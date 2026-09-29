@@ -1,0 +1,654 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="lj_transacao" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="id_transacao" type="xsd:int"/>
+								<xsd:element name="id_transacao_superior" type="xsd:int" minOccurs="0"/>
+								<xsd:element name="nome_transacao">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="50"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="titulo_transacao">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="100"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="tipo_transacao" type="xsd:int"/>
+								<xsd:element name="somente_acesso_especial" type="xsd:boolean"/>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<lj_transacao>
+		<id_transacao>1</id_transacao>
+		<nome_transacao>Sale</nome_transacao>
+		<titulo_transacao>Vendas</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>2</id_transacao>
+		<nome_transacao>CashManagementPOS</nome_transacao>
+		<titulo_transacao>Gerenciamento do caixa (LinxPOS)</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>3</id_transacao>
+		<nome_transacao>FiscalManagement</nome_transacao>
+		<titulo_transacao>Gerenciamento fiscal</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>4</id_transacao>
+		<nome_transacao>ChargeAccount</nome_transacao>
+		<titulo_transacao>Crediário</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>5</id_transacao>
+		<nome_transacao>CashManagement</nome_transacao>
+		<titulo_transacao>Movimentação de caixa</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>6</id_transacao>
+		<nome_transacao>SaleQuery</nome_transacao>
+		<titulo_transacao>Consulta de vendas</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>7</id_transacao>
+		<nome_transacao>InventoryQuery</nome_transacao>
+		<titulo_transacao>Consulta de estoque</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>8</id_transacao>
+		<nome_transacao>PriceQuery</nome_transacao>
+		<titulo_transacao>Consulta de preços</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>9</id_transacao>
+		<nome_transacao>ConfigPOS</nome_transacao>
+		<titulo_transacao>Configurações (LinxPOS)</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>10</id_transacao>
+		<nome_transacao>CashRegisterManagement</nome_transacao>
+		<titulo_transacao>Gerenciamento do caixa (Manager)</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>11</id_transacao>
+		<nome_transacao>CashRegisterReports</nome_transacao>
+		<titulo_transacao>Relatórios de caixa</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>12</id_transacao>
+		<nome_transacao>InventoryIn</nome_transacao>
+		<titulo_transacao>Entrada de mercadorias</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>13</id_transacao>
+		<nome_transacao>InventoryOut</nome_transacao>
+		<titulo_transacao>Saída de mercadorias</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>14</id_transacao>
+		<nome_transacao>InventoryCount</nome_transacao>
+		<titulo_transacao>Inventário</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>15</id_transacao>
+		<nome_transacao>Config</nome_transacao>
+		<titulo_transacao>Configurações (Manager)</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>16</id_transacao>
+		<nome_transacao>Customer</nome_transacao>
+		<titulo_transacao>Clientes</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>17</id_transacao>
+		<nome_transacao>Auditing</nome_transacao>
+		<titulo_transacao>Auditoria</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>18</id_transacao>
+		<nome_transacao>Invoice</nome_transacao>
+		<titulo_transacao>Notas fiscais</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>19</id_transacao>
+		<nome_transacao>Reserves</nome_transacao>
+		<titulo_transacao>Reservas</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>20</id_transacao>
+		<nome_transacao>ClearData</nome_transacao>
+		<titulo_transacao>Limpeza de dados</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>21</id_transacao>
+		<nome_transacao>ExternalModules</nome_transacao>
+		<titulo_transacao>Consultas gerenciais / Módulos exclusivos</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>22</id_transacao>
+		<nome_transacao>Request</nome_transacao>
+		<titulo_transacao>Pedidos</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>23</id_transacao>
+		<nome_transacao>CustomerLock</nome_transacao>
+		<titulo_transacao>Bloqueios de cliente</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>24</id_transacao>
+		<nome_transacao>CustomerConcept</nome_transacao>
+		<titulo_transacao>Conceitos de cliente</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>25</id_transacao>
+		<nome_transacao>CustomerSolvency</nome_transacao>
+		<titulo_transacao>Pontualidades de cliente</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>26</id_transacao>
+		<nome_transacao>CustomerType</nome_transacao>
+		<titulo_transacao>Tipos de cliente / fornecedor</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>27</id_transacao>
+		<nome_transacao>TaxException</nome_transacao>
+		<titulo_transacao>Faixas de classificação fiscal</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>28</id_transacao>
+		<nome_transacao>CancelReason</nome_transacao>
+		<titulo_transacao>Motivos de cancelamento</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>29</id_transacao>
+		<nome_transacao>InventoryType</nome_transacao>
+		<titulo_transacao>Tipos de entrada / saída</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>30</id_transacao>
+		<nome_transacao>CashRegisterMovType</nome_transacao>
+		<titulo_transacao>Tipos de movimentação de caixa</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>31</id_transacao>
+		<nome_transacao>ReserveType</nome_transacao>
+		<titulo_transacao>Tipos de reserva</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>32</id_transacao>
+		<nome_transacao>NFSeries</nome_transacao>
+		<titulo_transacao>Séries de nota fiscal</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>33</id_transacao>
+		<nome_transacao>TypePayment</nome_transacao>
+		<titulo_transacao>Tipos de lançamento de contas</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>34</id_transacao>
+		<nome_transacao>FiscalTaxException</nome_transacao>
+		<titulo_transacao>Exceção de impostos</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>35</id_transacao>
+		<nome_transacao>Terminals</nome_transacao>
+		<titulo_transacao>Cadastro de terminais</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>36</id_transacao>
+		<nome_transacao>Salesmen</nome_transacao>
+		<titulo_transacao>Cadastro de vendedores</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>37</id_transacao>
+		<nome_transacao>SaleOperations</nome_transacao>
+		<titulo_transacao>Operações de venda</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>38</id_transacao>
+		<nome_transacao>PaymentMethods</nome_transacao>
+		<titulo_transacao>Formas de pagamento</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>39</id_transacao>
+		<nome_transacao>Prices</nome_transacao>
+		<titulo_transacao>Preços (Linx Franchising)</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>40</id_transacao>
+		<nome_transacao>Currency</nome_transacao>
+		<titulo_transacao>Cadastro de moedas e câmbios</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>41</id_transacao>
+		<nome_transacao>RetailFiscalOperation</nome_transacao>
+		<titulo_transacao>Cadastro de naturezas de operação</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>42</id_transacao>
+		<nome_transacao>ProductQuery</nome_transacao>
+		<titulo_transacao>Consulta de produtos</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>43</id_transacao>
+		<nome_transacao>InventoryStatus</nome_transacao>
+		<titulo_transacao>Divergências de estoque</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>44</id_transacao>
+		<nome_transacao>InventorySummary</nome_transacao>
+		<titulo_transacao>Extrato de estoque</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>45</id_transacao>
+		<nome_transacao>Inventory</nome_transacao>
+		<titulo_transacao>Consulta de estoque</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>46</id_transacao>
+		<nome_transacao>Purchase</nome_transacao>
+		<titulo_transacao>Consulta de pedidos de compra</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>47</id_transacao>
+		<nome_transacao>Sales</nome_transacao>
+		<titulo_transacao>Consulta sintética de vendas</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>48</id_transacao>
+		<nome_transacao>SalesQuery</nome_transacao>
+		<titulo_transacao>Consulta analítica de vendas</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>49</id_transacao>
+		<nome_transacao>SalesProducts</nome_transacao>
+		<titulo_transacao>Consulta de vendas por produto e cor</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>50</id_transacao>
+		<nome_transacao>SaleProductSalesmen</nome_transacao>
+		<titulo_transacao>Consulta de vendas de produtos por vendedor</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>51</id_transacao>
+		<nome_transacao>InventoryProducts</nome_transacao>
+		<titulo_transacao>Consulta de vendas / metas e estoque atual</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>52</id_transacao>
+		<nome_transacao>SalesCommissions</nome_transacao>
+		<titulo_transacao>Consulta de comissão</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>53</id_transacao>
+		<nome_transacao>FiscalSintegra</nome_transacao>
+		<titulo_transacao>Sintegra</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>54</id_transacao>
+		<nome_transacao>SaleCustomers</nome_transacao>
+		<titulo_transacao>Consulta de vendas por cliente</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>55</id_transacao>
+		<nome_transacao>Transit</nome_transacao>
+		<titulo_transacao>Consulta de trânsito de mercadorias</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>56</id_transacao>
+		<nome_transacao>BarcodeQuery</nome_transacao>
+		<titulo_transacao>Impressão de códigos de barra</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>57</id_transacao>
+		<nome_transacao>Incoming</nome_transacao>
+		<titulo_transacao>Cadastro de títulos a receber</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>58</id_transacao>
+		<nome_transacao>IncomingPayment</nome_transacao>
+		<titulo_transacao>´Baixa de títulos a receber</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>59</id_transacao>
+		<nome_transacao>BounceCheck</nome_transacao>
+		<titulo_transacao>Devolução de cheques a receber</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>60</id_transacao>
+		<nome_transacao>IncomingQuery</nome_transacao>
+		<titulo_transacao>Consulta de títulos a receber</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>61</id_transacao>
+		<nome_transacao>IncomingPaymentQuery</nome_transacao>
+		<titulo_transacao>Consulta de títulos recebidos</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>62</id_transacao>
+		<nome_transacao>Cardholders</nome_transacao>
+		<titulo_transacao>Cadastro de administradoras de cartão</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>63</id_transacao>
+		<nome_transacao>CardNetwork</nome_transacao>
+		<titulo_transacao>Cadastro de redes de cartão</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>64</id_transacao>
+		<nome_transacao>Account</nome_transacao>
+		<titulo_transacao>Cadastro de contas contábeis</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>65</id_transacao>
+		<nome_transacao>MovType</nome_transacao>
+		<titulo_transacao>Cadastro de tipos de movimentos</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>66</id_transacao>
+		<nome_transacao>DocumentType</nome_transacao>
+		<titulo_transacao>Cadastro de tipos de documento</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>67</id_transacao>
+		<nome_transacao>CardConciliation</nome_transacao>
+		<titulo_transacao>Conciliação de cartão</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>68</id_transacao>
+		<nome_transacao>Expense</nome_transacao>
+		<titulo_transacao>Cadastro de títulos a pagar</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>69</id_transacao>
+		<nome_transacao>ExpensePayment</nome_transacao>
+		<titulo_transacao>Baixa de títulos a pagar</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>70</id_transacao>
+		<nome_transacao>ExpenseQuery</nome_transacao>
+		<titulo_transacao>Consulta de títulos a pagar</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>71</id_transacao>
+		<nome_transacao>ExpensePaymentQuery</nome_transacao>
+		<titulo_transacao>Consulta de títulos pagos</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>72</id_transacao>
+		<nome_transacao>SaleEdit</nome_transacao>
+		<titulo_transacao>Correção de vendas (tickets)</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>73</id_transacao>
+		<nome_transacao>SaleFinancialTransfer</nome_transacao>
+		<titulo_transacao>Transferência de vendas para o financeiro</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>74</id_transacao>
+		<nome_transacao>ReversalIntegrationStore</nome_transacao>
+		<titulo_transacao>Estorno de vendas do financeiro</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>75</id_transacao>
+		<nome_transacao>SalesPayment</nome_transacao>
+		<titulo_transacao>Consulta analítica de parcelas de venda</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>76</id_transacao>
+		<nome_transacao>CountsLaunching</nome_transacao>
+		<titulo_transacao>Lançamento de conta corrente</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>77</id_transacao>
+		<nome_transacao>BankingConciliation</nome_transacao>
+		<titulo_transacao>Conciliação bancária</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>78</id_transacao>
+		<nome_transacao>CashFlow</nome_transacao>
+		<titulo_transacao>Fluxo de caixa</titulo_transacao>
+		<tipo_transacao>1</tipo_transacao>
+		<somente_acesso_especial>false</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>79</id_transacao>
+		<id_transacao_superior>1</id_transacao_superior>
+		<nome_transacao>Sale.RemoveItem</nome_transacao>
+		<titulo_transacao>Vendas - Exclusão de item</titulo_transacao>
+		<tipo_transacao>2</tipo_transacao>
+		<somente_acesso_especial>true</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>80</id_transacao>
+		<id_transacao_superior>1</id_transacao_superior>
+		<nome_transacao>Sale.SaleDiscount</nome_transacao>
+		<titulo_transacao>Vendas - Desconto na tela de venda</titulo_transacao>
+		<tipo_transacao>2</tipo_transacao>
+		<somente_acesso_especial>true</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>81</id_transacao>
+		<id_transacao_superior>1</id_transacao_superior>
+		<nome_transacao>Sale.PaymentDiscount</nome_transacao>
+		<titulo_transacao>Vendas - Desconto na tela de pagamento</titulo_transacao>
+		<tipo_transacao>2</tipo_transacao>
+		<somente_acesso_especial>true</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>82</id_transacao>
+		<id_transacao_superior>1</id_transacao_superior>
+		<nome_transacao>Sale.CancelSale</nome_transacao>
+		<titulo_transacao>Vendas - Cancelamento de venda</titulo_transacao>
+		<tipo_transacao>2</tipo_transacao>
+		<somente_acesso_especial>true</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>83</id_transacao>
+		<id_transacao_superior>1</id_transacao_superior>
+		<nome_transacao>Sale.CustomPayment</nome_transacao>
+		<titulo_transacao>Vendas - Pagamento personalizado</titulo_transacao>
+		<tipo_transacao>2</tipo_transacao>
+		<somente_acesso_especial>true</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>84</id_transacao>
+		<id_transacao_superior>1</id_transacao_superior>
+		<nome_transacao>Sale.ExchangeItem</nome_transacao>
+		<titulo_transacao>Vendas - Lançamento de troca</titulo_transacao>
+		<tipo_transacao>2</tipo_transacao>
+		<somente_acesso_especial>true</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>85</id_transacao>
+		<id_transacao_superior>1</id_transacao_superior>
+		<nome_transacao>Sale.SaleType</nome_transacao>
+		<titulo_transacao>Vendas - Alteração do tipo de venda</titulo_transacao>
+		<tipo_transacao>2</tipo_transacao>
+		<somente_acesso_especial>true</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>86</id_transacao>
+		<id_transacao_superior>1</id_transacao_superior>
+		<nome_transacao>Sale.Tickets</nome_transacao>
+		<titulo_transacao>Vendas - Lista de tickes</titulo_transacao>
+		<tipo_transacao>2</tipo_transacao>
+		<somente_acesso_especial>true</somente_acesso_especial>
+	</lj_transacao>
+	<lj_transacao>
+		<id_transacao>87</id_transacao>
+		<id_transacao_superior>1</id_transacao_superior>
+		<nome_transacao>Sale.PaymentDate</nome_transacao>
+		<titulo_transacao>Vendas - Alteração de vencimento</titulo_transacao>
+		<tipo_transacao>2</tipo_transacao>
+		<somente_acesso_especial>true</somente_acesso_especial>
+	</lj_transacao>
+</VFPData>

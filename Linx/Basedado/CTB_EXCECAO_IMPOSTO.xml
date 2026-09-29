@@ -1,0 +1,123 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="ctb_excecao_imposto" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="codigo_fiscal_operacao" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="4"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="ctb_tipo_operacao" type="xsd:int" minOccurs="0"/>
+								<xsd:element name="id_excecao_imposto" type="xsd:int"/>
+								<xsd:element name="indicador_cfop" type="xsd:int" minOccurs="0"/>
+								<xsd:element name="indicador_fiscal_terceiro" type="xsd:int" minOccurs="0"/>
+								<xsd:element name="uf" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="2"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="desc_excecao">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="40"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="desc_detalhada" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="250"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<ctb_excecao_imposto>
+		<ctb_tipo_operacao>115</ctb_tipo_operacao>
+		<id_excecao_imposto>1</id_excecao_imposto>
+		<desc_excecao>SALIDA DE ALBARANES</desc_excecao>
+		<desc_detalhada>EXCEPCION PARA SALIDA DE ALBARANES</desc_detalhada>
+	</ctb_excecao_imposto>
+	<ctb_excecao_imposto>
+		<ctb_tipo_operacao>215</ctb_tipo_operacao>
+		<id_excecao_imposto>2</id_excecao_imposto>
+		<desc_excecao>ENTRADA DE ALBARANES</desc_excecao>
+		<desc_detalhada>EXCEPCION PARA ENTRADA DE ALBARANES</desc_detalhada>
+	</ctb_excecao_imposto>
+	<ctb_excecao_imposto>
+		<ctb_tipo_operacao>221</ctb_tipo_operacao>
+		<id_excecao_imposto>5</id_excecao_imposto>
+		<desc_excecao>TRANSFERENCIA</desc_excecao>
+		<desc_detalhada>TRANSFERENCIA</desc_detalhada>
+	</ctb_excecao_imposto>
+	<ctb_excecao_imposto>
+		<ctb_tipo_operacao>233</ctb_tipo_operacao>
+		<id_excecao_imposto>6</id_excecao_imposto>
+		<desc_excecao>MOSTRARIO</desc_excecao>
+		<desc_detalhada>MOSTRARIO</desc_detalhada>
+	</ctb_excecao_imposto>
+	<ctb_excecao_imposto>
+		<ctb_tipo_operacao>200</ctb_tipo_operacao>
+		<id_excecao_imposto>7</id_excecao_imposto>
+		<desc_excecao>COMPRA INTERNA</desc_excecao>
+		<desc_detalhada>COMPRA INTERNA</desc_detalhada>
+	</ctb_excecao_imposto>
+	<ctb_excecao_imposto>
+		<ctb_tipo_operacao>201</ctb_tipo_operacao>
+		<id_excecao_imposto>8</id_excecao_imposto>
+		<desc_excecao>COMPRA DE SERVICIOS</desc_excecao>
+		<desc_detalhada>COMPRA DE SERVICIOS</desc_detalhada>
+	</ctb_excecao_imposto>
+	<ctb_excecao_imposto>
+		<codigo_fiscal_operacao>2101</codigo_fiscal_operacao>
+		<ctb_tipo_operacao>200</ctb_tipo_operacao>
+		<id_excecao_imposto>9</id_excecao_imposto>
+		<desc_excecao>COMPRA INTRACOMUNITARIA</desc_excecao>
+		<desc_detalhada>COMPRA INTRACOMUNITARIA</desc_detalhada>
+	</ctb_excecao_imposto>
+	<ctb_excecao_imposto>
+		<ctb_tipo_operacao>202</ctb_tipo_operacao>
+		<id_excecao_imposto>12</id_excecao_imposto>
+		<desc_excecao>COMPRA DE SERVICIOS PROFESIONALES</desc_excecao>
+	</ctb_excecao_imposto>
+	<ctb_excecao_imposto>
+		<ctb_tipo_operacao>116</ctb_tipo_operacao>
+		<id_excecao_imposto>14</id_excecao_imposto>
+		<desc_excecao>DEVOLUCION DE COMPRA - ALBARAN</desc_excecao>
+	</ctb_excecao_imposto>
+	<ctb_excecao_imposto>
+		<ctb_tipo_operacao>120</ctb_tipo_operacao>
+		<id_excecao_imposto>16</id_excecao_imposto>
+		<desc_excecao>TRANSFERENCIA EXPEDIDA</desc_excecao>
+	</ctb_excecao_imposto>
+	<ctb_excecao_imposto>
+		<ctb_tipo_operacao>130</ctb_tipo_operacao>
+		<id_excecao_imposto>17</id_excecao_imposto>
+		<desc_excecao>SALIDA PARA TALLERES EXTERNOS</desc_excecao>
+	</ctb_excecao_imposto>
+	<ctb_excecao_imposto>
+		<ctb_tipo_operacao>131</ctb_tipo_operacao>
+		<id_excecao_imposto>18</id_excecao_imposto>
+		<desc_excecao>ENTREGA SIN CARGO</desc_excecao>
+	</ctb_excecao_imposto>
+	<ctb_excecao_imposto>
+		<ctb_tipo_operacao>217</ctb_tipo_operacao>
+		<id_excecao_imposto>19</id_excecao_imposto>
+		<desc_excecao>DEVOLUCION DE VENTAS - ALBARAN</desc_excecao>
+	</ctb_excecao_imposto>
+</VFPData>

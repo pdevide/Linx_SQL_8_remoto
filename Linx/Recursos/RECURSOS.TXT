@@ -1,0 +1,10 @@
+lx_entradas.app
+lx_faturamento.app
+lx_financeiro.app
+lx_fiscal.app
+lx_integracao_wf.app
+lx_nfe.app
+lx_planning.app
+lx_producao.app
+lx_sup_estoque.app
+lx_vendas.app

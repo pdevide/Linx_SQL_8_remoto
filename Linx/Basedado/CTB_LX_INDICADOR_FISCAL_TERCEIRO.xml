@@ -1,0 +1,102 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="ctb_lx_indicador_fiscal_terceiro" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="descricao_fiscal_terceiro">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="40"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="indicador_fiscal_terceiro" type="xsd:int"/>
+								<xsd:element name="inativo" type="xsd:boolean"/>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<ctb_lx_indicador_fiscal_terceiro>
+		<descricao_fiscal_terceiro>EMPRESA INDUSTRIAL/COMERCIAL</descricao_fiscal_terceiro>
+		<indicador_fiscal_terceiro>1</indicador_fiscal_terceiro>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_fiscal_terceiro>
+	<ctb_lx_indicador_fiscal_terceiro>
+		<descricao_fiscal_terceiro>EMPRESA COMERCIAL</descricao_fiscal_terceiro>
+		<indicador_fiscal_terceiro>2</indicador_fiscal_terceiro>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_fiscal_terceiro>
+	<ctb_lx_indicador_fiscal_terceiro>
+		<descricao_fiscal_terceiro>EMPRESA DE TRANSPORTE</descricao_fiscal_terceiro>
+		<indicador_fiscal_terceiro>3</indicador_fiscal_terceiro>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_fiscal_terceiro>
+	<ctb_lx_indicador_fiscal_terceiro>
+		<descricao_fiscal_terceiro>EMPRESA DE COMUNICAÇÃO</descricao_fiscal_terceiro>
+		<indicador_fiscal_terceiro>4</indicador_fiscal_terceiro>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_fiscal_terceiro>
+	<ctb_lx_indicador_fiscal_terceiro>
+		<descricao_fiscal_terceiro>DISTRIBUIDORA DE ENERGIA ELÉTRICA</descricao_fiscal_terceiro>
+		<indicador_fiscal_terceiro>5</indicador_fiscal_terceiro>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_fiscal_terceiro>
+	<ctb_lx_indicador_fiscal_terceiro>
+		<descricao_fiscal_terceiro>SIMPLES NACIONAL</descricao_fiscal_terceiro>
+		<indicador_fiscal_terceiro>6</indicador_fiscal_terceiro>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_fiscal_terceiro>
+	<ctb_lx_indicador_fiscal_terceiro>
+		<descricao_fiscal_terceiro>PRODUTOR RURAL</descricao_fiscal_terceiro>
+		<indicador_fiscal_terceiro>7</indicador_fiscal_terceiro>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_fiscal_terceiro>
+	<ctb_lx_indicador_fiscal_terceiro>
+		<descricao_fiscal_terceiro>NÃO CONTRIBUINTE</descricao_fiscal_terceiro>
+		<indicador_fiscal_terceiro>8</indicador_fiscal_terceiro>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_fiscal_terceiro>
+	<ctb_lx_indicador_fiscal_terceiro>
+		<descricao_fiscal_terceiro>ARMAZÉM GERAL / DEPOSITO</descricao_fiscal_terceiro>
+		<indicador_fiscal_terceiro>9</indicador_fiscal_terceiro>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_fiscal_terceiro>
+	<ctb_lx_indicador_fiscal_terceiro>
+		<descricao_fiscal_terceiro>EMPRESA ESTRANGEIRA</descricao_fiscal_terceiro>
+		<indicador_fiscal_terceiro>10</indicador_fiscal_terceiro>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_fiscal_terceiro>
+	<ctb_lx_indicador_fiscal_terceiro>
+		<descricao_fiscal_terceiro>AMBULANTE</descricao_fiscal_terceiro>
+		<indicador_fiscal_terceiro>11</indicador_fiscal_terceiro>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_fiscal_terceiro>
+	<ctb_lx_indicador_fiscal_terceiro>
+		<descricao_fiscal_terceiro>FILIAL</descricao_fiscal_terceiro>
+		<indicador_fiscal_terceiro>12</indicador_fiscal_terceiro>
+		<inativo>true</inativo>
+	</ctb_lx_indicador_fiscal_terceiro>
+	<ctb_lx_indicador_fiscal_terceiro>
+		<descricao_fiscal_terceiro>ZONA FRANCA / LIVRE MERCADO</descricao_fiscal_terceiro>
+		<indicador_fiscal_terceiro>13</indicador_fiscal_terceiro>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_fiscal_terceiro>
+	<ctb_lx_indicador_fiscal_terceiro>
+		<descricao_fiscal_terceiro>FEIRA / EXPOSICAO</descricao_fiscal_terceiro>
+		<indicador_fiscal_terceiro>14</indicador_fiscal_terceiro>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_fiscal_terceiro>
+	<ctb_lx_indicador_fiscal_terceiro>
+		<descricao_fiscal_terceiro>SIMPLES NACIONAL</descricao_fiscal_terceiro>
+		<indicador_fiscal_terceiro>16</indicador_fiscal_terceiro>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_fiscal_terceiro>
+</VFPData>

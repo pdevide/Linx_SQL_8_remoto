@@ -1,0 +1,211 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="lj_acsp_resp" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="id_resp_acsp" type="xsd:int"/>
+								<xsd:element name="descricao">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="60"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="id_resp_linx" type="xsd:int"/>
+								<xsd:element name="exibe_mensagem_display" type="xsd:boolean"/>
+								<xsd:element name="data_para_transferencia" type="xsd:dateTime" minOccurs="0"/>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<lj_acsp_resp>
+		<id_resp_acsp>0</id_resp_acsp>
+		<descricao>Não existe restrição</descricao>
+		<id_resp_linx>0</id_resp_linx>
+		<exibe_mensagem_display>true</exibe_mensagem_display>
+		<data_para_transferencia>2008-01-28T11:16:26</data_para_transferencia>
+	</lj_acsp_resp>
+	<lj_acsp_resp>
+		<id_resp_acsp>3</id_resp_acsp>
+		<descricao>Terminal/Estabelecimento não autorizado para acesso</descricao>
+		<id_resp_linx>1</id_resp_linx>
+		<exibe_mensagem_display>true</exibe_mensagem_display>
+		<data_para_transferencia>2008-01-28T11:16:26</data_para_transferencia>
+	</lj_acsp_resp>
+	<lj_acsp_resp>
+		<id_resp_acsp>6</id_resp_acsp>
+		<descricao>Inconsistências</descricao>
+		<id_resp_linx>1</id_resp_linx>
+		<exibe_mensagem_display>true</exibe_mensagem_display>
+		<data_para_transferencia>2008-01-28T11:16:26</data_para_transferencia>
+	</lj_acsp_resp>
+	<lj_acsp_resp>
+		<id_resp_acsp>43</id_resp_acsp>
+		<descricao>Constam ocorrências de débitos ou títulos protestados</descricao>
+		<id_resp_linx>1</id_resp_linx>
+		<exibe_mensagem_display>true</exibe_mensagem_display>
+		<data_para_transferencia>2008-01-28T11:16:26</data_para_transferencia>
+	</lj_acsp_resp>
+	<lj_acsp_resp>
+		<id_resp_acsp>44</id_resp_acsp>
+		<descricao>Cheque sustado</descricao>
+		<id_resp_linx>1</id_resp_linx>
+		<exibe_mensagem_display>true</exibe_mensagem_display>
+		<data_para_transferencia>2008-01-28T11:16:26</data_para_transferencia>
+	</lj_acsp_resp>
+	<lj_acsp_resp>
+		<id_resp_acsp>46</id_resp_acsp>
+		<descricao>Cheque sustado com outro documento</descricao>
+		<id_resp_linx>1</id_resp_linx>
+		<exibe_mensagem_display>true</exibe_mensagem_display>
+		<data_para_transferencia>2008-01-28T11:16:26</data_para_transferencia>
+	</lj_acsp_resp>
+	<lj_acsp_resp>
+		<id_resp_acsp>47</id_resp_acsp>
+		<descricao>Mensagem da instituição financeira</descricao>
+		<id_resp_linx>1</id_resp_linx>
+		<exibe_mensagem_display>true</exibe_mensagem_display>
+		<data_para_transferencia>2008-01-28T11:16:26</data_para_transferencia>
+	</lj_acsp_resp>
+	<lj_acsp_resp>
+		<id_resp_acsp>48</id_resp_acsp>
+		<descricao>Talão sustado</descricao>
+		<id_resp_linx>1</id_resp_linx>
+		<exibe_mensagem_display>true</exibe_mensagem_display>
+		<data_para_transferencia>2008-01-28T11:16:26</data_para_transferencia>
+	</lj_acsp_resp>
+	<lj_acsp_resp>
+		<id_resp_acsp>49</id_resp_acsp>
+		<descricao>Consta para o banco, agência e conta informados outro doc</descricao>
+		<id_resp_linx>1</id_resp_linx>
+		<exibe_mensagem_display>true</exibe_mensagem_display>
+		<data_para_transferencia>2008-01-28T11:16:26</data_para_transferencia>
+	</lj_acsp_resp>
+	<lj_acsp_resp>
+		<id_resp_acsp>50</id_resp_acsp>
+		<descricao>Talão sustado com outro documento</descricao>
+		<id_resp_linx>1</id_resp_linx>
+		<exibe_mensagem_display>true</exibe_mensagem_display>
+		<data_para_transferencia>2008-01-28T11:16:26</data_para_transferencia>
+	</lj_acsp_resp>
+	<lj_acsp_resp>
+		<id_resp_acsp>51</id_resp_acsp>
+		<descricao>Constam cheques sustados pelo motivo 21</descricao>
+		<id_resp_linx>1</id_resp_linx>
+		<exibe_mensagem_display>true</exibe_mensagem_display>
+		<data_para_transferencia>2008-01-28T11:16:26</data_para_transferencia>
+	</lj_acsp_resp>
+	<lj_acsp_resp>
+		<id_resp_acsp>52</id_resp_acsp>
+		<descricao>Constam cheques devolvidos pela segunda apresentação</descricao>
+		<id_resp_linx>1</id_resp_linx>
+		<exibe_mensagem_display>true</exibe_mensagem_display>
+		<data_para_transferencia>2008-01-28T11:16:26</data_para_transferencia>
+	</lj_acsp_resp>
+	<lj_acsp_resp>
+		<id_resp_acsp>53</id_resp_acsp>
+		<descricao>Constam ceques devolvidos por prática espúria</descricao>
+		<id_resp_linx>1</id_resp_linx>
+		<exibe_mensagem_display>true</exibe_mensagem_display>
+		<data_para_transferencia>2008-01-28T11:16:26</data_para_transferencia>
+	</lj_acsp_resp>
+	<lj_acsp_resp>
+		<id_resp_acsp>54</id_resp_acsp>
+		<descricao>Constam cheques devolvidos por conta encerrada</descricao>
+		<id_resp_linx>1</id_resp_linx>
+		<exibe_mensagem_display>true</exibe_mensagem_display>
+		<data_para_transferencia>2008-01-28T11:16:26</data_para_transferencia>
+	</lj_acsp_resp>
+	<lj_acsp_resp>
+		<id_resp_acsp>55</id_resp_acsp>
+		<descricao>Constam cheques devolvidos por outros motivos</descricao>
+		<id_resp_linx>1</id_resp_linx>
+		<exibe_mensagem_display>true</exibe_mensagem_display>
+		<data_para_transferencia>2008-01-28T11:16:26</data_para_transferencia>
+	</lj_acsp_resp>
+	<lj_acsp_resp>
+		<id_resp_acsp>56</id_resp_acsp>
+		<descricao>Constam cheques devolvidos por mais de um motivo</descricao>
+		<id_resp_linx>1</id_resp_linx>
+		<exibe_mensagem_display>true</exibe_mensagem_display>
+		<data_para_transferencia>2008-01-28T11:16:26</data_para_transferencia>
+	</lj_acsp_resp>
+	<lj_acsp_resp>
+		<id_resp_acsp>57</id_resp_acsp>
+		<descricao>Constam cheques devolvidos pelo motivo 21</descricao>
+		<id_resp_linx>1</id_resp_linx>
+		<exibe_mensagem_display>true</exibe_mensagem_display>
+		<data_para_transferencia>2008-01-28T11:16:26</data_para_transferencia>
+	</lj_acsp_resp>
+	<lj_acsp_resp>
+		<id_resp_acsp>58</id_resp_acsp>
+		<descricao>Constam cheques devolvidos informados por associados</descricao>
+		<id_resp_linx>1</id_resp_linx>
+		<exibe_mensagem_display>true</exibe_mensagem_display>
+		<data_para_transferencia>2008-01-28T11:16:26</data_para_transferencia>
+	</lj_acsp_resp>
+	<lj_acsp_resp>
+		<id_resp_acsp>59</id_resp_acsp>
+		<descricao>Constam inf. de cheques emitidos anteriormente, no dia e pré</descricao>
+		<id_resp_linx>1</id_resp_linx>
+		<exibe_mensagem_display>true</exibe_mensagem_display>
+		<data_para_transferencia>2008-01-28T11:16:26</data_para_transferencia>
+	</lj_acsp_resp>
+	<lj_acsp_resp>
+		<id_resp_acsp>60</id_resp_acsp>
+		<descricao>Requer informações adicionais</descricao>
+		<id_resp_linx>1</id_resp_linx>
+		<exibe_mensagem_display>true</exibe_mensagem_display>
+		<data_para_transferencia>2008-01-28T11:16:26</data_para_transferencia>
+	</lj_acsp_resp>
+	<lj_acsp_resp>
+		<id_resp_acsp>61</id_resp_acsp>
+		<descricao>Resposta parametrizada RESTRITIVA</descricao>
+		<id_resp_linx>1</id_resp_linx>
+		<exibe_mensagem_display>true</exibe_mensagem_display>
+		<data_para_transferencia>2008-01-28T11:16:26</data_para_transferencia>
+	</lj_acsp_resp>
+	<lj_acsp_resp>
+		<id_resp_acsp>62</id_resp_acsp>
+		<descricao>Resposta parametrizada NEGATIVA</descricao>
+		<id_resp_linx>1</id_resp_linx>
+		<exibe_mensagem_display>true</exibe_mensagem_display>
+		<data_para_transferencia>2008-01-28T11:16:26</data_para_transferencia>
+	</lj_acsp_resp>
+	<lj_acsp_resp>
+		<id_resp_acsp>63</id_resp_acsp>
+		<descricao>Constam consultas anteriores</descricao>
+		<id_resp_linx>1</id_resp_linx>
+		<exibe_mensagem_display>true</exibe_mensagem_display>
+		<data_para_transferencia>2008-01-28T11:16:26</data_para_transferencia>
+	</lj_acsp_resp>
+	<lj_acsp_resp>
+		<id_resp_acsp>89</id_resp_acsp>
+		<descricao>Mensagem genérica (outras)</descricao>
+		<id_resp_linx>1</id_resp_linx>
+		<exibe_mensagem_display>true</exibe_mensagem_display>
+		<data_para_transferencia>2008-01-28T11:16:26</data_para_transferencia>
+	</lj_acsp_resp>
+	<lj_acsp_resp>
+		<id_resp_acsp>91</id_resp_acsp>
+		<descricao>Sistema fora de Operação</descricao>
+		<id_resp_linx>1</id_resp_linx>
+		<exibe_mensagem_display>true</exibe_mensagem_display>
+		<data_para_transferencia>2008-01-28T11:16:26</data_para_transferencia>
+	</lj_acsp_resp>
+	<lj_acsp_resp>
+		<id_resp_acsp>131</id_resp_acsp>
+		<descricao>Serviço indisponível</descricao>
+		<id_resp_linx>1</id_resp_linx>
+		<exibe_mensagem_display>true</exibe_mensagem_display>
+		<data_para_transferencia>2008-01-28T11:16:26</data_para_transferencia>
+	</lj_acsp_resp>
+</VFPData>

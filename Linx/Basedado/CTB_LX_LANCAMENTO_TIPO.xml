@@ -1,0 +1,1633 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="ctb_lx_lancamento_tipo" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="lx_tipo_lancamento">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="3"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="inativo_para_lancto_manual" type="xsd:boolean"/>
+								<xsd:element name="indica_solicitacao_verba" type="xsd:boolean"/>
+								<xsd:element name="controle_sistema" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="6"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="somente_lanc_contabil" type="xsd:boolean"/>
+								<xsd:element name="indicador_tabela_origem" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="40"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="desc_tipo_lancamento">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="40"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="indica_id_contabil_terceiro" type="xsd:boolean"/>
+								<xsd:element name="credito_debito">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="1"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="indica_imposto" type="xsd:boolean"/>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>ADC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<desc_tipo_lancamento>AJUSTE DE DIVISAS A CRÉDITO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>ADD</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<desc_tipo_lancamento>AJUSTE DE DIVISAS A DÉBITO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>ADG</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<indicador_tabela_origem>LANÇAMENTO CONTÁBIL</indicador_tabela_origem>
+		<desc_tipo_lancamento>AJUSTE DE DIVISAS GANHO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>ADP</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<indicador_tabela_origem>LANÇAMENTO CONTÁBIL</indicador_tabela_origem>
+		<desc_tipo_lancamento>AJUSTE DE DIVISAS PERDA</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>AEC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<desc_tipo_lancamento>ABERTURA DO EXERCÍCIO A CRÉDITO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>AED</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<desc_tipo_lancamento>ABERTURA DO EXERCÍCIO A DÉBITO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>ATC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<desc_tipo_lancamento>ABERTURA TERC. DO EXERCÍCIO A CRÉDITO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>ATD</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<desc_tipo_lancamento>ABERTURA POR TERC. DO EXERCÍCIO A DÉBITO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>BAC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009033</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<indicador_tabela_origem>CTB_AVISO_LANCAMENTO_MOV</indicador_tabela_origem>
+		<desc_tipo_lancamento>BAIXA DE AVISO DE CRÉDITO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>BAD</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009042</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<indicador_tabela_origem>CTB_AVISO_LANCAMENTO_MOV</indicador_tabela_origem>
+		<desc_tipo_lancamento>BAIXA DE AVISO DE DÉBITO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>BBC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009025</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<indicador_tabela_origem>TÍTULOS À RECEBER</indicador_tabela_origem>
+		<desc_tipo_lancamento>BAIXA DE TÍT. RECEBER CONTAS PORTADORAS</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>BCD</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<desc_tipo_lancamento>BAIXA DE CHEQUE DEVOLVIDO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>BCH</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009067</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<indicador_tabela_origem>CTB_CHEQUE_CARTAO_MOV</indicador_tabela_origem>
+		<desc_tipo_lancamento>BAIXA / DEPÓSITO DE CHEQUES A RECEBER</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>BCM</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009060</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<desc_tipo_lancamento>BAIXA DE COMISSÃO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>BCP</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009031</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<indicador_tabela_origem>TITULOS À PAGAR</indicador_tabela_origem>
+		<desc_tipo_lancamento>BAIXA DE TÍTULOS A PAGAR EM C. PORTADORA</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>BCR</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009032</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<indicador_tabela_origem>CTB_CHEQUE_CARTAO_MOV</indicador_tabela_origem>
+		<desc_tipo_lancamento>BAIXA DE CARTÕES A RECEBER</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>BDC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009031</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<indicador_tabela_origem>TÍTULOS À PAGAR</indicador_tabela_origem>
+		<desc_tipo_lancamento>BAIXA DE TÍT. POR DEVOLUÇÃO DE COMPRA</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>BDR</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009031</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<indicador_tabela_origem>TÍTULOS À PAGAR</indicador_tabela_origem>
+		<desc_tipo_lancamento>BAIXA DE TÍT. POR DESCONTO RECEBIDO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>BDV</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009025</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<indicador_tabela_origem>TÍTULOS À RECEBER</indicador_tabela_origem>
+		<desc_tipo_lancamento>BAIXA DE TÍT. POR DEVOLUÇÃO DE VENDA</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>BEC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>BAIXA DE ESTORNO DE COMISSÃO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>BOP</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>BAIXA DE OBRIGAÇÕES A PAGAR</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>BTD</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009025</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<indicador_tabela_origem>TÍTULOS À RECEBER</indicador_tabela_origem>
+		<desc_tipo_lancamento>BAIXA DE TÍT. POR DESCONTO CONCEDIDO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>BTP</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009031</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<indicador_tabela_origem>CTB_A_PAGAR_MOV</indicador_tabela_origem>
+		<desc_tipo_lancamento>BAIXA DE TÍTULOS A PAGAR</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>BTR</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009025</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<indicador_tabela_origem>CTB_A_RECEBER_MOV</indicador_tabela_origem>
+		<desc_tipo_lancamento>BAIXA DE TÍTULOS A RECEBER</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>CBT</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>BAIXA DE TÍTULOS</indicador_tabela_origem>
+		<desc_tipo_lancamento>CRÉDITO EM CONTA POR BAIXA DE TÍTULOS</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>CDC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<desc_tipo_lancamento>CHEQUE COM DIVISAS A CRÉDITO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>CDD</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<desc_tipo_lancamento>CHEQUE COM DIVISAS A DÉBITO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>CDP</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>CREDITO - DESCONTO CONTA PORTADORA</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>CDT</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>CREDITO - DESCONTO CONTA TRANSITORIA</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>CHC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009044</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<indicador_tabela_origem>CHEQUE COMPENSADO</indicador_tabela_origem>
+		<desc_tipo_lancamento>CHEQUE COMPENSADO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>CMS</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>COMPRA DE MERCADORIA</indicador_tabela_origem>
+		<desc_tipo_lancamento>COMPRA DE MERCADORIA E SERVIÇOS</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>CMT</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>COMPRA DE MERCADORIA</indicador_tabela_origem>
+		<desc_tipo_lancamento>COMPRA DE MERCADORIA E SERVIÇOS TERCEIRO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>CPD</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<desc_tipo_lancamento>CHEQUE A PAGAR DEVOLVIDO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>DBT</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>BAIXA DE TÍTULOS</indicador_tabela_origem>
+		<desc_tipo_lancamento>DÉBITO EM CONTA POR BAIXA DE TÍTULOS</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>DCH</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009037</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<indicador_tabela_origem>CTB_CHEQUE_MOV</indicador_tabela_origem>
+		<desc_tipo_lancamento>DEVOLUÇÃO DE CHEQUES A RECEBER</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>DCM</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>DESPESA COM COMISSÃO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>DCP</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>DEVOLUÇÃO DE CHEQUES</indicador_tabela_origem>
+		<desc_tipo_lancamento>DEVOLUÇÃO DE CHEQUES A PAGAR</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>DCR</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<indicador_tabela_origem>CTB_CHEQUE_CARTAO_MOV</indicador_tabela_origem>
+		<desc_tipo_lancamento>DEVOLUÇÃO DE CARTÕES A RECEBER</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>DDP</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>DEBITO - DESCONTO CONTA PORTADORA</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>DDT</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>DEBITO - DESCONTO CONTA TRANSITORIA</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>DIE</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>DEDUÇÃO DE IMPOSTOS SOBRE COMPRAS</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>DIS</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>LANÇAMENTO CONTÁBIL</indicador_tabela_origem>
+		<desc_tipo_lancamento>DEDUÇÃO DE IMPOSTOS SOBRE SAÍDAS</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>DVC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>LANÇAMENTO CONTÁBIL</indicador_tabela_origem>
+		<desc_tipo_lancamento>DEVOLUÇÃO DE COMPRA</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>DVV</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>LANÇAMENTO CONTÁBIL</indicador_tabela_origem>
+		<desc_tipo_lancamento>DEVOLUÇÃO DE VENDAS</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>ECC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>CONTA CORRENTE</indicador_tabela_origem>
+		<desc_tipo_lancamento>ENTRADA EM CONTA CORRENTE</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>ECH</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009030</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<indicador_tabela_origem>CTB_CHEQUE</indicador_tabela_origem>
+		<desc_tipo_lancamento>EMISSÃO DE CHEQUES</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>ECM</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>ESTORNO DE COMISSÃO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>ECP</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>ENTRADA P/ RECEB. EM CONTAS PORTADORAS</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>ECT</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009035</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>ENTRADA NA CONTA DO TÍTULO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>EEC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>ENCERRA EXERCÍCIO A CRÉDITO - PREJUÍZO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>EED</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>ENCERRA EXERCÍCIO A DÉBITO - LUCRO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>EIM</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>ENTRADA COM IMPOSTO A MAIOR</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>ELC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>ENCERRAMENTO C/LANÇAMENTO A CRÉDITO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>ELD</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>ENCERRAMENTO C/LANÇAMENTO O DÉBITO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>EMC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>ENT. DE MERC. EM CONTA DE COMPENSAÇÃO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>EMR</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>ENT.  REMESSA DE MERC. C/ RETORNO FUTURO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>EMT</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>ENTRADA DE MERC. EM PODER DE TERCEIROS</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>ERD</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>ENTRADA POR RECEITA DIVERSA</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>ERM</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>ENTRADA POR RETORNO DE MERCADORIA</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>ERS</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>ENTRADA POR RETORNO SIMBÓLICO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>ESR</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>ENTRADA DE MERCADORIA S/ RETORNO FUT.</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>ETC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<desc_tipo_lancamento>ENCERRAMENTO TRIBUTÁRIO A CRÉDITO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>ETD</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<desc_tipo_lancamento>ENCERRAMENTO TRIBUTÁRIO A DÉBITO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>ETM</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>ENTRADA POR TRANSFÊRENCIA DE MERCADORIA</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>ETT</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>ENTRADA NO TRÂNSITO DE TRANSFERÊNCIA</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>EVM</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>ENTRADA COM VALOR A MAIOR</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>IAC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>true</indica_solicitacao_verba>
+		<controle_sistema>009020</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<indicador_tabela_origem>CTB_AVISO_LANCAMENTO</indicador_tabela_origem>
+		<desc_tipo_lancamento>INCLUSÃO DE AVISO DE CRÉDITO AO TERCEIRO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>IAD</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>true</indica_solicitacao_verba>
+		<controle_sistema>009043</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<indicador_tabela_origem>CTB_AVISO_LANCAMENTO</indicador_tabela_origem>
+		<desc_tipo_lancamento>INCLUSÃO DE AVISO DE DÉBITO DO TERCEIRO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>ICH</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009023</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<indicador_tabela_origem>CTB_CHEQUE_CARTAO</indicador_tabela_origem>
+		<desc_tipo_lancamento>INCLUSÃO DE CHEQUES</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>ICM</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<desc_tipo_lancamento>INCLUSÃO DE COMISSÃO P/ REPRESENTANTE</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>ICR</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009066</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<indicador_tabela_origem>CTB_CHEQUE_CARTAO</indicador_tabela_origem>
+		<desc_tipo_lancamento>INCLUSÃO DE CARTÃO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>IDC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>IMPOSTO S/ DEVOLUÇÃO DE COMPRA</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>IDV</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>IMPOSTO S/ DEVOLUÇÃO DE VENDA</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>IEC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>INCLUSÃO DE ESTORNO DE COMISSÃO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>IFP</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<desc_tipo_lancamento>INCLUSÃO DE FRETE A PAGAR</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>IRE</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009021</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>IMPOSTOS A RECUPERAR</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>true</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>IRS</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009021</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>IMPOSTOS A RECOLHER</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>true</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>ITP</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>true</indica_solicitacao_verba>
+		<controle_sistema>009022</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<indicador_tabela_origem>CTB_A_PAGAR_FATURA</indicador_tabela_origem>
+		<desc_tipo_lancamento>INCLUSÃO DE TÍTULOS A PAGAR</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>ITR</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009024</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<indicador_tabela_origem>CTB_A_RECEBER_FATURA</indicador_tabela_origem>
+		<desc_tipo_lancamento>INCLUSÃO DE TÍTULOS A RECEBER</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LAC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>LANÇAMENTO DE APURAÇÃO A CRÉDITO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LAD</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>LANÇAMENTO DE APURAÇÃO A DÉBITO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LCC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<indicador_tabela_origem>LANÇAMENTO CONTÁBIL</indicador_tabela_origem>
+		<desc_tipo_lancamento>COMPENSAÇÃO DE CHEQUES</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LDA</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>LANÇAMENTO CONTÁBIL</indicador_tabela_origem>
+		<desc_tipo_lancamento>DESPESAS ADMINISTRATIVAS</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LDC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>LANÇAMENTO CONTÁBIL</indicador_tabela_origem>
+		<desc_tipo_lancamento>DESCONTO CONCEDIDO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LDD</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>LANÇAMENTO CONTÁBIL</indicador_tabela_origem>
+		<desc_tipo_lancamento>DESPESAS DIVERSAS</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LDF</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>LANÇAMENTO CONTÁBIL</indicador_tabela_origem>
+		<desc_tipo_lancamento>DESPESAS FINANCEIRAS</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LDI</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>LANÇAMENTO CONTÁBIL</indicador_tabela_origem>
+		<desc_tipo_lancamento>DESPESAS INDUSTRIAIS</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LDP</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>LANÇAMENTO CONTÁBIL</indicador_tabela_origem>
+		<desc_tipo_lancamento>DESPESAS C/PESSOAL</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LDR</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>LANÇAMENTO CONTÁBIL</indicador_tabela_origem>
+		<desc_tipo_lancamento>DESCONTO RECEBIDO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LDT</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>LANÇAMENTO CONTÁBIL</indicador_tabela_origem>
+		<desc_tipo_lancamento>DESPESAS TRIBUTARIAS</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LDV</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>LANÇAMENTO CONTÁBIL</indicador_tabela_origem>
+		<desc_tipo_lancamento>DESPESAS COMERCIAIS</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LEC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>true</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>LANÇAMENTO CONTÁBIL</indicador_tabela_origem>
+		<desc_tipo_lancamento>ENTRADA NO CAIXA</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LJP</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>TITULOS À PAGAR</indicador_tabela_origem>
+		<desc_tipo_lancamento>JUROS PAGOS</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LJR</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>TITULOS À RECEBER</indicador_tabela_origem>
+		<desc_tipo_lancamento>JUROS RECEBIDOS</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LLE</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<desc_tipo_lancamento>LANÇAMENTO DE LUCRO DO EXERCÍCIO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LMC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>LANÇAMENTO CONTÁBIL</indicador_tabela_origem>
+		<desc_tipo_lancamento>LANÇAMENTO MANUAL A CRÉDITO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LMD</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>LANÇAMENTO CONTÁBIL</indicador_tabela_origem>
+		<desc_tipo_lancamento>LANÇAMENTO MANUAL A DÉBITO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LMP</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>TITULOS À PAGAR</indicador_tabela_origem>
+		<desc_tipo_lancamento>MULTAS PAGAS</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LMR</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>TITULOS À RECEBER</indicador_tabela_origem>
+		<desc_tipo_lancamento>MULTAS RECEBIDAS</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LOP</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>LANÇAR OBRIGAÇÕES A PAGAR</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LPE</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<desc_tipo_lancamento>LANÇAMENTO DE PREJUÍZO DO EXERCÍCIO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LRD</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>LANÇAMENTO CONTÁBIL</indicador_tabela_origem>
+		<desc_tipo_lancamento>RECEITAS DIVERSAS</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LRF</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>LANÇAMENTO CONTÁBIL</indicador_tabela_origem>
+		<desc_tipo_lancamento>RECEITAS FINANCEIRAS</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LSC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>SAÍDA DO CAIXA</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LTA</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>LANÇAMENTO DE TAXAS ADMINISTRATIVAS</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LTB</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>LANÇAMENTO DE TARIFA BANCÁRIA</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LTC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>LANÇAMENTO CONTÁBIL</indicador_tabela_origem>
+		<desc_tipo_lancamento>LANÇAMENTO MANUAL A CRÉDITO - C/TERCEIRO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LTD</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>LANÇAMENTO CONTÁBIL</indicador_tabela_origem>
+		<desc_tipo_lancamento>LANÇAMENTO MANUAL A DÉBITO - C/TERCEIRO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LTE</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>LANÇAMENTO DE TARIFA BANCÁRIA - ESTORNO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>LVZ</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>LANÇAMENTO CONTÁBIL</indicador_tabela_origem>
+		<desc_tipo_lancamento>LANÇAMENTO COM VALOR ZERADO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>MLC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<indicador_tabela_origem>LANÇAMENTO CONTÁBIL</indicador_tabela_origem>
+		<desc_tipo_lancamento>LANÇAMENTO DE MUTUO A CRÉDITO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>MLD</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>LANÇAMENTO CONTÁBIL</indicador_tabela_origem>
+		<desc_tipo_lancamento>LANÇAMENTO DE MUTUO A DÉBITO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>OCP</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<desc_tipo_lancamento>OUTRAS CONTAS A PAGAR (PASSIVO)</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>PCP</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>ENTRADA P/ PAGTO EM CONTAS PORTADORAS</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>PGM</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>PAGAMENTO COM MERCADORIA</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>RCP</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009013</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<desc_tipo_lancamento>RETORNO DA CONTA DE PAGAMENTO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>RCT</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009013</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<desc_tipo_lancamento>RETORNO PARA A CONTA DO TÍTULO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>RIP</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>RECOLHIMENTO DE IMPOSTOS</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>RPC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009013</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<desc_tipo_lancamento>REMESSA P/ PAGTO EM CONTAS PORTADORAS</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>RRC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009035</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<desc_tipo_lancamento>REMESSA P/ RECEB. EM CONTAS PORTADORAS</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>RSR</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>REMESSA SEM RETORNO FUTURO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>SCC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<indicador_tabela_origem>CONTAS CORRENTES</indicador_tabela_origem>
+		<desc_tipo_lancamento>SAÍDA DE CONTA CORRENTE</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>SCP</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009035</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>SAÍDA DA CONTA PORTADORA</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>SDD</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>SAÍDA POR DESPESA DIVERSAS</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>SIM</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>SAÍDA COM IMPOSTO A MAIOR</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>true</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>SMC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>SAÍDA DE MERC. EM CONTA DE COMPENSAÇÃO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>SMR</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>SAíDA REMESSA MERCAD.C/ RETORNO FUTURO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>SMT</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>SAÍDA MERC.DE EM PODER DE TERCEIRO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>SRM</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>SAÍDA POR RETORNO DE MERCADORIA</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>SRS</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>SAÍDA POR RETORNO SIMBÓLICO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>SSR</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>SAÍDA DE MATERIAL SEM RETORNO FUTURO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>STM</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>SAÍDA POR TRANSFERÊNCIA DE MERCADORIA</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>STT</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>SAÍDA DO TRÂNSITO DE TRANSFERÊNCIA</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>SVM</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>true</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>SAÍDA COM VALOR A MAIOR</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>TCE</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009163</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<desc_tipo_lancamento>TROCA DE CHEQUE EMITIDO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>TEC</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<desc_tipo_lancamento>ENCERRAMENTO POR TERCEIRO A CRÉDITO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>TED</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>false</somente_lanc_contabil>
+		<desc_tipo_lancamento>ENCERRAMENTO POR TERCIERO A DÉBITO</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>true</indica_id_contabil_terceiro>
+		<credito_debito>D</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+	<ctb_lx_lancamento_tipo>
+		<lx_tipo_lancamento>VMS</lx_tipo_lancamento>
+		<inativo_para_lancto_manual>false</inativo_para_lancto_manual>
+		<indica_solicitacao_verba>false</indica_solicitacao_verba>
+		<controle_sistema>009018</controle_sistema>
+		<somente_lanc_contabil>true</somente_lanc_contabil>
+		<desc_tipo_lancamento>VENDA DE MERCADORIA E SERVIÇOS</desc_tipo_lancamento>
+		<indica_id_contabil_terceiro>false</indica_id_contabil_terceiro>
+		<credito_debito>C</credito_debito>
+		<indica_imposto>false</indica_imposto>
+	</ctb_lx_lancamento_tipo>
+</VFPData>

@@ -1,0 +1,244 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="ctb_lx_modelo_documento_fiscal" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="numero_modelo_fiscal">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="3"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="notificacao">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="20"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="desc_modelo_fiscal">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="60"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>01</numero_modelo_fiscal>
+		<notificacao>NF</notificacao>
+		<desc_modelo_fiscal>NOTA FISCAL</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>02</numero_modelo_fiscal>
+		<notificacao>NFC</notificacao>
+		<desc_modelo_fiscal>NOTA FISCAL DE VENDA A CONSUMIDOR</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>03</numero_modelo_fiscal>
+		<notificacao>NFS</notificacao>
+		<desc_modelo_fiscal>NOTA FISCAL DE SERVIÇOS</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>04</numero_modelo_fiscal>
+		<notificacao>NFP</notificacao>
+		<desc_modelo_fiscal>NOTA FISCAL DE PRODUTOR</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>06</numero_modelo_fiscal>
+		<notificacao>NFEL</notificacao>
+		<desc_modelo_fiscal>NOTA FISCAL / CONTA DE ENERGIA ELÉTRICA</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>07</numero_modelo_fiscal>
+		<notificacao>NFST</notificacao>
+		<desc_modelo_fiscal>NOTA FISCAL DE SERVIÇO DE TRANSPORTE</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>08</numero_modelo_fiscal>
+		<notificacao>CTRC</notificacao>
+		<desc_modelo_fiscal>CONHECIMENTO DE TRANSPORTE RODOVIÁRIO DE CARGAS</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>09</numero_modelo_fiscal>
+		<notificacao>CTAC</notificacao>
+		<desc_modelo_fiscal>CONHECIMENTO DE TRANSPORTE AQUAVIÁRIO DE CARGAS</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>1</numero_modelo_fiscal>
+		<notificacao>NF</notificacao>
+		<desc_modelo_fiscal>NOTA FISCAL</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>10</numero_modelo_fiscal>
+		<notificacao>CA</notificacao>
+		<desc_modelo_fiscal>CONHECIMENTO AÉREO</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>11</numero_modelo_fiscal>
+		<notificacao>CTFC</notificacao>
+		<desc_modelo_fiscal>CONHECIMENTO DE TRANSPORTE FERROVIÁRIO DE CARGAS</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>13</numero_modelo_fiscal>
+		<notificacao>BPR</notificacao>
+		<desc_modelo_fiscal>BILHETE DE PASSAGEM RODOVIÁRIO</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>14</numero_modelo_fiscal>
+		<notificacao>BPA</notificacao>
+		<desc_modelo_fiscal>BILHETE DE PASSAGEM AQUAVIÁRIO</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>15</numero_modelo_fiscal>
+		<notificacao>BPNB</notificacao>
+		<desc_modelo_fiscal>BILHETE DE PASSAGEM E NOTA DE BAGAGEM</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>16</numero_modelo_fiscal>
+		<notificacao>BPF</notificacao>
+		<desc_modelo_fiscal>BILHETE DE PASSAGEM FERROVIÁRIO</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>17</numero_modelo_fiscal>
+		<notificacao>DT</notificacao>
+		<desc_modelo_fiscal>DESPACHO DE TRANSPORTE</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>18</numero_modelo_fiscal>
+		<notificacao>RMD</notificacao>
+		<desc_modelo_fiscal>RESUMO DE MOVIMENTO DIÁRIO</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>1B</numero_modelo_fiscal>
+		<notificacao>NFA</notificacao>
+		<desc_modelo_fiscal>NOTA FISCAL AVULSA</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>2</numero_modelo_fiscal>
+		<notificacao>NFC / ECF</notificacao>
+		<desc_modelo_fiscal>NOTA FISCAL DE VENDA A CONSUMIDOR / EMISSOR DE CUPOM FISCAL</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>20</numero_modelo_fiscal>
+		<notificacao>OCC</notificacao>
+		<desc_modelo_fiscal>ORDEM DE COLETA DE CARGA</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>21</numero_modelo_fiscal>
+		<notificacao>NFSC</notificacao>
+		<desc_modelo_fiscal>NOTA FISCAL DE SERVIÇO DE COMUNICAÇÃO</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>22</numero_modelo_fiscal>
+		<notificacao>NFST</notificacao>
+		<desc_modelo_fiscal>NOTA FISCAL DE SERVIÇO DE TELECOMUNICAÇÃO</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>23</numero_modelo_fiscal>
+		<notificacao>GNRE</notificacao>
+		<desc_modelo_fiscal>GNRE</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>24</numero_modelo_fiscal>
+		<notificacao>ACT</notificacao>
+		<desc_modelo_fiscal>AUTORIZAÇÃO DE CARREGAMENTO E TRANSPORTE</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>25</numero_modelo_fiscal>
+		<notificacao>MC</notificacao>
+		<desc_modelo_fiscal>MANIFESTO DE CARGA</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>26</numero_modelo_fiscal>
+		<notificacao>CTMC</notificacao>
+		<desc_modelo_fiscal>CONHECIMENTO DE TRANSPORTE MULTIMODAL DE CARGAS</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>27</numero_modelo_fiscal>
+		<notificacao>NFAC</notificacao>
+		<desc_modelo_fiscal>NOTA FISCAL / CONTA DE FORNECIMENTO DE ÁGUA CANALIZADA</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>28</numero_modelo_fiscal>
+		<notificacao>NFGC</notificacao>
+		<desc_modelo_fiscal>NOTA FISCAL / CONTA DE FORNECIMENTO DE GÁS CANALIZADO</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>2D</numero_modelo_fiscal>
+		<notificacao>ECF</notificacao>
+		<desc_modelo_fiscal>EMISSOR DE CUPOM FISCAL</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>2E</numero_modelo_fiscal>
+		<notificacao>CFBP</notificacao>
+		<desc_modelo_fiscal>CUPOM FISCAL BILHETE DE PASSAGEM</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>3</numero_modelo_fiscal>
+		<notificacao>NFE</notificacao>
+		<desc_modelo_fiscal>NOTA FISCAL ENTRADA</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>3A</numero_modelo_fiscal>
+		<notificacao>NFSS</notificacao>
+		<desc_modelo_fiscal>NOTA FISCAL DE SERVIÇOS - MODELO SIMPLIFICADO</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>3B</numero_modelo_fiscal>
+		<notificacao>NFSA</notificacao>
+		<desc_modelo_fiscal>NOTA FISCAL DE SERVIÇOS - MODELO AVULSO</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>4</numero_modelo_fiscal>
+		<notificacao>NFP</notificacao>
+		<desc_modelo_fiscal>NOTA FISCAL DE PRODUTOR</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>55</numero_modelo_fiscal>
+		<notificacao>NF-E</notificacao>
+		<desc_modelo_fiscal>NOTA FISCAL ELETRONICA</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>6</numero_modelo_fiscal>
+		<notificacao>NEL</notificacao>
+		<desc_modelo_fiscal>NOTA FISCAL / CONTA DE ENERGIA ELÉTRICA</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>7</numero_modelo_fiscal>
+		<notificacao>NST</notificacao>
+		<desc_modelo_fiscal>NOTA FISCAL DE SERVIÇO DE TRANSPORTE</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>8</numero_modelo_fiscal>
+		<notificacao>CTR</notificacao>
+		<desc_modelo_fiscal>CONHECIMENTO DE TRANSPORTE RODOVIÁRIO DE CARGAS</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>8B</numero_modelo_fiscal>
+		<notificacao>CTRCA</notificacao>
+		<desc_modelo_fiscal>CONHECIMENTO DE TRANSPORTE DE CARGAS AVULSO</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>9</numero_modelo_fiscal>
+		<notificacao>CTA</notificacao>
+		<desc_modelo_fiscal>CONHECIMENTO DE TRANSPORTE AQUAVIÁRIO DE CARGAS</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+	<ctb_lx_modelo_documento_fiscal>
+		<numero_modelo_fiscal>90</numero_modelo_fiscal>
+		<notificacao>NFS</notificacao>
+		<desc_modelo_fiscal>NOTA FISCAL DE SERVIÇO NÃO ESCRITURÁVEL PARA ICMS/IPI</desc_modelo_fiscal>
+	</ctb_lx_modelo_documento_fiscal>
+</VFPData>

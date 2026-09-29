@@ -1,0 +1,101 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="ae_lx_documento" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="ctrl_assinatura" type="xsd:boolean"/>
+								<xsd:element name="desc_documento">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="40"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="documento">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="4"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="form_consulta" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="30"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="proc_aprovacao" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="30"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="usuario" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="25"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="inativo" type="xsd:boolean"/>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<ae_lx_documento>
+		<ctrl_assinatura>false</ctrl_assinatura>
+		<desc_documento>AVISO DE LANÇAMENTO</desc_documento>
+		<documento>AL</documento>
+		<usuario>SA</usuario>
+		<inativo>false</inativo>
+	</ae_lx_documento>
+	<ae_lx_documento>
+		<ctrl_assinatura>false</ctrl_assinatura>
+		<desc_documento>CONTABILIDADE</desc_documento>
+		<documento>CC</documento>
+		<inativo>false</inativo>
+	</ae_lx_documento>
+	<ae_lx_documento>
+		<ctrl_assinatura>false</ctrl_assinatura>
+		<desc_documento>CHEQUE EMITIDO</desc_documento>
+		<documento>CH</documento>
+		<inativo>false</inativo>
+	</ae_lx_documento>
+	<ae_lx_documento>
+		<ctrl_assinatura>false</ctrl_assinatura>
+		<desc_documento>TITULO A PAGAR ACEITO</desc_documento>
+		<documento>CP</documento>
+		<usuario>SA</usuario>
+		<inativo>false</inativo>
+	</ae_lx_documento>
+	<ae_lx_documento>
+		<ctrl_assinatura>false</ctrl_assinatura>
+		<desc_documento>LANCAMENTO FINANCEIRO</desc_documento>
+		<documento>LF</documento>
+		<inativo>false</inativo>
+	</ae_lx_documento>
+	<ae_lx_documento>
+		<ctrl_assinatura>false</ctrl_assinatura>
+		<desc_documento>TITULO A PAGAR APROVADO</desc_documento>
+		<documento>PA</documento>
+		<usuario>SA</usuario>
+		<inativo>false</inativo>
+	</ae_lx_documento>
+	<ae_lx_documento>
+		<ctrl_assinatura>false</ctrl_assinatura>
+		<desc_documento>SOLICITAÇÃO DE VERBA</desc_documento>
+		<documento>SV</documento>
+		<usuario>SA</usuario>
+		<inativo>false</inativo>
+	</ae_lx_documento>
+</VFPData>

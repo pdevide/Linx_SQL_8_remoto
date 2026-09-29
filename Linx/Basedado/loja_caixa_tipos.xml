@@ -1,0 +1,244 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="loja_caixa_tipos" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="tipo_lancamento_caixa">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="2"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="desc_lanc_caixa" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="40"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="indicador_mov_caixa" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="1"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="timestamp" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:base64Binary">
+											<xsd:maxLength value="2147483647"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="data_para_transferencia" type="xsd:dateTime" minOccurs="0"/>
+								<xsd:element name="lancamento_padrao" type="xsd:int" minOccurs="0"/>
+								<xsd:element name="tipo_fiscal" type="xsd:int" minOccurs="0"/>
+								<xsd:element name="inativo" type="xsd:boolean"/>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<loja_caixa_tipos>
+		<tipo_lancamento_caixa>00</tipo_lancamento_caixa>
+		<desc_lanc_caixa>SALDO INICIAL</desc_lanc_caixa>
+		<indicador_mov_caixa>E</indicador_mov_caixa>
+		<timestamp>AAAAAAAB4ak=</timestamp>
+		<data_para_transferencia>2004-12-03T10:53:53</data_para_transferencia>
+		<inativo>false</inativo>
+	</loja_caixa_tipos>
+	<loja_caixa_tipos>
+		<tipo_lancamento_caixa>01</tipo_lancamento_caixa>
+		<desc_lanc_caixa>VIAGEM</desc_lanc_caixa>
+		<indicador_mov_caixa>S</indicador_mov_caixa>
+		<timestamp>AAAAAAAB4c0=</timestamp>
+		<data_para_transferencia>2004-12-03T10:53:53</data_para_transferencia>
+		<lancamento_padrao>90001</lancamento_padrao>
+		<tipo_fiscal>0</tipo_fiscal>
+		<inativo>false</inativo>
+	</loja_caixa_tipos>
+	<loja_caixa_tipos>
+		<tipo_lancamento_caixa>99</tipo_lancamento_caixa>
+		<desc_lanc_caixa>FECHAMENTO DE CAIXA</desc_lanc_caixa>
+		<indicador_mov_caixa>S</indicador_mov_caixa>
+		<timestamp>AAAAAAAB4as=</timestamp>
+		<data_para_transferencia>2004-12-03T10:53:53</data_para_transferencia>
+		<inativo>false</inativo>
+	</loja_caixa_tipos>
+	<loja_caixa_tipos>
+		<tipo_lancamento_caixa>FA</tipo_lancamento_caixa>
+		<desc_lanc_caixa>FECHAMENTO DE CAIXA DE (A)</desc_lanc_caixa>
+		<indicador_mov_caixa>S</indicador_mov_caixa>
+		<timestamp>AAAAAAAB4a0=</timestamp>
+		<data_para_transferencia>2004-12-03T10:53:53</data_para_transferencia>
+		<inativo>false</inativo>
+	</loja_caixa_tipos>
+	<loja_caixa_tipos>
+		<tipo_lancamento_caixa>FB</tipo_lancamento_caixa>
+		<desc_lanc_caixa>FECHAMENTO DE CAIXA DE (B)</desc_lanc_caixa>
+		<indicador_mov_caixa>S</indicador_mov_caixa>
+		<timestamp>AAAAAAAB4a8=</timestamp>
+		<data_para_transferencia>2004-12-03T10:53:53</data_para_transferencia>
+		<inativo>false</inativo>
+	</loja_caixa_tipos>
+	<loja_caixa_tipos>
+		<tipo_lancamento_caixa>FC</tipo_lancamento_caixa>
+		<desc_lanc_caixa>FECHAMENTO DE CAIXA DE (C)</desc_lanc_caixa>
+		<indicador_mov_caixa>S</indicador_mov_caixa>
+		<timestamp>AAAAAAAB4bE=</timestamp>
+		<data_para_transferencia>2004-12-03T10:53:53</data_para_transferencia>
+		<inativo>false</inativo>
+	</loja_caixa_tipos>
+	<loja_caixa_tipos>
+		<tipo_lancamento_caixa>FD</tipo_lancamento_caixa>
+		<desc_lanc_caixa>FECHAMENTO DE CAIXA DE (D)</desc_lanc_caixa>
+		<indicador_mov_caixa>S</indicador_mov_caixa>
+		<timestamp>AAAAAAAB4bM=</timestamp>
+		<data_para_transferencia>2004-12-03T10:53:53</data_para_transferencia>
+		<inativo>false</inativo>
+	</loja_caixa_tipos>
+	<loja_caixa_tipos>
+		<tipo_lancamento_caixa>FE</tipo_lancamento_caixa>
+		<desc_lanc_caixa>FECHAMENTO DE CAIXA DE (E)</desc_lanc_caixa>
+		<indicador_mov_caixa>S</indicador_mov_caixa>
+		<timestamp>AAAAAAAB4bU=</timestamp>
+		<data_para_transferencia>2004-12-03T10:53:53</data_para_transferencia>
+		<inativo>false</inativo>
+	</loja_caixa_tipos>
+	<loja_caixa_tipos>
+		<tipo_lancamento_caixa>FF</tipo_lancamento_caixa>
+		<desc_lanc_caixa>FECHAMENTO DE CAIXA DE (F)</desc_lanc_caixa>
+		<indicador_mov_caixa>S</indicador_mov_caixa>
+		<timestamp>AAAAAAAB4bc=</timestamp>
+		<data_para_transferencia>2004-12-03T10:53:53</data_para_transferencia>
+		<inativo>false</inativo>
+	</loja_caixa_tipos>
+	<loja_caixa_tipos>
+		<tipo_lancamento_caixa>FI</tipo_lancamento_caixa>
+		<desc_lanc_caixa>FECHAMENTO DE CAIXA DE (I)</desc_lanc_caixa>
+		<indicador_mov_caixa>S</indicador_mov_caixa>
+		<timestamp>AAAAAAAB4bk=</timestamp>
+		<data_para_transferencia>2004-12-03T10:53:53</data_para_transferencia>
+		<inativo>false</inativo>
+	</loja_caixa_tipos>
+	<loja_caixa_tipos>
+		<tipo_lancamento_caixa>FJ</tipo_lancamento_caixa>
+		<desc_lanc_caixa>FECHAMENTO DE CAIXA DE (J)</desc_lanc_caixa>
+		<indicador_mov_caixa>S</indicador_mov_caixa>
+		<timestamp>AAAAAAAB4bs=</timestamp>
+		<data_para_transferencia>2004-12-03T10:53:53</data_para_transferencia>
+		<inativo>false</inativo>
+	</loja_caixa_tipos>
+	<loja_caixa_tipos>
+		<tipo_lancamento_caixa>FK</tipo_lancamento_caixa>
+		<desc_lanc_caixa>FECHAMENTO DE CAIXA DE (K)</desc_lanc_caixa>
+		<indicador_mov_caixa>S</indicador_mov_caixa>
+		<timestamp>AAAAAAAB4b0=</timestamp>
+		<data_para_transferencia>2004-12-03T10:53:53</data_para_transferencia>
+		<inativo>false</inativo>
+	</loja_caixa_tipos>
+	<loja_caixa_tipos>
+		<tipo_lancamento_caixa>FM</tipo_lancamento_caixa>
+		<desc_lanc_caixa>FECHAMENTO DE CAIXA DE (M)</desc_lanc_caixa>
+		<indicador_mov_caixa>S</indicador_mov_caixa>
+		<timestamp>AAAAAAAB4b8=</timestamp>
+		<data_para_transferencia>2004-12-03T10:53:53</data_para_transferencia>
+		<inativo>false</inativo>
+	</loja_caixa_tipos>
+	<loja_caixa_tipos>
+		<tipo_lancamento_caixa>FP</tipo_lancamento_caixa>
+		<desc_lanc_caixa>FECHAMENTO DE CAIXA DE (P)</desc_lanc_caixa>
+		<indicador_mov_caixa>S</indicador_mov_caixa>
+		<timestamp>AAAAAAAB4cE=</timestamp>
+		<data_para_transferencia>2004-12-03T10:53:53</data_para_transferencia>
+		<inativo>false</inativo>
+	</loja_caixa_tipos>
+	<loja_caixa_tipos>
+		<tipo_lancamento_caixa>FR</tipo_lancamento_caixa>
+		<desc_lanc_caixa>FECHAMENTO DE CAIXA DE (R)</desc_lanc_caixa>
+		<indicador_mov_caixa>S</indicador_mov_caixa>
+		<timestamp>AAAAAAAB4cM=</timestamp>
+		<data_para_transferencia>2004-12-03T10:53:53</data_para_transferencia>
+		<inativo>false</inativo>
+	</loja_caixa_tipos>
+	<loja_caixa_tipos>
+		<tipo_lancamento_caixa>FT</tipo_lancamento_caixa>
+		<desc_lanc_caixa>FECHAMENTO DE CAIXA DE (T)</desc_lanc_caixa>
+		<indicador_mov_caixa>S</indicador_mov_caixa>
+		<timestamp>AAAAAAAB4cw=</timestamp>
+		<data_para_transferencia>2004-12-03T10:53:53</data_para_transferencia>
+		<inativo>false</inativo>
+	</loja_caixa_tipos>
+	<loja_caixa_tipos>
+		<tipo_lancamento_caixa>FV</tipo_lancamento_caixa>
+		<desc_lanc_caixa>FECHAMENTO DE CAIXA DE (V)</desc_lanc_caixa>
+		<indicador_mov_caixa>S</indicador_mov_caixa>
+		<timestamp>AAAAAAAB4cU=</timestamp>
+		<data_para_transferencia>2004-12-03T10:53:53</data_para_transferencia>
+		<inativo>false</inativo>
+	</loja_caixa_tipos>
+	<loja_caixa_tipos>
+		<tipo_lancamento_caixa>FX</tipo_lancamento_caixa>
+		<desc_lanc_caixa>FECHAMENTO DE CAIXA DE (X)</desc_lanc_caixa>
+		<indicador_mov_caixa>S</indicador_mov_caixa>
+		<timestamp>AAAAAAAB4cc=</timestamp>
+		<data_para_transferencia>2004-12-03T10:53:53</data_para_transferencia>
+		<inativo>false</inativo>
+	</loja_caixa_tipos>
+	<loja_caixa_tipos>
+		<tipo_lancamento_caixa>FY</tipo_lancamento_caixa>
+		<desc_lanc_caixa>FECHAMENTO DA BAIXA DE VALE CLIENTE</desc_lanc_caixa>
+		<indicador_mov_caixa>S</indicador_mov_caixa>
+		<timestamp>AAAAAAADxeQ=</timestamp>
+		<data_para_transferencia>2008-05-28T11:41:29</data_para_transferencia>
+		<inativo>false</inativo>
+	</loja_caixa_tipos>
+	<loja_caixa_tipos>
+		<tipo_lancamento_caixa>RT</tipo_lancamento_caixa>
+		<desc_lanc_caixa>FECHAMENTO DE CAIXA</desc_lanc_caixa>
+		<indicador_mov_caixa>S</indicador_mov_caixa>
+		<timestamp>AAAAAAAB4ac=</timestamp>
+		<data_para_transferencia>2004-12-03T10:53:53</data_para_transferencia>
+		<inativo>false</inativo>
+	</loja_caixa_tipos>
+	<loja_caixa_tipos>
+		<tipo_lancamento_caixa>SI</tipo_lancamento_caixa>
+		<desc_lanc_caixa>SALDO INICIAL</desc_lanc_caixa>
+		<indicador_mov_caixa>E</indicador_mov_caixa>
+		<timestamp>AAAAAAAB4cg=</timestamp>
+		<data_para_transferencia>2004-12-03T10:53:53</data_para_transferencia>
+		<inativo>false</inativo>
+	</loja_caixa_tipos>
+	<loja_caixa_tipos>
+		<tipo_lancamento_caixa>V</tipo_lancamento_caixa>
+		<desc_lanc_caixa>VALE CLIENTES</desc_lanc_caixa>
+		<indicador_mov_caixa>R</indicador_mov_caixa>
+		<timestamp>AAAAAAAB4ck=</timestamp>
+		<data_para_transferencia>2004-12-03T10:53:53</data_para_transferencia>
+		<inativo>false</inativo>
+	</loja_caixa_tipos>
+	<loja_caixa_tipos>
+		<tipo_lancamento_caixa>VC</tipo_lancamento_caixa>
+		<desc_lanc_caixa>VALE CLIENTE</desc_lanc_caixa>
+		<indicador_mov_caixa>R</indicador_mov_caixa>
+		<timestamp>AAAAAAAB4co=</timestamp>
+		<data_para_transferencia>2004-12-03T10:53:53</data_para_transferencia>
+		<inativo>false</inativo>
+	</loja_caixa_tipos>
+	<loja_caixa_tipos>
+		<tipo_lancamento_caixa>VP</tipo_lancamento_caixa>
+		<desc_lanc_caixa>VALE PRODUTO</desc_lanc_caixa>
+		<indicador_mov_caixa>R</indicador_mov_caixa>
+		<timestamp>AAAAAAAB4cs=</timestamp>
+		<data_para_transferencia>2004-12-03T10:53:53</data_para_transferencia>
+		<inativo>false</inativo>
+	</loja_caixa_tipos>
+</VFPData>

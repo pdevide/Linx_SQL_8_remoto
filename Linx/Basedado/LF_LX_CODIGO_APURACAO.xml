@@ -1,0 +1,135 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="lf_lx_codigo_apuracao" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="apuracao_totaliza_em" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="4"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="denominacao">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="50"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="lx_codigo_apuracao">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="4"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="lx_tipo_codigo_apuracao" type="xsd:int" minOccurs="0"/>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<lf_lx_codigo_apuracao>
+		<denominacao>por saídas com DÉBITO do imposto</denominacao>
+		<lx_codigo_apuracao>001</lx_codigo_apuracao>
+		<lx_tipo_codigo_apuracao>1</lx_tipo_codigo_apuracao>
+	</lf_lx_codigo_apuracao>
+	<lf_lx_codigo_apuracao>
+		<denominacao>outros DÉBITOS</denominacao>
+		<lx_codigo_apuracao>002</lx_codigo_apuracao>
+		<lx_tipo_codigo_apuracao>1</lx_tipo_codigo_apuracao>
+	</lf_lx_codigo_apuracao>
+	<lf_lx_codigo_apuracao>
+		<denominacao>estorno de CRÉDITOS</denominacao>
+		<lx_codigo_apuracao>003</lx_codigo_apuracao>
+		<lx_tipo_codigo_apuracao>1</lx_tipo_codigo_apuracao>
+	</lf_lx_codigo_apuracao>
+	<lf_lx_codigo_apuracao>
+		<denominacao>total dos DÉBITOS (001+002+003)</denominacao>
+		<lx_codigo_apuracao>004</lx_codigo_apuracao>
+		<lx_tipo_codigo_apuracao>2</lx_tipo_codigo_apuracao>
+	</lf_lx_codigo_apuracao>
+	<lf_lx_codigo_apuracao>
+		<denominacao>por entradas com CRÉDITO do mposto</denominacao>
+		<lx_codigo_apuracao>005</lx_codigo_apuracao>
+		<lx_tipo_codigo_apuracao>1</lx_tipo_codigo_apuracao>
+	</lf_lx_codigo_apuracao>
+	<lf_lx_codigo_apuracao>
+		<denominacao>outros CRÉDITOS</denominacao>
+		<lx_codigo_apuracao>006</lx_codigo_apuracao>
+		<lx_tipo_codigo_apuracao>1</lx_tipo_codigo_apuracao>
+	</lf_lx_codigo_apuracao>
+	<lf_lx_codigo_apuracao>
+		<denominacao>estorno de DÉBITOS</denominacao>
+		<lx_codigo_apuracao>007</lx_codigo_apuracao>
+		<lx_tipo_codigo_apuracao>1</lx_tipo_codigo_apuracao>
+	</lf_lx_codigo_apuracao>
+	<lf_lx_codigo_apuracao>
+		<denominacao>subtotal dos CRÉDITOS (005+006+007)</denominacao>
+		<lx_codigo_apuracao>008</lx_codigo_apuracao>
+		<lx_tipo_codigo_apuracao>2</lx_tipo_codigo_apuracao>
+	</lf_lx_codigo_apuracao>
+	<lf_lx_codigo_apuracao>
+		<denominacao>saldo CREDOR do período anterior</denominacao>
+		<lx_codigo_apuracao>009</lx_codigo_apuracao>
+		<lx_tipo_codigo_apuracao>2</lx_tipo_codigo_apuracao>
+	</lf_lx_codigo_apuracao>
+	<lf_lx_codigo_apuracao>
+		<denominacao>total dos CRÉDITOS (008+009)</denominacao>
+		<lx_codigo_apuracao>010</lx_codigo_apuracao>
+		<lx_tipo_codigo_apuracao>2</lx_tipo_codigo_apuracao>
+	</lf_lx_codigo_apuracao>
+	<lf_lx_codigo_apuracao>
+		<denominacao>saldo DEVEDOR (004 - 010) se 04 &gt; 10</denominacao>
+		<lx_codigo_apuracao>011</lx_codigo_apuracao>
+		<lx_tipo_codigo_apuracao>3</lx_tipo_codigo_apuracao>
+	</lf_lx_codigo_apuracao>
+	<lf_lx_codigo_apuracao>
+		<denominacao>deduções</denominacao>
+		<lx_codigo_apuracao>012</lx_codigo_apuracao>
+		<lx_tipo_codigo_apuracao>1</lx_tipo_codigo_apuracao>
+	</lf_lx_codigo_apuracao>
+	<lf_lx_codigo_apuracao>
+		<denominacao>imposto a recolher (011 - 012)</denominacao>
+		<lx_codigo_apuracao>013</lx_codigo_apuracao>
+		<lx_tipo_codigo_apuracao>2</lx_tipo_codigo_apuracao>
+	</lf_lx_codigo_apuracao>
+	<lf_lx_codigo_apuracao>
+		<denominacao>saldo CREDOR (010 - 004) se 04 &lt; 10</denominacao>
+		<lx_codigo_apuracao>014</lx_codigo_apuracao>
+		<lx_tipo_codigo_apuracao>3</lx_tipo_codigo_apuracao>
+	</lf_lx_codigo_apuracao>
+	<lf_lx_codigo_apuracao>
+		<denominacao>imposto a recolher (013-014)</denominacao>
+		<lx_codigo_apuracao>015</lx_codigo_apuracao>
+		<lx_tipo_codigo_apuracao>2</lx_tipo_codigo_apuracao>
+	</lf_lx_codigo_apuracao>
+	<lf_lx_codigo_apuracao>
+		<denominacao>saldo CREDOR (012-005) se 005 &lt; 012</denominacao>
+		<lx_codigo_apuracao>016</lx_codigo_apuracao>
+		<lx_tipo_codigo_apuracao>3</lx_tipo_codigo_apuracao>
+	</lf_lx_codigo_apuracao>
+	<lf_lx_codigo_apuracao>
+		<denominacao>Transferencia de saldo do Imposto</denominacao>
+		<lx_codigo_apuracao>050</lx_codigo_apuracao>
+		<lx_tipo_codigo_apuracao>1</lx_tipo_codigo_apuracao>
+	</lf_lx_codigo_apuracao>
+	<lf_lx_codigo_apuracao>
+		<denominacao>Transferencia de saldo DEVEDOR do Imposto</denominacao>
+		<lx_codigo_apuracao>051</lx_codigo_apuracao>
+		<lx_tipo_codigo_apuracao>1</lx_tipo_codigo_apuracao>
+	</lf_lx_codigo_apuracao>
+	<lf_lx_codigo_apuracao>
+		<denominacao>Base Final (011 - 012)</denominacao>
+		<lx_codigo_apuracao>090</lx_codigo_apuracao>
+		<lx_tipo_codigo_apuracao>2</lx_tipo_codigo_apuracao>
+	</lf_lx_codigo_apuracao>
+</VFPData>

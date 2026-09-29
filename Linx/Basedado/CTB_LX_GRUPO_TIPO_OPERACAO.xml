@@ -1,0 +1,158 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="ctb_lx_grupo_tipo_operacao" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="desc_grupo_tipo_operacao">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="40"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="tipo_operacao">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="1"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="utiliza_entrada" type="xsd:boolean"/>
+								<xsd:element name="utiliza_saida" type="xsd:boolean"/>
+								<xsd:element name="saida_valida_cliente" type="xsd:boolean"/>
+								<xsd:element name="saida_valida_fornecedor" type="xsd:boolean"/>
+								<xsd:element name="saida_valida_filial" type="xsd:boolean"/>
+								<xsd:element name="entrada_valida_cliente" type="xsd:boolean"/>
+								<xsd:element name="entrada_valida_fornecedor" type="xsd:boolean"/>
+								<xsd:element name="entrada_valida_filial" type="xsd:boolean"/>
+								<xsd:element name="inativo" type="xsd:boolean"/>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<ctb_lx_grupo_tipo_operacao>
+		<desc_grupo_tipo_operacao>COMPRAS</desc_grupo_tipo_operacao>
+		<tipo_operacao>C</tipo_operacao>
+		<utiliza_entrada>true</utiliza_entrada>
+		<utiliza_saida>false</utiliza_saida>
+		<saida_valida_cliente>false</saida_valida_cliente>
+		<saida_valida_fornecedor>false</saida_valida_fornecedor>
+		<saida_valida_filial>false</saida_valida_filial>
+		<entrada_valida_cliente>false</entrada_valida_cliente>
+		<entrada_valida_fornecedor>true</entrada_valida_fornecedor>
+		<entrada_valida_filial>false</entrada_valida_filial>
+		<inativo>false</inativo>
+	</ctb_lx_grupo_tipo_operacao>
+	<ctb_lx_grupo_tipo_operacao>
+		<desc_grupo_tipo_operacao>DEVOLUÇÃO</desc_grupo_tipo_operacao>
+		<tipo_operacao>D</tipo_operacao>
+		<utiliza_entrada>true</utiliza_entrada>
+		<utiliza_saida>true</utiliza_saida>
+		<saida_valida_cliente>false</saida_valida_cliente>
+		<saida_valida_fornecedor>true</saida_valida_fornecedor>
+		<saida_valida_filial>false</saida_valida_filial>
+		<entrada_valida_cliente>true</entrada_valida_cliente>
+		<entrada_valida_fornecedor>false</entrada_valida_fornecedor>
+		<entrada_valida_filial>false</entrada_valida_filial>
+		<inativo>false</inativo>
+	</ctb_lx_grupo_tipo_operacao>
+	<ctb_lx_grupo_tipo_operacao>
+		<desc_grupo_tipo_operacao>RETORNO DE MERCADORIAS ENVIADAS</desc_grupo_tipo_operacao>
+		<tipo_operacao>E</tipo_operacao>
+		<utiliza_entrada>true</utiliza_entrada>
+		<utiliza_saida>true</utiliza_saida>
+		<saida_valida_cliente>true</saida_valida_cliente>
+		<saida_valida_fornecedor>false</saida_valida_fornecedor>
+		<saida_valida_filial>true</saida_valida_filial>
+		<entrada_valida_cliente>true</entrada_valida_cliente>
+		<entrada_valida_fornecedor>true</entrada_valida_fornecedor>
+		<entrada_valida_filial>false</entrada_valida_filial>
+		<inativo>false</inativo>
+	</ctb_lx_grupo_tipo_operacao>
+	<ctb_lx_grupo_tipo_operacao>
+		<desc_grupo_tipo_operacao>GUIAS PARA FATURAMENTO FUTURO (E/S)</desc_grupo_tipo_operacao>
+		<tipo_operacao>G</tipo_operacao>
+		<utiliza_entrada>true</utiliza_entrada>
+		<utiliza_saida>true</utiliza_saida>
+		<saida_valida_cliente>true</saida_valida_cliente>
+		<saida_valida_fornecedor>false</saida_valida_fornecedor>
+		<saida_valida_filial>false</saida_valida_filial>
+		<entrada_valida_cliente>false</entrada_valida_cliente>
+		<entrada_valida_fornecedor>true</entrada_valida_fornecedor>
+		<entrada_valida_filial>false</entrada_valida_filial>
+		<inativo>false</inativo>
+	</ctb_lx_grupo_tipo_operacao>
+	<ctb_lx_grupo_tipo_operacao>
+		<desc_grupo_tipo_operacao>GUIAS DE DEVOLUCAO P/ FATURAS NEGATIVAS</desc_grupo_tipo_operacao>
+		<tipo_operacao>N</tipo_operacao>
+		<utiliza_entrada>true</utiliza_entrada>
+		<utiliza_saida>true</utiliza_saida>
+		<saida_valida_cliente>false</saida_valida_cliente>
+		<saida_valida_fornecedor>true</saida_valida_fornecedor>
+		<saida_valida_filial>false</saida_valida_filial>
+		<entrada_valida_cliente>true</entrada_valida_cliente>
+		<entrada_valida_fornecedor>false</entrada_valida_fornecedor>
+		<entrada_valida_filial>false</entrada_valida_filial>
+		<inativo>false</inativo>
+	</ctb_lx_grupo_tipo_operacao>
+	<ctb_lx_grupo_tipo_operacao>
+		<desc_grupo_tipo_operacao>OUTRAS</desc_grupo_tipo_operacao>
+		<tipo_operacao>O</tipo_operacao>
+		<utiliza_entrada>true</utiliza_entrada>
+		<utiliza_saida>true</utiliza_saida>
+		<saida_valida_cliente>true</saida_valida_cliente>
+		<saida_valida_fornecedor>true</saida_valida_fornecedor>
+		<saida_valida_filial>true</saida_valida_filial>
+		<entrada_valida_cliente>true</entrada_valida_cliente>
+		<entrada_valida_fornecedor>true</entrada_valida_fornecedor>
+		<entrada_valida_filial>true</entrada_valida_filial>
+		<inativo>false</inativo>
+	</ctb_lx_grupo_tipo_operacao>
+	<ctb_lx_grupo_tipo_operacao>
+		<desc_grupo_tipo_operacao>ENVIO DE MERCADORIAS A RETORNAR</desc_grupo_tipo_operacao>
+		<tipo_operacao>R</tipo_operacao>
+		<utiliza_entrada>true</utiliza_entrada>
+		<utiliza_saida>true</utiliza_saida>
+		<saida_valida_cliente>true</saida_valida_cliente>
+		<saida_valida_fornecedor>true</saida_valida_fornecedor>
+		<saida_valida_filial>true</saida_valida_filial>
+		<entrada_valida_cliente>true</entrada_valida_cliente>
+		<entrada_valida_fornecedor>true</entrada_valida_fornecedor>
+		<entrada_valida_filial>true</entrada_valida_filial>
+		<inativo>false</inativo>
+	</ctb_lx_grupo_tipo_operacao>
+	<ctb_lx_grupo_tipo_operacao>
+		<desc_grupo_tipo_operacao>TRANSFERENCIA</desc_grupo_tipo_operacao>
+		<tipo_operacao>T</tipo_operacao>
+		<utiliza_entrada>true</utiliza_entrada>
+		<utiliza_saida>true</utiliza_saida>
+		<saida_valida_cliente>false</saida_valida_cliente>
+		<saida_valida_fornecedor>false</saida_valida_fornecedor>
+		<saida_valida_filial>true</saida_valida_filial>
+		<entrada_valida_cliente>false</entrada_valida_cliente>
+		<entrada_valida_fornecedor>false</entrada_valida_fornecedor>
+		<entrada_valida_filial>true</entrada_valida_filial>
+		<inativo>false</inativo>
+	</ctb_lx_grupo_tipo_operacao>
+	<ctb_lx_grupo_tipo_operacao>
+		<desc_grupo_tipo_operacao>VENDA</desc_grupo_tipo_operacao>
+		<tipo_operacao>V</tipo_operacao>
+		<utiliza_entrada>false</utiliza_entrada>
+		<utiliza_saida>true</utiliza_saida>
+		<saida_valida_cliente>true</saida_valida_cliente>
+		<saida_valida_fornecedor>false</saida_valida_fornecedor>
+		<saida_valida_filial>false</saida_valida_filial>
+		<entrada_valida_cliente>false</entrada_valida_cliente>
+		<entrada_valida_fornecedor>false</entrada_valida_fornecedor>
+		<entrada_valida_filial>false</entrada_valida_filial>
+		<inativo>false</inativo>
+	</ctb_lx_grupo_tipo_operacao>
+</VFPData>

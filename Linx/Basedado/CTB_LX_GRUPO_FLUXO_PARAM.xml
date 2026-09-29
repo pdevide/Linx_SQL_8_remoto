@@ -1,0 +1,983 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="ctb_lx_grupo_fluxo_param" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="lx_grupo_fluxo">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="3"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="proc_parametro">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="25"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="desc_proc_parametro">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="40"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="tipo_proc_parametro">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="1"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="valida_proc_parametro" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="2147483647"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="ordem" type="xsd:int"/>
+								<xsd:element name="valor_padrao" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="25"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="indica_utilidade" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="1"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>00</lx_grupo_fluxo>
+		<proc_parametro>@INDICA_SALDO_INICIAL</proc_parametro>
+		<desc_proc_parametro>INDICA SALDO INICIAL DIGITADO</desc_proc_parametro>
+		<tipo_proc_parametro>L</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>0</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>00</lx_grupo_fluxo>
+		<proc_parametro>@SALDO_INICIAL</proc_parametro>
+		<desc_proc_parametro>SALDO INICIAL</desc_proc_parametro>
+		<tipo_proc_parametro>N</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>0.00</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>00</lx_grupo_fluxo>
+		<proc_parametro>@USAR_LIMITE</proc_parametro>
+		<desc_proc_parametro>USAR O LIMITE DA CONTA CORRENTE</desc_proc_parametro>
+		<tipo_proc_parametro>L</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>1</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>05</lx_grupo_fluxo>
+		<proc_parametro>@D_CR</proc_parametro>
+		<desc_proc_parametro>D+ PARA CONTAS A RECEBER</desc_proc_parametro>
+		<tipo_proc_parametro>N</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>0</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>05</lx_grupo_fluxo>
+		<proc_parametro>@DIAS_ATRASO_CR</proc_parametro>
+		<desc_proc_parametro>DIAS PARA BUSCAR ATRASADOS</desc_proc_parametro>
+		<tipo_proc_parametro>N</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>60</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>05</lx_grupo_fluxo>
+		<proc_parametro>@N1</proc_parametro>
+		<desc_proc_parametro>NÍVEL 1 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>CO</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>05</lx_grupo_fluxo>
+		<proc_parametro>@N2</proc_parametro>
+		<desc_proc_parametro>NÍVEL 2 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>CP</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>05</lx_grupo_fluxo>
+		<proc_parametro>@PORC_INADIMPLENCIA_CR</proc_parametro>
+		<desc_proc_parametro>PORCENTAGEM DE INDIMPLÊNCIA</desc_proc_parametro>
+		<tipo_proc_parametro>N</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>0.00</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>05</lx_grupo_fluxo>
+		<proc_parametro>@TIPO_CARTEIRA</proc_parametro>
+		<desc_proc_parametro>TIPOS DE CARTEIRA PARA CONSULTA</desc_proc_parametro>
+		<tipo_proc_parametro>T</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>CSV</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>10</lx_grupo_fluxo>
+		<proc_parametro>@CHEQUE_CARTAO</proc_parametro>
+		<desc_proc_parametro>INDICA SOMENTE CHEQUE, CARTÃO OU TODOS</desc_proc_parametro>
+		<tipo_proc_parametro>O</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>1</ordem>
+		<valor_padrao>C</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>10</lx_grupo_fluxo>
+		<proc_parametro>@D_CARTAO</proc_parametro>
+		<desc_proc_parametro>D+ PARA CARTAO</desc_proc_parametro>
+		<tipo_proc_parametro>N</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>4</ordem>
+		<valor_padrao>0</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>10</lx_grupo_fluxo>
+		<proc_parametro>@D_CHEQUE</proc_parametro>
+		<desc_proc_parametro>D+ PARA CHEQUE</desc_proc_parametro>
+		<tipo_proc_parametro>N</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>3</ordem>
+		<valor_padrao>0</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>10</lx_grupo_fluxo>
+		<proc_parametro>@GRAVA_DETALHE</proc_parametro>
+		<desc_proc_parametro>INDICA SE GRAVA DETALHADO OS CHEQUES</desc_proc_parametro>
+		<tipo_proc_parametro>L</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>2</ordem>
+		<valor_padrao>0</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>10</lx_grupo_fluxo>
+		<proc_parametro>@N1</proc_parametro>
+		<desc_proc_parametro>NÍVEL1 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>8</ordem>
+		<valor_padrao>CO</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>10</lx_grupo_fluxo>
+		<proc_parametro>@N2</proc_parametro>
+		<desc_proc_parametro>NÍVEL 2 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>9</ordem>
+		<valor_padrao>CP</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>10</lx_grupo_fluxo>
+		<proc_parametro>@PORC_INADIMPLENCIA_CAR</proc_parametro>
+		<desc_proc_parametro>% INADIMPLÊNCIA DE CARTÃO</desc_proc_parametro>
+		<tipo_proc_parametro>N</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>6</ordem>
+		<valor_padrao>0.00</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>10</lx_grupo_fluxo>
+		<proc_parametro>@PORC_INADIMPLENCIA_CHQ</proc_parametro>
+		<desc_proc_parametro>% INADIMPLÊNCIA DE CHEQUE</desc_proc_parametro>
+		<tipo_proc_parametro>N</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>5</ordem>
+		<valor_padrao>0.00</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>10</lx_grupo_fluxo>
+		<proc_parametro>@TIPO_CARTEIRA</proc_parametro>
+		<desc_proc_parametro>TIPO DE CARTEIRA</desc_proc_parametro>
+		<tipo_proc_parametro>T</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>7</ordem>
+		<valor_padrao>CSV</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>11</lx_grupo_fluxo>
+		<proc_parametro>@CHEQUE_CARTAO</proc_parametro>
+		<desc_proc_parametro>INDICA SOMENTE CHEQUE, CARTÃO OU TODOS</desc_proc_parametro>
+		<tipo_proc_parametro>O</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>1</ordem>
+		<valor_padrao>A</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>11</lx_grupo_fluxo>
+		<proc_parametro>@D_CARTAO</proc_parametro>
+		<desc_proc_parametro>D+ PARA CARTAO</desc_proc_parametro>
+		<tipo_proc_parametro>N</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>2</ordem>
+		<valor_padrao>0</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>11</lx_grupo_fluxo>
+		<proc_parametro>@D_CHEQUE</proc_parametro>
+		<desc_proc_parametro>D+ PARA CHEQUE</desc_proc_parametro>
+		<tipo_proc_parametro>N</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>3</ordem>
+		<valor_padrao>0</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>11</lx_grupo_fluxo>
+		<proc_parametro>@GRAVA_DETALHE</proc_parametro>
+		<desc_proc_parametro>INDICA SE GRAVA DETALHADO OS CHEQUES</desc_proc_parametro>
+		<tipo_proc_parametro>L</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>4</ordem>
+		<valor_padrao>0</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>11</lx_grupo_fluxo>
+		<proc_parametro>@N1</proc_parametro>
+		<desc_proc_parametro>NÍVEL 1 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>8</ordem>
+		<valor_padrao>CO</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>11</lx_grupo_fluxo>
+		<proc_parametro>@N2</proc_parametro>
+		<desc_proc_parametro>NÍVEL 2 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>9</ordem>
+		<valor_padrao>AD</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>11</lx_grupo_fluxo>
+		<proc_parametro>@PORC_INADIMPLENCIA_CAR</proc_parametro>
+		<desc_proc_parametro>% INADIMPLÊNCIA DE CARTÃO</desc_proc_parametro>
+		<tipo_proc_parametro>N</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>5</ordem>
+		<valor_padrao>0.00</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>11</lx_grupo_fluxo>
+		<proc_parametro>@PORC_INADIMPLENCIA_CHQ</proc_parametro>
+		<desc_proc_parametro>% INADIMPLÊNCIA DE CHEQUE</desc_proc_parametro>
+		<tipo_proc_parametro>N</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>6</ordem>
+		<valor_padrao>0.00</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>11</lx_grupo_fluxo>
+		<proc_parametro>@TIPO_CARTEIRA</proc_parametro>
+		<desc_proc_parametro>TIPO DE CARTEIRA</desc_proc_parametro>
+		<tipo_proc_parametro>T</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>7</ordem>
+		<valor_padrao>CSV</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>15</lx_grupo_fluxo>
+		<proc_parametro>@APROVACAO_AE</proc_parametro>
+		<desc_proc_parametro>FILTRAR PELO STATUS DA ASSINATURA</desc_proc_parametro>
+		<tipo_proc_parametro>S</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>T</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>15</lx_grupo_fluxo>
+		<proc_parametro>@N1</proc_parametro>
+		<desc_proc_parametro>NÍVEL 1 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>CO</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>15</lx_grupo_fluxo>
+		<proc_parametro>@N2</proc_parametro>
+		<desc_proc_parametro>NÍVEL 2 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>CC</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>20</lx_grupo_fluxo>
+		<proc_parametro>@APROVACAO_AE</proc_parametro>
+		<desc_proc_parametro>FILTRAR PELO STATUS DA ASSINATURA</desc_proc_parametro>
+		<tipo_proc_parametro>S</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>T</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>20</lx_grupo_fluxo>
+		<proc_parametro>@N1</proc_parametro>
+		<desc_proc_parametro>NÍVEL 1 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>CO</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>20</lx_grupo_fluxo>
+		<proc_parametro>@N2</proc_parametro>
+		<desc_proc_parametro>NÍVEL 2 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>TL</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>25</lx_grupo_fluxo>
+		<proc_parametro>@APROVACAO_PD</proc_parametro>
+		<desc_proc_parametro>FILTRAR STATUS DO PEDIDO</desc_proc_parametro>
+		<tipo_proc_parametro>P</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>T</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>25</lx_grupo_fluxo>
+		<proc_parametro>@DIAS_PEDIDOS_VENCIDOS</proc_parametro>
+		<desc_proc_parametro>DIAS PARA BUSCAR PEDIDOS VENCIDOS</desc_proc_parametro>
+		<tipo_proc_parametro>N</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>100</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>25</lx_grupo_fluxo>
+		<proc_parametro>@INDICA_DATA_INICIAL</proc_parametro>
+		<desc_proc_parametro>PEDIDOS VENCIDOS NA DATA INICIAL</desc_proc_parametro>
+		<tipo_proc_parametro>L</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>1</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>25</lx_grupo_fluxo>
+		<proc_parametro>@INDICA_LIMITE_ENTREGA</proc_parametro>
+		<desc_proc_parametro>UTILIZA DATA LIMITE</desc_proc_parametro>
+		<tipo_proc_parametro>L</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>0</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>25</lx_grupo_fluxo>
+		<proc_parametro>@INDICA_NA_ENTREGA</proc_parametro>
+		<desc_proc_parametro>NÃO VERIFICA A CONDIÇÃO DE PAGTO</desc_proc_parametro>
+		<tipo_proc_parametro>L</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>0</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>25</lx_grupo_fluxo>
+		<proc_parametro>@N1</proc_parametro>
+		<desc_proc_parametro>NÍVEL 1 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>TC</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>25</lx_grupo_fluxo>
+		<proc_parametro>@N2</proc_parametro>
+		<desc_proc_parametro>NÍVEL 2 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>TP</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>40</lx_grupo_fluxo>
+		<proc_parametro>@ABRIR_FILIAL</proc_parametro>
+		<desc_proc_parametro>INDICADOR PARA ABRIR A FILIAL</desc_proc_parametro>
+		<tipo_proc_parametro>L</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>1</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>40</lx_grupo_fluxo>
+		<proc_parametro>@LOJA_FORMA_PGTO</proc_parametro>
+		<desc_proc_parametro>FORMA DE PAGAMENTO DA LOJA</desc_proc_parametro>
+		<tipo_proc_parametro>C</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao/>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>40</lx_grupo_fluxo>
+		<proc_parametro>@N1</proc_parametro>
+		<desc_proc_parametro>NÍVEL 1 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>PG</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>40</lx_grupo_fluxo>
+		<proc_parametro>@N2</proc_parametro>
+		<desc_proc_parametro>NÍVEL 2 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>FI</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>40</lx_grupo_fluxo>
+		<proc_parametro>@PORC_PREVISAO</proc_parametro>
+		<desc_proc_parametro>PROCENTAGEM DA PREVISÃO</desc_proc_parametro>
+		<tipo_proc_parametro>N</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>100</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>43</lx_grupo_fluxo>
+		<proc_parametro>@GRAVA_DETALHE</proc_parametro>
+		<desc_proc_parametro>DETALHE POR LANCAMENTO CAIXA</desc_proc_parametro>
+		<tipo_proc_parametro>L</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>0</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>43</lx_grupo_fluxo>
+		<proc_parametro>@N1</proc_parametro>
+		<desc_proc_parametro>NÍVEL 1 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>PG</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>43</lx_grupo_fluxo>
+		<proc_parametro>@N2</proc_parametro>
+		<desc_proc_parametro>NÍVEL 2 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>FI</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>45</lx_grupo_fluxo>
+		<proc_parametro>@N1</proc_parametro>
+		<desc_proc_parametro>NÍVEL 1 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>RP</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>45</lx_grupo_fluxo>
+		<proc_parametro>@N2</proc_parametro>
+		<desc_proc_parametro>NÍVEL 2 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>RG</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>45</lx_grupo_fluxo>
+		<proc_parametro>@ULTIMO_DIA_MES</proc_parametro>
+		<desc_proc_parametro>COLOCAR O VENCIMENTO PARA O ULTIMO DIA D</desc_proc_parametro>
+		<tipo_proc_parametro>L</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>1</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>49</lx_grupo_fluxo>
+		<proc_parametro>@N1</proc_parametro>
+		<desc_proc_parametro>NÍVEL 1 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>CO</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>49</lx_grupo_fluxo>
+		<proc_parametro>@N2</proc_parametro>
+		<desc_proc_parametro>NÍVEL 2 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>TT</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>49</lx_grupo_fluxo>
+		<proc_parametro>@ORCAMENTO_TIPO</proc_parametro>
+		<desc_proc_parametro>FILTRO DE ORÇAMENTO</desc_proc_parametro>
+		<tipo_proc_parametro>C</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>TESTE FLUXO</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>50</lx_grupo_fluxo>
+		<proc_parametro>@APROVACAO_AE</proc_parametro>
+		<desc_proc_parametro>FILTRO DE STATUS DE ASSINATURA ELETRÔNIC</desc_proc_parametro>
+		<tipo_proc_parametro>S</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>3</ordem>
+		<valor_padrao>T</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>50</lx_grupo_fluxo>
+		<proc_parametro>@D_CP</proc_parametro>
+		<desc_proc_parametro>D+ PARA CONTAS A PAGAR</desc_proc_parametro>
+		<tipo_proc_parametro>N</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>2</ordem>
+		<valor_padrao>0</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>50</lx_grupo_fluxo>
+		<proc_parametro>@DIAS_ATRASO_CP</proc_parametro>
+		<desc_proc_parametro>DIAS PARA BUSCAR ATRASO</desc_proc_parametro>
+		<tipo_proc_parametro>N</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>1</ordem>
+		<valor_padrao>60</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>50</lx_grupo_fluxo>
+		<proc_parametro>@N1</proc_parametro>
+		<desc_proc_parametro>NIVEL 1 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>4</ordem>
+		<valor_padrao>CO</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>50</lx_grupo_fluxo>
+		<proc_parametro>@N2</proc_parametro>
+		<desc_proc_parametro>NIVEL 2 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>5</ordem>
+		<valor_padrao>CC</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>55</lx_grupo_fluxo>
+		<proc_parametro>@D_CHEQUE_CP</proc_parametro>
+		<desc_proc_parametro>D+ PARA CHEQUES A COMPENSAR</desc_proc_parametro>
+		<tipo_proc_parametro>N</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>0</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>55</lx_grupo_fluxo>
+		<proc_parametro>@DIAS_ATRASO_CHE</proc_parametro>
+		<desc_proc_parametro>DIAS PARA BUSCAR ATRASOS</desc_proc_parametro>
+		<tipo_proc_parametro>N</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>60</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>55</lx_grupo_fluxo>
+		<proc_parametro>@N1</proc_parametro>
+		<desc_proc_parametro>NÍVEL 1 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>CB</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>55</lx_grupo_fluxo>
+		<proc_parametro>@N2</proc_parametro>
+		<desc_proc_parametro>NÍVEL 2 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>TE</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>60</lx_grupo_fluxo>
+		<proc_parametro>@APROVACAO_AE</proc_parametro>
+		<desc_proc_parametro>FILTRAR PELO STATUS DA ASSINATURA</desc_proc_parametro>
+		<tipo_proc_parametro>S</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>T</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>60</lx_grupo_fluxo>
+		<proc_parametro>@N1</proc_parametro>
+		<desc_proc_parametro>NÍVEL 1 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>CO</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>60</lx_grupo_fluxo>
+		<proc_parametro>@N2</proc_parametro>
+		<desc_proc_parametro>NÍVEL 2 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>CC</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>65</lx_grupo_fluxo>
+		<proc_parametro>@APROVACAO_AE</proc_parametro>
+		<desc_proc_parametro>FILTRAR PELO STATUS DA ASSINATURA</desc_proc_parametro>
+		<tipo_proc_parametro>S</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>T</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>65</lx_grupo_fluxo>
+		<proc_parametro>@N1</proc_parametro>
+		<desc_proc_parametro>NÍVEL1 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>CO</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>65</lx_grupo_fluxo>
+		<proc_parametro>@N2</proc_parametro>
+		<desc_proc_parametro>NÍVEL 2 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>TL</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>70</lx_grupo_fluxo>
+		<proc_parametro>@APROVACAO_PD</proc_parametro>
+		<desc_proc_parametro>FILTRA STATUS PEDIDO</desc_proc_parametro>
+		<tipo_proc_parametro>P</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>T</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>70</lx_grupo_fluxo>
+		<proc_parametro>@DIAS_PEDIDOS_VENCIDOS</proc_parametro>
+		<desc_proc_parametro>DIAS PARA BUSCAR PEDIDOS VENCIDOS</desc_proc_parametro>
+		<tipo_proc_parametro>N</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>100</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>70</lx_grupo_fluxo>
+		<proc_parametro>@INDICA_DATA_INICIAL</proc_parametro>
+		<desc_proc_parametro>PEDIDOS VENCIDOS NA DATA INICIAL</desc_proc_parametro>
+		<tipo_proc_parametro>L</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>1</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>70</lx_grupo_fluxo>
+		<proc_parametro>@INDICA_LIMITE_ENTREGA</proc_parametro>
+		<desc_proc_parametro>UTILIZA DATA LIMITE</desc_proc_parametro>
+		<tipo_proc_parametro>L</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>0</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>70</lx_grupo_fluxo>
+		<proc_parametro>@N1</proc_parametro>
+		<desc_proc_parametro>NÍVEL 1 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>TC</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>70</lx_grupo_fluxo>
+		<proc_parametro>@N2</proc_parametro>
+		<desc_proc_parametro>NÍVEL 2 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>TP</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>70</lx_grupo_fluxo>
+		<proc_parametro>@TIPO_FORNECEDOR_TIRAR</proc_parametro>
+		<desc_proc_parametro>RETIRAR UM TIPO DE FORNECEDOR</desc_proc_parametro>
+		<tipo_proc_parametro>C</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>NULL</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>75</lx_grupo_fluxo>
+		<proc_parametro>@N1</proc_parametro>
+		<desc_proc_parametro>NÍVEL 1 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>RP</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>75</lx_grupo_fluxo>
+		<proc_parametro>@N2</proc_parametro>
+		<desc_proc_parametro>NÍVEL 2 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>RG</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>75</lx_grupo_fluxo>
+		<proc_parametro>@ULTIMO_DIA_MES</proc_parametro>
+		<desc_proc_parametro>COLOCAR O VENCIMENTO NO ÚLTIMO DIA DO MÊ</desc_proc_parametro>
+		<tipo_proc_parametro>L</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>1</valor_padrao>
+		<indica_utilidade>T</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>76</lx_grupo_fluxo>
+		<proc_parametro>@CONTA_CONTABIL</proc_parametro>
+		<desc_proc_parametro>CONTA CONTÁBIL OU PARTE DA CONTA</desc_proc_parametro>
+		<tipo_proc_parametro>C</tipo_proc_parametro>
+		<ordem>0</ordem>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>76</lx_grupo_fluxo>
+		<proc_parametro>@DIAS_VENCIMENTO</proc_parametro>
+		<desc_proc_parametro>DIAS PARA CALCULAR VENCIMENTO</desc_proc_parametro>
+		<tipo_proc_parametro>N</tipo_proc_parametro>
+		<ordem>0</ordem>
+		<valor_padrao>0</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>76</lx_grupo_fluxo>
+		<proc_parametro>@N1</proc_parametro>
+		<desc_proc_parametro>NÍVEL 1 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<ordem>0</ordem>
+		<valor_padrao>RP</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>76</lx_grupo_fluxo>
+		<proc_parametro>@N2</proc_parametro>
+		<desc_proc_parametro>NÍVEL 2 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<ordem>0</ordem>
+		<valor_padrao>RG</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>80</lx_grupo_fluxo>
+		<proc_parametro>@N1</proc_parametro>
+		<desc_proc_parametro>NÍVEL 1 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>OR</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>80</lx_grupo_fluxo>
+		<proc_parametro>@N2</proc_parametro>
+		<desc_proc_parametro>NÍVEL 2 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>IP</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>85</lx_grupo_fluxo>
+		<proc_parametro>@DIAS_ORDEM_VENCIDA</proc_parametro>
+		<desc_proc_parametro>DIAS PARA BUSCAR OP VENCIDAS</desc_proc_parametro>
+		<tipo_proc_parametro>N</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>1</ordem>
+		<valor_padrao>0</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>85</lx_grupo_fluxo>
+		<proc_parametro>@INDICA_DATA_INICIAL</proc_parametro>
+		<desc_proc_parametro>OP VENCIDAS NA DATA INICIAL</desc_proc_parametro>
+		<tipo_proc_parametro>L</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>2</ordem>
+		<valor_padrao>1</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>85</lx_grupo_fluxo>
+		<proc_parametro>@N1</proc_parametro>
+		<desc_proc_parametro>NÍVEL 1 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>3</ordem>
+		<valor_padrao>TF</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>85</lx_grupo_fluxo>
+		<proc_parametro>@N2</proc_parametro>
+		<desc_proc_parametro>NÍVEL 2 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>4</ordem>
+		<valor_padrao>TS</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>98</lx_grupo_fluxo>
+		<proc_parametro>@N1</proc_parametro>
+		<desc_proc_parametro>NÍVEL 1 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>CO</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>98</lx_grupo_fluxo>
+		<proc_parametro>@N2</proc_parametro>
+		<desc_proc_parametro>NÍVEL 2 DO FLUXO</desc_proc_parametro>
+		<tipo_proc_parametro>A</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>TT</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+	<ctb_lx_grupo_fluxo_param>
+		<lx_grupo_fluxo>98</lx_grupo_fluxo>
+		<proc_parametro>@ORCAMENTO_TIPO</proc_parametro>
+		<desc_proc_parametro>FILTRO DE ORÇAMENTO</desc_proc_parametro>
+		<tipo_proc_parametro>C</tipo_proc_parametro>
+		<valida_proc_parametro/>
+		<ordem>0</ordem>
+		<valor_padrao>TESTE FLUXO</valor_padrao>
+		<indica_utilidade>A</indica_utilidade>
+	</ctb_lx_grupo_fluxo_param>
+</VFPData>

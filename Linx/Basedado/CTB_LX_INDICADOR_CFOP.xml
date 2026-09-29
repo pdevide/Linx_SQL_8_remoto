@@ -1,0 +1,299 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="ctb_lx_indicador_cfop" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="descricao_indicador_cfop">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="40"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="indicador_cfop" type="xsd:int"/>
+								<xsd:element name="inativo" type="xsd:boolean"/>
+								<xsd:element name="data_para_transferencia" type="xsd:dateTime" minOccurs="0"/>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>PRODUÇÃO DO ESTABELECIMENTO</descricao_indicador_cfop>
+		<indicador_cfop>10</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>MERCADORIA ADQUIRIDA DE TERC. P/REVENDA</descricao_indicador_cfop>
+		<indicador_cfop>11</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>MATERIAL P/USO NA INDUSTRIALIZAÇÃO</descricao_indicador_cfop>
+		<indicador_cfop>12</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>MATERIAL P/USO OU CONSUMO</descricao_indicador_cfop>
+		<indicador_cfop>13</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>MATERIAL P/USO NA PRESTAÇÃO DE SERVIÇO</descricao_indicador_cfop>
+		<indicador_cfop>14</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>MATERIAIS DIVERSOS - NÃO ESCRITURÁVEL</descricao_indicador_cfop>
+		<indicador_cfop>15</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>MATERIAL/SERVIÇO DIVERSO - ESCRITURÁVEL</descricao_indicador_cfop>
+		<indicador_cfop>16</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>SERVIÇO DIV.INDUSTRIAL.  - ESCRITURÁVEL</descricao_indicador_cfop>
+		<indicador_cfop>17</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>MERC. C/SUBST. TRIBUTÁRIA JÁ RETIDA</descricao_indicador_cfop>
+		<indicador_cfop>18</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>ATIVO / IMOBILIZADO C/SUBST. TRIBUTÁRIA</descricao_indicador_cfop>
+		<indicador_cfop>19</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>ATIVO FIXO / IMOBILIZADO</descricao_indicador_cfop>
+		<indicador_cfop>20</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>RESÍDUOS OU SUCATAS</descricao_indicador_cfop>
+		<indicador_cfop>21</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>SERVIÇO ENERGIA ELÉTRICA P/ O COMÉRCIO</descricao_indicador_cfop>
+		<indicador_cfop>30</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>SERVIÇO ENERGIA ELÉTRICA P/ A INDÚSTRIA</descricao_indicador_cfop>
+		<indicador_cfop>31</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>SERVIÇO DE COMUNICAÇÃO P/ O COMÉRCIO</descricao_indicador_cfop>
+		<indicador_cfop>40</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>SERVIÇO DE COMUNICAÇÃO P/ A INDÚSTRIA</descricao_indicador_cfop>
+		<indicador_cfop>41</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>SERVIÇO DE TRANSPORTE P/ O COMÉRCIO</descricao_indicador_cfop>
+		<indicador_cfop>50</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>SERVIÇO DE TRANSPORTE P/ A INDÚSTRIA</descricao_indicador_cfop>
+		<indicador_cfop>51</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>FRETE FORA DO ESTADO P/ O COMÉRCIO</descricao_indicador_cfop>
+		<indicador_cfop>52</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>FRETE FORA DO ESTADO P/ A INDÚSTRIA</descricao_indicador_cfop>
+		<indicador_cfop>53</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>RESERVADO P/CONSIG. (NAO UTILIZAR)</descricao_indicador_cfop>
+		<indicador_cfop>60</indicador_cfop>
+		<inativo>true</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>MERCADORIA TERC. EM CONSIG. MERCANTIL</descricao_indicador_cfop>
+		<indicador_cfop>61</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>MERCADORIA TERC. EM CONSIG. INDUSTRIAL</descricao_indicador_cfop>
+		<indicador_cfop>62</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>RESERVADO P/CONSIG. (NAO UTILIZAR)</descricao_indicador_cfop>
+		<indicador_cfop>63</indicador_cfop>
+		<inativo>true</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>MERCADORIA TERC. P/CONSERTO OU REPARO</descricao_indicador_cfop>
+		<indicador_cfop>64</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>MERCADORIA TERC. P/FINS DE EXPORTAÇÃO</descricao_indicador_cfop>
+		<indicador_cfop>65</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>MERCADORIA TERC. EM NOSSO PODER</descricao_indicador_cfop>
+		<indicador_cfop>66</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>RETORNO SIMBÓLICO</descricao_indicador_cfop>
+		<indicador_cfop>67</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>MERCADORIA TERC. EM DEMONSTRAÇÃO</descricao_indicador_cfop>
+		<indicador_cfop>68</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>MERCADORIA TERC. EM COMODATO</descricao_indicador_cfop>
+		<indicador_cfop>69</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>PRODUTO ESTABELECIMENTO C/S.TRIBUTÁRIA</descricao_indicador_cfop>
+		<indicador_cfop>70</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>MERC. ADQ. TERC.P/REVENDA C/S.TRIBUTÁRIA</descricao_indicador_cfop>
+		<indicador_cfop>71</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>MATERIA-PRIMA C/S.TRIBUTÁRIA</descricao_indicador_cfop>
+		<indicador_cfop>72</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>MATERIAL USO OU CONSUMO C/S.TRIBUTÁRIA</descricao_indicador_cfop>
+		<indicador_cfop>73</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>SERVIÇO DE TRANSP. C/SUBSTIT.TRIBUTÁRIA</descricao_indicador_cfop>
+		<indicador_cfop>75</indicador_cfop>
+		<inativo>false</inativo>
+		<data_para_transferencia>2008-03-10T15:44:27</data_para_transferencia>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>MERCADORIA C/S.TRIBUTÁRIA JÁ RETIDA</descricao_indicador_cfop>
+		<indicador_cfop>78</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>ATIVO FIXO / IMOBILIZADO C/S.TRIBUTÁRIA</descricao_indicador_cfop>
+		<indicador_cfop>79</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>COMBUST./LUBRIF.PROD.ESTABELECIMENTO</descricao_indicador_cfop>
+		<indicador_cfop>80</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>COMBUST./LUBRIF. ADQ. TERC. P/REVENDA</descricao_indicador_cfop>
+		<indicador_cfop>81</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>COMBUST./LUBRIF.P/USO INDUSTRIALIZAÇÃO</descricao_indicador_cfop>
+		<indicador_cfop>82</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>COMBUST./LUBRIF.P/USO OU CONSUMO</descricao_indicador_cfop>
+		<indicador_cfop>83</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>BEM SOB REGIME ESPECIAL ADUANEIRO</descricao_indicador_cfop>
+		<indicador_cfop>85</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>MATERIAL P/INDUSTR.S/REGIME DRAWBACK</descricao_indicador_cfop>
+		<indicador_cfop>87</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>PRODUTO PROD. ESTAB. S/REGIME DRAWBACK</descricao_indicador_cfop>
+		<indicador_cfop>88</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>SERVIÇOS DIVERSOS</descricao_indicador_cfop>
+		<indicador_cfop>89</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>VASILHAME E SACARIA</descricao_indicador_cfop>
+		<indicador_cfop>90</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>ANIMAL OU INSUMO</descricao_indicador_cfop>
+		<indicador_cfop>91</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>BONIFICAÇÃO / BRINDE / DOAÇÃO</descricao_indicador_cfop>
+		<indicador_cfop>92</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>AMOSTRA GRÁTIS</descricao_indicador_cfop>
+		<indicador_cfop>93</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>SALDO DEVEDOR DE ICMS</descricao_indicador_cfop>
+		<indicador_cfop>94</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>CRÉDITO DE ICMS ACUMULADO</descricao_indicador_cfop>
+		<indicador_cfop>95</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>ICMS RETIDO POR SUBSTITUIÇÃO TRIBUTÁRIA</descricao_indicador_cfop>
+		<indicador_cfop>96</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>SALDO CREDOR DE ICMS</descricao_indicador_cfop>
+		<indicador_cfop>97</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+	<ctb_lx_indicador_cfop>
+		<descricao_indicador_cfop>CRÉDITO ICMS RELATIVO COMPRA IMOBILIZADO</descricao_indicador_cfop>
+		<indicador_cfop>98</indicador_cfop>
+		<inativo>false</inativo>
+	</ctb_lx_indicador_cfop>
+</VFPData>

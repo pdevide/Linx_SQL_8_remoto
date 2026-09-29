@@ -1,0 +1,122 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="crm_lx_tipo_relacao" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="tipo_relacao" type="xsd:int"/>
+								<xsd:element name="desc_relacao">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="80"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="indica_nivel_virtual" type="xsd:boolean"/>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<crm_lx_tipo_relacao>
+		<tipo_relacao>1</tipo_relacao>
+		<desc_relacao>Tarefas Predecessoras</desc_relacao>
+		<indica_nivel_virtual>true</indica_nivel_virtual>
+	</crm_lx_tipo_relacao>
+	<crm_lx_tipo_relacao>
+		<tipo_relacao>2</tipo_relacao>
+		<desc_relacao>Simples Classificação</desc_relacao>
+		<indica_nivel_virtual>false</indica_nivel_virtual>
+	</crm_lx_tipo_relacao>
+	<crm_lx_tipo_relacao>
+		<tipo_relacao>3</tipo_relacao>
+		<desc_relacao>Recursos</desc_relacao>
+		<indica_nivel_virtual>true</indica_nivel_virtual>
+	</crm_lx_tipo_relacao>
+	<crm_lx_tipo_relacao>
+		<tipo_relacao>4</tipo_relacao>
+		<desc_relacao>Solicitantes</desc_relacao>
+		<indica_nivel_virtual>true</indica_nivel_virtual>
+	</crm_lx_tipo_relacao>
+	<crm_lx_tipo_relacao>
+		<tipo_relacao>5</tipo_relacao>
+		<desc_relacao>Documentos</desc_relacao>
+		<indica_nivel_virtual>true</indica_nivel_virtual>
+	</crm_lx_tipo_relacao>
+	<crm_lx_tipo_relacao>
+		<tipo_relacao>6</tipo_relacao>
+		<desc_relacao>E-Mails Enviados</desc_relacao>
+		<indica_nivel_virtual>true</indica_nivel_virtual>
+	</crm_lx_tipo_relacao>
+	<crm_lx_tipo_relacao>
+		<tipo_relacao>7</tipo_relacao>
+		<desc_relacao>E-Mails Recebidos</desc_relacao>
+		<indica_nivel_virtual>true</indica_nivel_virtual>
+	</crm_lx_tipo_relacao>
+	<crm_lx_tipo_relacao>
+		<tipo_relacao>8</tipo_relacao>
+		<desc_relacao>Formulários</desc_relacao>
+		<indica_nivel_virtual>false</indica_nivel_virtual>
+	</crm_lx_tipo_relacao>
+	<crm_lx_tipo_relacao>
+		<tipo_relacao>9</tipo_relacao>
+		<desc_relacao>Relatórios</desc_relacao>
+		<indica_nivel_virtual>false</indica_nivel_virtual>
+	</crm_lx_tipo_relacao>
+	<crm_lx_tipo_relacao>
+		<tipo_relacao>10</tipo_relacao>
+		<desc_relacao>Visões</desc_relacao>
+		<indica_nivel_virtual>false</indica_nivel_virtual>
+	</crm_lx_tipo_relacao>
+	<crm_lx_tipo_relacao>
+		<tipo_relacao>11</tipo_relacao>
+		<desc_relacao>Tarefas Encaminhadas</desc_relacao>
+		<indica_nivel_virtual>true</indica_nivel_virtual>
+	</crm_lx_tipo_relacao>
+	<crm_lx_tipo_relacao>
+		<tipo_relacao>12</tipo_relacao>
+		<desc_relacao>Tarefas Dependentes</desc_relacao>
+		<indica_nivel_virtual>true</indica_nivel_virtual>
+	</crm_lx_tipo_relacao>
+	<crm_lx_tipo_relacao>
+		<tipo_relacao>13</tipo_relacao>
+		<desc_relacao>Acompanhamento</desc_relacao>
+		<indica_nivel_virtual>false</indica_nivel_virtual>
+	</crm_lx_tipo_relacao>
+	<crm_lx_tipo_relacao>
+		<tipo_relacao>14</tipo_relacao>
+		<desc_relacao>Fonte Requisitado</desc_relacao>
+		<indica_nivel_virtual>false</indica_nivel_virtual>
+	</crm_lx_tipo_relacao>
+	<crm_lx_tipo_relacao>
+		<tipo_relacao>15</tipo_relacao>
+		<desc_relacao>Fonte Devolvido</desc_relacao>
+		<indica_nivel_virtual>false</indica_nivel_virtual>
+	</crm_lx_tipo_relacao>
+	<crm_lx_tipo_relacao>
+		<tipo_relacao>16</tipo_relacao>
+		<desc_relacao>Conta Solicitante</desc_relacao>
+		<indica_nivel_virtual>true</indica_nivel_virtual>
+	</crm_lx_tipo_relacao>
+	<crm_lx_tipo_relacao>
+		<tipo_relacao>17</tipo_relacao>
+		<desc_relacao>Usuário de Cadastramento</desc_relacao>
+		<indica_nivel_virtual>true</indica_nivel_virtual>
+	</crm_lx_tipo_relacao>
+	<crm_lx_tipo_relacao>
+		<tipo_relacao>18</tipo_relacao>
+		<desc_relacao>Acompanhante (contato)</desc_relacao>
+		<indica_nivel_virtual>true</indica_nivel_virtual>
+	</crm_lx_tipo_relacao>
+	<crm_lx_tipo_relacao>
+		<tipo_relacao>19</tipo_relacao>
+		<desc_relacao>Participante Inativo (contato)</desc_relacao>
+		<indica_nivel_virtual>false</indica_nivel_virtual>
+	</crm_lx_tipo_relacao>
+</VFPData>

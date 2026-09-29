@@ -1,0 +1,707 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="cm_item_composicao" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="item_composicao">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="10"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="desc_item_composicao">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="40"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="indica_entrada_saida">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="1"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="inativo" type="xsd:boolean"/>
+								<xsd:element name="indicador_linx" type="xsd:boolean"/>
+								<xsd:element name="compoe_custo_medio" type="xsd:boolean"/>
+								<xsd:element name="lancamento_padrao" type="xsd:int" minOccurs="0"/>
+								<xsd:element name="atualiza_custo_mov" type="xsd:boolean"/>
+								<xsd:element name="fator_est_proprio" type="xsd:int"/>
+								<xsd:element name="fator_est_de_terceiro" type="xsd:int"/>
+								<xsd:element name="fator_est_com_terceiro" type="xsd:int"/>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<cm_item_composicao>
+		<item_composicao>000</item_composicao>
+		<desc_item_composicao>SALDO INICIAL</desc_item_composicao>
+		<indica_entrada_saida>-</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>true</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>001</item_composicao>
+		<desc_item_composicao>ENTRADA POR NOTA FISCAL</desc_item_composicao>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>true</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>002</item_composicao>
+		<desc_item_composicao>DEVOLUÇÃO DE NOTA FISCAL DE SAÍDA</desc_item_composicao>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>true</atualiza_custo_mov>
+		<fator_est_proprio>1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>003</item_composicao>
+		<desc_item_composicao>ENTRADA DE ESTOQUE</desc_item_composicao>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>true</atualiza_custo_mov>
+		<fator_est_proprio>1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>004</item_composicao>
+		<desc_item_composicao>ENTRADA DE ESTOQUE (CM)</desc_item_composicao>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>true</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>005</item_composicao>
+		<desc_item_composicao>ENTRADA POR DEVOLUÇÃO</desc_item_composicao>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>true</atualiza_custo_mov>
+		<fator_est_proprio>1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>006</item_composicao>
+		<desc_item_composicao>ENTRADA POR ORDEM DE PRODUÇÃO (CM)</desc_item_composicao>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>true</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>007</item_composicao>
+		<desc_item_composicao>ENTRADA POR ORDEM DE PRODUÇÃO</desc_item_composicao>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>true</atualiza_custo_mov>
+		<fator_est_proprio>1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>008</item_composicao>
+		<desc_item_composicao>ENTRADA POR PEDIDO DE COMPRA (CM)</desc_item_composicao>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>true</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>009</item_composicao>
+		<desc_item_composicao>ENTRADA POR PEDIDO DE COMPRA</desc_item_composicao>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>true</atualiza_custo_mov>
+		<fator_est_proprio>1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>010</item_composicao>
+		<desc_item_composicao>ENTRADA DE SOBRA DE SEMI-ACABADO</desc_item_composicao>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>true</atualiza_custo_mov>
+		<fator_est_proprio>1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>011</item_composicao>
+		<desc_item_composicao>SAÍDA DO ESTOQUE</desc_item_composicao>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>true</atualiza_custo_mov>
+		<fator_est_proprio>-1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>012</item_composicao>
+		<desc_item_composicao>SAÍDA DO ESTOQUE PARA TRANSFERENCIA</desc_item_composicao>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>true</atualiza_custo_mov>
+		<fator_est_proprio>-1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>013</item_composicao>
+		<desc_item_composicao>SAÍDA DO ESTOQUE PARA DEVOLUÇÃO</desc_item_composicao>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>true</atualiza_custo_mov>
+		<fator_est_proprio>-1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>014</item_composicao>
+		<desc_item_composicao>SAÍDA DO ESTOQUE POR ORDEM DE PRODUÇÃO</desc_item_composicao>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>true</atualiza_custo_mov>
+		<fator_est_proprio>-1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>015</item_composicao>
+		<desc_item_composicao>SAÍDA DO ESTOQUE POR PEDIDO DE VENDA</desc_item_composicao>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>true</atualiza_custo_mov>
+		<fator_est_proprio>-1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>016</item_composicao>
+		<desc_item_composicao>SAÍDA POR NOTA FISCAL</desc_item_composicao>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>true</atualiza_custo_mov>
+		<fator_est_proprio>-1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>017</item_composicao>
+		<desc_item_composicao>DEVOLUÇÃO DE NOTA FISCAL DE ENTRADA</desc_item_composicao>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>true</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>-1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>018</item_composicao>
+		<desc_item_composicao>CONTAGEM</desc_item_composicao>
+		<indica_entrada_saida>-</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>true</atualiza_custo_mov>
+		<fator_est_proprio>1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>019</item_composicao>
+		<desc_item_composicao>ENTRADA DE LOJA</desc_item_composicao>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>true</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>020</item_composicao>
+		<desc_item_composicao>ENTRADA DE LOJA COM N.F.</desc_item_composicao>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>true</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>021</item_composicao>
+		<desc_item_composicao>SAÍDA DE LOJA</desc_item_composicao>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>true</atualiza_custo_mov>
+		<fator_est_proprio>-1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>022</item_composicao>
+		<desc_item_composicao>VENDA DE LOJA</desc_item_composicao>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>true</atualiza_custo_mov>
+		<fator_est_proprio>-1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>023</item_composicao>
+		<desc_item_composicao>TROCA DE LOJA</desc_item_composicao>
+		<indica_entrada_saida>-</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>true</atualiza_custo_mov>
+		<fator_est_proprio>1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>024</item_composicao>
+		<desc_item_composicao>SAIDA DE PRODUTO ACABADO PARA COMPOR KIT</desc_item_composicao>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>true</atualiza_custo_mov>
+		<fator_est_proprio>-1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>025</item_composicao>
+		<desc_item_composicao>SAIDA DE PRODUTO ACABADO PARA CONSERTO</desc_item_composicao>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>true</atualiza_custo_mov>
+		<fator_est_proprio>-1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>026</item_composicao>
+		<desc_item_composicao>ENTRADA POR TRANSFERÊNCIA</desc_item_composicao>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>true</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>027</item_composicao>
+		<desc_item_composicao>CONTAGEM (CM)</desc_item_composicao>
+		<indica_entrada_saida>-</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>true</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>028</item_composicao>
+		<desc_item_composicao>AJUSTE CUSTO MÉDIO</desc_item_composicao>
+		<indica_entrada_saida>-</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>true</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>029</item_composicao>
+		<desc_item_composicao>ESTOQUE EM TRÂNSITO</desc_item_composicao>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>0</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>030</item_composicao>
+		<desc_item_composicao>ENTRADA POR TRANSFERÊNCIA (TRÂNSITO)</desc_item_composicao>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>0</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>100</item_composicao>
+		<desc_item_composicao>SALDO INICIAL CONSIGNADO PARA TERCEIRO</desc_item_composicao>
+		<indica_entrada_saida>-</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>true</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>1</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>101</item_composicao>
+		<desc_item_composicao>SAÍDA VENDA MERC.REMETIDA EM CONSIGNAÇÃO</desc_item_composicao>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>0</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>1</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>102</item_composicao>
+		<desc_item_composicao>SAÍDA REMESSA MERCADORIA EM CONSIGNAÇÃO</desc_item_composicao>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>-1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>1</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>103</item_composicao>
+		<desc_item_composicao>ENTRADA RET. DE REMESSA EM CONSIGNAÇÃO</desc_item_composicao>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>-1</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>104</item_composicao>
+		<desc_item_composicao>ENT. RET. SIMB. DE REMESSA EM CONSIGNADA</desc_item_composicao>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>0</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>199</item_composicao>
+		<desc_item_composicao>SALDO FINAL CONSIGNADO PARA TERCEIRO</desc_item_composicao>
+		<indica_entrada_saida>-</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>1</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>200</item_composicao>
+		<desc_item_composicao>SALDO INICIAL EM CONSIGNAÇÃO DE TERCEIRO</desc_item_composicao>
+		<indica_entrada_saida>-</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>0</fator_est_proprio>
+		<fator_est_de_terceiro>1</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>201</item_composicao>
+		<desc_item_composicao>ENTRADA COMPRA MERC. RECEBIDA EM CONSIG.</desc_item_composicao>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>true</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>1</fator_est_proprio>
+		<fator_est_de_terceiro>-1</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>202</item_composicao>
+		<desc_item_composicao>ENTRADA MERCADORIA EM CONSIGNAÇÃO</desc_item_composicao>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>0</fator_est_proprio>
+		<fator_est_de_terceiro>1</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>203</item_composicao>
+		<desc_item_composicao>SAÍDA RET. MERC. RECEBIDA EM CONSIGNAÇÃO</desc_item_composicao>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>0</fator_est_proprio>
+		<fator_est_de_terceiro>1</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>204</item_composicao>
+		<desc_item_composicao>SAÍDA RET. SIMB. MERC. RECEBIDA CONSIGN.</desc_item_composicao>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>0</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>299</item_composicao>
+		<desc_item_composicao>SALDO FINAL EM CONSIGNAÇÃO DE TERCEIRO</desc_item_composicao>
+		<indica_entrada_saida>-</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>0</fator_est_proprio>
+		<fator_est_de_terceiro>1</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>300</item_composicao>
+		<desc_item_composicao>SALDO INICIAL DE ESTOQUE COM TERCEIRO</desc_item_composicao>
+		<indica_entrada_saida>-</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>true</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>1</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>302</item_composicao>
+		<desc_item_composicao>SAÍDA REMESSA PARA TERCEIRO</desc_item_composicao>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>-1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>1</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>303</item_composicao>
+		<desc_item_composicao>ENTRADA RET. DE REMESSA PARA TERCEIRO</desc_item_composicao>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>-1</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>304</item_composicao>
+		<desc_item_composicao>ENT. RET.SIMB. DE REMESSA PARA TERCEIRO</desc_item_composicao>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>0</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>-1</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>399</item_composicao>
+		<desc_item_composicao>SALDO FINAL DE ESTOQUE COM TERCEIRO</desc_item_composicao>
+		<indica_entrada_saida>-</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>1</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>400</item_composicao>
+		<desc_item_composicao>SALDO INICIAL DE ESTOQUE DE TERCEIRO</desc_item_composicao>
+		<indica_entrada_saida>-</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>0</fator_est_proprio>
+		<fator_est_de_terceiro>1</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>402</item_composicao>
+		<desc_item_composicao>ENTRADA MERCADORIA DE TERCEIRO</desc_item_composicao>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>0</fator_est_proprio>
+		<fator_est_de_terceiro>1</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>403</item_composicao>
+		<desc_item_composicao>SAÍDA RET. MERC. RECEBIDA DE TERCEIRO</desc_item_composicao>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>0</fator_est_proprio>
+		<fator_est_de_terceiro>-1</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>404</item_composicao>
+		<desc_item_composicao>SAÍDA RET. SIMB. RECEBIDA DE TERCEIRO</desc_item_composicao>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>0</fator_est_proprio>
+		<fator_est_de_terceiro>-1</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>499</item_composicao>
+		<desc_item_composicao>SALDO FINAL DE ESTOQUE DE TERCEIRO</desc_item_composicao>
+		<indica_entrada_saida>-</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>0</fator_est_proprio>
+		<fator_est_de_terceiro>1</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>899</item_composicao>
+		<desc_item_composicao>SALDO FINAL (PRÓPRIO/TERCEIRO)</desc_item_composicao>
+		<indica_entrada_saida>-</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>0</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+	<cm_item_composicao>
+		<item_composicao>999</item_composicao>
+		<desc_item_composicao>SALDO FINAL (ESTOQUE PRÓPRIO)</desc_item_composicao>
+		<indica_entrada_saida>-</indica_entrada_saida>
+		<inativo>false</inativo>
+		<indicador_linx>true</indicador_linx>
+		<compoe_custo_medio>false</compoe_custo_medio>
+		<atualiza_custo_mov>false</atualiza_custo_mov>
+		<fator_est_proprio>1</fator_est_proprio>
+		<fator_est_de_terceiro>0</fator_est_de_terceiro>
+		<fator_est_com_terceiro>0</fator_est_com_terceiro>
+	</cm_item_composicao>
+</VFPData>

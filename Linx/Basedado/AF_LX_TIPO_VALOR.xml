@@ -1,0 +1,116 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="af_lx_tipo_valor" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="lx_tipo_valor_imobilizado">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="2"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="desc_tipo_valor">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="40"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="indica_contabil" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="1"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<af_lx_tipo_valor>
+		<lx_tipo_valor_imobilizado>CA</lx_tipo_valor_imobilizado>
+		<desc_tipo_valor>CORREÇÃO ACUMULADA  ATÉ A DATA</desc_tipo_valor>
+		<indica_contabil>S</indica_contabil>
+	</af_lx_tipo_valor>
+	<af_lx_tipo_valor>
+		<lx_tipo_valor_imobilizado>CD</lx_tipo_valor_imobilizado>
+		<desc_tipo_valor>CORREÇÃO DA DEPRECIAÇÃO MÊS</desc_tipo_valor>
+		<indica_contabil>M</indica_contabil>
+	</af_lx_tipo_valor>
+	<af_lx_tipo_valor>
+		<lx_tipo_valor_imobilizado>CM</lx_tipo_valor_imobilizado>
+		<desc_tipo_valor>CORREÇÃO MONETÁRIA  MÊS</desc_tipo_valor>
+		<indica_contabil>M</indica_contabil>
+	</af_lx_tipo_valor>
+	<af_lx_tipo_valor>
+		<lx_tipo_valor_imobilizado>CR</lx_tipo_valor_imobilizado>
+		<desc_tipo_valor>CORREÇÃO DO RESIDUAL</desc_tipo_valor>
+	</af_lx_tipo_valor>
+	<af_lx_tipo_valor>
+		<lx_tipo_valor_imobilizado>DA</lx_tipo_valor_imobilizado>
+		<desc_tipo_valor>DEPRECIAÇÃO ACUMULADA ATÉ A DATA</desc_tipo_valor>
+		<indica_contabil>S</indica_contabil>
+	</af_lx_tipo_valor>
+	<af_lx_tipo_valor>
+		<lx_tipo_valor_imobilizado>DC</lx_tipo_valor_imobilizado>
+		<desc_tipo_valor>DEPRECIAÇÃO + CORREÇÃO ACUMULADA DO MÊS</desc_tipo_valor>
+		<indica_contabil>M</indica_contabil>
+	</af_lx_tipo_valor>
+	<af_lx_tipo_valor>
+		<lx_tipo_valor_imobilizado>DP</lx_tipo_valor_imobilizado>
+		<desc_tipo_valor>DEPRECIAÇÃO MÊS</desc_tipo_valor>
+		<indica_contabil>M</indica_contabil>
+	</af_lx_tipo_valor>
+	<af_lx_tipo_valor>
+		<lx_tipo_valor_imobilizado>IR</lx_tipo_valor_imobilizado>
+		<desc_tipo_valor>IMPOSTO A RECUPERAR COMPRA</desc_tipo_valor>
+		<indica_contabil>E</indica_contabil>
+	</af_lx_tipo_valor>
+	<af_lx_tipo_valor>
+		<lx_tipo_valor_imobilizado>RC</lx_tipo_valor_imobilizado>
+		<desc_tipo_valor>VALOR DO COFINS S/DEPREC.RECUPERADO MÊS</desc_tipo_valor>
+		<indica_contabil>M</indica_contabil>
+	</af_lx_tipo_valor>
+	<af_lx_tipo_valor>
+		<lx_tipo_valor_imobilizado>RI</lx_tipo_valor_imobilizado>
+		<desc_tipo_valor>RESIDUAL DO IMPOSTO A RECUPERAR</desc_tipo_valor>
+		<indica_contabil>S</indica_contabil>
+	</af_lx_tipo_valor>
+	<af_lx_tipo_valor>
+		<lx_tipo_valor_imobilizado>RP</lx_tipo_valor_imobilizado>
+		<desc_tipo_valor>VALOR DO PIS S/DEPREC.RECUPERADO MÊS</desc_tipo_valor>
+		<indica_contabil>M</indica_contabil>
+	</af_lx_tipo_valor>
+	<af_lx_tipo_valor>
+		<lx_tipo_valor_imobilizado>VA</lx_tipo_valor_imobilizado>
+		<desc_tipo_valor>VALOR ACUMULADO DO BEM</desc_tipo_valor>
+	</af_lx_tipo_valor>
+	<af_lx_tipo_valor>
+		<lx_tipo_valor_imobilizado>VB</lx_tipo_valor_imobilizado>
+		<desc_tipo_valor>VALOR ORIGINAL DA BAIXA</desc_tipo_valor>
+		<indica_contabil>S</indica_contabil>
+	</af_lx_tipo_valor>
+	<af_lx_tipo_valor>
+		<lx_tipo_valor_imobilizado>VI</lx_tipo_valor_imobilizado>
+		<desc_tipo_valor>VALOR IMPOSTO RECUPERADO MÊS</desc_tipo_valor>
+		<indica_contabil>M</indica_contabil>
+	</af_lx_tipo_valor>
+	<af_lx_tipo_valor>
+		<lx_tipo_valor_imobilizado>VO</lx_tipo_valor_imobilizado>
+		<desc_tipo_valor>VALOR ORIGINAL COMPRA</desc_tipo_valor>
+		<indica_contabil>E</indica_contabil>
+	</af_lx_tipo_valor>
+	<af_lx_tipo_valor>
+		<lx_tipo_valor_imobilizado>VR</lx_tipo_valor_imobilizado>
+		<desc_tipo_valor>VALOR RESIDUAL DO BEM</desc_tipo_valor>
+	</af_lx_tipo_valor>
+</VFPData>

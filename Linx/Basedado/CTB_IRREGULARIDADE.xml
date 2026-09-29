@@ -1,0 +1,369 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="ctb_irregularidade" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="desc_irregularidade">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="50"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="id_imposto" type="xsd:int" minOccurs="0"/>
+								<xsd:element name="id_irregularidade" type="xsd:int"/>
+								<xsd:element name="lx_tipo_lancamento" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="3"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="rotina_irregularidade" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="250"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="inativo" type="xsd:boolean"/>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<ctb_irregularidade>
+		<desc_irregularidade>Razão Social</desc_irregularidade>
+		<id_irregularidade>1</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Endereço</desc_irregularidade>
+		<id_irregularidade>2</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Município</desc_irregularidade>
+		<id_irregularidade>3</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Estado</desc_irregularidade>
+		<id_irregularidade>4</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>nº de Inscrição no CGC/MF</desc_irregularidade>
+		<id_irregularidade>5</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>nº de Inscrição Estadual</desc_irregularidade>
+		<id_irregularidade>6</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Natureza da Operação</desc_irregularidade>
+		<id_irregularidade>7</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Código Fiscal da Operação</desc_irregularidade>
+		<id_irregularidade>8</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Via de Transporte</desc_irregularidade>
+		<id_irregularidade>9</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Data de Emissão</desc_irregularidade>
+		<id_irregularidade>10</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Data de Saída</desc_irregularidade>
+		<id_irregularidade>11</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Unidade(produto)</desc_irregularidade>
+		<id_irregularidade>12</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Quantidade(produto)</desc_irregularidade>
+		<id_irregularidade>13</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Descrição dos Produtos</desc_irregularidade>
+		<id_irregularidade>14</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Preço Unitário</desc_irregularidade>
+		<id_irregularidade>15</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Valor do Produto</desc_irregularidade>
+		<id_irregularidade>16</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Classificação Fiscal</desc_irregularidade>
+		<id_irregularidade>17</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Alíquota do IPI</desc_irregularidade>
+		<id_irregularidade>18</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Valor do IPI destacado a maior - Entrada</desc_irregularidade>
+		<id_irregularidade>19</id_irregularidade>
+		<lx_tipo_lancamento>EIM</lx_tipo_lancamento>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Valor do IPI destacado a maior - Saída</desc_irregularidade>
+		<id_irregularidade>20</id_irregularidade>
+		<lx_tipo_lancamento>SIM</lx_tipo_lancamento>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Base de Cálculo do IPI</desc_irregularidade>
+		<id_irregularidade>21</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Valor Total da Nota cobrado a maior - Entrada</desc_irregularidade>
+		<id_irregularidade>22</id_irregularidade>
+		<lx_tipo_lancamento>EVM</lx_tipo_lancamento>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Valor Total da Nota cobrado a maior - Saída</desc_irregularidade>
+		<id_irregularidade>23</id_irregularidade>
+		<lx_tipo_lancamento>SVM</lx_tipo_lancamento>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Alíquota do ICM</desc_irregularidade>
+		<id_irregularidade>24</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Valor do ICMS destacado a maior - Entrada</desc_irregularidade>
+		<id_irregularidade>25</id_irregularidade>
+		<lx_tipo_lancamento>EIM</lx_tipo_lancamento>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Valor do ICMS destacado a maior - Saída</desc_irregularidade>
+		<id_irregularidade>26</id_irregularidade>
+		<lx_tipo_lancamento>SIM</lx_tipo_lancamento>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Base de Cálculo do ICM</desc_irregularidade>
+		<id_irregularidade>27</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Nome do Transportador</desc_irregularidade>
+		<id_irregularidade>28</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Endereço do Transportador</desc_irregularidade>
+		<id_irregularidade>29</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Termo de Isenção do IPI</desc_irregularidade>
+		<id_irregularidade>30</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Termo de Isenção do ICM</desc_irregularidade>
+		<id_irregularidade>31</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Peso - Bruto/Líquido</desc_irregularidade>
+		<id_irregularidade>32</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Volume-Marca/Nun/Quant</desc_irregularidade>
+		<id_irregularidade>33</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Rasuras</desc_irregularidade>
+		<id_irregularidade>34</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Vencimento</desc_irregularidade>
+		<id_irregularidade>35</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Valor de cada parcela</desc_irregularidade>
+		<id_irregularidade>36</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Valor do frete</desc_irregularidade>
+		<id_irregularidade>37</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Frete por conta</desc_irregularidade>
+		<id_irregularidade>38</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Valor IRRF destacado a maior - Entrada</desc_irregularidade>
+		<id_irregularidade>39</id_irregularidade>
+		<lx_tipo_lancamento>EIM</lx_tipo_lancamento>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Valor IRRF destacado a maior - Saída</desc_irregularidade>
+		<id_irregularidade>40</id_irregularidade>
+		<lx_tipo_lancamento>SIM</lx_tipo_lancamento>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Cobrança - Razão Social</desc_irregularidade>
+		<id_irregularidade>41</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Cobrança - Endereço</desc_irregularidade>
+		<id_irregularidade>42</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Cobrança - Município</desc_irregularidade>
+		<id_irregularidade>43</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Cobrança - Estado</desc_irregularidade>
+		<id_irregularidade>44</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Cobrança - nº de Inscrição no CGC/MF</desc_irregularidade>
+		<id_irregularidade>45</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Cobrança - nº de Inscrição Estadual</desc_irregularidade>
+		<id_irregularidade>46</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Entrega - Razão Social</desc_irregularidade>
+		<id_irregularidade>47</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Entrega - Endereço</desc_irregularidade>
+		<id_irregularidade>48</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Entrega - Município</desc_irregularidade>
+		<id_irregularidade>49</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Entrega - Estado</desc_irregularidade>
+		<id_irregularidade>50</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Entrega - nº de Inscrição no CGC/MF</desc_irregularidade>
+		<id_irregularidade>51</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>Entrega - nº de Inscrição Estadual</desc_irregularidade>
+		<id_irregularidade>52</id_irregularidade>
+		<rotina_irregularidade>0</rotina_irregularidade>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+	<ctb_irregularidade>
+		<desc_irregularidade>RAZAO SOCIAL</desc_irregularidade>
+		<id_imposto>1</id_imposto>
+		<id_irregularidade>100</id_irregularidade>
+		<lx_tipo_lancamento>VMS</lx_tipo_lancamento>
+		<inativo>false</inativo>
+	</ctb_irregularidade>
+</VFPData>

@@ -1,0 +1,76 @@
+*-- Cliente : Lx-Vs: Track & Field
+*-- Conteudo: Programação Para Impressora Zebra Stripe (ZPL-II)
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+
+Procedure Zebra_Etiqueta_BOLINHA
+SELECT VTMP_FATURAMENTO_CAIXAS_00_EMBALADOS
+
+
+*!*	^XA
+*!*	^XZ
+*!*	^XA
+*!*	^FO100,180^XGNYLOGO.GRF,1,1^FS
+*!*	^FO92,276^XGPOLO.GRF,1,1^FS
+*!*	^FO272,276^XGYOGA.GRF,1,1^FS
+*!*	^FO452,276^XGTANGA.GRF,1,1^FS
+*!*	^FO632,276^XGCALCA.GRF,1,1^FS
+*!*	^AAN,36,20^FO328,469^FDAAAAAA^FS
+*!*	^AAN,36,20^FO292,523^FDBBBBBBBBB^FS
+*!*	^AAN,36,20^FO224,580^FDCCCCCCCCCCCCCC^FS
+*!*	^PQ1,0,1,Y
+*!*	^XZ
+*!*	^XA
+*!*	^XZ
+
+
+
+
+	*------- Parâmetros
+*!*		xMargem1 = '^LH030,000' + chr(13) + chr(10)    && Primeira Coluna
+*!*		xMargem2 = '^LH310,000' + chr(13) + chr(10)    && Segunda Coluna
+*!*		xMargem3 = '^LH590,000' + chr(13) + chr(10)    && Segunda Coluna
+
+	xini     = '^XA'        + chr(13) + chr(10)    && Inicia                                            
+	xfim     = '^XZ'        + chr(13) + chr(10)    && Finaliza                                                                     
+	xHot     = '' && 	'^MD10'      + chr(13) + chr(10)    && Temperatura (faixa: 30 a -30)
+	xTaxa    = '^PRD'       + chr(13) + chr(10)    && Velocidade de Impressão ( Print Rate (A,B,C,D) )
+	xT1    = '^MD28'       + chr(13) + chr(10)    && Velocidade de Impressão ( Print Rate (A,B,C,D) )
+	xT2    = '~SD28'       + chr(13) + chr(10)    && Velocidade de Impressão ( Print Rate (A,B,C,D) )
+
+	* logotipo
+	xlogo =  "^FO100,180^XGNYLOGO.GRF,1,1^FS"+chr(13)
+	* desenho 1 -  esporte
+	xdes1 = "^FO92,276^XG" + UPPER(ALLTRIM(VTMP_FATURAMENTO_CAIXAS_00_EMBALADOS.log_esporte)) + ",1,1^FS" + chr(13)
+	* desenho 2 -  tipo
+	xdes2 = "^FO272,276^XG" + UPPER(ALLTRIM(VTMP_FATURAMENTO_CAIXAS_00_EMBALADOS.log_tipo)) + ",1,1^FS" + chr(13)
+	* desenho 3 -  tamanho
+	xdes3 = "^FO452,276^XG" + UPPER(ALLTRIM(VTMP_FATURAMENTO_CAIXAS_00_EMBALADOS.log_tamanho)) + ",1,1^FS" + chr(13)
+	* desenho 4 -  estação
+	xdes4 = "^FO632,276^XG" + UPPER(ALLTRIM(VTMP_FATURAMENTO_CAIXAS_00_EMBALADOS.log_estacao)) + ",1,1^FS" + chr(13)
+	* nome produto
+	xnome = "^AAN,36,20^FO328,469^FD" + UPPER(ALLTRIM(VTMP_FATURAMENTO_CAIXAS_00_EMBALADOS.tf_nome_ing)) + "^FS" + chr(13)
+	* ref do produto
+	xref = "^AAN,36,20^FO292,523^FD" + UPPER(ALLTRIM(VTMP_FATURAMENTO_CAIXAS_00_EMBALADOS.produto)) + "^FS" + chr(13)
+	*cor_produto
+	xcor = "^AAN,36,20^FO224,580^FD" +  UPPER(ALLTRIM(VTMP_FATURAMENTO_CAIXAS_00_EMBALADOS.tf_traducao)) + "^FS" + chr(13)
+
+	xLayOut = ( xlogo + xdes1 + xdes2 + xdes3 + xdes4 + xnome + xref + xcor )
+	
+SET STEP ON 
+
+	*------- Retorno
+	xRetorno = ''
+	*if xQtdeInt <> 0 && Inteiro
+		xQtde    = '^PQ1'+',0,1,Y' + chr(13) + chr(10)
+		xRetorno = xRetorno + ( xini + xHot + xTaxa + Xt1 + xt2 ) + ( xLayOut ) + xQtde+ xfim 
+	*endif
+
+
+
+Return(xRetorno)
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+
+
+ENDPROC 
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+

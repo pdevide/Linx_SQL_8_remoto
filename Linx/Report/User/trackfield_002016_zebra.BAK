@@ -1,0 +1,371 @@
+*-- Cliente : Lx-Vs: Track & Field
+*-- Conteudo: Programação Para Impressora Zebra Stripe (ZPL-II)
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+Procedure Zebra_Etiqueta_Produto
+SELECT vtmp_tabelas_preco_barra_00
+*COPY TO c:\bgt TYPE xls
+
+	*------- Parâmetros
+	xMargem1 = '^LH030,000' + chr(13) + chr(10)    && Primeira Coluna
+	xMargem2 = '^LH310,000' + chr(13) + chr(10)    && Segunda Coluna
+	xMargem3 = '^LH590,000' + chr(13) + chr(10)    && Segunda Coluna
+
+	xini     = '^XA'        + chr(13) + chr(10)    && Inicia                                            
+	xfim     = '^XZ'        + chr(13) + chr(10)    && Finaliza                                                                     
+	xHot     = '' && 	'^MD10'      + chr(13) + chr(10)    && Temperatura (faixa: 30 a -30)
+	xTaxa    = '^PRD'       + chr(13) + chr(10)    && Velocidade de Impressão ( Print Rate (A,B,C,D) )
+	xBarra   = allt(vtmp_tabelas_preco_barra_00.codigo_barra)
+
+	*------- Qtdes
+	xQtdeInt = INT (vtmp_tabelas_preco_barra_00.qtde_etiquetas/3)
+	xQtdeRes = ( vtmp_tabelas_preco_barra_00.qtde_etiquetas - (xQtdeInt*3))
+
+	*------- LayOut
+	xlin1  = "^FO045,030^XGLOGOTRK.GRF,1,1^FS"+chr(13)
+	xlin2  = "^FO020,137^A0N,21,15^FH^FD" + "TROCA ATE:      /      /      "  + "^FS"+chr(13)
+	xlin3  = "^FO020,160^BY2^BEN,50,Y,N,^FD" + xBarra + "^FS" + chr(13)
+	xlin4  = "^FO020,250^A0N,21,15^FH^FD" + SUBSTR(allt(vtmp_tabelas_preco_barra_00.desc_produto),01,23)+"^FS"+chr(13)
+	xlin5  = "^FO020,280^A0N,21,15^FH^FD" + "REF: " +allt(vtmp_tabelas_preco_barra_00.produto)+"^FS"+chr(13)
+	xlin6  = "^FO020,310^A0N,21,15^FH^FD" + "COR: " +allt(vtmp_tabelas_preco_barra_00.desc_cor_produto)+"^FS"+chr(13)
+	xlin7  = "^FO120,340^A0N,40,30^FH^FD" + allt(vtmp_tabelas_preco_barra_00.nome_tamanho)+"^FS"+chr(13)
+	*
+	xlin8  = "^FO020,420^A0N,21,15^FH^FD" + SUBSTR(allt(vtmp_tabelas_preco_barra_00.desc_produto),01,23)+"^FS"+chr(13)
+	xlin9  = "^FO020,450^A0N,21,15^FH^FD" + "REF: " +allt(vtmp_tabelas_preco_barra_00.produto)+"^FS"+chr(13)
+	xlin10 = "^FO020,480^A0N,21,15^FH^FD" + "COR: " +allt(vtmp_tabelas_preco_barra_00.desc_cor_produto)+"^FS"+chr(13)
+	xlin11 = "^FO020,510^A0N,21,15^FH^FD" + "TAM: " +allt(vtmp_tabelas_preco_barra_00.nome_tamanho)+"^FS"+chr(13)
+	xlin12 = "^FO020,550^BY2^BEN,50,Y,N,^FD" + xBarra + "^FS" + chr(13)
+	*
+	xLayOut = ( xlin1+xlin2+xlin3+xlin4+xlin5+xlin6+xlin7+xlin8+xlin9+xlin10+xlin11+xlin12)
+
+	*------- Retorno
+	xRetorno = ''
+	if xQtdeInt <> 0 && Inteiro
+		xQtde    = '^PQ'+transf(xQtdeInt,'@L 99999') +',0,1,Y' + chr(13) + chr(10)
+		xRetorno = xRetorno + ( xini+xHot+xTaxa ) + ( xMargem1+xLayOut + xMargem2+xLayOut + xMargem3+xLayOut ) + xQtde+ xfim
+	endif
+	if xQtdeRes <> 0 && Resto de 2 colunas
+		IF xQtdeRes=1	&&=1
+			xqtde    = '^PQ'+transf(xQtdeRes,'@L 99999') +',0,1,Y' + chr(13) + chr(10)
+			xRetorno = xRetorno + ( xini+xHot+xTaxa ) + ( xMargem1+xLayOut ) + xQtde+ xfim
+		ELSE 		 	&&=2
+			xqtde    = '^PQ'+transf(1,'@L 99999') +',0,1,Y' + chr(13) + chr(10)
+			xRetorno = xRetorno + ( xini+xHot+xTaxa ) + ( xMargem1+xLayOut + xMargem2+xLayOut ) + xQtde+ xfim
+		ENDIF
+	endif
+
+
+Return(xRetorno)
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+
+
+
+Procedure Zebra_Etiqueta_Produto_TEST
+SELECT vtmp_tabelas_preco_barra_00
+*COPY TO c:\bgt TYPE xls
+
+	*------- Parâmetros
+	xMargem1 = '^LH030,000' + chr(13) + chr(10)    && Primeira Coluna
+	xMargem2 = '^LH310,000' + chr(13) + chr(10)    && Segunda Coluna
+	xMargem3 = '^LH590,000' + chr(13) + chr(10)    && Segunda Coluna
+
+	xini     = '^XA'        + chr(13) + chr(10)    && Inicia                                            
+	xfim     = '^XZ'        + chr(13) + chr(10)    && Finaliza                                                                     
+	xHot     = '' && 	'^MD10'      + chr(13) + chr(10)    && Temperatura (faixa: 30 a -30)
+	xTaxa    = '^PRD'       + chr(13) + chr(10)    && Velocidade de Impressão ( Print Rate (A,B,C,D) )
+	xT1    = '^MD30'       + chr(13) + chr(10)    && Velocidade de Impressão ( Print Rate (A,B,C,D) )
+	xT2    = '~SD30'       + chr(13) + chr(10)    && Velocidade de Impressão ( Print Rate (A,B,C,D) )
+	
+	xBarra   = allt(vtmp_tabelas_preco_barra_00.codigo_barra)
+
+	*------- Qtdes
+	xQtdeInt = INT (vtmp_tabelas_preco_barra_00.qtde_etiquetas/3)
+	xQtdeRes = ( vtmp_tabelas_preco_barra_00.qtde_etiquetas - (xQtdeInt*3))
+
+	*------- LayOut
+	xlin1  = "^FO045,030^XGLOGOTRK.GRF,1,1^FS"+chr(13)
+	xlin2  = "^FO020,137^A0N,21,15^FH^FD" + "TROCA ATE:      /      /      "  + "^FS"+chr(13)
+	xlin3  = "^FO020,160^BY2^BEN,50,Y,N,^FD" + xBarra + "^FS" + chr(13)
+	xlin4  = "^FO020,250^A0N,21,15^FH^FD" + SUBSTR(allt(vtmp_tabelas_preco_barra_00.desc_produto),01,23)+"^FS"+chr(13)
+	xlin5  = "^FO020,280^A0N,21,15^FH^FD" + "REF: " +allt(vtmp_tabelas_preco_barra_00.produto)+"^FS"+chr(13)
+	xlin6  = "^FO020,310^A0N,21,15^FH^FD" + "COR: " +allt(vtmp_tabelas_preco_barra_00.desc_cor_produto)+"^FS"+chr(13)
+	xlin7  = "^FO120,340^A0N,40,30^FH^FD" + allt(vtmp_tabelas_preco_barra_00.nome_tamanho)+"^FS"+chr(13)
+	*
+	xlin8  = "^FO020,420^A0N,21,15^FH^FD" + SUBSTR(allt(vtmp_tabelas_preco_barra_00.desc_produto),01,23)+"^FS"+chr(13)
+	xlin9  = "^FO020,450^A0N,21,15^FH^FD" + "REF: " +allt(vtmp_tabelas_preco_barra_00.produto)+"^FS"+chr(13)
+	xlin10 = "^FO020,480^A0N,21,15^FH^FD" + "COR: " +allt(vtmp_tabelas_preco_barra_00.desc_cor_produto)+"^FS"+chr(13)
+	xlin11 = "^FO020,510^A0N,21,15^FH^FD" + "TAM: " +allt(vtmp_tabelas_preco_barra_00.nome_tamanho)+"^FS"+chr(13)
+	xlin12 = "^FO020,540^BY2^BEN,50,Y,N,^FD" + xBarra + "^FS" + chr(13)
+	
+			*xx1 = '^BY3^FO154,90^BEN,102,Y,N^FV' + UPPER(ALLTRIM(VTMP_FATURAMENTO_CAIXAS_00_EMBALADOS.codigo_barra)) + '^FS'        + chr(13) + chr(10)
+
+	
+	
+	*
+	xLayOut = ( xlin1+xlin2+xlin3+xlin4+xlin5+xlin6+xlin7+xlin8+xlin9+xlin10+xlin11+xlin12)
+
+	*------- Retorno
+	xRetorno = ''
+	if xQtdeInt <> 0 && Inteiro
+		xQtde    = '^PQ'+transf(xQtdeInt,'@L 99999') +',0,1,Y' + chr(13) + chr(10)
+		xRetorno = xRetorno + ( xini+xHot+xTaxa+Xt1+xt2 ) + ( xMargem1+xLayOut + xMargem2+xLayOut + xMargem3+xLayOut ) + xQtde+ xfim
+	endif
+	if xQtdeRes <> 0 && Resto de 2 colunas
+		IF xQtdeRes=1	&&=1
+			xqtde    = '^PQ'+transf(xQtdeRes,'@L 99999') +',0,1,Y' + chr(13) + chr(10)
+			xRetorno = xRetorno + ( xini+xHot+xTaxa+Xt1+xt2 ) + ( xMargem1+xLayOut ) + xQtde+ xfim
+		ELSE 		 	&&=2
+			xqtde    = '^PQ'+transf(1,'@L 99999') +',0,1,Y' + chr(13) + chr(10)
+			xRetorno = xRetorno + ( xini+xHot+xTaxa+Xt1+xt2 ) + ( xMargem1+xLayOut + xMargem2+xLayOut ) + xQtde+ xfim
+		ENDIF
+	endif
+
+
+Return(xRetorno)
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+
+
+
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+Procedure Zebra_Etiqueta_Produtos_Importados
+
+	*------- Parâmetros
+	xMargem1 = '^LH030,000' + chr(13) + chr(10)    && Primeira Coluna
+	xMargem2 = '^LH310,000' + chr(13) + chr(10)    && Segunda Coluna
+	xMargem3 = '^LH590,000' + chr(13) + chr(10)    && Segunda Coluna
+
+	xini     = '^XA'        + chr(13) + chr(10)    && Inicia                                            
+	xfim     = '^XZ'        + chr(13) + chr(10)    && Finaliza                                                                     
+	xHot     = '' && 	'^MD10'      + chr(13) + chr(10)    && Temperatura (faixa: 30 a -30)
+	xTaxa    = '^PRD'       + chr(13) + chr(10)    && Velocidade de Impressão ( Print Rate (A,B,C,D) )
+	xBarra   = allt(vtmp_tabelas_preco_barra_00.codigo_barra)
+
+	xTexto1 = '        Importado por:  '
+	xTexto2 = ' Bo Trading importacao e'
+	xTexto3 = '      Exportacao Ltda   '
+	xTexto4 = 'CNPJ: 04.608.270/0001-30'
+	xTexto5 = '   Pais de Origem: China'
+	xTexto6 = '    TEL:SAC 3048-1238   '
+
+	*------- Qtdes
+	xQtdeInt = INT (vtmp_tabelas_preco_barra_00.qtde_etiquetas/3)
+	xQtdeRes = ( vtmp_tabelas_preco_barra_00.qtde_etiquetas - (xQtdeInt*3))
+
+	*------- LayOut
+	xlin1  = "^FO045,030^XGLOGOTRK.GRF,1,1^FS"+chr(13)
+	xlin2  = "^FO020,137^A0N,21,15^FH^FD" + "TROCA ATE:      /      /      "  + "^FS"+chr(13)
+	xlin3  = "^FO020,160^BY2^BEN,50,Y,N,^FD" + xBarra + "^FS" + chr(13)
+
+	xlin4  = "^FO030,240^A0N,25,18^FH^FD" + xTexto1 + "^FS"+chr(13)
+	xlin5  = "^FO030,268^A0N,25,18^FH^FD" + xTexto2 +"^FS"+chr(13)
+	xlin6  = "^FO030,296^A0N,25,18^FH^FD" + xTexto3 +"^FS"+chr(13)
+	xlin7  = "^FO030,324^A0N,25,18^FH^FD" + xTexto4 +"^FS"+chr(13)
+	xlin8  = "^FO030,352^A0N,25,18^FH^FD" + xTexto5 +"^FS"+chr(13)
+	xlin9  = "^FO030,380^A0N,25,18^FH^FD" + xTexto6 +"^FS"+chr(13)
+
+	*
+	xlin10 = "^FO020,420^A0N,21,15^FH^FD" + SUBSTR(allt(vtmp_tabelas_preco_barra_00.desc_produto),01,23)+"^FS"+chr(13)
+	xlin11 = "^FO020,450^A0N,21,15^FH^FD" + "REF: " +allt(vtmp_tabelas_preco_barra_00.produto)+"^FS"+chr(13)
+	xlin12 = "^FO020,480^A0N,21,15^FH^FD" + "COR: " +allt(vtmp_tabelas_preco_barra_00.desc_cor_produto)+"^FS"+chr(13)
+	xlin13 = "^FO020,510^A0N,21,15^FH^FD" + "TAM: " +allt(vtmp_tabelas_preco_barra_00.nome_tamanho)+"^FS"+chr(13)
+	xlin14 = "^FO020,550^BY2^BEN,50,Y,N,^FD" + xBarra + "^FS" + chr(13)
+	*
+	xLayOut = ( xlin1+xlin2+xlin3+xlin4+xlin5+xlin6+xlin7+xlin8+xlin9+xlin10+xlin11+xlin12+xlin13+xlin14)
+
+	*------- Retorno
+	xRetorno = ''
+	if xQtdeInt <> 0 && Inteiro
+		xQtde    = '^PQ'+transf(xQtdeInt,'@L 99999') +',0,1,Y' + chr(13) + chr(10)
+		xRetorno = xRetorno + ( xini+xHot+xTaxa ) + ( xMargem1+xLayOut + xMargem2+xLayOut + xMargem3+xLayOut ) + xQtde+ xfim
+	endif
+	if xQtdeRes <> 0 && Resto de 2 colunas
+		IF xQtdeRes=1	&&=1
+			xqtde    = '^PQ'+transf(xQtdeRes,'@L 99999') +',0,1,Y' + chr(13) + chr(10)
+			xRetorno = xRetorno + ( xini+xHot+xTaxa ) + ( xMargem1+xLayOut ) + xQtde+ xfim
+		ELSE 		 	&&=2
+			xqtde    = '^PQ'+transf(1,'@L 99999') +',0,1,Y' + chr(13) + chr(10)
+			xRetorno = xRetorno + ( xini+xHot+xTaxa ) + ( xMargem1+xLayOut + xMargem2+xLayOut ) + xQtde+ xfim
+		ENDIF
+	endif
+
+
+Return(xRetorno)
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+
+PROCEDURE Datamax_Etiqueta_Produtos_Importados
+
+ON ERROR
+
+	xini  = "" + "L" + chr(13) + chr(10) + ;
+			"SK" + chr(13) + chr(10) + ;
+			"PA" + chr(13) + chr(10) + ;
+			"D11" + chr(13) + chr(10) + ;
+			"H10" + chr(13) + chr(10)
+	xfim  = "E" + chr(13) + chr(10) 			
+	
+	xColA = 005
+	xColB = 135
+ 	xColC = 275
+ 	
+	xQtdeInt = INT (vtmp_tabelas_preco_barra_00.qtde_etiquetas/3)
+	xQtdeRes = ( vtmp_tabelas_preco_barra_00.qtde_etiquetas - (xQtdeInt*3))
+
+SET STEP ON 
+
+	for k = 65 to 67
+		K_ = chr(K)
+		
+		****                   POSIÇÃO Y		 POSIÇÃO X				****
+		xLin1	= "1Y11000"+F_StrZero(255,4)+F_StrZero(xCol&K_+25,4)+ "LOGO" + CHR(10) + CHR(13)
+		xLin2	= "1112001"+F_StrZero(240,4)+F_StrZero(xCol&K_+12,4)+ "TROCA ATE:   /   /    " + CHR(10) + CHR(13)
+		xLin3	= "1F12030"+F_StrZero(200,4)+F_StrZero(xCol&K_+12,4)+ ALLTRIM(vtmp_tabelas_preco_barra_00.codigo_barra) + CHR(10) + CHR(13)
+		xLin4	= "1112001"+F_StrZero(180,4)+F_StrZero(xCol&K_+12,4)+ SUBSTR(ALLTRIM(vtmp_tabelas_preco_barra_00.desc_produto),01,23) + CHR(10) + CHR(13)
+		xLin5	= "1112001"+F_StrZero(165,4)+F_StrZero(xCol&K_+12,4)+ "REF: "+ALLTRIM(vtmp_tabelas_preco_barra_00.produto) + CHR(10) + CHR(13)
+		xLin6	= "1112001"+F_StrZero(150,4)+F_StrZero(xCol&K_+12,4)+ "COR: "+ALLTRIM(vtmp_tabelas_preco_barra_00.desc_cor_produto) + CHR(10) + CHR(13)
+		xLin7	= "1311001"+F_StrZero(120,4)+F_StrZero(xCol&K_+60,4)+ ALLTRIM(vtmp_tabelas_preco_barra_00.nome_tamanho) + CHR(10) + CHR(13)
+		xLin8	= "1112001"+F_StrZero( 90,4)+F_StrZero(xCol&K_+12,4)+ SUBSTR(ALLTRIM(vtmp_tabelas_preco_barra_00.desc_produto),01,23) + CHR(10) + CHR(13)
+		xLin9	= "1112001"+F_StrZero( 75,4)+F_StrZero(xCol&K_+12,4)+ "REF: "+ALLTRIM(vtmp_tabelas_preco_barra_00.produto) + CHR(10) + CHR(13)
+		xLin10	= "1112001"+F_StrZero( 60,4)+F_StrZero(xCol&K_+12,4)+ "COR: "+ALLTRIM(vtmp_tabelas_preco_barra_00.desc_cor_produto) + CHR(10) + CHR(13)
+		xLin11	= "1112001"+F_StrZero( 45,4)+F_StrZero(xCol&K_+12,4)+ "TAM: "+ALLTRIM(vtmp_tabelas_preco_barra_00.nome_tamanho) + CHR(10) + CHR(13)
+		xLin12	= "1F12030"+F_StrZero(  5,4)+F_StrZero(xCol&K_+12,4)+ ALLTRIM(vtmp_tabelas_preco_barra_00.codigo_barra) + CHR(10) + CHR(13)
+		
+		****
+		xLayout&K_ = (xLin1+xLin2+xLin3+xLin4+xLin5+xLin6+xLin7+xLin8+xLin9+xLin10+xLin11+xLin12)
+		
+	ENDFOR 
+	
+	*------- Retorno
+	xRetorno = ''
+	IF xQtdeInt <> 0 && Inteiro
+		xQtde = "Q" + F_StrZero(xQtdeInt,4) + chr(13) + chr(10) 
+		xRetorno = xRetorno + xini + ( xLayoutA + xLayoutB + xLayoutC ) + xQtde+ xfim
+	ENDIF 
+ 	IF xQtdeRes <> 0 && Resto de 2 colunas
+		IF xQtdeRes=1	
+			xQtde = "Q" + F_StrZero(1,4) + chr(13) + chr(10) 
+			xRetorno = xRetorno + xini + ( xLayoutA ) + xQtde+ xfim
+		ELSE 		 	
+			xQtde = "Q" + F_StrZero(1,4) + chr(13) + chr(10) 
+			xRetorno = xRetorno + xini + ( xLayoutA + xLayoutB ) + xQtde+ xfim
+		ENDIF
+	ENDIF 
+
+	Return(xRetorno)
+	
+	
+
+Procedure Zebra_colante
+SELECT vtmp_tabelas_preco_barra_00
+*COPY TO c:\bgt TYPE xls
+
+
+	*------- Parâmetros
+	xMargem1 = '^LH030,000' + chr(13) + chr(10)    && Primeira Coluna
+	xMargem2 = '^LH310,000' + chr(13) + chr(10)    && Segunda Coluna
+	xMargem3 = '^LH590,000' + chr(13) + chr(10)    && Segunda Coluna
+
+	xini     = '^XA'        + chr(13) + chr(10)    && Inicia                                            
+	xfim     = '^XZ'        + chr(13) + chr(10)    && Finaliza                                                                     
+	xHot     = '' && 	'^MD10'      + chr(13) + chr(10)    && Temperatura (faixa: 30 a -30)
+	xTaxa    = '^PRD'       + chr(13) + chr(10)    && Velocidade de Impressão ( Print Rate (A,B,C,D) )
+	xBarra   = allt(vtmp_tabelas_preco_barra_00.codigo_barra)
+
+	*------- Qtdes
+	xQtdeInt = INT (vtmp_tabelas_preco_barra_00.qtde_etiquetas/3)
+	xQtdeRes = ( vtmp_tabelas_preco_barra_00.qtde_etiquetas - (xQtdeInt*3))
+
+	*------- LayOut
+	xlin1  = "" &&^FO045,030^XGLOGOTRK.GRF,1,1^FS"+chr(13)
+	xlin2  = ''&&"^FO020,137^A0N,21,15^FH^FD" + "TROCA ATE:      /      /      "  + "^FS"+chr(13)
+	xlin3  = ''&&"^FO020,160^BY2^BEN,50,Y,N,^FD" + xBarra + "^FS" + chr(13)
+
+	xlin2  = "^FO020,310^A0N,21,15^FH^FD" + "TROCA ATE:      /      /      "  + "^FS"+chr(13)
+	xlin3  = "^FO020,330^BY2^BEN,50,Y,N,^FD" + xBarra + "^FS" + chr(13)
+
+	
+	xlin4  = "^FO005,30^A0,32,15^FH^FD" + SUBSTR(allt(vtmp_tabelas_preco_barra_00.desc_produto),01,23)+"^FS"+chr(13)
+	xlin5  = "^FO005,70^A0,32,15^FH^FD" + allt(vtmp_tabelas_preco_barra_00.produto)+ " - " +  allt(vtmp_tabelas_preco_barra_00.cor_produto) +"^FS"+chr(13)
+	
+	xlin6  = "^FO005,110^A0N,32,15^FH^FD" + "COR: " +allt(vtmp_tabelas_preco_barra_00.desc_cor_produto) +"  -  " +"TAM: " + allt(vtmp_tabelas_preco_barra_00.nome_tamanho)    +"^FS"+chr(13)
+	
+	F_select("select * from prop_produtos where propriedade = '00043' and produto = ?vtmp_tabelas_preco_barra_00.produto order by item_propriedade ","TEMPROD")
+
+	xx = 0
+
+	*SET STEP ON 
+	SELECT TEMPROD
+	SCAN
+		xx=xx+1
+		vtf ='tf'+ALLTRIM(STR(xx))
+		&VTF = ALLTRIM(TEMPROD.valor_propriedade)
+	ENDSCAN
+	
+	xlin7 = ''
+	
+	IF xx >= 1
+		IF !EMPTY(TF1)
+			xlin7 = xlin7 + ;
+			"^FO005,160^A0N,32,15^FH^FD" + TF1 +"^FS"+chr(13)
+		ENDIF
+	ENDIF	
+
+	IF xx >= 2
+		IF !EMPTY(TF2)
+			xlin7 = xlin7 + ;
+			"^FO005,190^A0N,32,15^FH^FD" + TF2 +"^FS"+chr(13)
+		ENDIF
+	ENDIF	
+	
+
+	IF xx >= 3
+		IF !EMPTY(TF3)
+			xlin7 = xlin7 + ;
+			"^FO005,220^A0N,32,15^FH^FD" + TF3 +"^FS"+chr(13)
+		ENDIF
+	endif	
+	
+	IF xx >= 4
+		IF !EMPTY(TF4)
+			xlin7 = xlin7 + ;
+			"^FO005,250^A0N,32,15^FH^FD" + TF4 +"^FS"+chr(13)
+		ENDIF
+	endif	
+	
+	
+	
+	
+	*xlin7  = "^FO120,340^A0N,40,30^FH^FD" + "TAM: " + allt(vtmp_tabelas_preco_barra_00.nome_tamanho)+"^FS"+chr(13)
+	*
+	xlin8  = ''&&"^FO020,420^A0N,21,15^FH^FD" + SUBSTR(allt(vtmp_tabelas_preco_barra_00.desc_produto),01,22)+"^FS"+chr(13)
+	xlin9  = ''&&"^FO020,450^A0N,21,15^FH^FD" + "REF: " +allt(vtmp_tabelas_preco_barra_00.produto)+"^FS"+chr(13)
+	xlin10 = ''&&"^FO020,480^A0N,21,15^FH^FD" + "COR: " +allt(vtmp_tabelas_preco_barra_00.desc_cor_produto)+"^FS"+chr(13)
+	xlin11 = ''&&"^FO020,510^A0N,21,15^FH^FD" + "TAM: " +allt(vtmp_tabelas_preco_barra_00.nome_tamanho)+"^FS"+chr(13)
+	xlin12 = ''&&"^FO020,550^BY2^BEN,50,Y,N,^FD" + xBarra + "^FS" + chr(13)
+	*
+	xLayOut = ( xlin1+xlin2+xlin3+xlin4+xlin5+xlin6+xlin7+xlin8+xlin9+xlin10+xlin11+xlin12)
+
+	*------- Retorno
+	xRetorno = ''
+	if xQtdeInt <> 0 && Inteiro
+		xQtde    = '^PQ'+transf(xQtdeInt,'@L 99999') +',0,1,Y' + chr(13) + chr(10)
+		xRetorno = xRetorno + ( xini+xHot+xTaxa ) + ( xMargem1+xLayOut + xMargem2+xLayOut + xMargem3+xLayOut ) + xQtde+ xfim
+	endif
+	if xQtdeRes <> 0 && Resto de 2 colunas
+		IF xQtdeRes=1	&&=1
+			xqtde    = '^PQ'+transf(xQtdeRes,'@L 99999') +',0,1,Y' + chr(13) + chr(10)
+			xRetorno = xRetorno + ( xini+xHot+xTaxa ) + ( xMargem1+xLayOut ) + xQtde+ xfim
+		ELSE 		 	&&=2
+			xqtde    = '^PQ'+transf(1,'@L 99999') +',0,1,Y' + chr(13) + chr(10)
+			xRetorno = xRetorno + ( xini+xHot+xTaxa ) + ( xMargem1+xLayOut + xMargem2+xLayOut ) + xQtde+ xfim
+		ENDIF
+	endif
+
+
+Return(xRetorno)
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+
+	
+	
+	
+ENDPROC 
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+

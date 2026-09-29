@@ -1,0 +1,252 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="loja_lx_eventos_tipos" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="tipo_evento" type="xsd:int"/>
+								<xsd:element name="descricao">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="250"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="modulo_evento" type="xsd:int" minOccurs="0"/>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>1</tipo_evento>
+		<descricao>Acesso à tela de configuração.</descricao>
+		<modulo_evento>1</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>2</tipo_evento>
+		<descricao>Acesso à tela de gerenciamento de caixa.</descricao>
+		<modulo_evento>1</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>3</tipo_evento>
+		<descricao>Acesso à tela de relatórios de caixa.</descricao>
+		<modulo_evento>1</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>4</tipo_evento>
+		<descricao>Acesso à tela de gerenciamento fiscal.</descricao>
+		<modulo_evento>1</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>5</tipo_evento>
+		<descricao>Acesso à tela de limpeza de movimentação.</descricao>
+		<modulo_evento>1</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>6</tipo_evento>
+		<descricao>O usuário solicitou a abertura da administração do TEF.</descricao>
+		<modulo_evento>1</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>7</tipo_evento>
+		<descricao>Um item da tabela de vendas foi excluído.</descricao>
+		<modulo_evento>2</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>8</tipo_evento>
+		<descricao>Usuário fechou a tela de venda após efetuar o lançamento de pelo menos um produto.</descricao>
+		<modulo_evento>2</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>9</tipo_evento>
+		<descricao>Usuário cancelou uma nova venda após efetuar o lançamento de pelo menos um produto.</descricao>
+		<modulo_evento>2</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>10</tipo_evento>
+		<descricao>Venda suspensa foi removida do sistema.</descricao>
+		<modulo_evento>2</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>11</tipo_evento>
+		<descricao>Desconto no item da venda.</descricao>
+		<modulo_evento>2</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>12</tipo_evento>
+		<descricao>Desconto no valor da venda.</descricao>
+		<modulo_evento>2</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>13</tipo_evento>
+		<descricao>Usuário lançou um item de troca.</descricao>
+		<modulo_evento>2</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>14</tipo_evento>
+		<descricao>O preço líquido do produto foi alterado.</descricao>
+		<modulo_evento>2</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>15</tipo_evento>
+		<descricao>A venda foi cancelada.</descricao>
+		<modulo_evento>2</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>16</tipo_evento>
+		<descricao>O gerente aprovou a venda a um cliente com limite de crédito insuficiente.</descricao>
+		<modulo_evento>3</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>17</tipo_evento>
+		<descricao>O usuário clicou no botão copiar para customizar as parcelas.</descricao>
+		<modulo_evento>3</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>18</tipo_evento>
+		<descricao>O usuário fechou a tela de pagamento sem concluir a venda.</descricao>
+		<modulo_evento>3</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>19</tipo_evento>
+		<descricao>Desconto no valor do pagamento.</descricao>
+		<modulo_evento>3</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>20</tipo_evento>
+		<descricao>A venda foi alterada.</descricao>
+		<modulo_evento>3</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>21</tipo_evento>
+		<descricao>O processo de TEF não foi concluído com sucesso.</descricao>
+		<modulo_evento>3</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>22</tipo_evento>
+		<descricao>A consulta de cheques não foi efetuada para o cliente devido ao parâmetro NAO_CONSULTA_CHEQUE no seu cadastro.</descricao>
+		<modulo_evento>3</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>23</tipo_evento>
+		<descricao>Cheque foi impresso porém não foi consultado.</descricao>
+		<modulo_evento>4</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>24</tipo_evento>
+		<descricao>Cheque não foi consultado.</descricao>
+		<modulo_evento>4</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>25</tipo_evento>
+		<descricao>Leitura de CMC7 do cheque foi efetuada mas o mesmo não foi consultado.</descricao>
+		<modulo_evento>4</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>26</tipo_evento>
+		<descricao>Leitura de CMC7 e impressão do cheque foram efetuadas mas o mesmo não foi consultado.</descricao>
+		<modulo_evento>4</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>27</tipo_evento>
+		<descricao>O usuário solicitou a lista de vendas do cliente.</descricao>
+		<modulo_evento>5</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>28</tipo_evento>
+		<descricao>O terminal foi aberto.</descricao>
+		<modulo_evento>6</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>29</tipo_evento>
+		<descricao>O terminal foi aberto automaticamente.</descricao>
+		<modulo_evento>6</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>30</tipo_evento>
+		<descricao>O terminal entrou em estado de suspensão.</descricao>
+		<modulo_evento>6</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>31</tipo_evento>
+		<descricao>O terminal saiu do estado de suspensão.</descricao>
+		<modulo_evento>6</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>32</tipo_evento>
+		<descricao>O terminal foi fechado.</descricao>
+		<modulo_evento>6</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>33</tipo_evento>
+		<descricao>Nova entrada efetuada.</descricao>
+		<modulo_evento>7</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>34</tipo_evento>
+		<descricao>Entrada alterada.</descricao>
+		<modulo_evento>7</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>35</tipo_evento>
+		<descricao>Entrada cancelada.</descricao>
+		<modulo_evento>7</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>36</tipo_evento>
+		<descricao>Nova saída efetuada.</descricao>
+		<modulo_evento>7</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>37</tipo_evento>
+		<descricao>Saída alterada.</descricao>
+		<modulo_evento>7</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>38</tipo_evento>
+		<descricao>Saída cancelada.</descricao>
+		<modulo_evento>7</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>39</tipo_evento>
+		<descricao>Novo inventário efetuado.</descricao>
+		<modulo_evento>7</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>40</tipo_evento>
+		<descricao>Inventário alterado.</descricao>
+		<modulo_evento>7</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>41</tipo_evento>
+		<descricao>Inventário cancelado.</descricao>
+		<modulo_evento>7</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>42</tipo_evento>
+		<descricao>Atualizado estoque de acordo com o inventário.</descricao>
+		<modulo_evento>7</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>43</tipo_evento>
+		<descricao>O gerente efetuou uma limpeza de movimento.</descricao>
+		<modulo_evento>8</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>44</tipo_evento>
+		<descricao>Informações na tela de configuração foram modificadas.</descricao>
+		<modulo_evento>9</modulo_evento>
+	</loja_lx_eventos_tipos>
+	<loja_lx_eventos_tipos>
+		<tipo_evento>45</tipo_evento>
+		<descricao>Evento gerado por objeto de entrada.</descricao>
+		<modulo_evento>10</modulo_evento>
+	</loja_lx_eventos_tipos>
+</VFPData>

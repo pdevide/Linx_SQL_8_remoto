@@ -1,0 +1,1722 @@
+SCHEMA BANCO DE DADOS	: dbo
+
+OBJETO COM PROBLEMA	: LX_CTB_LEITURA_LAYOUTS
+
+DESCRIÇÃO DO PROBLEMA	: LX_CTB_LEITURA_LAYOUTS -- Incorrect syntax near '30002'.
+
+CONTEÚDO DO OBJETO		: 
+
+CREATE PROCEDURE   [dbo].[LX_CTB_LEITURA_LAYOUTS]     @LAYOUT_FILTER    VARCHAR(4)        =      NULL,
+                                                                 @MOVE_FILE        BIT                     =     1,
+                                                                 @ID_LAYOUT        INT                     =     NULL,
+                                                                 @FILENAME_TEMP      VARCHAR(1000)     =     NULL
+
+--10/04 LUCIANO        
+-- 22/01/2013 - LUCAS SOUZA        - TP 3256445 - #3# - CASO O ARQUIVO LIDO SEJA INVÁLIDO, O IGNORA E CONTINUA IMPORTAÇÃO                                                            
+-- 10/10/2012 - ALEX BORTOTO     - TP 3047259 - #2# - ALTERADO PARA EFETUAR UM REPLACE DO CARACTERE ' AO GERAR A LINHA DO ARQUIVO
+-- 12/06/2012 - DANIEL GONCALVES - TP 2509827 - #1# - ALTERADO A VALIDAÇÃO DOS LAYOUTS, QUANDO A MENSAGEM DE ERRO ESTAVA VAZIA ELE FAZIA O PROCESSO, POREM COM 2 ITENS UM COM ERRO E UM CORRETO, ELE LIA O ARQUIVO GRAVAVA NA TABELA MAIS NAO MOVIA PARA A PASTA LIDOS.
+-- 29/03/2012 - ALEX BORTOTO - TP 2384970 - INCLUIDO PARA NÃO VERIFICAR O LAYOUT COM O TIPO DE CONCILIAÇÃO 7                                                            
+-- 22/07/2011 - JOAO RICARDO - VOLTAR O IDENTIFICADOR REGISTRO 
+-- 12/07/2011 - ADRIANO RODRIGUES - PREENCHER VALOR NO CAMPO [IDENTIFICADOR REGISTRO]
+-- 29/03/2010 - ADRIANO RODRIGUES - INCLUIR NO FINAL DA PROCEDURE O CÓDIGO PARA GERAR O XML DO ARQUIVO (COMENTADO NA PROCEDURE PORQUE O PROJETO ESTA PARADO)
+-- 19/01/2010 - ADRIANO RODRIGUES - ACERTO PARA TRANSAÇÕES DEPENDENTES COM MAIS DE UMA LINHA NÃO DUPLICAR VALORES
+-- 15/01/2010 - ADRIANO RODRIGUES - PERMITIR LER LAYOUTS COM O CAMPO ID_LAYOUT NULO
+-- 06/01/2010 - ADRIANO RODRIGUES - PERMITIR QUE A LEITURA DO LAYOUT ENTENDA TRANSAÇÕES DEPENDENTES DE OUTRA
+-- 18/11/2009 - ADRIANO RODRIGUES - ALTERAR A MASCARA DE ACORDO COM O TAMANHO DO CAMPO NO LAYOUT
+-- 08/10/2009 - JOAO RICARDO - RETORNO DE SELECT NO FINAL DA PROCEDURE
+-- 21/08/2009 - JOAO RICARDO - AUMENTAR A VARIAVEL DE LEITURA
+-- 07/08/2008 - ALESSANDRO - ADIÇÃO DO TRATAMENTO PARA O CAMPO IDENTIFICADOR MOVIMENTO
+-- 07/08/2008 - ALESSANDRO - AJUSTE DO MECANISMO DE FETCH DO CURSOR DOS LAYOUTS
+-- 04/08/2008 - ALESSANDRO - MELHORAR MENSAGEM DE CRÍTICA QUANDO HÁ PROBLEMAS ENTRE O LAYOUT E O ARQUIVO
+-- 24/07/2008 - ALESSANDRO - MOVER OS ARQUIVOS APENAS NO FIM DO PROCESSO E COM @MOVE_FILE = 1
+-- 20/05/2008 - ALESSANDRO - CRIADA PARA LEITURA DOS LAYOUTS COM CONCILIAÇÃO AUTOMÁTICA
+AS
+BEGIN
+      SET NOCOUNT ON
+
+      --GENERATE LAYOUT SEQUENCE
+      IF NOT EXISTS     (     SELECT 1 FROM SEQUENCIAIS WHERE TABELA_COLUNA = 'CTB_ARQ_CONCILIACAO.ID_ARQUIVO'   )
+            INSERT INTO SEQUENCIAIS (     TABELA_COLUNA,  DESCRICAO,  SEQUENCIA, TAMANHO )
+                                   VALUES      (     'CTB_ARQ_CONCILIACAO.ID_ARQUIVO', 'CONCILIAÇÃO AUTOMÁTICA DE BORDERÔS', '00000000000000', 14 )
+
+      --DECLARE VARIABLES
+      DECLARE     @LAYOUT                            CHAR(4),
+                  @DATE_MASK                   VARCHAR(10),
+                  @F_NAME                            VARCHAR(255),
+                  @ROW_CONTENT                 VARCHAR(1000),
+                  @COD_TRAN_LAYOUT        CHAR(5),
+                  @INSERT_FIELDS               VARCHAR(8000),
+                  @INSERT_SCRIPT               VARCHAR(8000),
+                  @INSERT_FIELDS_DEP           VARCHAR(8000),
+                  @INSERT_SCRIPT_DEP           VARCHAR(8000),
+                  @TOPOLOGIA_DEP               CHAR(5),
+                  @INSERT_FIELDS_CAB           VARCHAR(8000),
+                  @INSERT_SCRIPT_CAB           VARCHAR(8000),
+                  @MSG_ERROR                   VARCHAR(8000),
+                  @SEQUENCE_LAYOUT_FILE   INT,
+                  @RECORD_NAME                 VARCHAR(40),
+                  @DIRETORIO_ARQUIVO           VARCHAR(100),
+                  @FULL_FILE_PATH              VARCHAR(255),
+                  @FULL_MOVE_PATH              VARCHAR(255),
+                  @TIPO_CONCILIACAO       INT
+
+      DECLARE     @ID_ROW_T               VARCHAR(50),
+                  @POS_ID_ROW_T           SMALLINT,
+                  @LEN_ID_ROW_T           SMALLINT,
+                  @ID_ROW_D               VARCHAR(50),
+                  @POS_ID_ROW_D           SMALLINT,
+                  @LEN_ID_ROW_D           SMALLINT,
+                  @ID_ROW_C               VARCHAR(50),
+                  @POS_ID_ROW_C           SMALLINT,
+                  @LEN_ID_ROW_C           SMALLINT,
+                  @VALID_LAYOUT           VARCHAR(255),
+                  @POS_VALID_LAYOUT SMALLINT,
+                  @LEN_VALID_LAYOUT SMALLINT,
+                  @DELIMITER              CHAR(1),
+                  @EXTERNAL_PROCEDURE     VARCHAR(100),
+                  @SCRIPT_TO_EXEC         VARCHAR(1000),
+                  @ID_ROW_DIFF            VARCHAR(10),
+                  @POS_ID_ROW_DIFF  SMALLINT,
+                  @LEN_ID_ROW_DIFF  SMALLINT,
+                  @ID_ROW_DIFF_C          VARCHAR(10),
+                  @POS_ID_ROW_DIFF_C      SMALLINT,
+                  @LEN_ID_ROW_DIFF_C      SMALLINT,
+                  @ID_ROW_MOV             VARCHAR(10),
+                  @POS_ID_ROW_MOV         SMALLINT,
+                  @LEN_ID_ROW_MOV         SMALLINT,
+                  @VALUE_MOV              VARCHAR(250)
+
+      --DECLARE TABLES  
+      DECLARE     @FILES_TO_MOVE    TABLE (     DIRECTORY         VARCHAR(100)      COLLATE      DATABASE_DEFAULT,
+                                                           FULL_FILE_PATH    VARCHAR(255)      COLLATE     DATABASE_DEFAULT,
+                                                           FULL_MOVE_PATH    VARCHAR(255)      COLLATE     DATABASE_DEFAULT  )
+
+      DECLARE     @DIFFS_LAYOUT     TABLE (     COD_DIFF          CHAR(5)                 COLLATE     DATABASE_DEFAULT,
+                                                           ID_ROW_DIFF       VARCHAR(250)      COLLATE     DATABASE_DEFAULT,
+                                                           POS_ID_ROW_DIFF   INT,
+                                                           LEN_ID_ROW_DIFF   INT   )
+
+      DECLARE     @LAYOUT_FIELDS    TABLE (     DATAFIELD         VARCHAR(100)      COLLATE      DATABASE_DEFAULT,
+                                                           TOPOLOGY          CHAR(5)                 COLLATE     DATABASE_DEFAULT,
+                                                           POSITION          SMALLINT,
+                                                           DATATYPE          CHAR(1)                 COLLATE     DATABASE_DEFAULT,
+                                                           DATALEN                 TINYINT,
+                                                           DECIMALS          TINYINT,
+                                                           FIXED_VALUES      VARCHAR(250)      COLLATE     DATABASE_DEFAULT  )
+
+      CREATE TABLE      #FILES_READED     (     F_NAME                  VARCHAR(255)      COLLATE     DATABASE_DEFAULT,
+                                                           ROW_CONTENT       VARCHAR(1000)      COLLATE     DATABASE_DEFAULT,
+                                                           INDEX_ID          INT   IDENTITY      )
+
+      SELECT      @MSG_ERROR  =     ''
+
+      
+
+      --GET LAYOUTS TO PROCESS  
+      DECLARE     CUR_LAYOUTS CURSOR READ_ONLY FAST_FORWARD LOCAL FOR
+            SELECT      LAYOUT, MASCARA_DATA, DELIMITADOR, DIRETORIO_ARQUIVO, TIPO_CONCILIACAO  
+            FROM  CTB_BORDERO_LAYOUT
+            WHERE TIPO_CONCILIACAO  >     0     AND TIPO_CONCILIACAO <> 7 AND
+                        INATIVO                      =     0                            AND
+                        (     @LAYOUT_FILTER    IS    NULL  OR
+                             LAYOUT                  =     @LAYOUT_FILTER    )     AND
+                             --ID_LAYOUT             IS    NOT   NULL              AND
+                        (     ID_LAYOUT         =     @ID_LAYOUT  OR
+                             @ID_LAYOUT        IS    NULL  )
+            ORDER BY    TIPO_CONCILIACAO, LX_TIPO_BORDERO, LAYOUT
+
+      OPEN  CUR_LAYOUTS
+      FETCH NEXT FROM   CUR_LAYOUTS INTO  @LAYOUT, @DATE_MASK, @DELIMITER, @DIRETORIO_ARQUIVO, @TIPO_CONCILIACAO
+      --LOOP LAYOUTS
+      WHILE @@FETCH_STATUS    =     0
+      BEGIN
+      
+            --MOVE FILE TO    
+            SELECT      @FULL_MOVE_PATH   =     RTRIM(@DIRETORIO_ARQUIVO)    +     CASE WHEN RIGHT(RTRIM(@DIRETORIO_ARQUIVO), 1) = '\' THEN '' ELSE '\' END   +     'READED\'
+
+            --IDENTIFICADOR DO MOVIMENTO
+            SELECT      @ID_ROW_MOV = '', @POS_ID_ROW_MOV = 0, @LEN_ID_ROW_MOV = 0, @VALUE_MOV = ''
+            
+            SELECT      @ID_ROW_MOV = RTRIM(A.PARAMETROS), @POS_ID_ROW_MOV = A.POSICAO, @LEN_ID_ROW_MOV = A.TAMANHO
+            FROM  CTB_BORDERO_LAYOUT_CAMPO AS A
+                        INNER JOIN  CTB_BORDERO_LAYOUT_CMD AS B  ON    (     A.ID_COMANDO      =     B.ID_COMANDO      )
+            WHERE A.LAYOUT          =     @LAYOUT     AND
+                        A.LX_TOPOLOGIA    =     'C'         AND
+                        B.DESC_COMANDO    =     'IDENTIFICADOR MOVIMENTO'
+
+            --GET EXTERNAL PROCEDURE
+            SELECT      @EXTERNAL_PROCEDURE = ''
+            
+            SELECT      @EXTERNAL_PROCEDURE     =     A.PARAMETROS
+            FROM  CTB_BORDERO_LAYOUT_CAMPO AS A
+                        INNER JOIN  CTB_BORDERO_LAYOUT_CMD AS B  ON    (A.ID_COMANDO     =      B.ID_COMANDO)
+            WHERE A.LAYOUT          =     @LAYOUT                      AND
+                        B.DESC_COMANDO    =     'PROCEDURE EXTERNA'     AND
+                        A.LX_TOPOLOGIA    =     'C'
+
+            IF    @EXTERNAL_PROCEDURE     =     ''    OR
+                  NOT EXISTS  (     SELECT      1     FROM  SYSOBJECTS  WHERE NAME  =      @EXTERNAL_PROCEDURE     AND   XTYPE =     'P'   )
+            BEGIN
+                  SELECT      @MSG_ERROR  =     @MSG_ERROR  + CHAR(13) + CHAR(10)   +     'O layout [' + @LAYOUT + '] está com o campo [PROCEDURE EXTERNA] incorreto.'
+                  FETCH NEXT FROM   CUR_LAYOUTS INTO  @LAYOUT , @DATE_MASK, @DELIMITER, @DIRETORIO_ARQUIVO, @TIPO_CONCILIACAO
+                  CONTINUE
+            END
+            
+
+            --GENERATE DIFFS
+            DELETE      FROM  @DIFFS_LAYOUT
+            
+            INSERT INTO @DIFFS_LAYOUT     (     COD_DIFF, ID_ROW_DIFF, POS_ID_ROW_DIFF, LEN_ID_ROW_DIFF   )
+                  SELECT      A.LX_TOPOLOGIA, A.PARAMETROS, A.POSICAO, A.TAMANHO
+                  FROM  CTB_BORDERO_LAYOUT_CAMPO AS A
+                             INNER JOIN  CTB_BORDERO_LAYOUT_CMD AS B  ON    (A.ID_COMANDO      =     B.ID_COMANDO)
+                  WHERE A.LAYOUT          =     @LAYOUT     AND
+                             B.DESC_COMANDO    =     'DIFERENCIADOR REGISTRO'
+
+            --VERIFY IF IN HEADER EXISTS THE FIELD [IDENTIFICADOR REGISTRO] OR [IDENTIFICADOR REGISTRO VALIDAR]
+            SELECT      @ID_ROW_C = '', @POS_ID_ROW_C = 0, @LEN_ID_ROW_C = 0
+
+            SELECT      @ID_ROW_C = RTRIM(A.PARAMETROS), @POS_ID_ROW_C = A.POSICAO, @LEN_ID_ROW_C = A.TAMANHO
+            FROM  CTB_BORDERO_LAYOUT_CAMPO AS A
+                        INNER JOIN  CTB_BORDERO_LAYOUT_CMD AS B  ON    (A.ID_COMANDO     =      B.ID_COMANDO)
+            WHERE A.LAYOUT          =     @LAYOUT     AND
+                        A.LX_TOPOLOGIA    =     'C'         AND
+                        B.DESC_COMANDO    =     'IDENTIFICADOR REGISTRO'
+
+            IF    @ID_ROW_C   =     ''
+            BEGIN
+                  SELECT      @ID_ROW_C = '', @POS_ID_ROW_C = 0, @LEN_ID_ROW_C = 0
+
+                  SELECT      @ID_ROW_C         =     @ID_ROW_C   +     CASE WHEN @ID_ROW_C = '' THEN '' ELSE ',' END +     RTRIM(C.VALOR_CAMPO),
+                             @POS_ID_ROW_C     =     A.POSICAO,
+                             @LEN_ID_ROW_C     =     A.TAMANHO
+                  FROM  CTB_BORDERO_LAYOUT_CAMPO AS A
+                             INNER JOIN  CTB_BORDERO_LAYOUT_CMD AS B        ON    (      A.ID_COMANDO      =     B.ID_COMANDO      )
+                             INNER JOIN  CTB_BORDERO_LAYOUT_VALIDA AS C     ON    (      A.LAYOUT          =     C.LAYOUT    AND
+                                                                                                          A.POSICAO         =     C.POSICAO   AND
+                                                                                                          A.LX_TOPOLOGIA    =     C.LX_TOPOLOGIA    )
+                  WHERE A.LAYOUT          =     @LAYOUT     AND
+                             A.LX_TOPOLOGIA    =     'C'         AND
+                             B.DESC_COMANDO    =     'IDENTIFICADOR REGISTRO VALIDAR'
+            END    
+
+            IF    @ID_ROW_C   <>    ''
+                  SET   @ID_ROW_C   =     ','   +     RTRIM(@ID_ROW_C)  +     ','
+            ELSE
+                  SET   @ID_ROW_C   =     '*'   --ALWAYS READ HEADER
+
+            SELECT      @ID_ROW_DIFF_C    =     ''
+            
+            IF    EXISTS      (     SELECT      1     FROM  @DIFFS_LAYOUT     WHERE COD_DIFF      =     'C'   )
+            BEGIN
+                  SELECT      @ID_ROW_DIFF_C = ID_ROW_DIFF, @POS_ID_ROW_DIFF_C = POS_ID_ROW_DIFF, @LEN_ID_ROW_DIFF_C = LEN_ID_ROW_DIFF
+                  FROM  @DIFFS_LAYOUT
+                  WHERE COD_DIFF    =     'C'
+            END
+
+            -------------------------------------------------------------------------------------------------------------------------------------------------------
+            --CREATE TABLE WITH ALL FIELDS OF LAYOUT
+            DELETE FROM @LAYOUT_FIELDS
+            
+            INSERT INTO @LAYOUT_FIELDS
+                  SELECT      DISTINCT
+                             '['   +     RTRIM(B.DESC_COMANDO)   +     ']' AS DATAFIELD,
+                             A.LX_TOPOLOGIA,
+                             A.POSICAO AS POSITION,
+                              B.LX_TIPO_DADO AS DATATYPE,
+                             A.TAMANHO AS DATALEN,
+                             A.DECIMAIS AS DECIMALS,
+                             A.PARAMETROS AS FIXED_VALUES
+                  FROM  CTB_BORDERO_LAYOUT_CAMPO AS A   
+                             INNER JOIN  CTB_BORDERO_LAYOUT_CMD AS B  ON    (      A.ID_COMANDO      =     B.ID_COMANDO      )
+                  WHERE A.LAYOUT          =           @LAYOUT     AND
+                             B.DESC_COMANDO    NOT IN      (     'VALIDACAO DO LAYOUT', 'IDENTIFICADOR REGISTRO', 'PROCEDURE EXTERNA', 'IDENTIFICADOR REGISTRO VALIDAR', 
+                                                                       'DIFERENCIADOR REGISTRO', 'IDENTIFICADOR MOVIMENTO'     )
+                  ORDER BY    1
+
+            BEGIN TRY  
+                  --CREATE LAYOUT STRUCTURE 
+                  
+                  EXEC  LX_CTB_CREATE_LAYOUT_STRUCTURE     @LAYOUT
+                  
+                  /*#3#*/
+                  IF (SELECT OBJECT_ID('TEMPDB..#LAYOUT_CONTENT')) IS NOT NULL
+                        DROP TABLE #LAYOUT_CONTENT
+
+                  SELECT      *
+                  INTO  #LAYOUT_CONTENT
+                  FROM  ##LAYOUT_CONTENT
+
+                  EXEC  LX_CTB_RELEASE_LAYOUT_STRUCTURE
+
+                  --READ FILES CONTENT  
+                  
+                  EXEC  LX_CTB_LEITURA_ARQUIVOS_LAYOUT     @LAYOUT, '#FILES_READED', @FILENAME_TEMP
+                  
+            END TRY  
+            BEGIN CATCH  
+                  SELECT      @MSG_ERROR  =     @MSG_ERROR  +     CHAR(13) + CHAR(10) + 'Error: ' + CONVERT(VARCHAR(20), ISNULL(ERROR_NUMBER(), 0)) + ' Message: ' + ISNULL(RTRIM(ERROR_MESSAGE()), '') + ' Proc: ' + ISNULL(RTRIM(ERROR_PROCEDURE()), '')
+                  SELECT      @MSG_ERROR  =     @MSG_ERROR  +     ' LayOut: ' +      RTRIM(@LAYOUT)
+                  /*#3#*/
+                  /*GOTO      ENDPROC*/
+                  FETCH NEXT FROM   CUR_LAYOUTS INTO  @LAYOUT , @DATE_MASK, @DELIMITER, @DIRETORIO_ARQUIVO, @TIPO_CONCILIACAO
+                  CONTINUE
+            END CATCH
+
+            --VALID LAYOUT
+            SELECT      @VALID_LAYOUT = '', @POS_VALID_LAYOUT = 0, @LEN_VALID_LAYOUT = 0
+            
+            SELECT      @VALID_LAYOUT = A.PARAMETROS, @POS_VALID_LAYOUT = A.POSICAO, @LEN_VALID_LAYOUT = A.TAMANHO
+            FROM  CTB_BORDERO_LAYOUT_CAMPO AS A
+                        INNER JOIN  CTB_BORDERO_LAYOUT_CMD AS B  ON    (     A.ID_COMANDO      =     B.ID_COMANDO      )
+            WHERE A.LAYOUT = @LAYOUT AND A.LX_TOPOLOGIA = 'C' AND B.DESC_COMANDO = 'VALIDACAO DO LAYOUT'
+            --END VALID LAYOUT
+            
+            DECLARE     CUR_FILES_LAYOUT  CURSOR READ_ONLY FAST_FORWARD LOCAL FOR
+                  SELECT      DISTINCT
+                             F_NAME
+                  FROM  #FILES_READED
+
+            OPEN  CUR_FILES_LAYOUT
+            FETCH NEXT FROM   CUR_FILES_LAYOUT  INTO  @F_NAME
+            WHILE @@FETCH_STATUS    =     0
+            BEGIN
+            
+                  --FULL FILE PATH
+                  SET   @FULL_FILE_PATH   =     RTRIM(@DIRETORIO_ARQUIVO) + CASE WHEN RIGHT(RTRIM(@DIRETORIO_ARQUIVO),1)='\' THEN '' ELSE '\' END + @F_NAME
+
+                  --VALID LAYOUT
+                  IF    @VALID_LAYOUT     <>    ''
+                  BEGIN
+                  
+                        SELECT      TOP 1
+                                   @ROW_CONTENT      =     ROW_CONTENT
+                        FROM  #FILES_READED
+                        WHERE F_NAME      =     @F_NAME
+                        ORDER BY    INDEX_ID
+
+                        IF    ('''' + RTRIM(@VALID_LAYOUT) + '''')     <>      DBO.FX_CTB_GET_FIELD_CONTENT(@ROW_CONTENT, 'C', @POS_VALID_LAYOUT, @LEN_VALID_LAYOUT, 0, '', '', @DELIMITER)
+                        BEGIN  
+                             SET   @MSG_ERROR  =     @MSG_ERROR + CHAR(13) + CHAR(10) + 'LayOut: '+rtrim(@LAYOUT) + ' O arquivo ['+@F_NAME+'] não passou pelo campo [VALIDACAO DO LAYOUT].'
+
+                             FETCH NEXT FROM   CUR_FILES_LAYOUT  INTO  @F_NAME
+                             CONTINUE
+                        END
+                  END
+
+                  --GET TRANSACTIONS TO READ
+                  DECLARE     CUR_TRANSACTIONS_LAYOUT CURSOR READ_ONLY FAST_FORWARD LOCAL FOR
+                        SELECT      A.LX_TOPOLOGIA, A.PARAMETROS, A.POSICAO, A.TAMANHO, B.DESC_COMANDO
+                        FROM  CTB_BORDERO_LAYOUT_CAMPO AS A
+                                   INNER JOIN  CTB_BORDERO_LAYOUT_CMD AS B  ON    (      A.ID_COMANDO      =     B.ID_COMANDO      )
+                        WHERE A.LAYOUT          =           @LAYOUT                                                                                 AND
+                                   A.LX_TOPOLOGIA    LIKE  'T%'                                                                              AND
+                                   A.LX_TOPOLOGIA    NOT IN      (     SELECT      A.LX_TOPOLOGIA
+                                                                            FROM      CTB_BORDERO_LAYOUT_CAMPO AS A
+                                                                                        INNER JOIN  CTB_BORDERO_LAYOUT_CMD AS B  ON    (     A.ID_COMANDO      =     B.ID_COMANDO      )
+                                                                            WHERE A.LAYOUT            =     @LAYOUT                      AND
+                                                                                        B.DESC_COMANDO    =     'TRANSACAO DEPENDENTE'  )     AND
+                                   B.DESC_COMANDO    IN    (     'IDENTIFICADOR REGISTRO', 'IDENTIFICADOR REGISTRO VALIDAR'   )
+                        ORDER BY    1
+
+                  OPEN  CUR_TRANSACTIONS_LAYOUT
+                  FETCH NEXT FROM   CUR_TRANSACTIONS_LAYOUT INTO  @COD_TRAN_LAYOUT, @ID_ROW_T, @POS_ID_ROW_T, @LEN_ID_ROW_T, @RECORD_NAME
+                  WHILE @@FETCH_STATUS    =     0
+                  BEGIN
+                  
+                        IF    @ID_ROW_T   <>    '*'
+                        BEGIN
+                             IF    @RECORD_NAME      =     'IDENTIFICADOR REGISTRO VALIDAR'
+                             BEGIN
+                                   SET   @ID_ROW_T   =     ''
+
+                                   SELECT      @ID_ROW_T   =     @ID_ROW_T   +     CASE WHEN @ID_ROW_T = '' THEN '' ELSE ',' END + RTRIM(C.VALOR_CAMPO)
+                                   FROM  CTB_BORDERO_LAYOUT_CAMPO AS A
+                                               INNER JOIN  CTB_BORDERO_LAYOUT_CMD AS B        ON    (     A.ID_COMANDO      =     B.ID_COMANDO      )
+                                               INNER JOIN  CTB_BORDERO_LAYOUT_VALIDA AS C      ON    (     A.LAYOUT          =     C.LAYOUT    AND
+                                                                                                                           A.POSICAO         =     C.POSICAO   AND
+                                                                                                                           A.LX_TOPOLOGIA    =     C.LX_TOPOLOGIA    )
+                                   WHERE A.LAYOUT          =     @LAYOUT                       AND
+                                               A.LX_TOPOLOGIA    =     @COD_TRAN_LAYOUT  AND
+                                               B.DESC_COMANDO    =     'IDENTIFICADOR REGISTRO VALIDAR'
+                             END
+
+                             SET   @ID_ROW_T   =     ',' + RTRIM(@ID_ROW_T) + ','
+                        END
+
+                        SELECT      @ID_ROW_DIFF      =     ''
+
+                        IF    EXISTS      (     SELECT      1     FROM  @DIFFS_LAYOUT     WHERE      COD_DIFF    =     @COD_TRAN_LAYOUT  )
+                        BEGIN
+                             SELECT      @ID_ROW_DIFF = ID_ROW_DIFF, @POS_ID_ROW_DIFF = POS_ID_ROW_DIFF, @LEN_ID_ROW_DIFF = LEN_ID_ROW_DIFF
+                             FROM  @DIFFS_LAYOUT
+                             WHERE COD_DIFF    =     @COD_TRAN_LAYOUT
+                        END
+
+                        --Transações dependentes
+                        SELECT      @ID_ROW_D = '', @POS_ID_ROW_D = 0, @LEN_ID_ROW_D = 0
+                        
+                        SELECT      @TOPOLOGIA_DEP    =     MIN(A.TOPOLOGY)
+                        FROM  @LAYOUT_FIELDS AS A
+                        WHERE LEFT(A.TOPOLOGY, 1)     =     'T'                                      AND
+                                   A.DATAFIELD             =     '[TRANSACAO DEPENDENTE]'      AND
+                                   A.FIXED_VALUES          =     @COD_TRAN_LAYOUT
+
+                        IF    (     @TOPOLOGIA_DEP    IS NOT      NULL  )
+                        BEGIN 
+                             SELECT      @ID_ROW_D = RTRIM(A.PARAMETROS), @POS_ID_ROW_D = A.POSICAO, @LEN_ID_ROW_D = A.TAMANHO
+                             FROM  CTB_BORDERO_LAYOUT_CAMPO AS A
+                                         INNER JOIN  CTB_BORDERO_LAYOUT_CMD AS B  ON    (      A.ID_COMANDO      =     B.ID_COMANDO      )
+                             WHERE A.LAYOUT          =     @LAYOUT                 AND
+                                         A.LX_TOPOLOGIA    =     @TOPOLOGIA_DEP    AND
+                                         B.DESC_COMANDO    =     'IDENTIFICADOR REGISTRO'
+
+                             IF    @ID_ROW_D   <>    ''
+                                   SET   @ID_ROW_D   =     ',' + RTRIM(@ID_ROW_D) + ','
+                             ELSE
+                                   SET   @ID_ROW_D   =     '*'   --ALWAYS READ HEADER
+                        END
+
+                        DECLARE     CUR_ROWS_LAYOUT   CURSOR READ_ONLY FAST_FORWARD LOCAL FOR
+                             SELECT      REPLACE(ROW_CONTENT,'''','') --#2#
+                             FROM  #FILES_READED
+                             WHERE F_NAME      =     @F_NAME
+                             ORDER BY    INDEX_ID
+
+                        OPEN  CUR_ROWS_LAYOUT
+                        FETCH NEXT FROM   CUR_ROWS_LAYOUT   INTO  @ROW_CONTENT
+                        --LOOP FILES FROM LAYOUT  
+                        WHILE @@FETCH_STATUS    =     0
+                        BEGIN
+                        
+                             -----------------------------------------------------------------------------------------------------------------------------------------
+                             IF    ISNULL(@ID_ROW_MOV,'')  <>    ''    AND
+                                   @ID_ROW_MOV                  =      DBO.FX_CTB_GET_FIELD_CONTENT(@ROW_CONTENT, 'I', @POS_ID_ROW_C, @LEN_ID_ROW_C, 0, '', '', @DELIMITER)
+                             BEGIN  
+                                   SELECT      @VALUE_MOV  =      DBO.FX_CTB_GET_FIELD_CONTENT(@ROW_CONTENT, 'C', @POS_ID_ROW_MOV, @LEN_ID_ROW_MOV, 0, '', '', @DELIMITER)
+                             END
+
+                             --Cabeçalho
+                             IF    @ID_ROW_C   =     '*'   OR
+                                   CHARINDEX(','+DBO.FX_CTB_GET_FIELD_CONTENT(@ROW_CONTENT, 'I', @POS_ID_ROW_C, @LEN_ID_ROW_C, 0, '', '', @DELIMITER)+',', @ID_ROW_C) > 0
+                             BEGIN  
+                                   IF    ISNULL(@ID_ROW_DIFF_C, '')   =     ''          OR
+                                         @ID_ROW_DIFF_C                     =      DBO.FX_CTB_GET_FIELD_CONTENT(@ROW_CONTENT, 'I', @POS_ID_ROW_DIFF_C, @LEN_ID_ROW_DIFF_C, 0, '', '', @DELIMITER)
+                                   BEGIN
+                                         IF    ISNULL(@ID_ROW_MOV, '') <>    ''
+                                               SELECT      @INSERT_FIELDS_CAB      =      '[IDENTIFICADOR MOVIMENTO]', @INSERT_SCRIPT_CAB      =     ISNULL(@VALUE_MOV, '')
+                                         ELSE
+                                               SELECT      @INSERT_FIELDS_CAB      =     '', @INSERT_SCRIPT_CAB      =     ''
+
+                                         SELECT      @INSERT_FIELDS_CAB      =      @INSERT_FIELDS_CAB + CASE WHEN @INSERT_FIELDS_CAB = '' THEN '' ELSE ',' END + A.DATAFIELD,
+                                                     @INSERT_SCRIPT_CAB      =      @INSERT_SCRIPT_CAB + CASE WHEN @INSERT_SCRIPT_CAB = '' THEN '' ELSE ',' END +
+                                                     DBO.FX_CTB_GET_FIELD_CONTENT(@ROW_CONTENT, A.DATATYPE, A.POSITION, A.DATALEN, A.DECIMALS, A.FIXED_VALUES,
+                                                     CASE  WHEN  A.DATALEN   =     6     AND      LEN(@DATE_MASK)   =     8     AND   LEFT(@DATE_MASK, 1)     =     'A'   THEN      RIGHT(@DATE_MASK, 6)
+                                                                 WHEN  A.DATALEN   =     6      AND   LEN(@DATE_MASK)   =     8     AND   LEFT(@DATE_MASK, 1)     <>    'A'   THEN      LEFT(@DATE_MASK, 6)
+                                                                 WHEN  A.DATALEN   =     8      AND   LEN(@DATE_MASK)   =     6     AND   LEFT(@DATE_MASK, 1)     =     'A'   THEN  'AA' + @DATE_MASK
+                                                                 WHEN  A.DATALEN   =     8      AND   LEN(@DATE_MASK)   =     6     AND   LEFT(@DATE_MASK, 1)     <>    'A'   THEN      @DATE_MASK + 'AA'
+                                                                 ELSE  @DATE_MASK  END, @DELIMITER)
+                                         FROM  @LAYOUT_FIELDS AS A
+                                         WHERE A.TOPOLOGY  =     'C'
+                                   END  
+                             END  
+
+                             --Transações dependentes                             
+                              IF    (     @TOPOLOGIA_DEP    IS NOT      NULL  )
+                             BEGIN
+                                   IF    CHARINDEX(',' + DBO.FX_CTB_GET_FIELD_CONTENT(@ROW_CONTENT, 'I', @POS_ID_ROW_D, @LEN_ID_ROW_D, 0, '', '', @DELIMITER)+',', @ID_ROW_D) > 0
+                                   BEGIN
+                                         IF    ISNULL(@ID_ROW_MOV, '') <>    ''
+                                               SELECT      @INSERT_FIELDS_DEP      =      '[IDENTIFICADOR MOVIMENTO]', @INSERT_SCRIPT_DEP      =     ISNULL(@VALUE_MOV, '')
+                                         ELSE
+                                               SELECT      @INSERT_FIELDS_DEP      =     '', @INSERT_SCRIPT_DEP      =     ''
+
+                                         SELECT      @INSERT_FIELDS_DEP      =      @INSERT_FIELDS_DEP + CASE WHEN @INSERT_FIELDS_DEP = '' THEN '' ELSE ',' END + A.DATAFIELD,
+                                                     @INSERT_SCRIPT_DEP      =      @INSERT_SCRIPT_DEP + CASE WHEN @INSERT_SCRIPT_DEP = '' THEN '' ELSE ',' END +
+                                                     DBO.FX_CTB_GET_FIELD_CONTENT(@ROW_CONTENT, A.DATATYPE, A.POSITION, A.DATALEN, A.DECIMALS, A.FIXED_VALUES,
+                                                     CASE  WHEN  A.DATALEN   =     6     AND      LEN(@DATE_MASK)   =     8     AND   LEFT(@DATE_MASK, 1)     =     'A'   THEN      RIGHT(@DATE_MASK, 6)
+                                                                 WHEN  A.DATALEN   =     6      AND   LEN(@DATE_MASK)   =     8     AND   LEFT(@DATE_MASK, 1)     <>    'A'   THEN      LEFT(@DATE_MASK, 6)
+                                                                 WHEN  A.DATALEN   =     8      AND   LEN(@DATE_MASK)   =     6     AND   LEFT(@DATE_MASK, 1)     =     'A'   THEN  'AA' + @DATE_MASK
+                                                                 WHEN  A.DATALEN   =     8      AND   LEN(@DATE_MASK)   =     6     AND   LEFT(@DATE_MASK, 1)     <>    'A'   THEN      @DATE_MASK + 'AA'
+                                                                 ELSE  @DATE_MASK  END, @DELIMITER)
+                                         FROM  @LAYOUT_FIELDS AS A
+                                         WHERE A.TOPOLOGY  =     @TOPOLOGIA_DEP    AND
+                                                     A.DATAFIELD <>    '[TRANSACAO DEPENDENTE]'
+                                   END  
+                             END
+
+                             --Transações
+                             IF    (     @ID_ROW_T   =     '*'   OR
+                                         CHARINDEX(',' + DBO.FX_CTB_GET_FIELD_CONTENT(@ROW_CONTENT, 'I', @POS_ID_ROW_T, @LEN_ID_ROW_T, 0, '', '', @DELIMITER)+',', @ID_ROW_T) > 0    )
+                             BEGIN   
+                                   IF    ISNULL(@ID_ROW_DIFF, '')     =     ''    OR
+                                         @ID_ROW_DIFF      =      DBO.FX_CTB_GET_FIELD_CONTENT(@ROW_CONTENT, 'I', @POS_ID_ROW_DIFF, @LEN_ID_ROW_DIFF, 0, '', '', @DELIMITER)
+                                   BEGIN      
+                                   
+                                         SELECT      @INSERT_FIELDS    =     '', @INSERT_SCRIPT    =     ''
+
+                                         BEGIN TRY  
+                                               SELECT      @INSERT_FIELDS    =      @INSERT_FIELDS + CASE WHEN @INSERT_SCRIPT = '' THEN '' ELSE ',' END + A.DATAFIELD,
+                                                           @INSERT_SCRIPT    =      @INSERT_SCRIPT + CASE WHEN @INSERT_SCRIPT = '' THEN '' ELSE ',' END +
+                                                           DBO.FX_CTB_GET_FIELD_CONTENT(@ROW_CONTENT, A.DATATYPE, A.POSITION, A.DATALEN, A.DECIMALS, A.FIXED_VALUES,
+                                                           CASE  WHEN  A.DATALEN   =     6      AND   LEN(@DATE_MASK)   =     8     AND   LEFT(@DATE_MASK, 1)     =     'A'   THEN      RIGHT(@DATE_MASK, 6)
+                                                                       WHEN  A.DATALEN   =      6     AND   LEN(@DATE_MASK)   =     8     AND   LEFT(@DATE_MASK, 1)     <>    'A'   THEN      LEFT(@DATE_MASK, 6)
+                                                                       WHEN  A.DATALEN   =      8     AND   LEN(@DATE_MASK)   =     6     AND   LEFT(@DATE_MASK, 1)     =     'A'   THEN      'AA' + @DATE_MASK
+                                                                       WHEN  A.DATALEN   =      8     AND   LEN(@DATE_MASK)   =     6     AND   LEFT(@DATE_MASK, 1)     <>    'A'   THEN      @DATE_MASK + 'AA'
+                                                                       ELSE  @DATE_MASK  END, @DELIMITER)
+                                               FROM  @LAYOUT_FIELDS AS A
+                                               WHERE A.TOPOLOGY  =     @COD_TRAN_LAYOUT
+                                         END TRY
+                                         BEGIN CATCH
+                                               SELECT      @MSG_ERROR  =     @MSG_ERROR + CHAR(13)+CHAR(10)+'Error: ' + CONVERT(VARCHAR(20),isnull(ERROR_NUMBER(),0)) +' Message: '+ ISNULL(RTRIM(ERROR_MESSAGE()),'') +' Proc: ' + ISNULL(RTRIM(ERROR_PROCEDURE()),'')
+                                               SELECT      @MSG_ERROR  =     @MSG_ERROR + ' LayOut: '+rtrim(@LAYOUT) + ' File With Problem: '+rtrim(@F_NAME)
+                                               /*#3#*/
+                                               /*GOTO      ENDPROC*/
+                                               FETCH NEXT FROM   CUR_ROWS_LAYOUT   INTO      @ROW_CONTENT
+                                               CONTINUE
+                                         END CATCH  
+
+                                         IF    ISNULL(@INSERT_FIELDS_CAB, '')     =     ''
+                                               SET   @INSERT_FIELDS_CAB      =     ''
+                                         ELSE
+                                               IF    RIGHT(@INSERT_FIELDS_CAB, 1) <>    ','
+                                                     SET   @INSERT_FIELDS_CAB      =      @INSERT_FIELDS_CAB + ','
+
+                                         IF    ISNULL(@INSERT_SCRIPT_CAB, '')     =     ''
+                                               SET   @INSERT_SCRIPT_CAB      =     ''
+                                         ELSE
+                                               IF    RIGHT(@INSERT_SCRIPT_CAB, 1) <>    ','
+                                                     SET   @INSERT_SCRIPT_CAB      =      @INSERT_SCRIPT_CAB      +     ','
+
+                                         IF    ISNULL(@INSERT_FIELDS_DEP, '')     =     ''
+                                               SET   @INSERT_FIELDS_DEP      =     ''
+                                         ELSE
+                                               IF    RIGHT(@INSERT_FIELDS_DEP, 1) <>    ','
+                                                     SET   @INSERT_FIELDS_DEP      =      @INSERT_FIELDS_DEP      +     ','
+
+                                         IF    ISNULL(@INSERT_SCRIPT_DEP, '')     =     ''
+                                               SET   @INSERT_SCRIPT_DEP      =     ''
+                                         ELSE
+                                               IF    RIGHT(@INSERT_SCRIPT_DEP, 1) <>    ','
+                                                     SET   @INSERT_SCRIPT_DEP      =      @INSERT_SCRIPT_DEP      +     ','
+
+                                         --GENERATE TEMPORARY DATA  
+                                         BEGIN TRY  
+                                               
+                                               EXEC( 'INSERT INTO #LAYOUT_CONTENT ('    +      @INSERT_FIELDS_CAB      +     @INSERT_FIELDS_DEP      +     @INSERT_FIELDS    +     ')
+                                                                                              VALUES      ('    +     @INSERT_SCRIPT_CAB      +     @INSERT_SCRIPT_DEP      +      @INSERT_SCRIPT    +     ')'   )
+                                         END TRY  
+                                         BEGIN CATCH         
+                                               SELECT      @MSG_ERROR  =     @MSG_ERROR  +      CHAR(13) + CHAR(10) + 'LayOut: ' + RTRIM(@LAYOUT) + ' File With Problem: ' + 
+                                                                                                          RTRIM(@F_NAME) +  CHAR(13)+CHAR(10) + 'Error: ' + 
+                                                                                                          CONVERT(VARCHAR(20), ISNULL(ERROR_NUMBER(), 0))      +
+                                                                                                          ' Message: '      + ISNULL(RTRIM(ERROR_MESSAGE()),'') +
+                                                                                                          ' Proc: ' + ISNULL(RTRIM(ERROR_PROCEDURE()),'')
+                                               /*#3#*/
+                                               /*GOTO      ENDPROC*/
+                                               FETCH NEXT FROM   CUR_ROWS_LAYOUT   INTO      @ROW_CONTENT
+                                               CONTINUE
+                                         END CATCH
+                                         
+                                         SELECT      @INSERT_FIELDS_DEP      =     '', @INSERT_SCRIPT_DEP      =     ''
+                                   END  
+                             END  
+
+                             FETCH NEXT FROM   CUR_ROWS_LAYOUT   INTO  @ROW_CONTENT
+                        END
+                        CLOSE       CUR_ROWS_LAYOUT
+                        DEALLOCATE  CUR_ROWS_LAYOUT
+
+                        FETCH NEXT FROM   CUR_TRANSACTIONS_LAYOUT INTO  @COD_TRAN_LAYOUT, @ID_ROW_T, @POS_ID_ROW_T, @LEN_ID_ROW_T, @RECORD_NAME
+                  END
+                  --END READ TRANSATIONS
+                  CLOSE       CUR_TRANSACTIONS_LAYOUT
+                  DEALLOCATE  CUR_TRANSACTIONS_LAYOUT
+
+                  --GENERATE DATA OF CONCILIATION
+                  BEGIN TRANSACTION
+                  --GET LAYOUT SEQUENCE
+                  SELECT      @SEQUENCE_LAYOUT_FILE   =     NULL
+                  
+                  SELECT      @SEQUENCE_LAYOUT_FILE   =     ID_ARQUIVO
+                  FROM  CTB_ARQ_CONCILIACAO
+                  WHERE LAYOUT                  =     @LAYOUT     AND
+                             NOME_ARQUIVO      =     @F_NAME
+
+                  IF    @SEQUENCE_LAYOUT_FILE   IS    NULL
+                  BEGIN
+                        EXEC  LX_SEQUENCIAL     @TABELA_COLUNA    =      'CTB_ARQ_CONCILIACAO.ID_ARQUIVO', 
+                                                           @EMPRESA          =     0,
+                                                           @SEQUENCIA        =      @SEQUENCE_LAYOUT_FILE   OUTPUT
+
+                        INSERT INTO CTB_ARQ_CONCILIACAO     (     ID_ARQUIVO, NOME_ARQUIVO, DATA_RECEBIMENTO, REDE, LAYOUT, STATUS   )
+                                                           VALUES      (      @SEQUENCE_LAYOUT_FILE, @F_NAME, CONVERT(VARCHAR(8), GETDATE(), 112), NULL, @LAYOUT, 0      )
+                  END
+
+                  --COPY CONTENT FILE TO DATABASE
+                  SELECT      @SCRIPT_TO_EXEC   =     'EXEC '     +     @EXTERNAL_PROCEDURE      +     ' '   +     CONVERT(VARCHAR(20), @SEQUENCE_LAYOUT_FILE)
+                  BEGIN TRY
+                        EXECUTE(@SCRIPT_TO_EXEC)
+      
+                        COMMIT TRANSACTION
+
+                        --ALERT FILE TO MOVE
+                        IF    @MOVE_FILE  =     1     AND
+                             NOT EXISTS  (     SELECT      1     FROM  @FILES_TO_MOVE    WHERE      FULL_FILE_PATH    =     @FULL_FILE_PATH   )
+                             INSERT INTO @FILES_TO_MOVE    (     DIRECTORY, FULL_FILE_PATH, FULL_MOVE_PATH    )
+                                                           VALUES      (      @DIRETORIO_ARQUIVO, @FULL_FILE_PATH, @FULL_MOVE_PATH )
+                  END TRY  
+                  BEGIN CATCH  
+                        SELECT      @MSG_ERROR  =     @MSG_ERROR  + CHAR(13) + CHAR(10)   +      'LayOut: '  +     RTRIM(@LAYOUT)    +     ' File With Problem: '  +
+                                                           RTRIM(@F_NAME)    +     ' Executing Proc '      +     RTRIM(@EXTERNAL_PROCEDURE)   +     CHAR(13) + CHAR(10) +
+                                                           'Error: '   +      CONVERT(VARCHAR(20), ISNULL(ERROR_NUMBER(), 0))      +     ' Message: '      +     
+                                                           ISNULL(RTRIM(ERROR_MESSAGE()), '')      +     ' Proc: '   +     ISNULL(RTRIM(ERROR_PROCEDURE()), '')
+                        WHILE @@TRANCOUNT >     0
+                             ROLLBACK    TRANSACTION
+                  END CATCH
+
+                  FETCH NEXT FROM   CUR_FILES_LAYOUT  INTO  @F_NAME
+            END
+            CLOSE       CUR_FILES_LAYOUT
+            DEALLOCATE  CUR_FILES_LAYOUT
+
+            --TRUNCATE FILES READED
+            TRUNCATE TABLE    #FILES_READED
+            DELETE      FROM  @LAYOUT_FIELDS
+            --DELETE TABLE LAYOUT CONTENT
+            DROP TABLE  #LAYOUT_CONTENT
+
+            FETCH NEXT FROM   CUR_LAYOUTS INTO  @LAYOUT, @DATE_MASK, @DELIMITER, @DIRETORIO_ARQUIVO, @TIPO_CONCILIACAO
+      END
+      CLOSE       CUR_LAYOUTS
+      DEALLOCATE  CUR_LAYOUTS
+
+ENDPROC:
+
+      SET NOCOUNT OFF
+
+      --IF  @MSG_ERROR  =     '' --#1#
+      --BEGIN  
+            IF    @MOVE_FILE  =     1
+            BEGIN
+                  DECLARE     CUR_FILES_TO_MOVE CURSOR READ_ONLY FAST_FORWARD LOCAL FOR
+                        SELECT      DISTINCT
+                                   FULL_FILE_PATH, FULL_MOVE_PATH
+                        FROM  @FILES_TO_MOVE
+                        ORDER BY    FULL_FILE_PATH
+
+                  OPEN  CUR_FILES_TO_MOVE
+                  FETCH NEXT FROM   CUR_FILES_TO_MOVE INTO  @FULL_FILE_PATH, @FULL_MOVE_PATH
+                  WHILE @@FETCH_STATUS    =     0
+                  BEGIN
+                        EXEC  lx_FSOMoveFile    @FULL_FILE_PATH, @FULL_MOVE_PATH
+                  
+                        FETCH NEXT FROM   CUR_FILES_TO_MOVE INTO  @FULL_FILE_PATH, @FULL_MOVE_PATH
+                  END
+                  CLOSE       CUR_FILES_TO_MOVE
+                  DEALLOCATE  CUR_FILES_TO_MOVE
+            END
+/*          
+            -- GERAR O XML PARA O ROBO DE CONCILIAÇÃO
+            IF    EXISTS      (     SELECT      1
+                                   FROM  CTB_ARQ_CONCILIACAO AS A
+                                               INNER JOIN  CTB_BORDERO_LAYOUT AS B ON      A.LAYOUT    =     B.LAYOUT
+                                   WHERE A.ID_ARQUIVO            =     @SEQUENCE_LAYOUT_FILE      AND
+                                               B.TIPO_CONCILIACAO      IN    (1,2) )
+            BEGIN
+                  SELECT      C.ID_LAYOUT, B.ESTABELECIMENTO, B.NUMERO_APROVACAO_CARTAO, B.NUMERO_CARTAO, B.GUIA_ENVIO, B.PARCELA,
+                             B.NUMERO_PARCELAS, B.EMISSAO, B.VENCIMENTO_REAL, B.VENCIMENTO_ORIGINAL, B.VALOR_BRUTO,
+                             B.TAXA, B.VALOR_LIQUIDO, B.OBSERVACAO, B.NUMERO_TITULOS, B.OCORRENCIA, B.VENDA_DOCUMENTO
+                  FROM  CTB_ARQ_CONCILIACAO AS A
+                             INNER JOIN  CTB_ARQ_CONCILIACAO_CARTAO AS B    ON      A.ID_ARQUIVO      =     B.ID_ARQUIVO
+                             INNER JOIN  CTB_BORDERO_LAYOUT AS C            ON    A.LAYOUT            =     C.LAYOUT
+                  WHERE A.ID_ARQUIVO      =     @SEQUENCE_LAYOUT_FILE
+                  FOR XML AUTO
+            END
+
+            IF    EXISTS      (     SELECT      1
+                                   FROM  CTB_ARQ_CONCILIACAO AS A
+                                               INNER JOIN  CTB_BORDERO_LAYOUT AS B ON      A.LAYOUT    =     B.LAYOUT
+                                   WHERE A.ID_ARQUIVO            =     @SEQUENCE_LAYOUT_FILE      AND
+                                               B.TIPO_CONCILIACAO      =     3     )
+            BEGIN
+                  SELECT      C.ID_LAYOUT, B.DOCUMENTO, B.DATA, B.DEBITO, B.CREDITO, B.HISTORICO, B.CATEGORIA,
+                             B.BANCO, B.AGENCIA, B.CONTA
+                  FROM  CTB_ARQ_CONCILIACAO AS A
+                             INNER JOIN  CTB_ARQ_CONCILIACAO_CONTA AS B     ON      A.ID_ARQUIVO      =     B.ID_ARQUIVO
+                             INNER JOIN  CTB_BORDERO_LAYOUT AS C            ON    A.LAYOUT            =     C.LAYOUT
+                  WHERE A.ID_ARQUIVO      =     @SEQUENCE_LAYOUT_FILE
+                  FOR XML AUTO
+            END
+
+            IF    EXISTS      (     SELECT      1
+                                   FROM  CTB_ARQ_CONCILIACAO AS A
+                                               INNER JOIN  CTB_BORDERO_LAYOUT AS B ON      A.LAYOUT    =     B.LAYOUT
+                                   WHERE A.ID_ARQUIVO            =     @SEQUENCE_LAYOUT_FILE      AND
+                                               B.TIPO_CONCILIACAO      IN    (4,5,6)     )
+            BEGIN
+                  SELECT      C.ID_LAYOUT, B.BANCO, B.AGENCIA, B.CONTA_CORRENTE, B.BANCO_CHEQUE, B.AGENCIA_CHEQUE,
+                             B.CONTA_CORRENTE_CHEQUE, B.DATA_BAIXA, B.NUMERO_CHEQUE, B.CMC7, B.VALOR_CHEQUE, B.VENCIMENTO,
+                             B.CPF_CNPJ, B.NUMERO_BORDERO, B.NUMERO_LOTE, B.ALINEA_DEVOLUCAO, B.OCORRENCIA, B.OBSERVACAO
+                  FROM  CTB_ARQ_CONCILIACAO AS A
+                             INNER JOIN  CTB_ARQ_CONCILIACAO_CHEQUE AS B    ON      A.ID_ARQUIVO      =     B.ID_ARQUIVO
+                             INNER JOIN  CTB_BORDERO_LAYOUT AS C            ON    A.LAYOUT            =     C.LAYOUT
+                  WHERE A.ID_ARQUIVO      =     @SEQUENCE_LAYOUT_FILE
+                  FOR XML AUTO
+            END
+            
+            IF @ID_LAYOUT IS NOT NULL
+                  DELETE      A
+                  FROM  CTB_ARQ_CONCILIACAO AS A
+                  WHERE A.ID_ARQUIVO      =     @SEQUENCE_LAYOUT_FILE
+*/
+      --END  
+      --ELSE  
+      IF    @MSG_ERROR  <>    ''
+      BEGIN 
+            RAISERROR   30002 @MSG_ERROR
+      END   
+END   
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SCHEMA BANCO DE DADOS	: dbo
+
+OBJETO COM PROBLEMA	: LX_CTB_MOVIMENTO_CONTA_CORRENTE
+
+DESCRIÇÃO DO PROBLEMA	: LX_CTB_MOVIMENTO_CONTA_CORRENTE -- Invalid object name 'CTB_BALANCETE_SALDO_ANTERIOR'.
+
+CONTEÚDO DO OBJETO		: 
+CREATE PROCEDURE [dbo].[LX_CTB_MOVIMENTO_CONTA_CORRENTE] 
+							@DATA_INICIAL		DATETIME,
+							@DATA_FINAL			DATETIME,
+							@TIPO				   CHAR(1),
+							@EMPRESA			   INT			   = NULL,
+							@CONTA_CONTABIL	VARCHAR(20)	   = NULL,
+							@TIPO_MOVIMENTO	INT			   = NULL,
+							@USAR_LIMITE		INT            = NULL,
+							@FILTRA_CONTA     VARCHAR(MAX)  = NULL,
+							@FILTRA_COD_MATRIZ	CHAR(6) = NULL, 
+							@FILTRA_COD_FILIAL	CHAR(6) = NULL	
+AS
+-- 17/01/2012 - DANIEL GONCALVES - TP[2206274] - ALTERAÇÃO NO TAMANHO DO CAMPO/VARIAVEL @FILTRA_CONTA DE VARCHAR (1000) PARA (MAX).
+-- 06/04/2011 - ALEX BORTOTO - CORRIGIDO POSICAO DO UPDATE QUE ATUALIZAVA O SALDO DA CONTA PARA NAO DUPLICAR OS VALORES
+--							 - NO TIPO "S"
+-- 07/03/2011 - LETÍCIA		 - INCLUSÃO DOS PARÂMETRO @FILTRA_COD_MATRIZ E @FILTRA_COD_FILIAL AOS FILTROS 
+-- 16/12/2010 - JOAO RICARDO - PERFORMANCE
+-- 24/11/2010 - ADRIANO RODRIGUES - MELHORA DE PERFORMANCE DA PROCEDURE
+-- 17/06/2010 - LETÍCIA		 - INCLUSÃO DO CAMPO NUMERO_CHEQUE  
+-- 29/10/2009 - JOAO RICARDO - MELHORIA DE PERFORMANCE
+-- 01/04/2008 - JOAO RICARDO - INCLUINDO A MATRIZ CONTÁBIL NAS CONSULTAS
+-- 19/03/2008 - JOAO RICARDO - TRATAMENTO DE MATRIZ CONTABIL POR USUÁRIO
+-- 21/06/2007 - ADRIANO      - INCLUIR O CAMPO PREVISAO_DESPESA
+-- 27/03/2007 - JOAO RICARDO - FILTRAR MAIS DE UMA CONTA CORRENTE
+-- 13/12/2006 - JOAO RICARDO - INVERTER NO WHERE QUANDO VERIFICA A VARIAVEL NULL
+-- 12/09/2006 - JOAO RICARDO - TRATAMENTO PARA SALDO BLOQUEADO
+-- 24/02/2006 - ADRIANO      - INCLUSÃO DO CAMPO MOEDA
+-- 29/09/2005 - JOAO RICARDO - TIPO MOVIMENTO NO RESULTADO
+-- 28/09/2005 - JOAO RICARDO - PROBLEMA NOS CHEQUES EM ABERTO
+-- 28/09/2005 - joao ricardo - faltava os filtros para o select de cheques
+-- 27/09/2005 - JOAO RICARDO - criado mais um tipo N para resultado do movimento por conta  
+-- 27/09/2005 - Sergio       - Alterado o collate de SQL_Latin1_General_CP1_CI_AS para COLLATE DATABASE_DEFAULT
+
+SET NOCOUNT ON
+SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED
+-- S - SALDO POR FILIAL
+-- M - MOVIMENTO DA CONTA CORRENTE POR FILIAL
+-- N - MOVIMENTO DA CONTA CORRENTE
+
+DECLARE 	@ERRMSG						VARCHAR(100),
+			@WHILE						VARCHAR(200),
+			@SALDO_ANTERIOR				DECIMAL(19,2),
+			@COUNT						INT,
+			@EMPRESA_CUR 				INT,
+			@LANCAMENTO_CUR				INT,
+			@ITEM_CUR					INT,
+			@CONTA_CONTABIL_CUR			VARCHAR(20),
+			@MOEDA_CUR					CHAR(6),
+			@COD_FILIAL_CUR				VARCHAR(15),
+			@DATA_LANCAMENTO_CUR		DATETIME,
+			@VALOR_CUR					DECIMAL(19,2),
+			@VALOR_MOEDA_CUR			DECIMAL(19,2),
+			@TIPO_MOVIMENTO_CUR			INT,
+			@USUARIO					VARCHAR(25),
+			@DATA_FINAL_SALDO_ANTERIOR	DATETIME,
+			@DATA_INICIAL_PERIODO		DATETIME,
+			@DATA_FINAL_PERIODO			DATETIME
+			
+
+SELECT @DATA_FINAL_SALDO_ANTERIOR	= DBO.FX_ULTIMO_DIA_DO_MES(DATEADD(month, -1, @DATA_INICIAL)) 
+SELECT @DATA_INICIAL_PERIODO		= DBO.FX_ULTIMO_DIA_DO_MES(DATEADD(month, -1, @DATA_INICIAL))
+SELECT @DATA_INICIAL_PERIODO		= @DATA_INICIAL_PERIODO + 1
+SELECT @DATA_FINAL_PERIODO			= @DATA_FINAL
+	
+SELECT @USUARIO					= USUARIO FROM USERS WHERE LX_SYSTEM_USER = SYSTEM_USER
+
+DECLARE @FILTRO_CONTA			VARCHAR(8000), 
+		@CONTADOR				INT, 
+		@CONTA_CONTABIL_FILTRO	VARCHAR(20)
+
+SELECT @CONTADOR = 1
+SELECT @CONTA_CONTABIL_FILTRO = ''
+SELECT @FILTRO_CONTA = @FILTRA_CONTA
+
+CREATE TABLE #CONTA_CONTABIL (CONTA_CONTABIL VARCHAR(20) COLLATE DATABASE_DEFAULT)
+
+WHILE @CONTADOR <= LEN(@FILTRO_CONTA)
+	BEGIN
+		
+		IF SUBSTRING(@FILTRO_CONTA, @CONTADOR, 1) <> '[' AND SUBSTRING(@FILTRO_CONTA, @CONTADOR, 1) <> ' ' and SUBSTRING(@FILTRO_CONTA, @CONTADOR, 1) <> '/'
+			BEGIN
+				IF SUBSTRING(@FILTRO_CONTA, @CONTADOR, 1) = ']' AND RTRIM(LTRIM(@CONTA_CONTABIL)) <> ''
+					BEGIN
+						IF @CONTA_CONTABIL <> ']'
+							INSERT #CONTA_CONTABIL (CONTA_CONTABIL) VALUES(@CONTA_CONTABIL_FILTRO)
+							
+						SELECT @CONTA_CONTABIL_FILTRO = ''
+					END
+				ELSE
+					BEGIN
+						IF RTRIM(LTRIM(SUBSTRING(@FILTRO_CONTA, @CONTADOR, 1))) <> ''
+							SELECT @CONTA_CONTABIL_FILTRO = @CONTA_CONTABIL_FILTRO + SUBSTRING(@FILTRO_CONTA, @CONTADOR, 1) 
+					END	
+			END
+		
+		SELECT @CONTADOR = @CONTADOR + 1
+	END
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+-- CRIAR TABELAS TEMPORÁRIAS PARA MELHORA DE PERFORMANCE
+CREATE TABLE	#FILIAL_MATRIZ_CONTABIL_TEMP		(	COD_MATRIZ_CONTABIL	CHAR(6)		COLLATE	DATABASE_DEFAULT,
+														MATRIZ_CONTABIL		VARCHAR(25)	COLLATE	DATABASE_DEFAULT,
+														COD_FILIAL			CHAR(6)		COLLATE	DATABASE_DEFAULT,
+														FILIAL				VARCHAR(25)	COLLATE	DATABASE_DEFAULT	)
+
+CREATE INDEX	IX_CHAVE_COD_FILIAL			ON	#FILIAL_MATRIZ_CONTABIL_TEMP	(	COD_FILIAL	)
+CREATE INDEX	IX_CHAVE_FILIAL				ON	#FILIAL_MATRIZ_CONTABIL_TEMP	(	FILIAL	)
+
+INSERT INTO	#FILIAL_MATRIZ_CONTABIL_TEMP	(	COD_MATRIZ_CONTABIL, MATRIZ_CONTABIL, COD_FILIAL, FILIAL	)
+SELECT	A.COD_FILIAL, A.FILIAL, B.COD_FILIAL, B.FILIAL
+FROM	FILIAIS AS A
+		JOIN	FILIAIS AS B	ON	A.FILIAL	=	B.MATRIZ
+
+--
+CREATE TABLE	#RATEIO_FILIAL_MATRIZ_CONTABIL_TEMP	(	RATEIO_FILIAL		VARCHAR(15)	COLLATE	DATABASE_DEFAULT,
+														COD_MATRIZ_CONTABIL	CHAR(6)		COLLATE	DATABASE_DEFAULT	)
+
+CREATE INDEX IX_CHAVE						ON	#RATEIO_FILIAL_MATRIZ_CONTABIL_TEMP	(	RATEIO_FILIAL, COD_MATRIZ_CONTABIL	)
+CREATE INDEX IX_CHAVE_RATEIO_FILIAL			ON	#RATEIO_FILIAL_MATRIZ_CONTABIL_TEMP	(	RATEIO_FILIAL	)
+CREATE INDEX IX_CHAVE_COD_MATRIZ_CONTABIL	ON	#RATEIO_FILIAL_MATRIZ_CONTABIL_TEMP	(	COD_MATRIZ_CONTABIL	)
+
+INSERT INTO	#RATEIO_FILIAL_MATRIZ_CONTABIL_TEMP	(	RATEIO_FILIAL, COD_MATRIZ_CONTABIL	)
+SELECT	RATEIO_FILIAL, COD_MATRIZ_CONTABIL
+FROM	W_CTB_RATEIO_FILIAL_MATRIZ_CONTABIL
+
+--
+CREATE	TABLE	#USERS_MATRIZ_CONTABIL_TEMP			(	COD_MATRIZ_CONTABIL	CHAR(6)		COLLATE	DATABASE_DEFAULT	)
+
+CREATE INDEX IX_CHAVE_COD_MATRIZ_CONTABIL	ON	#USERS_MATRIZ_CONTABIL_TEMP	(	COD_MATRIZ_CONTABIL	)
+
+INSERT INTO	#USERS_MATRIZ_CONTABIL_TEMP(	COD_MATRIZ_CONTABIL	)
+SELECT	COD_MATRIZ_CONTABIL
+FROM	DBO.FX_USERS_MATRIZ_CONTABIL(@USUARIO)
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+IF @TIPO = 'S'
+	BEGIN
+		CREATE TABLE #SALDO_ATUAL_CONTA
+			(	EMPRESA						INT,
+				CONTA_CONTABIL 				VARCHAR(20)  	COLLATE DATABASE_DEFAULT,
+				DESC_CONTA					VARCHAR(40)  	COLLATE DATABASE_DEFAULT,
+				COD_FILIAL					VARCHAR(6)  	COLLATE DATABASE_DEFAULT,
+				FILIAL						VARCHAR(25)  	COLLATE DATABASE_DEFAULT,
+				MOEDA						CHAR(6)			COLLATE DATABASE_DEFAULT,
+				SALDO_ATUAL					DECIMAL(19,2),
+				SALDO_EM_CHEQUES			DECIMAL(19,2),
+				DATA_ULTIMO_LANCTO			DATETIME,
+				LIMITE_CONTA_CORRENTE		DECIMAL(19,2),
+				SALDO_BLOQ_CONTA_CORRENTE	DECIMAL(19,2),
+				PREVISAO_DESPESA			DECIMAL(19,2),
+				COD_MATRIZ_CONTABIL			VARCHAR(6)		COLLATE DATABASE_DEFAULT, 
+				NUMERO_CHEQUE				VARCHAR(10)		COLLATE DATABASE_DEFAULT
+			)			
+								
+		CREATE  INDEX #XIE1SALDO_ATUAL_CONTA ON #SALDO_ATUAL_CONTA(EMPRESA, CONTA_CONTABIL, COD_FILIAL) WITH  FILLFACTOR = 10 ON [PRIMARY]
+					
+		CREATE TABLE #SALDO_ATUAL_CONTA_TEMP
+			(	EMPRESA						INT,
+				CONTA_CONTABIL 				VARCHAR(20)  	COLLATE DATABASE_DEFAULT,
+				DESC_CONTA					VARCHAR(40)  	COLLATE DATABASE_DEFAULT,
+				COD_FILIAL					VARCHAR(6)  	COLLATE DATABASE_DEFAULT,
+				FILIAL						VARCHAR(25)  	COLLATE DATABASE_DEFAULT,
+				MOEDA						CHAR(6)			COLLATE DATABASE_DEFAULT,
+				SALDO_ATUAL					DECIMAL(19,2),
+				SALDO_EM_CHEQUES			DECIMAL(19,2),
+				DATA_ULTIMO_LANCTO			DATETIME,
+				LIMITE_CONTA_CORRENTE		DECIMAL(19,2),
+				SALDO_BLOQ_CONTA_CORRENTE	DECIMAL(19,2),
+				PREVISAO_DESPESA			DECIMAL(19,2),
+				COD_MATRIZ_CONTABIL			VARCHAR(6)		COLLATE DATABASE_DEFAULT, 
+				NUMERO_CHEQUE				VARCHAR(10)		COLLATE DATABASE_DEFAULT
+			)			
+
+		CREATE  INDEX #XIE1SALDO_ATUAL_CONTA_TEMP ON #SALDO_ATUAL_CONTA_TEMP(EMPRESA, CONTA_CONTABIL, COD_FILIAL) WITH  FILLFACTOR = 10 ON [PRIMARY]
+		
+		IF RTRIM(LTRIM(@CONTA_CONTABIL)) = 'SEM CONTA'
+			BEGIN
+							
+				DECLARE CUR_CONTAS_FILTROS CURSOR LOCAL FAST_FORWARD FOR
+				SELECT LTRIM(RTRIM(CONTA_CONTABIL)) FROM #CONTA_CONTABIL WHERE LTRIM(RTRIM(CONTA_CONTABIL)) <> ''
+				
+				OPEN CUR_CONTAS_FILTROS
+				
+				FETCH NEXT FROM CUR_CONTAS_FILTROS
+				INTO @CONTA_CONTABIL_FILTRO
+				
+				WHILE @@FETCH_STATUS = 0
+					BEGIN
+					
+						-- BUSCANDO TABELA SALDO ANTERIOR					
+						INSERT #SALDO_ATUAL_CONTA 
+								(	EMPRESA, 
+									CONTA_CONTABIL, 
+									DESC_CONTA, 
+									COD_FILIAL, 
+									FILIAL, 
+									MOEDA,
+									SALDO_ATUAL, 
+									DATA_ULTIMO_LANCTO, 
+									SALDO_EM_CHEQUES,
+									LIMITE_CONTA_CORRENTE,
+									SALDO_BLOQ_CONTA_CORRENTE,
+									PREVISAO_DESPESA,
+									COD_MATRIZ_CONTABIL,
+									NUMERO_CHEQUE
+								) 
+						SELECT 	A.EMPRESA, 
+									A.CONTA_CONTABIL, 
+									B.DESC_CONTA,
+									COD_FILIAL						= A.COD_FILIAL, 
+									FILIAL							= D.FILIAL,
+									MOEDA							= B.MOEDA,
+									SALDO_ATUAL						= SUM(A.DEBITO) - SUM(A.CREDITO)+CASE WHEN @USAR_LIMITE = 1 THEN MAX(ISNULL(B.LIMITE_CONTA_CORRENTE,0.00)) ELSE 0.00 END, 
+									DATA_ULTIMO_LANCTO				= NULL, 
+									0.00,
+									LIMITE_CONTA_CORRENTE			= MAX(ISNULL(LIMITE_CONTA_CORRENTE,0.00)),
+									SALDO_BLOQ_CONTA_CORRENTE		= MAX(ISNULL(SALDO_BLOQ_CONTA_CORRENTE,0.00)),
+									PREVISAO_DESPESA				= MAX(ISNULL(B.PREVISAO_DESPESA,0.00)),
+									COD_MATRIZ_CONTABIL				= D.COD_MATRIZ_CONTABIL,
+									B.ULTIMO_CHEQUE
+						FROM W_CTB_BALANCETE_SALDO_ANTERIOR A (NOLOCK)
+							JOIN CTB_CONTA_PLANO B (NOLOCK) ON
+							   A.CONTA_CONTABIL     = B.CONTA_CONTABIL
+							JOIN #FILIAL_MATRIZ_CONTABIL_TEMP D ON
+								A.COD_FILIAL	= D.COD_FILIAL
+							JOIN #USERS_MATRIZ_CONTABIL_TEMP E ON
+								D.COD_MATRIZ_CONTABIL			= E.COD_MATRIZ_CONTABIL
+						WHERE	A.DATA_SALDO 		<= @DATA_FINAL_SALDO_ANTERIOR									AND
+								(@EMPRESA 			IS NULL     OR A.EMPRESA				= @EMPRESA 			)	AND
+								 A.CONTA_CONTABIL	= @CONTA_CONTABIL_FILTRO										AND
+								(@TIPO_MOVIMENTO 	IS NULL     OR A.TIPO_MOVIMENTO		= @TIPO_MOVIMENTO	)		AND
+								(@FILTRA_COD_MATRIZ	IS NULL		OR D.COD_MATRIZ_CONTABIL	= @FILTRA_COD_MATRIZ)	AND
+								(@FILTRA_COD_FILIAL	IS NULL		OR A.COD_FILIAL			=	  @FILTRA_COD_FILIAL)	
+						GROUP BY A.EMPRESA, A.CONTA_CONTABIL, B.DESC_CONTA, A.COD_FILIAL, D.FILIAL, B.MOEDA, D.COD_MATRIZ_CONTABIL, B.ULTIMO_CHEQUE
+
+						DELETE #SALDO_ATUAL_CONTA_TEMP
+						
+						INSERT #SALDO_ATUAL_CONTA_TEMP 
+								(	EMPRESA, 
+									CONTA_CONTABIL, 
+									DESC_CONTA, 
+									COD_FILIAL, 
+									FILIAL, 
+									MOEDA,
+									SALDO_ATUAL, 
+									DATA_ULTIMO_LANCTO, 
+									SALDO_EM_CHEQUES,
+									LIMITE_CONTA_CORRENTE,
+									SALDO_BLOQ_CONTA_CORRENTE,
+									PREVISAO_DESPESA,
+									COD_MATRIZ_CONTABIL,
+									NUMERO_CHEQUE
+								) 
+						SELECT 		A.EMPRESA, 
+									A2.CONTA_CONTABIL, 
+									B.DESC_CONTA,
+									COD_FILIAL						= A.COD_FILIAL, 
+									FILIAL							= D.FILIAL,
+									MOEDA							= A2.MOEDA,
+									SALDO_ATUAL						= SUM(A.DEBITO)-SUM(A.CREDITO)+CASE WHEN @USAR_LIMITE = 1 THEN MAX(ISNULL(B.LIMITE_CONTA_CORRENTE,0.00)) ELSE 0.00 END, 
+									DATA_ULTIMO_LANCTO				= MAX(A1.DATA_LANCAMENTO), 
+									0.00,
+									LIMITE_CONTA_CORRENTE			= MAX(ISNULL(LIMITE_CONTA_CORRENTE,0.00)),
+									SALDO_BLOQ_CONTA_CORRENTE		= MAX(ISNULL(SALDO_BLOQ_CONTA_CORRENTE,0.00)),
+									PREVISAO_DESPESA				= MAX(ISNULL(B.PREVISAO_DESPESA,0.00)),
+									COD_FILIAL						= D.COD_MATRIZ_CONTABIL,
+									B.ULTIMO_CHEQUE
+						FROM CTB_LANCAMENTO_RATEIO A (NOLOCK)
+								JOIN CTB_LANCAMENTO A1 (NOLOCK) ON
+									A.EMPRESA		= A1.EMPRESA		AND
+									A.LANCAMENTO	= A1.LANCAMENTO		
+								JOIN CTB_LANCAMENTO_ITEM A2 (NOLOCK) ON
+									A.EMPRESA		= A2.EMPRESA		AND
+									A.LANCAMENTO	= A2.LANCAMENTO		AND
+									A.ITEM			= A2.ITEM		
+								JOIN CTB_CONTA_PLANO B (NOLOCK) ON
+								   A2.CONTA_CONTABIL     = B.CONTA_CONTABIL
+								JOIN #FILIAL_MATRIZ_CONTABIL_TEMP D ON
+									A.COD_FILIAL	= D.COD_FILIAL
+								JOIN #USERS_MATRIZ_CONTABIL_TEMP E ON
+									D.COD_MATRIZ_CONTABIL			= E.COD_MATRIZ_CONTABIL
+						WHERE	A1.DATA_LANCAMENTO		>= @DATA_INICIAL_PERIODO		AND
+								A1.DATA_LANCAMENTO 		<= @DATA_FINAL_PERIODO			AND
+								(@EMPRESA 			IS NULL     OR A.EMPRESA				= @EMPRESA 			)	AND
+								 A2.CONTA_CONTABIL	= @CONTA_CONTABIL_FILTRO										AND
+								(@TIPO_MOVIMENTO 	IS NULL     OR A1.TIPO_MOVIMENTO		= @TIPO_MOVIMENTO	)	AND
+								(@FILTRA_COD_MATRIZ	IS NULL		OR D.COD_MATRIZ_CONTABIL	= @FILTRA_COD_MATRIZ)	AND
+								(@FILTRA_COD_FILIAL	IS NULL		OR A.COD_FILIAL			=	  @FILTRA_COD_FILIAL)	
+						GROUP BY A.EMPRESA, A2.CONTA_CONTABIL, B.DESC_CONTA, A.COD_FILIAL, D.FILIAL, A2.MOEDA, D.COD_MATRIZ_CONTABIL, B.ULTIMO_CHEQUE
+
+						UPDATE B SET
+							SALDO_ATUAL			= B.SALDO_ATUAL + ISNULL(A.SALDO_ATUAL,0),
+							DATA_ULTIMO_LANCTO	= ISNULL(A.DATA_ULTIMO_LANCTO,B.DATA_ULTIMO_LANCTO)
+						FROM #SALDO_ATUAL_CONTA_TEMP A
+								JOIN #SALDO_ATUAL_CONTA B ON
+									A.EMPRESA			= B.EMPRESA			AND
+									A.CONTA_CONTABIL	= B.CONTA_CONTABIL	AND
+									A.COD_FILIAL		= B.COD_FILIAL
+
+						INSERT #SALDO_ATUAL_CONTA 
+								(	EMPRESA, 
+									CONTA_CONTABIL, 
+									DESC_CONTA, 
+									COD_FILIAL, 
+									FILIAL, 
+									MOEDA,
+									SALDO_ATUAL, 
+									DATA_ULTIMO_LANCTO, 
+									SALDO_EM_CHEQUES,
+									LIMITE_CONTA_CORRENTE,
+									SALDO_BLOQ_CONTA_CORRENTE,
+									PREVISAO_DESPESA,
+									COD_MATRIZ_CONTABIL,
+									NUMERO_CHEQUE
+								) 					
+						SELECT		A.EMPRESA, 
+									A.CONTA_CONTABIL, 
+									A.DESC_CONTA, 
+									A.COD_FILIAL, 
+									A.FILIAL, 
+									A.MOEDA,
+									A.SALDO_ATUAL, 
+									A.DATA_ULTIMO_LANCTO, 
+									A.SALDO_EM_CHEQUES,
+									A.LIMITE_CONTA_CORRENTE,
+									A.SALDO_BLOQ_CONTA_CORRENTE,
+									A.PREVISAO_DESPESA,
+									A.COD_MATRIZ_CONTABIL,
+									A.NUMERO_CHEQUE
+						FROM #SALDO_ATUAL_CONTA_TEMP A
+								LEFT JOIN #SALDO_ATUAL_CONTA B ON
+									A.EMPRESA			= B.EMPRESA			AND
+									A.CONTA_CONTABIL	= B.CONTA_CONTABIL	AND
+									A.COD_FILIAL		= B.COD_FILIAL
+						WHERE B.EMPRESA IS NULL			
+
+						-- ALEX - COMENTADO POIS ESTAVA GERANDO DUPLICIDADE E INCLUIDO ANTES DO INSERT
+						--UPDATE B SET
+						--	SALDO_ATUAL			= B.SALDO_ATUAL + ISNULL(A.SALDO_ATUAL,0),
+						--	DATA_ULTIMO_LANCTO	= ISNULL(A.DATA_ULTIMO_LANCTO,B.DATA_ULTIMO_LANCTO)
+						--FROM #SALDO_ATUAL_CONTA_TEMP A
+						--		JOIN #SALDO_ATUAL_CONTA B ON
+						--			A.EMPRESA			= B.EMPRESA			AND
+						--			A.CONTA_CONTABIL	= B.CONTA_CONTABIL	AND
+						--			A.COD_FILIAL		= B.COD_FILIAL
+									
+				
+						UPDATE D SET SALDO_EM_CHEQUES = A.SALDO_CHEQUES
+						FROM #SALDO_ATUAL_CONTA D
+								JOIN (		SELECT A.EMPRESA, A.CONTA_CONTABIL AS CONTA_CONTABIL, B.COD_FILIAL AS COD_FILIAL_RATEIO, CAST(SUM(CREDITO+DEBITO) AS DECIMAL(19,2)) AS SALDO_CHEQUES
+													FROM CTB_CHEQUE A (NOLOCK)
+															JOIN W_CTB_CHEQUE_SALDO A1 (NOLOCK) ON
+																A.EMPRESA			= A1.EMPRESA			AND
+																A.LANCAMENTO		= A1.LANCAMENTO			AND
+																A.ITEM				= A1.ITEM	
+															JOIN CTB_LANCAMENTO_RATEIO B (NOLOCK) ON
+																A.EMPRESA				= B.EMPRESA 		AND
+																A.LANCAMENTO 			= B.LANCAMENTO		AND
+																A.ITEM					= B.ITEM
+															JOIN CTB_LANCAMENTO B1 (NOLOCK) ON
+																B.EMPRESA				= B1.EMPRESA		AND
+																B.LANCAMENTO			= B1.LANCAMENTO
+															JOIN #FILIAL_MATRIZ_CONTABIL_TEMP D1 ON
+																B.COD_FILIAL	= D1.COD_FILIAL																			
+															JOIN #USERS_MATRIZ_CONTABIL_TEMP C ON
+																D1.COD_MATRIZ_CONTABIL			= C.COD_MATRIZ_CONTABIL
+													WHERE	A1.VALOR_A_PAGAR > 0 								AND
+															DBO.LX_DATA_REAL(NULL,A.VENCIMENTO) 		<= @DATA_FINAL		AND
+															(@EMPRESA 				IS NULL     OR A.EMPRESA				= @EMPRESA 			)	AND
+															A.CONTA_CONTABIL		= @CONTA_CONTABIL_FILTRO										AND
+															(@TIPO_MOVIMENTO 		IS NULL     OR B1.TIPO_MOVIMENTO		= @TIPO_MOVIMENTO	)	AND						
+															(@FILTRA_COD_MATRIZ		IS NULL		OR D1.COD_MATRIZ_CONTABIL	= @FILTRA_COD_MATRIZ)	AND
+															(@FILTRA_COD_FILIAL		IS NULL		OR B.COD_FILIAL			=	  @FILTRA_COD_FILIAL)	
+										GROUP BY A.EMPRESA, A.CONTA_CONTABIL, B.COD_FILIAL	
+										) A ON 
+									A.EMPRESA				= D.EMPRESA				AND
+									A.CONTA_CONTABIL		= D.CONTA_CONTABIL	AND
+									A.COD_FILIAL_RATEIO		= D.COD_FILIAL
+						WHERE a.CONTA_CONTABIL = 	@CONTA_CONTABIL_FILTRO				
+									
+						FETCH NEXT FROM CUR_CONTAS_FILTROS
+						INTO @CONTA_CONTABIL_FILTRO
+					
+					END	
+
+				CLOSE CUR_CONTAS_FILTROS
+				DEALLOCATE CUR_CONTAS_FILTROS
+			END
+		ELSE
+			BEGIN	
+				
+						-- BUSCANDO TABELA SALDO ANTERIOR					
+						INSERT #SALDO_ATUAL_CONTA 
+								(	EMPRESA, 
+									CONTA_CONTABIL, 
+									DESC_CONTA, 
+									COD_FILIAL, 
+									FILIAL, 
+									MOEDA,
+									SALDO_ATUAL, 
+									DATA_ULTIMO_LANCTO, 
+									SALDO_EM_CHEQUES,
+									LIMITE_CONTA_CORRENTE,
+									SALDO_BLOQ_CONTA_CORRENTE,
+									PREVISAO_DESPESA,
+									COD_MATRIZ_CONTABIL,
+									NUMERO_CHEQUE
+								) 
+						SELECT 	A.EMPRESA, 
+									A.CONTA_CONTABIL, 
+									B.DESC_CONTA,
+									COD_FILIAL						= A.COD_FILIAL, 
+									FILIAL							= D.FILIAL,
+									MOEDA							= B.MOEDA,
+									SALDO_ATUAL						= SUM(A.DEBITO) - SUM(A.CREDITO)+CASE WHEN @USAR_LIMITE = 1 THEN MAX(ISNULL(B.LIMITE_CONTA_CORRENTE,0.00)) ELSE 0.00 END, 
+									DATA_ULTIMO_LANCTO				= NULL, 
+									0.00,
+									LIMITE_CONTA_CORRENTE			= MAX(ISNULL(LIMITE_CONTA_CORRENTE,0.00)),
+									SALDO_BLOQ_CONTA_CORRENTE		= MAX(ISNULL(SALDO_BLOQ_CONTA_CORRENTE,0.00)),
+									PREVISAO_DESPESA				= MAX(ISNULL(B.PREVISAO_DESPESA,0.00)),
+									COD_MATRIZ_CONTABIL				= D.COD_MATRIZ_CONTABIL,
+									B.ULTIMO_CHEQUE
+						FROM W_CTB_BALANCETE_SALDO_ANTERIOR A (NOLOCK)
+							JOIN CTB_CONTA_PLANO B (NOLOCK) ON
+							   A.CONTA_CONTABIL     = B.CONTA_CONTABIL
+							JOIN #FILIAL_MATRIZ_CONTABIL_TEMP D ON
+								A.COD_FILIAL	= D.COD_FILIAL
+							JOIN #USERS_MATRIZ_CONTABIL_TEMP E ON
+								D.COD_MATRIZ_CONTABIL			= E.COD_MATRIZ_CONTABIL
+						WHERE	A.DATA_SALDO 		<= @DATA_FINAL_SALDO_ANTERIOR									AND
+								(@EMPRESA 			IS NULL     OR A.EMPRESA			= @EMPRESA 			)		AND
+								 A.CONTA_CONTABIL	= @CONTA_CONTABIL												AND
+								(@TIPO_MOVIMENTO 	IS NULL     OR A.TIPO_MOVIMENTO			= @TIPO_MOVIMENTO	)	AND
+								(@FILTRA_COD_MATRIZ	IS NULL		OR D.COD_MATRIZ_CONTABIL	= @FILTRA_COD_MATRIZ)	AND
+								(@FILTRA_COD_FILIAL	IS NULL		OR A.COD_FILIAL				= @FILTRA_COD_FILIAL)	
+						GROUP BY A.EMPRESA, A.CONTA_CONTABIL, B.DESC_CONTA, A.COD_FILIAL, D.FILIAL, B.MOEDA, D.COD_MATRIZ_CONTABIL, B.ULTIMO_CHEQUE
+
+						DELETE #SALDO_ATUAL_CONTA_TEMP
+						
+						INSERT #SALDO_ATUAL_CONTA_TEMP 
+								(	EMPRESA, 
+									CONTA_CONTABIL, 
+									DESC_CONTA, 
+									COD_FILIAL, 
+									FILIAL, 
+									MOEDA,
+									SALDO_ATUAL, 
+									DATA_ULTIMO_LANCTO, 
+									SALDO_EM_CHEQUES,
+									LIMITE_CONTA_CORRENTE,
+									SALDO_BLOQ_CONTA_CORRENTE,
+									PREVISAO_DESPESA,
+									COD_MATRIZ_CONTABIL,
+									NUMERO_CHEQUE
+								) 
+						SELECT 		A.EMPRESA, 
+									A2.CONTA_CONTABIL, 
+									B.DESC_CONTA,
+									COD_FILIAL						= A.COD_FILIAL, 
+									FILIAL							= D.FILIAL,
+									MOEDA							= A2.MOEDA,
+									SALDO_ATUAL						= SUM(A.DEBITO)-SUM(A.CREDITO)+CASE WHEN @USAR_LIMITE = 1 THEN MAX(ISNULL(B.LIMITE_CONTA_CORRENTE,0.00)) ELSE 0.00 END, 
+									DATA_ULTIMO_LANCTO				= MAX(A1.DATA_LANCAMENTO), 
+									0.00,
+									LIMITE_CONTA_CORRENTE			= MAX(ISNULL(LIMITE_CONTA_CORRENTE,0.00)),
+									SALDO_BLOQ_CONTA_CORRENTE		= MAX(ISNULL(SALDO_BLOQ_CONTA_CORRENTE,0.00)),
+									PREVISAO_DESPESA				= MAX(ISNULL(B.PREVISAO_DESPESA,0.00)),
+									COD_FILIAL						= D.COD_MATRIZ_CONTABIL,
+									B.ULTIMO_CHEQUE
+						FROM CTB_LANCAMENTO_RATEIO A (NOLOCK)
+								JOIN CTB_LANCAMENTO A1 (NOLOCK) ON
+									A.EMPRESA		= A1.EMPRESA		AND
+									A.LANCAMENTO	= A1.LANCAMENTO		
+								JOIN CTB_LANCAMENTO_ITEM A2 (NOLOCK) ON
+									A.EMPRESA		= A2.EMPRESA		AND
+									A.LANCAMENTO	= A2.LANCAMENTO		AND
+									A.ITEM			= A2.ITEM		
+								JOIN CTB_CONTA_PLANO B (NOLOCK) ON
+								   A2.CONTA_CONTABIL     = B.CONTA_CONTABIL
+								JOIN #FILIAL_MATRIZ_CONTABIL_TEMP D ON
+									A.COD_FILIAL	= D.COD_FILIAL
+								JOIN #USERS_MATRIZ_CONTABIL_TEMP E ON
+									D.COD_MATRIZ_CONTABIL			= E.COD_MATRIZ_CONTABIL
+						WHERE	A1.DATA_LANCAMENTO		>= @DATA_INICIAL_PERIODO		AND
+								A1.DATA_LANCAMENTO 		<= @DATA_FINAL_PERIODO			AND
+								(@EMPRESA 			IS NULL     OR A.EMPRESA				= @EMPRESA 			)	AND
+								 A2.CONTA_CONTABIL	= @CONTA_CONTABIL												AND
+								(@TIPO_MOVIMENTO 	IS NULL     OR A1.TIPO_MOVIMENTO		= @TIPO_MOVIMENTO	)	AND
+								(@FILTRA_COD_MATRIZ	IS NULL		OR D.COD_MATRIZ_CONTABIL	= @FILTRA_COD_MATRIZ)	AND
+								(@FILTRA_COD_FILIAL	IS NULL		OR A.COD_FILIAL			=	  @FILTRA_COD_FILIAL)	
+						GROUP BY A.EMPRESA, A2.CONTA_CONTABIL, B.DESC_CONTA, A.COD_FILIAL, D.FILIAL, A2.MOEDA, D.COD_MATRIZ_CONTABIL, B.ULTIMO_CHEQUE
+
+
+						UPDATE B SET
+							SALDO_ATUAL			= B.SALDO_ATUAL + ISNULL(A.SALDO_ATUAL,0),
+							DATA_ULTIMO_LANCTO	= ISNULL(A.DATA_ULTIMO_LANCTO,B.DATA_ULTIMO_LANCTO)
+						FROM #SALDO_ATUAL_CONTA_TEMP A
+								JOIN #SALDO_ATUAL_CONTA B ON
+									A.EMPRESA			= B.EMPRESA			AND
+									A.CONTA_CONTABIL	= B.CONTA_CONTABIL	AND
+									A.COD_FILIAL		= B.COD_FILIAL
+
+						INSERT #SALDO_ATUAL_CONTA 
+								(	EMPRESA, 
+									CONTA_CONTABIL, 
+									DESC_CONTA, 
+									COD_FILIAL, 
+									FILIAL, 
+									MOEDA,
+									SALDO_ATUAL, 
+									DATA_ULTIMO_LANCTO, 
+									SALDO_EM_CHEQUES,
+									LIMITE_CONTA_CORRENTE,
+									SALDO_BLOQ_CONTA_CORRENTE,
+									PREVISAO_DESPESA,
+									COD_MATRIZ_CONTABIL,
+									NUMERO_CHEQUE
+								) 					
+						SELECT		A.EMPRESA, 
+									A.CONTA_CONTABIL, 
+									A.DESC_CONTA, 
+									A.COD_FILIAL, 
+									A.FILIAL, 
+									A.MOEDA,
+									A.SALDO_ATUAL, 
+									A.DATA_ULTIMO_LANCTO, 
+									A.SALDO_EM_CHEQUES,
+									A.LIMITE_CONTA_CORRENTE,
+									A.SALDO_BLOQ_CONTA_CORRENTE,
+									A.PREVISAO_DESPESA,
+									A.COD_MATRIZ_CONTABIL,
+									A.NUMERO_CHEQUE
+						FROM #SALDO_ATUAL_CONTA_TEMP A
+								LEFT JOIN #SALDO_ATUAL_CONTA B ON
+									A.EMPRESA			= B.EMPRESA			AND
+									A.CONTA_CONTABIL	= B.CONTA_CONTABIL	AND
+									A.COD_FILIAL		= B.COD_FILIAL
+						WHERE B.EMPRESA IS NULL			
+							
+--						SELECT * FROM #SALDO_ATUAL_CONTA_TEMP	
+--						SELECT * FROM #SALDO_ATUAL_CONTA
+
+						-- ALEX - COMENTADO POIS ESTAVA GERANDO DUPLICIDADE E INCLUIDO ANTES DO INSERT
+						--UPDATE B SET
+						--	SALDO_ATUAL			= B.SALDO_ATUAL + ISNULL(A.SALDO_ATUAL,0),
+						--	DATA_ULTIMO_LANCTO	= ISNULL(A.DATA_ULTIMO_LANCTO,B.DATA_ULTIMO_LANCTO)
+						--FROM #SALDO_ATUAL_CONTA_TEMP A
+						--		JOIN #SALDO_ATUAL_CONTA B ON
+						--			A.EMPRESA			= B.EMPRESA			AND
+						--			A.CONTA_CONTABIL	= B.CONTA_CONTABIL	AND
+						--			A.COD_FILIAL		= B.COD_FILIAL
+
+--						SELECT * FROM #SALDO_ATUAL_CONTA
+														
+						UPDATE D SET SALDO_EM_CHEQUES = A.SALDO_CHEQUES
+						FROM #SALDO_ATUAL_CONTA D
+								JOIN (		SELECT A.EMPRESA, A.CONTA_CONTABIL AS CONTA_CONTABIL, B.COD_FILIAL AS COD_FILIAL_RATEIO, CAST(SUM(CREDITO+DEBITO) AS DECIMAL(19,2)) AS SALDO_CHEQUES
+													FROM CTB_CHEQUE A (NOLOCK)
+															JOIN W_CTB_CHEQUE_SALDO A1 (NOLOCK) ON
+																A.EMPRESA			= A1.EMPRESA			AND
+																A.LANCAMENTO		= A1.LANCAMENTO			AND
+																A.ITEM				= A1.ITEM	
+															JOIN CTB_LANCAMENTO_RATEIO B (NOLOCK) ON
+																A.EMPRESA				= B.EMPRESA 		AND
+																A.LANCAMENTO 			= B.LANCAMENTO		AND
+																A.ITEM					= B.ITEM
+															JOIN CTB_LANCAMENTO B1 (NOLOCK) ON
+																B.EMPRESA				= B1.EMPRESA		AND
+																B.LANCAMENTO			= B1.LANCAMENTO
+															JOIN #FILIAL_MATRIZ_CONTABIL_TEMP D1 ON
+																B.COD_FILIAL	= D1.COD_FILIAL																			
+															JOIN #USERS_MATRIZ_CONTABIL_TEMP C ON
+																D1.COD_MATRIZ_CONTABIL			= C.COD_MATRIZ_CONTABIL
+													WHERE	A1.VALOR_A_PAGAR > 0 								AND
+															DBO.LX_DATA_REAL(NULL,A.VENCIMENTO) 		<= @DATA_FINAL		AND
+															(@EMPRESA 				IS NULL     OR A.EMPRESA				= @EMPRESA 			)	AND
+															A.CONTA_CONTABIL		= @CONTA_CONTABIL												AND
+															(@TIPO_MOVIMENTO 		IS NULL     OR B1.TIPO_MOVIMENTO			= @TIPO_MOVIMENTO	)	AND									
+															(@FILTRA_COD_MATRIZ		IS NULL		OR D1.COD_MATRIZ_CONTABIL	= @FILTRA_COD_MATRIZ)	AND
+															(@FILTRA_COD_FILIAL		IS NULL		OR B.COD_FILIAL			=	  @FILTRA_COD_FILIAL)	
+										GROUP BY A.EMPRESA, A.CONTA_CONTABIL, B.COD_FILIAL	
+										) A ON 
+									A.EMPRESA				= D.EMPRESA				AND
+									A.CONTA_CONTABIL		= D.CONTA_CONTABIL	AND
+									A.COD_FILIAL_RATEIO		= D.COD_FILIAL
+						WHERE a.CONTA_CONTABIL = 	@CONTA_CONTABIL	
+						
+			END
+			
+		SELECT A.*, MATRIZ_CONTABIL = B.NOME_CLIFOR, 
+					SALDO_S_CHEQUES = CAST(SALDO_ATUAL-SALDO_EM_CHEQUES  AS DECIMAL(19,2))
+		FROM #SALDO_ATUAL_CONTA A 
+				JOIN W_CTB_MATRIZ_CONTABIL B ON
+					A.COD_MATRIZ_CONTABIL = B.COD_CLIFOR
+		ORDER BY A.EMPRESA, A.CONTA_CONTABIL, A.COD_FILIAL
+
+
+		RETURN		
+	
+	END
+	
+
+IF @TIPO = 'M'
+	BEGIN
+
+		CREATE TABLE #MOV_CONTA_CORRENTE
+				( 	EMPRESA					INT,
+					LANCAMENTO				INT,
+					ITEM						INT,
+					CONTA_CONTABIL			VARCHAR(20)  	COLLATE DATABASE_DEFAULT,
+					COD_FILIAL				VARCHAR(6)		COLLATE DATABASE_DEFAULT,
+					SALDO_ANTERIOR			DECIMAL(19,2),
+					VALOR						DECIMAL(19,2),
+					SALDO_ATUAL				DECIMAL(19,2),
+					DATA_LANCAMENTO		DATETIME,
+					TIPO_MOVIMENTO			INT,
+					HISTORICO				VARCHAR(250)  	COLLATE DATABASE_DEFAULT,
+					LX_TIPO_LANCAMENTO	VARCHAR(3)  	COLLATE DATABASE_DEFAULT,
+					DESC_TIPO_LANCAMENTO	VARCHAR(40)  	COLLATE DATABASE_DEFAULT,
+					COD_MATRIZ_CONTABIL	VARCHAR(6)		COLLATE DATABASE_DEFAULT, 
+					NUMERO_CHEQUE		VARCHAR(10)	
+				)
+
+		INSERT #MOV_CONTA_CORRENTE 
+				( 	EMPRESA,
+					LANCAMENTO,
+					ITEM,
+					CONTA_CONTABIL,
+					COD_FILIAL,
+					SALDO_ANTERIOR,
+					VALOR,
+					SALDO_ATUAL,
+					DATA_LANCAMENTO,
+					TIPO_MOVIMENTO,
+					HISTORICO,
+					LX_TIPO_LANCAMENTO,
+					DESC_TIPO_LANCAMENTO,
+					COD_MATRIZ_CONTABIL,
+					NUMERO_CHEQUE	
+				)
+		SELECT 	A.EMPRESA, 
+					A.LANCAMENTO,
+					A.ITEM,
+					A2.CONTA_CONTABIL,
+					A.COD_FILIAL,
+					0.00,
+					VALOR			= CASE WHEN A.DEBITO > 0 THEN A.DEBITO ELSE A.CREDITO*-1 END, 
+					0.00,
+					A1.DATA_LANCAMENTO,
+					A1.TIPO_MOVIMENTO,
+					A2.HISTORICO,
+					A2.LX_TIPO_LANCAMENTO,
+					F.DESC_TIPO_LANCAMENTO,
+					D.COD_MATRIZ_CONTABIL,
+					B.ULTIMO_CHEQUE
+		FROM CTB_LANCAMENTO_RATEIO A (NOLOCK)
+				JOIN CTB_LANCAMENTO A1 (NOLOCK) ON
+					A.EMPRESA		= A1.EMPRESA			AND
+					A.LANCAMENTO	= A1.LANCAMENTO
+				JOIN CTB_LANCAMENTO_ITEM A2 (NOLOCK) ON
+					A.EMPRESA		= A2.EMPRESA			AND
+					A.LANCAMENTO	= A2.LANCAMENTO			AND
+					A.ITEM			= A2.ITEM	
+				JOIN CTB_CONTA_PLANO B (NOLOCK) ON
+					A2.CONTA_CONTABIL = B.CONTA_CONTABIL 
+				JOIN #FILIAL_MATRIZ_CONTABIL_TEMP D ON
+					A.COD_FILIAL	= D.COD_FILIAL
+				JOIN #USERS_MATRIZ_CONTABIL_TEMP E ON
+					D.COD_MATRIZ_CONTABIL			= E.COD_MATRIZ_CONTABIL
+				JOIN CTB_LX_LANCAMENTO_TIPO	F (NOLOCK) ON
+					A2.LX_TIPO_LANCAMENTO = F.LX_TIPO_LANCAMENTO
+		WHERE	A1.DATA_LANCAMENTO 	>= @DATA_INICIAL		AND
+				A1.DATA_LANCAMENTO 	<= @DATA_FINAL			AND
+				(@EMPRESA 			IS NULL     OR A.EMPRESA				= @EMPRESA 			)	AND
+				((A2.CONTA_CONTABIL		= @CONTA_CONTABIL	) OR CHARINDEX('['+RTRIM(A2.CONTA_CONTABIL)+']',@FILTRA_CONTA) > 0) AND
+				(@TIPO_MOVIMENTO 	IS NULL     OR A1.TIPO_MOVIMENTO		= @TIPO_MOVIMENTO	)	AND				
+				(@FILTRA_COD_MATRIZ	IS NULL		OR D.COD_MATRIZ_CONTABIL	= @FILTRA_COD_MATRIZ)	AND
+				(@FILTRA_COD_FILIAL	IS NULL		OR A.COD_FILIAL			=	  @FILTRA_COD_FILIAL)	
+		ORDER BY A.EMPRESA, A2.CONTA_CONTABIL, A.COD_FILIAL, A1.DATA_LANCAMENTO, A.LANCAMENTO, A.ITEM, D.COD_MATRIZ_CONTABIL, B.ULTIMO_CHEQUE
+
+
+		CREATE  INDEX #XIE1MOV_CONTA_CORRENTE ON #MOV_CONTA_CORRENTE(EMPRESA, LANCAMENTO, ITEM, CONTA_CONTABIL, COD_FILIAL, DATA_LANCAMENTO) WITH  FILLFACTOR = 10 ON [PRIMARY]
+		
+
+		DECLARE CUR_CONTA_CORRENTE CURSOR LOCAL FAST_FORWARD READ_ONLY FOR 
+		SELECT EMPRESA, LANCAMENTO, ITEM, DATA_LANCAMENTO, CONTA_CONTABIL, COD_FILIAL, VALOR, TIPO_MOVIMENTO
+		FROM #MOV_CONTA_CORRENTE
+		ORDER BY EMPRESA, CONTA_CONTABIL, COD_FILIAL, DATA_LANCAMENTO, LANCAMENTO, ITEM
+		
+		OPEN CUR_CONTA_CORRENTE
+		
+		FETCH NEXT FROM CUR_CONTA_CORRENTE
+		INTO @EMPRESA_CUR, @LANCAMENTO_CUR, @ITEM_CUR, @DATA_LANCAMENTO_CUR, @CONTA_CONTABIL_CUR, @COD_FILIAL_CUR, @VALOR_CUR, @TIPO_MOVIMENTO_CUR
+		
+		SELECT @WHILE = ''	
+
+		WHILE @@FETCH_STATUS = 0
+			BEGIN
+		
+				IF @WHILE <> RTRIM(CAST(@EMPRESA_CUR AS VARCHAR(10)))+'-'+RTRIM(CAST(@CONTA_CONTABIL_CUR AS VARCHAR(30)))+'-'+RTRIM(CAST(@COD_FILIAL_CUR AS VARCHAR(6)))
+					BEGIN
+						SELECT @SALDO_ANTERIOR = 0.00
+
+						SELECT @SALDO_ANTERIOR = ISNULL(SUM(A.DEBITO) - SUM(A.CREDITO),0.00)
+						FROM CTB_LANCAMENTO_RATEIO A (NOLOCK)
+								JOIN CTB_LANCAMENTO A1 (NOLOCK) ON
+									A.EMPRESA		= A1.EMPRESA			AND
+									A.LANCAMENTO	= A1.LANCAMENTO
+								JOIN CTB_LANCAMENTO_ITEM A2 (NOLOCK) ON
+									A.EMPRESA		= A2.EMPRESA			AND
+									A.LANCAMENTO	= A2.LANCAMENTO			AND
+									A.ITEM			= A2.ITEM							
+								JOIN #FILIAL_MATRIZ_CONTABIL_TEMP D ON
+									A.COD_FILIAL	= D.COD_FILIAL
+								JOIN #USERS_MATRIZ_CONTABIL_TEMP E ON
+									D.COD_MATRIZ_CONTABIL			= E.COD_MATRIZ_CONTABIL
+						WHERE	A1.DATA_LANCAMENTO 			< @DATA_INICIAL				AND
+								A.EMPRESA					= @EMPRESA_CUR				AND
+								A2.CONTA_CONTABIL			= @CONTA_CONTABIL_CUR		AND
+								A.COD_FILIAL				= @COD_FILIAL_CUR			AND
+				            (@EMPRESA 			IS NULL     OR A.EMPRESA				= @EMPRESA 			)			AND
+              				((A2.CONTA_CONTABIL		= @CONTA_CONTABIL	) OR CHARINDEX('['+RTRIM(A2.CONTA_CONTABIL)+']',@FILTRA_CONTA) > 0) AND
+				            (@TIPO_MOVIMENTO 	IS NULL     OR A1.TIPO_MOVIMENTO		= @TIPO_MOVIMENTO	)			AND
+            				(@FILTRA_COD_MATRIZ	IS NULL		OR D.COD_MATRIZ_CONTABIL	= @FILTRA_COD_MATRIZ)	AND
+							(@FILTRA_COD_FILIAL	IS NULL		OR A.COD_FILIAL				= @FILTRA_COD_FILIAL)	
+
+                  SELECT @SALDO_ANTERIOR = ISNULL(@SALDO_ANTERIOR,0.00) + CASE WHEN ISNULL(@USAR_LIMITE,0) = 1 THEN MAX(ISNULL(LIMITE_CONTA_CORRENTE,0.00)) ELSE 0.00 END
+                  FROM CTB_CONTA_PLANO
+                  WHERE CONTA_CONTABIL = @CONTA_CONTABIL_CUR
+
+						UPDATE #MOV_CONTA_CORRENTE SET 
+								SALDO_ANTERIOR = @SALDO_ANTERIOR,
+								SALDO_ATUAL		= @SALDO_ANTERIOR+@VALOR_CUR
+						FROM #MOV_CONTA_CORRENTE
+						WHERE	EMPRESA				= @EMPRESA_CUR				AND
+								LANCAMENTO			= @LANCAMENTO_CUR			AND
+								ITEM				= @ITEM_CUR					AND
+								CONTA_CONTABIL		= @CONTA_CONTABIL_CUR	AND
+								COD_FILIAL			= @COD_FILIAL_CUR			AND
+								DATA_LANCAMENTO		= @DATA_LANCAMENTO_CUR
+
+						SELECT @WHILE = RTRIM(CAST(@EMPRESA_CUR AS VARCHAR(10)))+'-'+RTRIM(CAST(@CONTA_CONTABIL_CUR AS VARCHAR(30)))+'-'+RTRIM(CAST(@COD_FILIAL_CUR AS VARCHAR(6)))
+						SELECT @COUNT = 1
+
+					END
+		
+				IF @COUNT > 1
+					BEGIN
+						UPDATE #MOV_CONTA_CORRENTE SET 
+								SALDO_ANTERIOR = @SALDO_ANTERIOR,
+								SALDO_ATUAL		= @SALDO_ANTERIOR+@VALOR_CUR
+						FROM #MOV_CONTA_CORRENTE
+						WHERE EMPRESA				= @EMPRESA_CUR				AND
+								LANCAMENTO			= @LANCAMENTO_CUR			AND
+								ITEM				= @ITEM_CUR					AND
+								CONTA_CONTABIL		= @CONTA_CONTABIL_CUR		AND
+								COD_FILIAL			= @COD_FILIAL_CUR			AND
+								DATA_LANCAMENTO		= @DATA_LANCAMENTO_CUR
+					END
+
+				SELECT @SALDO_ANTERIOR = @SALDO_ANTERIOR+@VALOR_CUR
+
+				SELECT @COUNT = @COUNT + 1
+
+				FETCH NEXT FROM CUR_CONTA_CORRENTE
+				INTO @EMPRESA_CUR, @LANCAMENTO_CUR, @ITEM_CUR, @DATA_LANCAMENTO_CUR, @CONTA_CONTABIL_CUR, @COD_FILIAL_CUR, @VALOR_CUR, @TIPO_MOVIMENTO_CUR
+		
+			END
+		
+		CLOSE CUR_CONTA_CORRENTE
+		DEALLOCATE CUR_CONTA_CORRENTE
+	
+		SELECT A.*, B.DESC_CONTA, B.BANCO, B.AGENCIA, B.CONTA_CORRENTE, B.NUMERO_CONTA_CORRENTE, C.FILIAL, D.DESC_TIPO_MOVIMENTO, MATRIZ_CONTABIL = E.NOME_CLIFOR 
+			FROM #MOV_CONTA_CORRENTE A
+						JOIN CTB_CONTA_PLANO B (NOLOCK) ON
+							A.CONTA_CONTABIL 	= B.CONTA_CONTABIL
+						JOIN FILIAIS C (NOLOCK) ON	
+							A.COD_FILIAL		= C.COD_FILIAL	
+						JOIN CTB_MOVIMENTO_TIPO D (NOLOCK) ON
+							A.TIPO_MOVIMENTO	= D.TIPO_MOVIMENTO
+						JOIN W_CTB_MATRIZ_CONTABIL E ON
+							A.COD_MATRIZ_CONTABIL = E.COD_CLIFOR
+		ORDER BY A.EMPRESA, A.CONTA_CONTABIL, A.COD_FILIAL, A.DATA_LANCAMENTO, A.LANCAMENTO, A.ITEM
+	END
+
+
+IF @TIPO = 'N'
+	BEGIN
+
+		CREATE TABLE #MOV_CONTA_CORRENTE_RESUMO
+				( 	EMPRESA					INT,
+					LANCAMENTO				INT,
+					ITEM					INT,
+					CONTA_CONTABIL			VARCHAR(20)  	COLLATE DATABASE_DEFAULT,
+					MOEDA					CHAR(6),
+					SALDO_ANTERIOR			DECIMAL(19,2),
+					VALOR					DECIMAL(19,2),
+					VALOR_MOEDA				DECIMAL(19,2),
+					SALDO_ATUAL				DECIMAL(19,2),
+					DATA_LANCAMENTO			DATETIME,
+					HISTORICO				VARCHAR(250)  	COLLATE DATABASE_DEFAULT,
+					LX_TIPO_LANCAMENTO		VARCHAR(3)  	COLLATE DATABASE_DEFAULT,
+					DESC_TIPO_LANCAMENTO	VARCHAR(40)  	COLLATE DATABASE_DEFAULT,
+					TIPO_MOVIMENTO			INT,
+					DESC_TIPO_MOVIMENTO		VARCHAR(40)  	COLLATE DATABASE_DEFAULT,
+					COD_MATRIZ_CONTABIL		VARCHAR(6)		COLLATE DATABASE_DEFAULT, 
+					NUMERO_CHEQUE			VARCHAR(6)
+				)
+
+		INSERT #MOV_CONTA_CORRENTE_RESUMO 
+				( 	EMPRESA,
+					LANCAMENTO,
+					ITEM,
+					CONTA_CONTABIL,
+					MOEDA,
+					SALDO_ANTERIOR,
+					VALOR,
+					VALOR_MOEDA,
+					SALDO_ATUAL,
+					DATA_LANCAMENTO,
+					HISTORICO,
+					LX_TIPO_LANCAMENTO,
+					DESC_TIPO_LANCAMENTO,
+					TIPO_MOVIMENTO,
+					DESC_TIPO_MOVIMENTO,
+					COD_MATRIZ_CONTABIL,
+					NUMERO_CHEQUE
+				)
+		SELECT 	A.EMPRESA, 
+					A.LANCAMENTO,
+					A.ITEM,
+					A.CONTA_CONTABIL, 
+					A.MOEDA,
+					0.00,
+					VALOR			= CASE WHEN A.DEBITO > 0 THEN A.DEBITO ELSE A.CREDITO*-1 END, 
+					VALOR_MOEDA		= CASE WHEN A.DEBITO_MOEDA > 0 THEN A.DEBITO_MOEDA ELSE A.CREDITO_MOEDA*-1 END, 
+					0.00,
+					A1.DATA_LANCAMENTO,
+					A.HISTORICO,
+					A.LX_TIPO_LANCAMENTO,
+					F.DESC_TIPO_LANCAMENTO,
+					A1.TIPO_MOVIMENTO,
+					G.DESC_TIPO_MOVIMENTO,
+					C.COD_MATRIZ_CONTABIL,
+					B.ULTIMO_CHEQUE
+		FROM CTB_LANCAMENTO_ITEM A (NOLOCK)
+				JOIN CTB_LANCAMENTO A1 (NOLOCK) ON
+					A.EMPRESA		= A1.EMPRESA		AND
+					A.LANCAMENTO	= A1.LANCAMENTO
+				JOIN CTB_CONTA_PLANO B (NOLOCK) ON
+					A.CONTA_CONTABIL = B.CONTA_CONTABIL 
+				JOIN #RATEIO_FILIAL_MATRIZ_CONTABIL_TEMP C ON
+					A.RATEIO_FILIAL	= C.RATEIO_FILIAL
+				JOIN #USERS_MATRIZ_CONTABIL_TEMP E ON
+					C.COD_MATRIZ_CONTABIL			= E.COD_MATRIZ_CONTABIL
+				JOIN CTB_LX_LANCAMENTO_TIPO F (NOLOCK) ON
+					A.LX_TIPO_LANCAMENTO = F.LX_TIPO_LANCAMENTO
+				JOIN CTB_MOVIMENTO_TIPO	G (NOLOCK) ON
+					A1.TIPO_MOVIMENTO = G.TIPO_MOVIMENTO	
+		WHERE	A1.DATA_LANCAMENTO 	>= @DATA_INICIAL		AND
+				A1.DATA_LANCAMENTO 	<= @DATA_FINAL			AND
+				(@EMPRESA 			IS NULL     OR A.EMPRESA				= @EMPRESA 			)	AND
+				((A.CONTA_CONTABIL		= @CONTA_CONTABIL	) OR CHARINDEX('['+RTRIM(A.CONTA_CONTABIL)+']',@FILTRA_CONTA) > 0) AND
+				(@TIPO_MOVIMENTO 	IS NULL     OR A1.TIPO_MOVIMENTO		= @TIPO_MOVIMENTO	)	AND
+				(@FILTRA_COD_MATRIZ	IS NULL		OR C.COD_MATRIZ_CONTABIL	= @FILTRA_COD_MATRIZ) AND
+				(@FILTRA_COD_FILIAL	IS NULL		OR A1.COD_FILIAL			=	  @FILTRA_COD_FILIAL)	
+
+		ORDER BY A.EMPRESA, A.CONTA_CONTABIL, A1.DATA_LANCAMENTO, A.LANCAMENTO, A.ITEM
+
+
+		DECLARE CUR_CONTA_CORRENTE CURSOR LOCAL FAST_FORWARD READ_ONLY FOR 
+		SELECT EMPRESA, LANCAMENTO, ITEM, DATA_LANCAMENTO, CONTA_CONTABIL, MOEDA, VALOR, VALOR_MOEDA
+		FROM #MOV_CONTA_CORRENTE_RESUMO
+		ORDER BY EMPRESA, CONTA_CONTABIL, DATA_LANCAMENTO, LANCAMENTO, ITEM
+		
+		OPEN CUR_CONTA_CORRENTE
+		
+		FETCH NEXT FROM CUR_CONTA_CORRENTE
+		INTO @EMPRESA_CUR, @LANCAMENTO_CUR, @ITEM_CUR, @DATA_LANCAMENTO_CUR, @CONTA_CONTABIL_CUR, @MOEDA_CUR, @VALOR_CUR, @VALOR_MOEDA_CUR
+		
+		SELECT @WHILE = ''	
+
+		WHILE @@FETCH_STATUS = 0
+			BEGIN
+		
+				IF @WHILE <> RTRIM(CAST(@EMPRESA_CUR AS VARCHAR(10)))+'-'+RTRIM(CAST(@CONTA_CONTABIL_CUR AS VARCHAR(30)))
+					BEGIN
+						SELECT @SALDO_ANTERIOR = 0.00
+
+						SELECT @SALDO_ANTERIOR = ISNULL(SUM(A.DEBITO)-SUM(A.CREDITO),0.00)
+						FROM CTB_LANCAMENTO_ITEM A (NOLOCK)
+								JOIN CTB_LANCAMENTO A1 (NOLOCK) ON
+									A.EMPRESA		= A1.EMPRESA		AND
+									A.LANCAMENTO	= A1.LANCAMENTO
+								JOIN CTB_CONTA_PLANO B (NOLOCK) ON
+									A.CONTA_CONTABIL = B.CONTA_CONTABIL 
+								LEFT JOIN #RATEIO_FILIAL_MATRIZ_CONTABIL_TEMP C ON
+									A.RATEIO_FILIAL	= C.RATEIO_FILIAL
+								JOIN #USERS_MATRIZ_CONTABIL_TEMP D ON
+									C.COD_MATRIZ_CONTABIL			= D.COD_MATRIZ_CONTABIL
+						WHERE A1.DATA_LANCAMENTO 		< @DATA_INICIAL			AND
+								A.EMPRESA					= @EMPRESA_CUR				AND
+								A.CONTA_CONTABIL			= @CONTA_CONTABIL_CUR	AND
+				            (@EMPRESA 			IS NULL     OR A.EMPRESA				= @EMPRESA 			)	AND
+				            ((A.CONTA_CONTABIL		= @CONTA_CONTABIL	) OR CHARINDEX('['+RTRIM(A.CONTA_CONTABIL)+']',@FILTRA_CONTA) > 0) AND
+				            (@TIPO_MOVIMENTO 	IS NULL     OR A1.TIPO_MOVIMENTO		= @TIPO_MOVIMENTO	)	AND
+				            (@FILTRA_COD_MATRIZ	IS NULL		OR C.COD_MATRIZ_CONTABIL	= @FILTRA_COD_MATRIZ)	AND
+							(@FILTRA_COD_FILIAL	IS NULL		OR A1.COD_FILIAL			= @FILTRA_COD_FILIAL)	
+
+                  SELECT @SALDO_ANTERIOR = ISNULL(@SALDO_ANTERIOR,0.00) + CASE WHEN ISNULL(@USAR_LIMITE,0) = 1 THEN MAX(ISNULL(LIMITE_CONTA_CORRENTE,0.00)) ELSE 0.00 END
+                  FROM CTB_CONTA_PLANO
+                  WHERE CONTA_CONTABIL = @CONTA_CONTABIL_CUR
+
+						UPDATE #MOV_CONTA_CORRENTE_RESUMO SET 
+								SALDO_ANTERIOR = @SALDO_ANTERIOR,
+								SALDO_ATUAL		= @SALDO_ANTERIOR+@VALOR_CUR
+						FROM #MOV_CONTA_CORRENTE_RESUMO
+						WHERE EMPRESA				= @EMPRESA_CUR				AND
+								LANCAMENTO			= @LANCAMENTO_CUR			AND
+								ITEM					= @ITEM_CUR					AND
+								CONTA_CONTABIL		= @CONTA_CONTABIL_CUR	AND
+								DATA_LANCAMENTO	= @DATA_LANCAMENTO_CUR	
+
+						SELECT @WHILE = RTRIM(CAST(@EMPRESA_CUR AS VARCHAR(10)))+'-'+RTRIM(CAST(@CONTA_CONTABIL_CUR AS VARCHAR(30)))
+						SELECT @COUNT = 1
+
+					END
+		
+				IF @COUNT > 1
+					BEGIN
+						UPDATE #MOV_CONTA_CORRENTE_RESUMO SET 
+								SALDO_ANTERIOR = @SALDO_ANTERIOR,
+								SALDO_ATUAL		= @SALDO_ANTERIOR+@VALOR_CUR
+						FROM #MOV_CONTA_CORRENTE_RESUMO
+						WHERE EMPRESA				= @EMPRESA_CUR				AND
+								LANCAMENTO			= @LANCAMENTO_CUR			AND
+								ITEM					= @ITEM_CUR					AND
+								CONTA_CONTABIL		= @CONTA_CONTABIL_CUR	AND
+								DATA_LANCAMENTO	= @DATA_LANCAMENTO_CUR
+					END
+
+				SELECT @SALDO_ANTERIOR = @SALDO_ANTERIOR+@VALOR_CUR
+
+				SELECT @COUNT = @COUNT + 1
+
+				FETCH NEXT FROM CUR_CONTA_CORRENTE
+				INTO @EMPRESA_CUR, @LANCAMENTO_CUR, @ITEM_CUR, @DATA_LANCAMENTO_CUR, @CONTA_CONTABIL_CUR, @MOEDA_CUR, @VALOR_CUR, @VALOR_MOEDA_CUR
+		
+			END
+		
+		CLOSE CUR_CONTA_CORRENTE
+		DEALLOCATE CUR_CONTA_CORRENTE
+	
+		SELECT A.*, B.DESC_CONTA, B.BANCO, B.AGENCIA, B.CONTA_CORRENTE, B.NUMERO_CONTA_CORRENTE, A.COD_MATRIZ_CONTABIL, MATRIZ_CONTABIL = C.NOME_CLIFOR
+			FROM #MOV_CONTA_CORRENTE_RESUMO A
+						JOIN CTB_CONTA_PLANO B ON
+							A.CONTA_CONTABIL 	= B.CONTA_CONTABIL
+						JOIN W_CTB_MATRIZ_CONTABIL C ON
+							A.COD_MATRIZ_CONTABIL = C.COD_CLIFOR
+		ORDER BY A.EMPRESA, A.CONTA_CONTABIL, A.DATA_LANCAMENTO, A.LANCAMENTO, A.ITEM
+	END
+
+SET NOCOUNT OFF
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED
+
+IF	(	SELECT	OBJECT_ID('TEMPDB..#CONTA_CONTABIL')	)	IS NOT NULL
+	DROP TABLE	#CONTA_CONTABIL
+
+IF	(	SELECT	OBJECT_ID('TEMPDB..#FILIAL_MATRIZ_CONTABIL_TEMP')	)	IS NOT NULL
+	DROP TABLE	#FILIAL_MATRIZ_CONTABIL_TEMP
+
+IF	(	SELECT	OBJECT_ID('TEMPDB..#RATEIO_FILIAL_MATRIZ_CONTABIL_TEMP')	)	IS NOT NULL
+	DROP TABLE	#RATEIO_FILIAL_MATRIZ_CONTABIL_TEMP
+
+IF	(	SELECT	OBJECT_ID('TEMPDB..#USERS_MATRIZ_CONTABIL_TEMP')	)	IS NOT NULL
+	DROP TABLE	#USERS_MATRIZ_CONTABIL_TEMP
+
+IF	(	SELECT	OBJECT_ID('TEMPDB..#SALDO_ATUAL_CONTA')	)	IS NOT NULL
+	DROP TABLE	#SALDO_ATUAL_CONTA
+
+IF	(	SELECT	OBJECT_ID('TEMPDB..#SALDO_ATUAL_CONTA_TEMP')	)	IS NOT NULL
+	DROP TABLE	#SALDO_ATUAL_CONTA_TEMP
+
+IF	(	SELECT	OBJECT_ID('TEMPDB..#MOV_CONTA_CORRENTE')	)	IS NOT NULL
+	DROP TABLE	#MOV_CONTA_CORRENTE
+
+IF	(	SELECT	OBJECT_ID('TEMPDB..#MOV_CONTA_CORRENTE_RESUMO')	)	IS NOT NULL
+	DROP TABLE	#MOV_CONTA_CORRENTE_RESUMO
+
+RETURN
+
+ERROR:
+	SET NOCOUNT OFF
+	SET TRANSACTION ISOLATION LEVEL READ COMMITTED
+
+	IF	(	SELECT	OBJECT_ID('TEMPDB..#CONTA_CONTABIL')	)	IS NOT NULL
+		DROP TABLE	#CONTA_CONTABIL
+
+	IF	(	SELECT	OBJECT_ID('TEMPDB..#FILIAL_MATRIZ_CONTABIL_TEMP')	)	IS NOT NULL
+		DROP TABLE	#FILIAL_MATRIZ_CONTABIL_TEMP
+
+	IF	(	SELECT	OBJECT_ID('TEMPDB..#RATEIO_FILIAL_MATRIZ_CONTABIL_TEMP')	)	IS NOT NULL
+		DROP TABLE	#RATEIO_FILIAL_MATRIZ_CONTABIL_TEMP
+
+	IF	(	SELECT	OBJECT_ID('TEMPDB..#USERS_MATRIZ_CONTABIL_TEMP')	)	IS NOT NULL
+		DROP TABLE	#USERS_MATRIZ_CONTABIL_TEMP
+
+	IF	(	SELECT	OBJECT_ID('TEMPDB..#SALDO_ATUAL_CONTA')	)	IS NOT NULL
+		DROP TABLE	#SALDO_ATUAL_CONTA
+		
+	IF	(	SELECT	OBJECT_ID('TEMPDB..#SALDO_ATUAL_CONTA_TEMP')	)	IS NOT NULL
+		DROP TABLE	#SALDO_ATUAL_CONTA_TEMP
+
+	IF	(	SELECT	OBJECT_ID('TEMPDB..#MOV_CONTA_CORRENTE')	)	IS NOT NULL
+		DROP TABLE	#MOV_CONTA_CORRENTE
+
+	IF	(	SELECT	OBJECT_ID('TEMPDB..#MOV_CONTA_CORRENTE_RESUMO')	)	IS NOT NULL
+		DROP TABLE	#MOV_CONTA_CORRENTE_RESUMO
+	
+	IF (CURSOR_STATUS('LOCAL','CUR_CONTA_CORRENTE'  )>-3 )
+		BEGIN
+			CLOSE 		CUR_CONTA_CORRENTE
+			DEALLOCATE 	CUR_CONTA_CORRENTE
+		END
+		
+	IF @ERRMSG IS NOT NULL
+		raiserror (@errmsg, 16, 1)
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

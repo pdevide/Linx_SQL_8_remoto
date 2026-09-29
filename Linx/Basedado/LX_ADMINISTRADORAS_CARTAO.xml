@@ -1,0 +1,92 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="lx_administradoras_cartao" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="lx_cod_administradora">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="5"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="lx_administradora">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="40"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<lx_administradoras_cartao>
+		<lx_cod_administradora>00000</lx_cod_administradora>
+		<lx_administradora>INDEFINIDO</lx_administradora>
+	</lx_administradoras_cartao>
+	<lx_administradoras_cartao>
+		<lx_cod_administradora>00001</lx_cod_administradora>
+		<lx_administradora>VISA</lx_administradora>
+	</lx_administradoras_cartao>
+	<lx_administradoras_cartao>
+		<lx_cod_administradora>00002</lx_cod_administradora>
+		<lx_administradora>MASTERCARD</lx_administradora>
+	</lx_administradoras_cartao>
+	<lx_administradoras_cartao>
+		<lx_cod_administradora>00003</lx_cod_administradora>
+		<lx_administradora>DINERS</lx_administradora>
+	</lx_administradoras_cartao>
+	<lx_administradoras_cartao>
+		<lx_cod_administradora>00004</lx_cod_administradora>
+		<lx_administradora>AMERICAN EXPRESS</lx_administradora>
+	</lx_administradoras_cartao>
+	<lx_administradoras_cartao>
+		<lx_cod_administradora>00005</lx_cod_administradora>
+		<lx_administradora>SOLLO</lx_administradora>
+	</lx_administradoras_cartao>
+	<lx_administradoras_cartao>
+		<lx_cod_administradora>00006</lx_cod_administradora>
+		<lx_administradora>SIDECARD (REDECARD)</lx_administradora>
+	</lx_administradoras_cartao>
+	<lx_administradoras_cartao>
+		<lx_cod_administradora>00007</lx_cod_administradora>
+		<lx_administradora>PRIVATE LABEL (REDECARD)</lx_administradora>
+	</lx_administradoras_cartao>
+	<lx_administradoras_cartao>
+		<lx_cod_administradora>00008</lx_cod_administradora>
+		<lx_administradora>REDESHOP</lx_administradora>
+	</lx_administradoras_cartao>
+	<lx_administradoras_cartao>
+		<lx_cod_administradora>00010</lx_cod_administradora>
+		<lx_administradora>FININVEST</lx_administradora>
+	</lx_administradoras_cartao>
+	<lx_administradoras_cartao>
+		<lx_cod_administradora>00011</lx_cod_administradora>
+		<lx_administradora>JCB</lx_administradora>
+	</lx_administradoras_cartao>
+	<lx_administradoras_cartao>
+		<lx_cod_administradora>00012</lx_cod_administradora>
+		<lx_administradora>HIPERCARD</lx_administradora>
+	</lx_administradoras_cartao>
+	<lx_administradoras_cartao>
+		<lx_cod_administradora>00013</lx_cod_administradora>
+		<lx_administradora>AURA</lx_administradora>
+	</lx_administradoras_cartao>
+	<lx_administradoras_cartao>
+		<lx_cod_administradora>00014</lx_cod_administradora>
+		<lx_administradora>LOSANGO</lx_administradora>
+	</lx_administradoras_cartao>
+	<lx_administradoras_cartao>
+		<lx_cod_administradora>00015</lx_cod_administradora>
+		<lx_administradora>SOROCRED</lx_administradora>
+	</lx_administradoras_cartao>
+</VFPData>

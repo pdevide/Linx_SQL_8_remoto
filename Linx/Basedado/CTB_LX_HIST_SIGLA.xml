@@ -1,0 +1,502 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="ctb_lx_hist_sigla" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="coluna">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="250"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="descricao">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="50"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="sigla">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="5"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="tabela" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="2147483647"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="inativo" type="xsd:boolean"/>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<ctb_lx_hist_sigla>
+		<coluna>B.AGENCIA</coluna>
+		<descricao>AGÊNCIA DO CHEQUE PRÓPRIO</descricao>
+		<sigla>AGP</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_CONTA_PLANO B ON LI.CONTA_CONTABIL=B.CONTA_CONTABIL</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.AGENCIA</coluna>
+		<descricao>AGÊNCIA DO CHEQUE PRÓPRIO DA C/PARTIDA</descricao>
+		<sigla>AGP*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA=CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0)) JOIN CTB_CONTA_PLANO B ON CP.CONTA_CONTABIL=B.CONTA_CONTABIL</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.CHEQUE_AGENCIA</coluna>
+		<descricao>AGÊNCIA DO CHEQUE A RECEBER</descricao>
+		<sigla>AGR</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_CHEQUE_CARTAO B ON LI.EMPRESA=B.EMPRESA AND LI.LANCAMENTO=B.LANCAMENTO AND LI.ITEM=B.ITEM LEFT JOIN CTB_CHEQUE_CARTAO_MOV LM ON LI.EMPRESA=LM.EMPRESA AND LI.LANCAMENTO=LM.LANCAMENTO_MOV AND LI.ITEM=LM.ITEM_MOV AND B.SUB_ITEM=LM.SUB_ITEM</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.CHEQUE_AGENCIA</coluna>
+		<descricao>AGÊNCIA DO CHEQUE A RECEBER DA C/PARTIDA</descricao>
+		<sigla>AGR*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA=CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0)) JOIN CTB_CHEQUE_CARTAO B ON CP.EMPRESA=B.EMPRESA AND CP.LANCAMENTO=B.LANCAMENTO AND CP.ITEM=B.ITEM LEFT JOIN CTB_CHEQUE_CARTAO_MOV LM ON CP.EMPRESA=LM.EMPRESA AND CP.LANCAMENTO=LM.LANCAMENTO_MOV AND CP.ITEM=LM.ITEM_MOV AND B.SUB_ITEM=LM.SUB_ITEM</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>C.BANCO</coluna>
+		<descricao>BANCO DO CHEQUE PRÓPRIO</descricao>
+		<sigla>BCP</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_CHEQUE B ON LI.EMPRESA = B.EMPRESA AND LI.LANCAMENTO = B.LANCAMENTO AND LI.ITEM = B.ITEM JOIN CTB_CONTA_PLANO C ON B.CONTA_CONTABIL = C.CONTA_CONTABIL LEFT JOIN CTB_CHEQUE_MOV LM ON LI.EMPRESA=LM.EMPRESA AND LI.LANCAMENTO=LM.LANCAMENTO_MOV AND LI.ITEM=LM.ITEM_MOV</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.BANCO</coluna>
+		<descricao>BANCO DO CHEQUE PRÓPRIO DA C/PARTIDA</descricao>
+		<sigla>BCP*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA=CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0)) JOIN CTB_CONTA_PLANO B ON CP.CONTA_CONTABIL=B.CONTA_CONTABIL</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.CHEQUE_BANCO</coluna>
+		<descricao>BANCO DO CHEQUE A RECEBER</descricao>
+		<sigla>BCR</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_CHEQUE_CARTAO B ON LI.EMPRESA=B.EMPRESA AND LI.LANCAMENTO=B.LANCAMENTO AND LI.ITEM=B.ITEM LEFT JOIN CTB_CHEQUE_CARTAO_MOV LM ON LI.EMPRESA=LM.EMPRESA AND LI.LANCAMENTO=LM.LANCAMENTO_MOV AND LI.ITEM=LM.ITEM_MOV AND B.SUB_ITEM=LM.SUB_ITEM</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.CHEQUE_BANCO</coluna>
+		<descricao>BANCO DO CHEQUE A RECEBER DA C/PARTIDA</descricao>
+		<sigla>BCR*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA=CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0)) JOIN CTB_CHEQUE_CARTAO B ON CP.EMPRESA=B.EMPRESA AND CP.LANCAMENTO=B.LANCAMENTO AND CP.ITEM=B.ITEM LEFT JOIN CTB_CHEQUE_CARTAO_MOV LM ON CP.EMPRESA=LM.EMPRESA AND CP.LANCAMENTO=LM.LANCAMENTO_MOV AND CP.ITEM=LM.ITEM_MOV AND B.SUB_ITEM=LM.SUB_ITEM</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>C.NUMERO_CONTA_CORRENTE</coluna>
+		<descricao>CONTA CORRENTE DO CHEQUE PRÓPRIO</descricao>
+		<sigla>CCP</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_CHEQUE B ON LI.EMPRESA = B.EMPRESA AND LI.LANCAMENTO = B.LANCAMENTO AND LI.ITEM = B.ITEM JOIN CTB_CONTA_PLANO C ON B.CONTA_CONTABIL = C.CONTA_CONTABIL LEFT JOIN CTB_CHEQUE_MOV LM ON LI.EMPRESA=LM.EMPRESA AND LI.LANCAMENTO=LM.LANCAMENTO_MOV AND LI.ITEM=LM.ITEM_MOV</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.NUMERO_CONTA_CORRENTE</coluna>
+		<descricao>CONTA CORRENTE DO CHEQUE PRÓPRIO DA C/PARTIDA</descricao>
+		<sigla>CCP*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA=CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0)) JOIN CTB_CONTA_PLANO B ON CP.CONTA_CONTABIL=B.CONTA_CONTABIL</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.CHEQUE_CONTA_CORRENTE</coluna>
+		<descricao>CONTA CORRENTE DO CHEQUE A RECEBER</descricao>
+		<sigla>CCR</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_CHEQUE_CARTAO B ON LI.EMPRESA=B.EMPRESA AND LI.LANCAMENTO=B.LANCAMENTO AND LI.ITEM=B.ITEM LEFT JOIN CTB_CHEQUE_CARTAO_MOV LM ON LI.EMPRESA=LM.EMPRESA AND LI.LANCAMENTO=LM.LANCAMENTO_MOV AND LI.ITEM=LM.ITEM_MOV AND B.SUB_ITEM=LM.SUB_ITEM</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.CHEQUE_CONTA_CORRENTE</coluna>
+		<descricao>CONTA CORRENTE DO CHEQUE A RECEBER DA C/PARTIDA</descricao>
+		<sigla>CCR*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA=CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0)) JOIN CTB_CHEQUE_CARTAO B ON CP.EMPRESA=B.EMPRESA AND CP.LANCAMENTO=B.LANCAMENTO AND CP.ITEM=B.ITEM LEFT JOIN CTB_CHEQUE_CARTAO_MOV LM ON CP.EMPRESA=LM.EMPRESA AND CP.LANCAMENTO=LM.LANCAMENTO_MOV AND CP.ITEM=LM.ITEM_MOV AND B.SUB_ITEM=LM.SUB_ITEM</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.NUMERO_CHEQUE</coluna>
+		<descricao>CHEQUE PRÓPRIO</descricao>
+		<sigla>CHP</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_CHEQUE B ON LI.EMPRESA=B.EMPRESA AND LI.LANCAMENTO=B.LANCAMENTO AND LI.ITEM=B.ITEM LEFT JOIN CTB_CHEQUE_MOV LM ON LI.EMPRESA=LM.EMPRESA AND LI.LANCAMENTO=LM.LANCAMENTO_MOV AND LI.ITEM=LM.ITEM_MOV</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.NUMERO_CHEQUE</coluna>
+		<descricao>CHEQUE PRÓPRIO DA C/PARTIDA</descricao>
+		<sigla>CHP*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA=CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0)) JOIN CTB_CHEQUE B ON CP.EMPRESA=B.EMPRESA AND CP.LANCAMENTO=B.LANCAMENTO AND CP.ITEM=B.ITEM LEFT JOIN CTB_CHEQUE_MOV LM ON CP.EMPRESA=LM.EMPRESA AND CP.LANCAMENTO=LM.LANCAMENTO_MOV AND CP.ITEM=LM.ITEM_MOV</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.NUMERO_CHEQUE_CARTAO</coluna>
+		<descricao>Nº DO CHEQUE OU CARTÃO A RECEBER</descricao>
+		<sigla>CHR</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_CHEQUE_CARTAO B ON LI.EMPRESA=B.EMPRESA AND LI.LANCAMENTO=B.LANCAMENTO AND LI.ITEM=B.ITEM LEFT JOIN CTB_CHEQUE_CARTAO_MOV LM ON LI.EMPRESA=LM.EMPRESA AND LI.LANCAMENTO=LM.LANCAMENTO_MOV AND LI.ITEM=LM.ITEM_MOV AND B.SUB_ITEM=LM.SUB_ITEM</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.NUMERO_CHEQUE_CARTAO</coluna>
+		<descricao>Nº DO CHEQUE OU CARTÃO A RECEBER DA C/PARTIDA</descricao>
+		<sigla>CHR*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA=CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0)) JOIN CTB_CHEQUE_CARTAO B ON CP.EMPRESA=B.EMPRESA AND CP.LANCAMENTO=B.LANCAMENTO AND CP.ITEM=B.ITEM LEFT JOIN CTB_CHEQUE_CARTAO_MOV LM ON CP.EMPRESA=LM.EMPRESA AND CP.LANCAMENTO=LM.LANCAMENTO_MOV AND CP.ITEM=LM.ITEM_MOV AND B.SUB_ITEM=LM.SUB_ITEM</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>DATENAME(MM,B.DATA_LANCAMENTO)</coluna>
+		<descricao>MÊS DE COMPETÊNCIA DO LANÇAMENTO</descricao>
+		<sigla>CPT</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO B ON LI.EMPRESA=B.EMPRESA AND LI.LANCAMENTO=B.LANCAMENTO</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.DESC_AVISO_LANCAMENTO</coluna>
+		<descricao>DESCRIÇÃO DO AVISO DE LANÇAMENTO</descricao>
+		<sigla>DAL</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_AVISO_LANCAMENTO B ON LI.EMPRESA=B.EMPRESA AND LI.LANCAMENTO=B.LANCAMENTO AND LI.ITEM=B.ITEM LEFT JOIN CTB_AVISO_LANCAMENTO_MOV LM ON LI.EMPRESA=LM.EMPRESA AND LI.LANCAMENTO=LM.LANCAMENTO_MOV AND LI.ITEM=LM.ITEM_MOV</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.DESC_AVISO_LANCAMENTO</coluna>
+		<descricao>DESCRIÇÃO DO AVISO DE LANÇAMENTO DA C/PARTIDA</descricao>
+		<sigla>DAL*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA=CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0)) JOIN CTB_AVISO_LANCAMENTO B ON CP.EMPRESA=B.EMPRESA AND CP.LANCAMENTO=B.LANCAMENTO AND CP.ITEM=B.ITEM LEFT JOIN CTB_AVISO_LANCAMENTO_MOV LM ON CP.EMPRESA=LM.EMPRESA AND CP.LANCAMENTO=LM.LANCAMENTO_MOV AND CP.ITEM=LM.ITEM_MOV</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.DESC_CONTA</coluna>
+		<descricao>DESCRIÇÃO DA CONTA CONTÁBIL</descricao>
+		<sigla>DCC</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_CONTA_PLANO B ON LI.CONTA_CONTABIL=B.CONTA_CONTABIL</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.DESC_CONTA</coluna>
+		<descricao>DESCRIÇÃO DA CONTA CONTÁBIL DA C/PARTIDA</descricao>
+		<sigla>DCC*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA=CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0)) JOIN CTB_CONTA_PLANO B ON CP.CONTA_CONTABIL=B.CONTA_CONTABIL</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>RTRIM(C.DESC_SOLICITACAO_VERBA_ITEM)</coluna>
+		<descricao>DESCRIÇÃO DO ITEM DA SOLICITAÇÃO DE VERBA</descricao>
+		<sigla>DSV</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_SOLICITACAO_VERBA_MOV B ON LI.EMPRESA=B.EMPRESA AND LI.LANCAMENTO=B.LANCAMENTO AND LI.ITEM=B.ITEM JOIN CTB_SOLICITACAO_VERBA_ITEM C ON B.EMPRESA = C.EMPRESA AND B.ID_SOLICITACAO_ITEM = C.ID_SOLICITACAO_ITEM AND B.ID_SOLICITACAO_ITEM = C.ID_SOLICITACAO_ITEM</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.FAVORECIDO_CHEQUE</coluna>
+		<descricao>FAVORECIDO</descricao>
+		<sigla>FAV</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_CHEQUE B ON LI.EMPRESA=B.EMPRESA AND LI.LANCAMENTO=B.LANCAMENTO AND LI.ITEM=B.ITEM LEFT JOIN CTB_CHEQUE_MOV LM ON LI.EMPRESA=LM.EMPRESA AND LI.LANCAMENTO=LM.LANCAMENTO_MOV AND LI.ITEM=LM.ITEM_MOV</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.FAVORECIDO_CHEQUE</coluna>
+		<descricao>FAVORECIDO DA C/PARTIDA</descricao>
+		<sigla>FAV*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA=CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0)) JOIN CTB_CHEQUE B ON CP.EMPRESA=B.EMPRESA AND CP.LANCAMENTO=B.LANCAMENTO AND CP.ITEM=B.ITEM LEFT JOIN CTB_CHEQUE_MOV LM ON CP.EMPRESA=LM.EMPRESA AND CP.LANCAMENTO=LM.LANCAMENTO_MOV AND CP.ITEM=LM.ITEM_MOV</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.FATURA</coluna>
+		<descricao>NR. DA FATURA QUE GEROU A COMISSÃO</descricao>
+		<sigla>FGC</sigla>
+		<tabela>CTB_COMISSAO A JOIN CTB_A_RECEBER_FATURA B ON	A.EMPRESA = B.EMPRESA AND A.LANCAMENTO = B.LANCAMENTO AND A.ITEM = B.ITEM JOIN ctb_lancamento_item li ON	A.EMPRESA = li.EMPRESA AND	A.LANCAMENTO = li.LANCAMENTO AND	A.ITEM = li.ITEM</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>RTRIM(a.FATURA)+'-'+a.id_parcela</coluna>
+		<descricao>NR. DA FATURA QUE GEROU A COMISSÃO P/ BAIXA</descricao>
+		<sigla>FGCB</sigla>
+		<tabela>w_CTB_COMISSAO A JOIN ctb_lancamento_item li ON	A.EMPRESA = li.EMPRESA AND	A.LANCAMENTO = li.LANCAMENTO AND	A.ITEM = li.ITEM left join ctb_comissao_mov LM on a.empresa = lm.empresa and a.lancamento = lm.lancamento_mov and a.item_COMISSAO = lm.item_comissao and a.id_parcela = lm.id_parcela</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.FILIAL</coluna>
+		<descricao>FILIAL DO LANÇAMENTO</descricao>
+		<sigla>FLC</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN FILIAIS B ON LI.COD_CLIFOR=B.COD_FILIAL JOIN CTB_LANCAMENTO C ON LI.EMPRESA=B.EMPRESA AND LI.LANCAMENTO=C.LANCAMENTO</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>CP.HISTORICO</coluna>
+		<descricao>HISTÓRICO DA CONTRA PARTIDA DA C/PARTIDA</descricao>
+		<sigla>HCP*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA=CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0))</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>datename(MM,CP.data_lancamento)+'/'+cast(year(CP.data_lancamento) as varchar(4))</coluna>
+		<descricao>MÊS E ANO DO LANÇAMENTO CONTÁBIL</descricao>
+		<sigla>MAD</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>datename(MM,a.data_lancamento)+'/'+cast(year(a.data_lancamento) as varchar(4))</coluna>
+		<descricao>MÊS/ANO DE COMPETÊNCIA DA INCLUSÃO DO DOCTO</descricao>
+		<sigla>MCP</sigla>
+		<tabela>(select empresa, lancamento, item, lancamento_mov, item_mov, id_parcela, 0 as sub_item from ctb_a_receber_mov union all select empresa, lancamento, item, lancamento_mov, item_mov, id_parcela, 0 as sub_item from ctb_a_pagar_mov union all select empresa, lancamento, item, lancamento_mov, item_mov, ' as id_parcela, sub_item from ctb_cheque_cartao_mov union all select empresa, lancamento, item, lancamento_mov, item_mov, ' as id_parcela, sub_item from ctb_aviso_lancamento_mov) lm join ctb_lancamento_item li on lm.empresa = li.empresa and lm.lancamento = li.lancamento and lm.item = li.item join ctb_lancamento a on lm.empresa = a.empresa and lm.lancamento_mov = a.lancamento</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.AVISO_LANCAMENTO</coluna>
+		<descricao>Nº DO AVISO DE LANÇAMENTO</descricao>
+		<sigla>NAL</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_AVISO_LANCAMENTO B ON LI.EMPRESA=B.EMPRESA AND LI.LANCAMENTO=B.LANCAMENTO AND LI.ITEM=B.ITEM LEFT JOIN CTB_AVISO_LANCAMENTO_MOV LM ON LI.EMPRESA=LM.EMPRESA AND LI.LANCAMENTO=LM.LANCAMENTO_MOV AND LI.ITEM=LM.ITEM_MOV</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.AVISO_LANCAMENTO</coluna>
+		<descricao>Nº DO AVISO DE LANÇAMENTO DA C/PARTIDA</descricao>
+		<sigla>NAL*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA=CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0)) JOIN CTB_AVISO_LANCAMENTO B ON CP.EMPRESA=B.EMPRESA AND CP.LANCAMENTO=B.LANCAMENTO AND CP.ITEM=B.ITEM LEFT JOIN CTB_AVISO_LANCAMENTO_MOV LM ON CP.EMPRESA=LM.EMPRESA AND CP.LANCAMENTO=LM.LANCAMENTO_MOV AND CP.ITEM=LM.ITEM_MOV</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>D.NOME_BANCO</coluna>
+		<descricao>NOME DO BCO. DO CHEQUE PRÓPRIO</descricao>
+		<sigla>NBP</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_CHEQUE B ON LI.EMPRESA = B.EMPRESA AND LI.LANCAMENTO = B.LANCAMENTO AND LI.ITEM = B.ITEM JOIN CTB_CONTA_PLANO C ON B.CONTA_CONTABIL = C.CONTA_CONTABIL JOIN BANCOS D ON C.BANCO = D.BANCO LEFT JOIN CTB_CHEQUE_MOV LM ON LI.EMPRESA=LM.EMPRESA AND LI.LANCAMENTO=LM.LANCAMENTO_MOV AND LI.ITEM=LM.ITEM_MOV</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>C.NOME_BANCO</coluna>
+		<descricao>NOME DO BCO. DO CHEQUE PRÓPRIO DA C/PARTIDA</descricao>
+		<sigla>NBP*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA=CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0)) JOIN CTB_CONTA_PLANO B ON CP.CONTA_CONTABIL=B.CONTA_CONTABIL JOIN BANCOS C ON B.BANCO=C.BANCO</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>C.NOME_BANCO</coluna>
+		<descricao>NOME DO BCO. DO CHEQUE A RECEBER</descricao>
+		<sigla>NBR</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_CONTA_PLANO B ON LI.CONTA_CONTABIL=B.CONTA_CONTABIL JOIN BANCOS C ON B.BANCO=C.BANCO</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>C.NOME_BANCO</coluna>
+		<descricao>NOME DO BCO. DO CHEQUE A RECEBER DA C/PARTIDA</descricao>
+		<sigla>NBR*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA=CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0)) JOIN CTB_CONTA_PLANO B ON CP.CONTA_CONTABIL=B.CONTA_CONTABIL JOIN BANCOS C ON B.BANCO=C.BANCO</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.RAZAO_SOCIAL</coluna>
+		<descricao>NOME DO CLIENTE</descricao>
+		<sigla>NCL</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CADASTRO_CLI_FOR B ON LI.COD_CLIFOR=B.COD_CLIFOR</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.RAZAO_SOCIAL</coluna>
+		<descricao>NOME DO CLIENTE DA C/PARTIDA</descricao>
+		<sigla>NCL*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA=CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0)) JOIN CADASTRO_CLI_FOR B ON CP.COD_CLIFOR=B.COD_CLIFOR</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>CONTA_CONTABIL</coluna>
+		<descricao>Nº DA CONTA DA CONTRA PARTIDA</descricao>
+		<sigla>NCT</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>CONTA_CONTABIL</coluna>
+		<descricao>Nº DA CONTA DA CONTRA PARTIDA DA C/PARTIDA</descricao>
+		<sigla>NCT*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA=CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0))</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>RTRIM(B.DOCUMENTO)</coluna>
+		<descricao>Nº DO DOCUMENTO A RECEBER</descricao>
+		<sigla>NDO</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_A_RECEBER_FATURA B ON LI.EMPRESA=B.EMPRESA AND LI.LANCAMENTO=B.LANCAMENTO AND LI.ITEM=B.ITEM JOIN CTB_A_RECEBER_PARCELA C ON LI.EMPRESA=C.EMPRESA AND LI.LANCAMENTO=C.LANCAMENTO AND LI.ITEM=C.ITEM LEFT JOIN CTB_A_RECEBER_MOV LM ON LI.EMPRESA=LM.EMPRESA AND LI.LANCAMENTO=LM.LANCAMENTO_MOV AND LI.ITEM=LM.ITEM_MOV AND C.ID_PARCELA=LM.ID_PARCELA</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>RTRIM(B.DOCUMENTO)</coluna>
+		<descricao>Nº DO DOCUMENTO A RECEBER DA C/PARTIDA</descricao>
+		<sigla>NDO*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA=CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0)) JOIN CTB_A_RECEBER_FATURA B ON CP.EMPRESA=B.EMPRESA AND CP.LANCAMENTO=B.LANCAMENTO AND CP.ITEM=B.ITEM JOIN CTB_A_RECEBER_PARCELA C ON CP.EMPRESA=C.EMPRESA AND CP.LANCAMENTO=C.LANCAMENTO AND CP.ITEM=C.ITEM LEFT JOIN CTB_A_RECEBER_MOV LM ON CP.EMPRESA=LM.EMPRESA AND CP.LANCAMENTO=LM.LANCAMENTO_MOV AND CP.ITEM=LM.ITEM_MOV AND C.ID_PARCELA=LM.ID_PARCELA</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>RTRIM(B.DOCUMENTO)</coluna>
+		<descricao>Nº DO DOCUMENTO A PAGAR</descricao>
+		<sigla>NDP</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_A_PAGAR_FATURA B ON LI.EMPRESA=B.EMPRESA AND LI.LANCAMENTO=B.LANCAMENTO AND LI.ITEM=B.ITEM JOIN CTB_A_PAGAR_PARCELA C ON LI.EMPRESA=C.EMPRESA AND LI.LANCAMENTO=C.LANCAMENTO AND LI.ITEM=C.ITEM LEFT JOIN CTB_A_PAGAR_MOV LM ON LI.EMPRESA=LM.EMPRESA AND LI.LANCAMENTO=LM.LANCAMENTO_MOV AND LI.ITEM=LM.ITEM_MOV AND C.ID_PARCELA=LM.ID_PARCELA</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>RTRIM(B.DOCUMENTO)</coluna>
+		<descricao>Nº DO DOCUMENTO A PAGAR DA C/PARTIDA</descricao>
+		<sigla>NDP*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA=CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0)) JOIN CTB_A_PAGAR_FATURA B ON CP.EMPRESA=B.EMPRESA AND CP.LANCAMENTO=B.LANCAMENTO AND CP.ITEM=B.ITEM JOIN CTB_A_PAGAR_PARCELA C ON CP.EMPRESA=C.EMPRESA AND CP.LANCAMENTO=C.LANCAMENTO AND CP.ITEM=C.ITEM LEFT JOIN CTB_A_PAGAR_MOV LM ON CP.EMPRESA=LM.EMPRESA AND CP.LANCAMENTO=LM.LANCAMENTO_MOV AND CP.ITEM=LM.ITEM_MOV AND C.ID_PARCELA=LM.ID_PARCELA</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.RAZAO_SOCIAL</coluna>
+		<descricao>NOME DO TERCEIRO</descricao>
+		<sigla>NDT</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CADASTRO_CLI_FOR B ON LI.COD_CLIFOR=B.COD_CLIFOR</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.RAZAO_SOCIAL</coluna>
+		<descricao>NOME DO TERCEIDO DA C/PARTIDA</descricao>
+		<sigla>NDT*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA=CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0)) JOIN CADASTRO_CLI_FOR B ON CP.COD_CLIFOR=B.COD_CLIFOR</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.NOME_CLIFOR</coluna>
+		<descricao>NOME FANTASIA FORNECEDOR</descricao>
+		<sigla>NFA</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CADASTRO_CLI_FOR B ON LI.COD_CLIFOR=B.COD_CLIFOR</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.NOME_CLIFOR</coluna>
+		<descricao>NOME FANTASIA FORNECEDOR DA C/PARTIDA</descricao>
+		<sigla>NFA*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA=CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0)) JOIN CADASTRO_CLI_FOR B ON CP.COD_CLIFOR=B.COD_CLIFOR</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.NF_ENTRADA</coluna>
+		<descricao>Nº DA NOTA FISCAL DE ENTRADA</descricao>
+		<sigla>NFE</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN ENTRADAS B ON LI.EMPRESA=B.EMPRESA AND LI.LANCAMENTO=B.CTB_LANCAMENTO AND LI.ITEM=B.CTB_ITEM</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.NF_ENTRADA</coluna>
+		<descricao>Nº DA NOTA FISCAL DE ENTRADA DA C/PARTIDA</descricao>
+		<sigla>NFE*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA=CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0)) JOIN ENTRADAS B ON CP.EMPRESA=B.EMPRESA AND CP.LANCAMENTO=B.CTB_LANCAMENTO AND CP.ITEM=B.CTB_ITEM</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.NF_NUMERO</coluna>
+		<descricao>Nº DA NOTA FISCAL DA LOJA</descricao>
+		<sigla>NFL</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN LOJA_NOTA_FISCAL B ON LI.EMPRESA=B.EMPRESA AND (LI.LANCAMENTO=B.CTB_LANCAMENTO) AND LI.ITEM=B.CTB_ITEM</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.NF_NUMERO</coluna>
+		<descricao>Nº DA NOTA FISCAL DA LOJA DA C/PARTIDA</descricao>
+		<sigla>NFL*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA=CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0)) JOIN LOJA_NOTA_FISCAL B ON CP.EMPRESA=B.EMPRESA AND (CP.LANCAMENTO=B.CTB_LANCAMENTO) AND CP.ITEM=B.CTB_ITEM</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.RAZAO_SOCIAL</coluna>
+		<descricao>NOME DO FORNECEDOR</descricao>
+		<sigla>NFR</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CADASTRO_CLI_FOR B ON LI.COD_CLIFOR=B.COD_CLIFOR</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.RAZAO_SOCIAL</coluna>
+		<descricao>NOME DO FORNECEDOR DA C/PARTIDA</descricao>
+		<sigla>NFR*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA=CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0)) JOIN CADASTRO_CLI_FOR B ON CP.COD_CLIFOR=B.COD_CLIFOR</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.NF_SAIDA</coluna>
+		<descricao>Nº DA NOTA FISCAL DE SAÍDA</descricao>
+		<sigla>NFS</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN FATURAMENTO B ON LI.EMPRESA=B.EMPRESA AND (LI.LANCAMENTO=B.CTB_LANCAMENTO OR LI.LANCAMENTO = B.NUMERO_CONFERENCIA ) AND LI.ITEM=B.CTB_ITEM</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>B.NF_SAIDA</coluna>
+		<descricao>Nº DA NOTA FISCAL DE SAÍDA DA C/PARTIDA</descricao>
+		<sigla>NFS*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA=CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0)) JOIN FATURAMENTO B ON CP.EMPRESA=B.EMPRESA AND (CP.LANCAMENTO=B.CTB_LANCAMENTO OR CP.LANCAMENTO = B.NUMERO_CONFERENCIA) AND CP.ITEM=B.CTB_ITEM</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>RTRIM(B.NF_SAIDA)+"-"+B.SERIE_NF</coluna>
+		<descricao>Nº DA NOTA FISCAL DE SAÍDA E SERIE</descricao>
+		<sigla>NFSS</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN FATURAMENTO B ON LI.EMPRESA=B.EMPRESA AND (LI.LANCAMENTO=B.CTB_LANCAMENTO OR LI.LANCAMENTO = B.NUMERO_CONFERENCIA ) AND LI.ITEM=B.CTB_ITEM</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>RTRIM(B.NF_SAIDA)+"-"+B.SERIE_NF</coluna>
+		<descricao>Nº DA NOTA FISCAL DE SAÍDA E SERIE DA C/PARTIDA</descricao>
+		<sigla>NFSS*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA=CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0)) JOIN FATURAMENTO B ON CP.EMPRESA=</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>REPRESENTANTE</coluna>
+		<descricao>NOME DO REPRESENTANTE</descricao>
+		<sigla>NRP</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN REPRESENTANTES B ON LI.COD_CLIFOR=B.COD_REPRESENTANTE</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>REPRESENTANTE</coluna>
+		<descricao>NOME DO REPRESENTANTE DA C/PARTIDA</descricao>
+		<sigla>NRP*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA=CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0)) JOIN REPRESENTANTES B ON CP.COD_CLIFOR=B.COD_REPRESENTANTE</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>RTRIM(B.FATURA)+'/'+C.ID_PARCELA</coluna>
+		<descricao>Nº DA PARCELA A PAGAR</descricao>
+		<sigla>NTP</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_A_PAGAR_FATURA B ON LI.EMPRESA=B.EMPRESA AND LI.LANCAMENTO=B.LANCAMENTO AND LI.ITEM=B.ITEM JOIN CTB_A_PAGAR_PARCELA C ON LI.EMPRESA=C.EMPRESA AND LI.LANCAMENTO=C.LANCAMENTO AND LI.ITEM=C.ITEM LEFT JOIN CTB_A_PAGAR_MOV LM ON LI.EMPRESA=LM.EMPRESA AND LI.LANCAMENTO=LM.LANCAMENTO_MOV AND LI.ITEM=LM.ITEM_MOV AND C.ID_PARCELA=LM.ID_PARCELA</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>RTRIM(B.FATURA)+'/'+C.ID_PARCELA</coluna>
+		<descricao>Nº DA PARCELA A PAGAR DA C/PARTIDA</descricao>
+		<sigla>NTP*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA=CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0)) JOIN CTB_A_PAGAR_FATURA B ON CP.EMPRESA=B.EMPRESA AND CP.LANCAMENTO=B.LANCAMENTO AND CP.ITEM=B.ITEM JOIN CTB_A_PAGAR_PARCELA C ON CP.EMPRESA=C.EMPRESA AND CP.LANCAMENTO=C.LANCAMENTO AND CP.ITEM=C.ITEM LEFT JOIN CTB_A_PAGAR_MOV LM ON CP.EMPRESA=LM.EMPRESA AND CP.LANCAMENTO=LM.LANCAMENTO_MOV AND CP.ITEM=LM.ITEM_MOV AND C.ID_PARCELA=LM.ID_PARCELA</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>RTRIM(B.FATURA)+'/'+C.ID_PARCELA</coluna>
+		<descricao>Nº DA PARCELA A RECEBER</descricao>
+		<sigla>NTR</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_A_RECEBER_FATURA B ON LI.EMPRESA=B.EMPRESA AND LI.LANCAMENTO=B.LANCAMENTO AND LI.ITEM=B.ITEM JOIN CTB_A_RECEBER_PARCELA C ON LI.EMPRESA=C.EMPRESA AND LI.LANCAMENTO=C.LANCAMENTO AND LI.ITEM=C.ITEM LEFT JOIN CTB_A_RECEBER_MOV LM ON LI.EMPRESA=LM.EMPRESA AND LI.LANCAMENTO=LM.LANCAMENTO_MOV AND LI.ITEM=LM.ITEM_MOV AND C.ID_PARCELA=LM.ID_PARCELA</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>RTRIM(B.FATURA)+'/'+C.ID_PARCELA</coluna>
+		<descricao>Nº DA PARCELA A RECEBER DA C/PARTIDA</descricao>
+		<sigla>NTR*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA=CP.EMPRESA AND LI.LANCAMENTO=CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA=CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0)) JOIN CTB_A_RECEBER_FATURA B ON CP.EMPRESA=B.EMPRESA AND CP.LANCAMENTO=B.LANCAMENTO AND CP.ITEM=B.ITEM JOIN CTB_A_RECEBER_PARCELA C ON CP.EMPRESA=C.EMPRESA AND CP.LANCAMENTO=C.LANCAMENTO AND CP.ITEM=C.ITEM LEFT JOIN CTB_A_RECEBER_MOV LM ON CP.EMPRESA=LM.EMPRESA AND CP.LANCAMENTO=LM.LANCAMENTO_MOV AND CP.ITEM=LM.ITEM_MOV AND C.ID_PARCELA=LM.ID_PARCELA</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+	<ctb_lx_hist_sigla>
+		<coluna>RTRIM(B.FATURA)+'/'+C.ID_PARCELA</coluna>
+		<descricao>Nº DA PARCELA A RECEBER DA C/PARTIDA P/ BAIXA</descricao>
+		<sigla>NTRB*</sigla>
+		<tabela>CTB_LANCAMENTO_ITEM LI JOIN CTB_LANCAMENTO_ITEM CP ON LI.EMPRESA = CP.EMPRESA AND LI.LANCAMENTO = CP.LANCAMENTO AND LI.ID_CONTRAPARTIDA = CP.ID_CONTRAPARTIDA AND ((LI.DEBITO&gt;0 AND CP.DEBITO=0) OR (LI.CREDITO&gt;0 AND CP.CREDITO=0)) JOIN CTB_A_RECEBER_MOV LM ON CP.EMPRESA = LM.EMPRESA AND CP.LANCAMENTO = LM.LANCAMENTO AND CP.ITEM = LM.ITEM JOIN CTB_A_RECEBER_FATURA B ON LM.EMPRESA = B.EMPRESA AND LM.LANCAMENTO_MOV = B.LANCAMENTO AND LM.ITEM_MOV = B.ITEM JOIN CTB_A_RECEBER_PARCELA C ON B.EMPRESA = C.EMPRESA AND B.LANCAMENTO = C.LANCAMENTO AND B.ITEM = C.ITEM AND LM.ID_PARCELA = C.ID_PARCELA</tabela>
+		<inativo>false</inativo>
+	</ctb_lx_hist_sigla>
+</VFPData>

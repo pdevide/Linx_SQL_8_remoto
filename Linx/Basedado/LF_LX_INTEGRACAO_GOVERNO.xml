@@ -1,0 +1,660 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="lf_lx_integracao_governo" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="id_integracao_governo" type="xsd:int"/>
+								<xsd:element name="descr_integracao_governo" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="100"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="periodicidade" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="20"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="permite_alteracao" type="xsd:boolean" minOccurs="0"/>
+								<xsd:element name="sigla_integracao_governo" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="20"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="estrutura_arquivo" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:decimal">
+											<xsd:totalDigits value="4"/>
+											<xsd:fractionDigits value="0"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="versao" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="20"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="cod_transacao" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="23"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="permite_arquivo_unico" type="xsd:boolean" minOccurs="0"/>
+								<xsd:element name="comando" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="100"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="comando_select" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="2147483647"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="tipo_obrigacao" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="1"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="objeto_periodo" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="50"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="existe_inf_complementar" type="xsd:boolean" minOccurs="0"/>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<lf_lx_integracao_governo>
+		<id_integracao_governo>1</id_integracao_governo>
+		<descr_integracao_governo>GUIA DE INFORMAÇÃO E APURAÇÃO DO ICMS - RJ</descr_integracao_governo>
+		<periodicidade>MENSAL</periodicidade>
+		<permite_alteracao>false</permite_alteracao>
+		<sigla_integracao_governo>GIA</sigla_integracao_governo>
+		<estrutura_arquivo>1</estrutura_arquivo>
+		<versao>0.3.1X</versao>
+		<cod_transacao>LX012013_001</cod_transacao>
+		<permite_arquivo_unico>false</permite_arquivo_unico>
+		<comando/>
+		<comando_select/>
+		<tipo_obrigacao>E</tipo_obrigacao>
+		<objeto_periodo>CNTFILTROEXERCICIOFISCAL</objeto_periodo>
+		<existe_inf_complementar>true</existe_inf_complementar>
+	</lf_lx_integracao_governo>
+	<lf_lx_integracao_governo>
+		<id_integracao_governo>2</id_integracao_governo>
+		<descr_integracao_governo>LIVRO ELETRONICO</descr_integracao_governo>
+		<periodicidade>MENSAL</periodicidade>
+		<permite_alteracao>false</permite_alteracao>
+		<sigla_integracao_governo>COTEPE</sigla_integracao_governo>
+		<estrutura_arquivo>1</estrutura_arquivo>
+		<versao>1.2.1.3</versao>
+		<cod_transacao>LX012060_001</cod_transacao>
+		<permite_arquivo_unico>false</permite_arquivo_unico>
+		<comando/>
+		<comando_select/>
+		<tipo_obrigacao>E</tipo_obrigacao>
+		<objeto_periodo>CNTFILTRODATA</objeto_periodo>
+		<existe_inf_complementar>true</existe_inf_complementar>
+	</lf_lx_integracao_governo>
+	<lf_lx_integracao_governo>
+		<id_integracao_governo>3</id_integracao_governo>
+		<descr_integracao_governo>DECLARAÇÃO E APURAÇÃO MENSAL DO ICMS</descr_integracao_governo>
+		<periodicidade>MENSAL</periodicidade>
+		<permite_alteracao>false</permite_alteracao>
+		<sigla_integracao_governo>DMA</sigla_integracao_governo>
+		<estrutura_arquivo>1</estrutura_arquivo>
+		<versao>5.04</versao>
+		<cod_transacao>LX012076_001</cod_transacao>
+		<permite_arquivo_unico>false</permite_arquivo_unico>
+		<comando/>
+		<comando_select/>
+		<tipo_obrigacao>E</tipo_obrigacao>
+		<objeto_periodo>CNTFILTRODATA</objeto_periodo>
+		<existe_inf_complementar>true</existe_inf_complementar>
+	</lf_lx_integracao_governo>
+	<lf_lx_integracao_governo>
+		<id_integracao_governo>4</id_integracao_governo>
+		<descr_integracao_governo>DECLARAÇÃO ELETRONICA DE SERVIÇOS</descr_integracao_governo>
+		<periodicidade>MENSAL</periodicidade>
+		<permite_alteracao>false</permite_alteracao>
+		<sigla_integracao_governo>DES</sigla_integracao_governo>
+		<estrutura_arquivo>1</estrutura_arquivo>
+		<versao>1.4</versao>
+		<cod_transacao>LX012025_001</cod_transacao>
+		<permite_arquivo_unico>false</permite_arquivo_unico>
+		<comando/>
+		<comando_select/>
+		<tipo_obrigacao>M</tipo_obrigacao>
+		<objeto_periodo>CNTFILTRODATA</objeto_periodo>
+		<existe_inf_complementar>true</existe_inf_complementar>
+	</lf_lx_integracao_governo>
+	<lf_lx_integracao_governo>
+		<id_integracao_governo>5</id_integracao_governo>
+		<descr_integracao_governo>GUIA DE INFORMAÇÃO E APURAÇÃO DO ICMS - SP</descr_integracao_governo>
+		<periodicidade>MENSAL</periodicidade>
+		<permite_alteracao>false</permite_alteracao>
+		<sigla_integracao_governo>GIA</sigla_integracao_governo>
+		<estrutura_arquivo>1</estrutura_arquivo>
+		<versao>0780</versao>
+		<cod_transacao>LX012013_001</cod_transacao>
+		<permite_arquivo_unico>false</permite_arquivo_unico>
+		<comando/>
+		<comando_select/>
+		<tipo_obrigacao>E</tipo_obrigacao>
+		<objeto_periodo>CNTFILTROEXERCICIOFISCAL</objeto_periodo>
+		<existe_inf_complementar>true</existe_inf_complementar>
+	</lf_lx_integracao_governo>
+	<lf_lx_integracao_governo>
+		<id_integracao_governo>6</id_integracao_governo>
+		<descr_integracao_governo>DECLARAÇÃO DE ESTOQUE DE MERCADORIAS NO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA - SP</descr_integracao_governo>
+		<periodicidade>MENSAL</periodicidade>
+		<permite_alteracao>false</permite_alteracao>
+		<sigla_integracao_governo>STDE</sigla_integracao_governo>
+		<estrutura_arquivo>1</estrutura_arquivo>
+		<versao/>
+		<cod_transacao>LX012082_001</cod_transacao>
+		<permite_arquivo_unico>false</permite_arquivo_unico>
+		<comando/>
+		<comando_select/>
+		<tipo_obrigacao>E</tipo_obrigacao>
+		<objeto_periodo>CNTFILTRODATA</objeto_periodo>
+		<existe_inf_complementar>true</existe_inf_complementar>
+	</lf_lx_integracao_governo>
+	<lf_lx_integracao_governo>
+		<id_integracao_governo>7</id_integracao_governo>
+		<descr_integracao_governo>NOTA FISCAL PAULISTA</descr_integracao_governo>
+		<periodicidade>MENSAL</periodicidade>
+		<permite_alteracao>false</permite_alteracao>
+		<sigla_integracao_governo>NFP</sigla_integracao_governo>
+		<estrutura_arquivo>1</estrutura_arquivo>
+		<versao/>
+		<cod_transacao>LX012081_001</cod_transacao>
+		<permite_arquivo_unico>false</permite_arquivo_unico>
+		<comando/>
+		<comando_select/>
+		<tipo_obrigacao>E</tipo_obrigacao>
+		<objeto_periodo>CNTFILTRODATA</objeto_periodo>
+		<existe_inf_complementar>true</existe_inf_complementar>
+	</lf_lx_integracao_governo>
+	<lf_lx_integracao_governo>
+		<id_integracao_governo>8</id_integracao_governo>
+		<descr_integracao_governo>DECLARAÇÃO DE INFORMAÇÕES ECONOMICO-FISCAIS - CE</descr_integracao_governo>
+		<periodicidade>MENSAL</periodicidade>
+		<permite_alteracao>false</permite_alteracao>
+		<sigla_integracao_governo>DIEF</sigla_integracao_governo>
+		<estrutura_arquivo>1</estrutura_arquivo>
+		<versao>3.0.3</versao>
+		<cod_transacao>LX012055_001</cod_transacao>
+		<permite_arquivo_unico>false</permite_arquivo_unico>
+		<comando/>
+		<comando_select/>
+		<tipo_obrigacao>M</tipo_obrigacao>
+		<objeto_periodo>CNTFILTRODATA</objeto_periodo>
+		<existe_inf_complementar>true</existe_inf_complementar>
+	</lf_lx_integracao_governo>
+	<lf_lx_integracao_governo>
+		<id_integracao_governo>9</id_integracao_governo>
+		<descr_integracao_governo>DECLARAÇÃO DE INFORMAÇÕES ECONOMICO-FISCAIS - RJ</descr_integracao_governo>
+		<periodicidade>MENSAL</periodicidade>
+		<permite_alteracao>false</permite_alteracao>
+		<sigla_integracao_governo>DIEF</sigla_integracao_governo>
+		<estrutura_arquivo>1</estrutura_arquivo>
+		<versao>1.1</versao>
+		<cod_transacao>LX012055_001</cod_transacao>
+		<permite_arquivo_unico>false</permite_arquivo_unico>
+		<comando/>
+		<comando_select/>
+		<tipo_obrigacao>M</tipo_obrigacao>
+		<objeto_periodo>CNTFILTRODATA</objeto_periodo>
+		<existe_inf_complementar>true</existe_inf_complementar>
+	</lf_lx_integracao_governo>
+	<lf_lx_integracao_governo>
+		<id_integracao_governo>10</id_integracao_governo>
+		<descr_integracao_governo>DECLARAÇÃO ANUAL PARA APURAÇÃO DE INDICE DE PARTICIPAÇÃO DO MUNICIPIO</descr_integracao_governo>
+		<periodicidade>MENSAL</periodicidade>
+		<permite_alteracao>false</permite_alteracao>
+		<sigla_integracao_governo>DECLAN</sigla_integracao_governo>
+		<estrutura_arquivo>1</estrutura_arquivo>
+		<versao/>
+		<cod_transacao>LX012080_001</cod_transacao>
+		<permite_arquivo_unico>false</permite_arquivo_unico>
+		<comando/>
+		<comando_select/>
+		<tipo_obrigacao>M</tipo_obrigacao>
+		<objeto_periodo>CNTFILTRODATA</objeto_periodo>
+		<existe_inf_complementar>true</existe_inf_complementar>
+	</lf_lx_integracao_governo>
+	<lf_lx_integracao_governo>
+		<id_integracao_governo>11</id_integracao_governo>
+		<descr_integracao_governo>GUIA NACIONAL DE RECOLHIMENTO DE TRIBUTOS ESTADUAIS</descr_integracao_governo>
+		<periodicidade>MENSAL</periodicidade>
+		<permite_alteracao>false</permite_alteracao>
+		<sigla_integracao_governo>GNRE</sigla_integracao_governo>
+		<estrutura_arquivo>1</estrutura_arquivo>
+		<versao/>
+		<cod_transacao>LX012078_001</cod_transacao>
+		<permite_arquivo_unico>false</permite_arquivo_unico>
+		<comando/>
+		<comando_select/>
+		<tipo_obrigacao>E</tipo_obrigacao>
+		<objeto_periodo>CNTFILTRODATA</objeto_periodo>
+		<existe_inf_complementar>true</existe_inf_complementar>
+	</lf_lx_integracao_governo>
+	<lf_lx_integracao_governo>
+		<id_integracao_governo>12</id_integracao_governo>
+		<descr_integracao_governo>DECLARAÇÃO DE INFORMAÇÕES DO ICMS E MOVIMENTO ECONÔMICO</descr_integracao_governo>
+		<periodicidade>MENSAL</periodicidade>
+		<permite_alteracao>false</permite_alteracao>
+		<sigla_integracao_governo>DIME</sigla_integracao_governo>
+		<estrutura_arquivo>1</estrutura_arquivo>
+		<versao>2.0.8</versao>
+		<cod_transacao>LX012032_001</cod_transacao>
+		<permite_arquivo_unico>false</permite_arquivo_unico>
+		<comando>LX_LF_IG_DIME_SC</comando>
+		<comando_select>				Select	Marca								=	0,
+						ArquivoSigla						=	IG.Sigla_Integracao_Governo,
+						ArquivoDescricao					=	IG.Descr_Integracao_Governo,
+						IDIntegracaoGoverno					=	Cast(IG.ID_Integracao_Governo As VarChar(5)),
+						EstruturaArquivo					=	IG.Estrutura_Arquivo,
+						Periodicidade						=	IG.Periodicidade,
+						PermiteAlterarPeriodo				=	IG.Permite_Alteracao,
+						PermiteArquivoUnico					=	IG.Permite_Arquivo_Unico,
+						ObjetoPeriodo						=	IG.Objeto_Periodo,
+						ExisteInfComplementar				=	Cast(IG.Existe_Inf_Complementar As Integer),
+						Comando								=	IG.Comando,
+						Codificacao							=	'ANSI',
+						ArquivoUnico						=	0,
+						NumeroArquivo						=	Cast(1 As Numeric(2)),
+						ArquivoVersao						=	IG.Versao,
+						FiltroArquivoDescricao				=	'Matriz Fiscal',
+						Textbox								=	Ltrim(Rtrim(MF.Nome_CliFor)) + '',
+						DataInicial							=	Space(10),
+						DataFinal							=	Space(10),
+						GerarExcel							=	0,
+						PastaErro							=	Space(250),
+						PastaExcel							=	Space(250),
+						PastaTexto							=	Space(250),
+						ArquivoErro							=	Space(250),
+						ArquivoExcel						=	Space(250),
+						ArquivoTexto						=	Space(250),
+						Codigo								=	MF.Cod_CliFor,
+						Nome								=	MF.Nome_CliFor,
+						CodigoLoja							=	LV.Codigo_Filial,
+						NomeLoja							=	LV.Filial,
+						UF									=	MF.UF,
+
+						Data_Inicial									=	Convert(Char(10), (GetDate() - Day(GetDate())) - (Day(GetDate() - Day(GetDate()))) + 1, 103),
+						Data_Final										=	Convert(Char(10), (GetDate() - Day(GetDate())), 103),						
+						NOME_CONTRIBUINTE								= 	CAST('' AS CHAR(50)),
+						NUMERO_INSCRICAO_CONTRIBUINTE					= 	CAST('' AS CHAR(9)),
+						QUANTIDADE_TRABALHADORES						= 	CAST('' AS CHAR(5)),
+						NOME_CONTABILISTA								= 	CAST('' AS CHAR(50)),
+						CPF_CONTABILISTA								= 	CAST('' AS CHAR(11)),
+						TIPO_DECLARACAO									= 	' ',
+						REGIME_APURACAO									= 	' ',
+						PORTE_EMPRESA									= 	' ',
+						MOVIMENTO										= 	' ',
+						ESCRITA_CONTABIL								= 	' ',
+						APURACAO_CONSOLIDADA							= 	' ',
+						TRANSFERENCIA_CREDITO_PERIODO					= 	' ',
+						CREDITOS_PRESUMIDOS								= 	' ',
+						CREDITOS_INCENTIVOS_FISCAIS						=	'3',
+						SUBSTITUTO_TRIBUTARIO							= 	' ',						
+						Pago_Empregados									=	CAST(0 AS Numeric(15,2)),
+						Pago_Empregados_Exercicio_Anterior				=	CAST(0 AS Numeric(15,2)),
+						Incentivo_Verificado							=	CAST(0 AS Numeric(15,2)),
+						Credito_Presumido_Incentivo_Geracao_Emprego		=	CAST(0 AS Numeric(15,2)),
+						ESTOQUE_INICIO_EXERCICIO						=	CAST(0 AS Numeric(15,2)),
+						ESTOQUE_FIM_EXERCICIO							=	CAST(0 AS Numeric(15,2)),
+						RECEITA_BRUTA_VENDAS_SERVICOS					=	CAST(0 AS Numeric(15,2)),
+						ID_VERSAO_CONTABIL								=	CAST(0 AS Numeric(6)),
+						ID_EXERCICIO									=	CAST(0 AS Numeric(6)),
+						ID_PERIODO										=	CAST(0 AS Numeric(6)),
+						PERIODO_DECLARACAO								=	CAST('' AS CHAR(6))	,
+						APURACAO_CENTRALIZADA							=	0, 
+						NOME_VERSAO_CONTABIL							=	CAST('' AS CHAR(50)),
+						NOME_EXERCICIO									=	CAST('' AS CHAR(50)),
+						NOME_PERIODO									=	CAST('' AS CHAR(50)),
+						CONTA_SEM_MOVIMENTO								=	0,
+						VISAO_81										=	CAST('' AS CHAR(6)),
+						VISAO_82										=	CAST('' AS CHAR(6)),
+						VISAO_83										=	CAST('' AS CHAR(6)),
+						VISAO_84										=	CAST('' AS CHAR(6))					
+					From W_LF_Matriz_Fiscal As MF
+						Left Join	Lojas_Varejo As LV				On	MF.Nome_CliFor	=	LV.Filial
+						&lt;&lt;Iif(Val(Strtran(System.ApplicationVersion, ".", "")) &gt;= 701003, "Join DBO.FX_Users_Matriz_Contabil(?wUsuario) As A On MF.Cod_Matriz_Contabil = A.Cod_Matriz_Contabil", "")&gt;&gt;
+						Left Join	LF_LX_Integracao_Governo AS IG	On IG.Cod_Transacao	=	'&lt;&lt;Alltrim(Thisformset.Name)&gt;&gt;'
+					Where	MF.Inativo	=	0	And
+							MF.UF		=	'SC'					
+					Order By	Nome_CliFor, ArquivoSigla</comando_select>
+		<tipo_obrigacao>E</tipo_obrigacao>
+		<objeto_periodo>CNTFILTRODATA</objeto_periodo>
+		<existe_inf_complementar>true</existe_inf_complementar>
+	</lf_lx_integracao_governo>
+	<lf_lx_integracao_governo>
+		<id_integracao_governo>13</id_integracao_governo>
+		<descr_integracao_governo>SISTEMA PÚBLICO DE ESCRITURAÇÃO DIGITAL CONTABIL</descr_integracao_governo>
+		<periodicidade>MENSAL</periodicidade>
+		<permite_alteracao>false</permite_alteracao>
+		<sigla_integracao_governo>SPED</sigla_integracao_governo>
+		<estrutura_arquivo>1</estrutura_arquivo>
+		<versao>1.00</versao>
+		<cod_transacao>LX012088_001</cod_transacao>
+		<permite_arquivo_unico>false</permite_arquivo_unico>
+		<comando/>
+		<comando_select/>
+		<tipo_obrigacao>F</tipo_obrigacao>
+		<objeto_periodo>CNTFILTROEXERCICIOCONTABIL</objeto_periodo>
+		<existe_inf_complementar>true</existe_inf_complementar>
+	</lf_lx_integracao_governo>
+	<lf_lx_integracao_governo>
+		<id_integracao_governo>14</id_integracao_governo>
+		<descr_integracao_governo>SISTEMA PÚBLICO DE ESCRITURAÇÃO DIGITAL FISCAL</descr_integracao_governo>
+		<periodicidade>MENSAL</periodicidade>
+		<permite_alteracao>false</permite_alteracao>
+		<sigla_integracao_governo>SPED</sigla_integracao_governo>
+		<estrutura_arquivo>1</estrutura_arquivo>
+		<versao>1.00</versao>
+		<cod_transacao>LX012089_001</cod_transacao>
+		<permite_arquivo_unico>false</permite_arquivo_unico>
+		<comando>LX_LF_IG_SPED_FISCAL</comando>
+		<comando_select>				Select	Marca								=	0,
+						ArquivoSigla						=	IG.Sigla_Integracao_Governo,
+						ArquivoDescricao					=	IG.Descr_Integracao_Governo,
+						IDIntegracaoGoverno					=	Cast(IG.ID_Integracao_Governo As VarChar(5)),
+						EstruturaArquivo					=	IG.Estrutura_Arquivo,
+						Periodicidade						=	IG.Periodicidade,
+						PermiteAlterarPeriodo				=	IG.Permite_Alteracao,
+						PermiteArquivoUnico					=	IG.Permite_Arquivo_Unico,
+						ObjetoPeriodo						=	IG.Objeto_Periodo,
+						ExisteInfComplementar				=	Cast(IG.Existe_Inf_Complementar As Integer),
+						Comando								=	IG.Comando,
+						Codificacao							=	'ANSI',
+						ArquivoUnico						=	0,
+						NumeroArquivo						=	Cast(1 As Numeric(2)),
+						ArquivoVersao						=	IG.Versao,
+						FiltroArquivoDescricao				=	'Matriz Fiscal',
+						Textbox								=	Ltrim(Rtrim(MF.Nome_CliFor)) + '',
+						DataInicial							=	Space(10),
+						DataFinal							=	Space(10),
+						GerarExcel							=	0,
+						PastaErro							=	Space(250),
+						PastaExcel							=	Space(250),
+						PastaTexto							=	Space(250),
+						ArquivoErro							=	Space(250),
+						ArquivoExcel						=	Space(250),
+						ArquivoTexto						=	Space(250),
+						Codigo								=	MF.Cod_CliFor,
+						Nome								=	MF.Nome_CliFor,
+						CodigoLoja							=	LV.Codigo_Filial,
+						NomeLoja							=	LV.Filial,
+						UF									=	MF.UF,
+						Versao								=	Cast('01' As VarChar(2)),
+						InscricaoEstadual					=	Cast(MF.RG_IE As VarChar(10)),
+						Categoria							=	Cast(2 As Char(1)),
+						RazaoSocial							=	Cast(MF.Razao_Social As VarChar(46)),
+						Email								=	Cast(IsNull(MF.Email, '') As VarChar(100)),
+						CodigoFinalidade					=	'0',
+						CNPJ								=	case when MF.PJ_PF = 1 then MF.CGC_CPF else '00000000000000' end,
+						CPF									=	case when MF.PJ_PF = 0 then MF.CGC_CPF else '00000000000' end,
+						UF									=	MF.UF,
+						IE									=	case when MF.PJ_PF = 1 then MF.RG_IE else '' end,
+						CodigoMunicipio						=	isnull(RTRIM(LTRIM(dbo.FX_LF_VALOR_INTEGRACAO(14, 3, 1, mf.cidade))), '0000000'),
+						IM									=	MF.IM,
+						SUFRAMA								=	Space(20),
+						Perfil								=	'A',
+						Atividade							=	Space(1),
+						Fantasia							=	Space(40),
+						MF.Cep,
+						MF.Endereco,
+						Numero								=	Space(6),
+						Complemento							=	Space(40),
+						MF.Bairro,
+						Telefone							=	ISNULL(MF.DDD1 + MF.TELEFONE1, ''),
+						Fax									=	ISNULL(MF.DDDFAX + MF.FAX, ''),
+						NomeContador						=	Space(60),
+						CEPContador							=	Space(8),
+						EnderecoContador					=	Space(60),
+						NumeroContador						=	space(9),
+						ComplementoContador					=	space(60),
+						BairroContador						=	space(40),
+						TelefoneContador					=	space(12),
+						FaxContador							=	space(12),
+						EmailContador						=	space(40),
+						CidadeContador						=	space(35),
+						CodCidadeContador					=	space(7),
+						CPFContador							=	space(11),
+						CNPJContador						=	space(14),
+						CRCContador							=	space(11),
+						VisaoContabil						=	space(4),
+						NomeVisaoContabil					=	space(30),
+						DataInventario						=	CONVERT(CHAR(10), (GETDATE() - DAY(GETDATE())) - (DAY(GETDATE() - DAY(GETDATE()))) + 1, 103)
+					From W_LF_Matriz_Fiscal As MF
+						Left Join	Lojas_Varejo As LV				On	MF.Nome_CliFor	=	LV.Filial
+						&lt;&lt;Iif(Val(Strtran(System.ApplicationVersion, ".", "")) &gt;= 701003, "Join DBO.FX_Users_Matriz_Contabil(?wUsuario) As A On MF.Cod_CliFor = A.Cod_Matriz_Contabil", "")&gt;&gt;
+						Left Join	LF_LX_Integracao_Governo AS IG	On IG.Cod_Transacao	=	'&lt;&lt;Alltrim(Thisformset.Name)&gt;&gt;'
+					Where	MF.Inativo	=	0				
+					Order By	Nome_CliFor, ArquivoSigla</comando_select>
+		<tipo_obrigacao>F</tipo_obrigacao>
+		<objeto_periodo>CNTFILTRODATA</objeto_periodo>
+		<existe_inf_complementar>true</existe_inf_complementar>
+	</lf_lx_integracao_governo>
+	<lf_lx_integracao_governo>
+		<id_integracao_governo>15</id_integracao_governo>
+		<descr_integracao_governo>DECLARAÇÃO DE ESTOQUE DE MERCADORIAS NO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA - RS</descr_integracao_governo>
+		<periodicidade>MENSAL</periodicidade>
+		<permite_alteracao>false</permite_alteracao>
+		<sigla_integracao_governo>STDE</sigla_integracao_governo>
+		<estrutura_arquivo>1</estrutura_arquivo>
+		<versao>1</versao>
+		<cod_transacao>LX012090_001</cod_transacao>
+		<permite_arquivo_unico>false</permite_arquivo_unico>
+		<comando>LX_LF_IG_STDE_RS</comando>
+		<comando_select>				SELECT	MARCA								=	0,
+						ARQUIVOSIGLA						=	IG.SIGLA_INTEGRACAO_GOVERNO,
+						ARQUIVODESCRICAO					=	IG.DESCR_INTEGRACAO_GOVERNO,
+						IDINTEGRACAOGOVERNO					=	CAST(IG.ID_INTEGRACAO_GOVERNO AS VARCHAR(5)),
+						ESTRUTURAARQUIVO					=	IG.ESTRUTURA_ARQUIVO,
+						PERIODICIDADE						=	IG.PERIODICIDADE,
+						PERMITEALTERARPERIODO				=	IG.PERMITE_ALTERACAO,
+						PERMITEARQUIVOUNICO					=	IG.PERMITE_ARQUIVO_UNICO,
+						OBJETOPERIODO						=	IG.OBJETO_PERIODO,
+						EXISTEINFCOMPLEMENTAR				=	CAST(IG.EXISTE_INF_COMPLEMENTAR AS INTEGER),
+						COMANDO								=	IG.COMANDO,
+						CODIFICACAO							=	'ANSI',
+						ARQUIVOUNICO						=	0,
+						NUMEROARQUIVO						=	CAST(1 AS NUMERIC(2)),
+						ARQUIVOVERSAO						=	IG.VERSAO,
+						FILTROARQUIVODESCRICAO				=	'MATRIZ FISCAL',
+						TEXTBOX								=	LTRIM(RTRIM(MF.NOME_CLIFOR)) + '',
+						DATAINICIAL							=	SPACE(10),
+						DATAFINAL							=	SPACE(10),
+						GERAREXCEL							=	0,
+						PASTAERRO							=	SPACE(250),
+						PASTAEXCEL							=	SPACE(250),
+						PASTATEXTO							=	SPACE(250),
+						ARQUIVOERRO							=	SPACE(250),
+						ARQUIVOEXCEL						=	SPACE(250),
+						ARQUIVOTEXTO						=	SPACE(250),				
+						CODIGO								=	MF.COD_CLIFOR,        
+						NOME								=	MF.NOME_CLIFOR,        
+						CODIGOLOJA							=	LV.CODIGO_FILIAL,        
+						NOMELOJA							=	LV.FILIAL,        
+						UF									=	MF.UF,        
+						RAZAO_SOCIAL						= 	CAST('' AS CHAR(50)),
+						EMAIL								=	CAST('' AS VARCHAR(100)),
+						NUMERO_INSCRICAO					=	CAST('' AS CHAR(14)),
+						SUBSTITUICAO						=	0,
+						CATEGORIA							=	CAST(1 AS CHAR(1)),
+						BUSCAR_INVENTARIO					=	CAST(1 AS CHAR(1)),
+						PARCELAS							=	CAST(1 AS CHAR(3))
+					FROM W_LF_MATRIZ_FISCAL AS MF
+						LEFT JOIN	LOJAS_VAREJO AS LV				ON	MF.NOME_CLIFOR	=	LV.FILIAL
+						&lt;&lt;IIF(VAL(STRTRAN(SYSTEM.APPLICATIONVERSION, ".", "")) &gt;= 701003, "JOIN DBO.FX_USERS_MATRIZ_CONTABIL(?WUSUARIO) AS A ON MF.COD_CLIFOR = A.COD_MATRIZ_CONTABIL", "")&gt;&gt;
+						LEFT JOIN	LF_LX_INTEGRACAO_GOVERNO AS IG	ON IG.COD_TRANSACAO	=	'&lt;&lt;ALLTRIM(THISFORMSET.NAME)&gt;&gt;'
+					WHERE	MF.INATIVO	=	0					
+					ORDER BY	NOME_CLIFOR, ARQUIVOSIGLA</comando_select>
+		<tipo_obrigacao>M</tipo_obrigacao>
+		<objeto_periodo>CNTFILTRODATA</objeto_periodo>
+		<existe_inf_complementar>true</existe_inf_complementar>
+	</lf_lx_integracao_governo>
+	<lf_lx_integracao_governo>
+		<id_integracao_governo>16</id_integracao_governo>
+		<descr_integracao_governo>GUIA DE INFORMAÇÃO E APURAÇÃO DO ICMS - PE</descr_integracao_governo>
+		<periodicidade>MENSAL</periodicidade>
+		<permite_alteracao>false</permite_alteracao>
+		<sigla_integracao_governo>GIA</sigla_integracao_governo>
+		<estrutura_arquivo>1</estrutura_arquivo>
+		<versao>2.6</versao>
+		<cod_transacao>LX012091_001</cod_transacao>
+		<permite_arquivo_unico>false</permite_arquivo_unico>
+		<comando>LX_LF_IG_GIA_PE</comando>
+		<comando_select>				Select	Marca								=	0,
+						ArquivoSigla						=	IG.Sigla_Integracao_Governo,
+						ArquivoDescricao					=	IG.Descr_Integracao_Governo,
+						IDIntegracaoGoverno					=	Cast(IG.ID_Integracao_Governo As VarChar(5)),
+						EstruturaArquivo					=	IG.Estrutura_Arquivo,
+						Periodicidade						=	IG.Periodicidade,
+						PermiteAlterarPeriodo				=	IG.Permite_Alteracao,
+						PermiteArquivoUnico					=	IG.Permite_Arquivo_Unico,
+						ObjetoPeriodo						=	IG.Objeto_Periodo,
+						ExisteInfComplementar				=	Cast(IG.Existe_Inf_Complementar As Integer),
+						Comando								=	IG.Comando,
+						Codificacao							=	'ANSI',
+						ArquivoUnico						=	0,
+						NumeroArquivo						=	Cast(1 As Numeric(2)),
+						ArquivoVersao						=	IG.Versao,
+						FiltroArquivoDescricao				=	'Matriz Fiscal',
+						Textbox								=	Ltrim(Rtrim(MF.Nome_CliFor)) + '',
+						DataInicial							=	Space(10),
+						DataFinal							=	Space(10),
+						GerarExcel							=	0,
+						PastaErro							=	Space(250),
+						PastaExcel							=	Space(250),
+						PastaTexto							=	Space(250),
+						ArquivoErro							=	Space(250),
+						ArquivoExcel						=	Space(250),
+						ArquivoTexto						=	Space(250),	
+						Codigo								=	MF.Cod_CliFor,
+						Nome								=	MF.Nome_CliFor,
+						CodigoLoja							=	LV.Codigo_Filial,
+						NomeLoja							=	LV.Filial,
+						UF									=	MF.UF,			
+						INDICADOR							= 	'N',
+						EXERCICIO							=	CAST('' AS CHAR(4)),	
+						NOME_RESPONSAVEL					= 	CAST('' AS CHAR(40)),	
+						CPF_RESPONSAVEL						= 	CAST('' AS CHAR(11)),
+						RAZAO_CONTRIBUINTE					= 	CAST('' AS CHAR(46)),	
+						CPF_CNPJ_CONTRIBUINTE				= 	CAST('' AS CHAR(14)),
+						TEL_CONTRIBUINTE					= 	CAST('' AS CHAR(14)),
+						NUMERO_INSCRICAO_CONTRIBUINTE		= 	CAST('' AS CHAR(14)),
+						EMAIL_CONTRIBUINTE					= 	CAST('' AS CHAR(40))									
+					From W_LF_Matriz_Fiscal As MF
+						Left Join	Lojas_Varejo As LV				On	MF.Nome_CliFor	=	LV.Filial
+						&lt;&lt;Iif(Val(Strtran(System.ApplicationVersion, ".", "")) &gt;= 701003, "Join DBO.FX_Users_Matriz_Contabil(?wUsuario) As A On MF.Cod_Matriz_Contabil = A.Cod_Matriz_Contabil", "")&gt;&gt;
+						Left Join	LF_LX_Integracao_Governo AS IG	On IG.Cod_Transacao	=	'&lt;&lt;Alltrim(Thisformset.Name)&gt;&gt;'
+					Where	MF.Inativo	=	0	And
+							MF.UF		=	'PE'					
+					Order By	Nome_CliFor, ArquivoSigla</comando_select>
+		<tipo_obrigacao>E</tipo_obrigacao>
+		<objeto_periodo>CNTFILTRODATA</objeto_periodo>
+		<existe_inf_complementar>true</existe_inf_complementar>
+	</lf_lx_integracao_governo>
+	<lf_lx_integracao_governo>
+		<id_integracao_governo>17</id_integracao_governo>
+		<descr_integracao_governo>DECLARAÇÃO DE IMPOSTO DE RENDA RETIDO NA FONTE</descr_integracao_governo>
+		<periodicidade>MENSAL</periodicidade>
+		<permite_alteracao>false</permite_alteracao>
+		<sigla_integracao_governo>DIRF</sigla_integracao_governo>
+		<estrutura_arquivo>1</estrutura_arquivo>
+		<versao>1.2</versao>
+		<cod_transacao>LX012059_001</cod_transacao>
+		<permite_arquivo_unico>false</permite_arquivo_unico>
+		<comando>LX_LF_IG_DIRF</comando>
+		<comando_select>				Select	Marca										=	0,
+						ArquivoSigla								=	IG.Sigla_Integracao_Governo,
+						ArquivoDescricao							=	IG.Descr_Integracao_Governo,
+						IDIntegracaoGoverno							=	Cast(IG.ID_Integracao_Governo As VarChar(5)),
+						EstruturaArquivo							=	IG.Estrutura_Arquivo,
+						Periodicidade								=	IG.Periodicidade,
+						PermiteAlterarPeriodo						=	IG.Permite_Alteracao,
+						PermiteArquivoUnico							=	IG.Permite_Arquivo_Unico,
+						ObjetoPeriodo								=	IG.Objeto_Periodo,
+						ExisteInfComplementar						=	Cast(IG.Existe_Inf_Complementar As Integer),
+						Comando										=	IG.Comando,
+						Codificacao									=	'ANSI',
+						ArquivoUnico								=	0,
+						NumeroArquivo								=	Cast(1 As Numeric(2)),
+						ArquivoVersao								=	IG.Versao,
+						FiltroArquivoDescricao						=	'Matriz Fiscal',
+						Textbox										=	Ltrim(Rtrim(MF.Nome_CliFor)) + '',
+						DataInicial									=	Space(10),
+						DataFinal									=	Space(10),
+						GerarExcel									=	0,
+						PastaErro									=	Space(250),
+						PastaExcel									=	Space(250),
+						PastaTexto									=	Space(250),
+						ArquivoErro									=	Space(250),
+						ArquivoExcel								=	Space(250),
+						ArquivoTexto								=	Space(250),	
+						Codigo										=	MF.Cod_CliFor,
+						Nome										=	MF.Nome_CliFor,
+						CodigoLoja									=	LV.Codigo_Filial,
+						NomeLoja									=	LV.Filial,
+						UF											=	MF.UF,			
+						TIPO_DECLARACAO								= 	'O',
+						TIPO_DECLARANTE								= 	'2',
+						SITUACAO									= 	'1',
+						NATUREZA_DECLARANTE							= 	'0',
+						IDENTIFICACAO_TIPO_RENDIMENTO_IMPOSTO		= 	'0',
+						INDICADOR_DECLARANTE_DEPOSITARIO			= 	'0',
+						DATA_EVENTO									=	Space(08),
+						TIPO_EVENTO									=	'1',
+						NUMERO_RECIBO_ULTIMA_DECLARACAO_ENTREGUE	=	Space(12),
+						NOME_EMPRESA								=	Left(MF.RAZAO_SOCIAL, 60),
+						CNPJ_CPF_EMPRESA							=	CAST(REPLACE(REPLACE(REPLACE(MF.CGC_CPF, '-', ''), '/',''), ' ', '') AS CHAR(14)),
+						CPF_RESPONSAVEL_EMPRESA						=	Space(11),
+						CPF_RESPONSAVEL								=	Space(11),
+						NOME_RESPONSAVEL							=	Space(60),
+						DDD_RESPONSAVEL								=	Space(04),
+						EMAIL_RESPONSAVEL							=	Space(50),
+						TELEFONE_RESPONSAVEL						=	Space(08),
+						RAMAL_RESPONSAVEL							=	Space(06),
+						FAX_RESPONSAVEL								=	Space(08)																
+					From W_LF_Matriz_Fiscal As MF
+						Left Join	Lojas_Varejo As LV				On	MF.Nome_CliFor	=	LV.Filial
+						&lt;&lt;Iif(Val(Strtran(System.ApplicationVersion, ".", "")) &gt;= 701003, "Join DBO.FX_Users_Matriz_Contabil(?wUsuario) As A On MF.Cod_Matriz_Contabil = A.Cod_Matriz_Contabil", "")&gt;&gt;
+						Left Join	LF_LX_Integracao_Governo AS IG	On IG.Cod_Transacao	=	'&lt;&lt;Alltrim(Thisformset.Name)&gt;&gt;'
+					Where	MF.Inativo	=	0					
+					Order By	Nome_CliFor, ArquivoSigla</comando_select>
+		<tipo_obrigacao>E</tipo_obrigacao>
+		<objeto_periodo>CNTFILTRODATA</objeto_periodo>
+		<existe_inf_complementar>true</existe_inf_complementar>
+	</lf_lx_integracao_governo>
+</VFPData>

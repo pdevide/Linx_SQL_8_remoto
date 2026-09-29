@@ -1,0 +1,1762 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="ctb_lx_lanc_tipo_contra" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="lx_tipo_contrapartida">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="3"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="lx_tipo_lancamento">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="3"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="motivo" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="250"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="inativo" type="xsd:boolean"/>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BAD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BAC</lx_tipo_lancamento>
+		<motivo>PAGAR O CRÉDITO COM UM DÉBITO DO TERCEIRO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BCH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BAC</lx_tipo_lancamento>
+		<motivo>PAGAR O CRÉDITO COM CHEQUES A RECEBER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BTR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BAC</lx_tipo_lancamento>
+		<motivo>PAGAR O CRÉDITO COM TÍTULOS A RECEBER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BAC</lx_tipo_lancamento>
+		<motivo>PAGAR O CRÉDITO COM CHEQUE PRÓPRIO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>IAC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BAC</lx_tipo_lancamento>
+		<motivo>TROCAR O CRÉDITO POR UM NOVO AVISO DE CRÉDITO (PARCELAMENTO)</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ITP</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BAC</lx_tipo_lancamento>
+		<motivo>TROCAR O CRÉDITO POR UM TÍTULO A PAGAR</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LDR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BAC</lx_tipo_lancamento>
+		<motivo>LANÇAR CRÉDITO DE TERCEIROS COMO DESCONTO RECEBIDO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LJR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BAC</lx_tipo_lancamento>
+		<motivo>LANÇAR CRÉDITO DE TERCEIROS COMO JUROS RECEBIDOS</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LMR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BAC</lx_tipo_lancamento>
+		<motivo>LANÇAR CRÉDITO DE TERCEIROS COMO MULTAS RECEBIDAS</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LRD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BAC</lx_tipo_lancamento>
+		<motivo>DESCONSIDERAR O CRÉDITO E LANÇAR COMO RECEITA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LSC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BAC</lx_tipo_lancamento>
+		<motivo>PAGAR O CRÉDITO COM MOEDA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>SCC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BAC</lx_tipo_lancamento>
+		<motivo>PAGAR O CRÉDITO COM DÉBITO EM CONTA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BAC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BAD</lx_tipo_lancamento>
+		<motivo>RECEBER O DÉBITO COM UM CRÉDITO DO TERCEIRO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BTP</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BAD</lx_tipo_lancamento>
+		<motivo>COMPENSAR O DÉBITO COM BAIXA DE TÍTULOS A PAGAR (DEVOLUÇÃO DE COMPRA)</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BAD</lx_tipo_lancamento>
+		<motivo>RECEBER O DÉBITO COM CRÉDITO EM CONTA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>IAD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BAD</lx_tipo_lancamento>
+		<motivo>TROCAR O DÉBITO POR OUTRO AVISO DE DÉBITO (REPARCELAMENTO)</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ICH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BAD</lx_tipo_lancamento>
+		<motivo>RECEBER O DÉBITO COM CHEQUE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ICR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BAD</lx_tipo_lancamento>
+		<motivo>RECEBER O DÉBITO COM CARTÃO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ITR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BAD</lx_tipo_lancamento>
+		<motivo>RECEBER O DÉBITO COM TÍTULOS DE TERCEIROS A RECEBER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LDD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BAD</lx_tipo_lancamento>
+		<motivo>LANÇAR DÉBITO EM CONTA COMO DESPESA DIVERSA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LEC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BAD</lx_tipo_lancamento>
+		<motivo>RECEBER O DÉBITO EM MOEDA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>CBT</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BBC</lx_tipo_lancamento>
+		<motivo>BAIXAR TÍTULO LIQUIDADO NO ARQUIVO RETORNO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BTR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BCD</lx_tipo_lancamento>
+		<motivo>TROCAR CHEQUE DEVOLVIDO POR TÍTULOS A RECEBER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BCD</lx_tipo_lancamento>
+		<motivo>TROCAR CHEQUE DEVOLVIDO POR OUTRO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LSC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BCD</lx_tipo_lancamento>
+		<motivo>TROCAR CHEQUE DEVOLVIDO POR MOEDA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BAC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BCH</lx_tipo_lancamento>
+		<motivo>PAGAR CRÉDITOS COM CHEQUES A RECEBER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BTP</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BCH</lx_tipo_lancamento>
+		<motivo>PAGAR TÍTULOS COM CHEQUES A RECEBER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BCH</lx_tipo_lancamento>
+		<motivo>DEPOSITAR CHEQUE EM CONTA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>IAD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BCH</lx_tipo_lancamento>
+		<motivo>TROCAR CHEQUES A RECEBER POR AVISO DE DÉBITO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ICH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BCH</lx_tipo_lancamento>
+		<motivo>TROCA DE CHEQUE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ICR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BCH</lx_tipo_lancamento>
+		<motivo>TROCAR CHEQUES POR CARTÃO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ITR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BCH</lx_tipo_lancamento>
+		<motivo>TROCAR CHEQUES POR TÍTULOS A RECEBER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LEC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BCH</lx_tipo_lancamento>
+		<motivo>RECEBER CHEQUE EM MOEDA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BAD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BCM</lx_tipo_lancamento>
+		<motivo>BAIXAR COMISSÃO CONTRA DÉBITO DO REPRESENTANTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BCH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BCM</lx_tipo_lancamento>
+		<motivo>PAGAR COMISSÃO COM CHEQUES A RECEBER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BCM</lx_tipo_lancamento>
+		<motivo>PAGAR COMISSÃO COM CHEQUE PRÓPRIO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LDR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BCM</lx_tipo_lancamento>
+		<motivo>BAIXAR COMISSÃO COMO DESCONTO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LRD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BCM</lx_tipo_lancamento>
+		<motivo>BAIXAR COMISSÃO COMO RECEITAS DIVERSAS</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LSC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BCM</lx_tipo_lancamento>
+		<motivo>PAGAR COMISSÃO EM MOEDA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>SCC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BCM</lx_tipo_lancamento>
+		<motivo>PAGAR COMISSÃO COM DÉBITO EM CONTA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>DBT</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BCP</lx_tipo_lancamento>
+		<motivo>PAGAMENTO DO TÍTULO PELO BANCO (RETORNO PAGTO)</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BAC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BCR</lx_tipo_lancamento>
+		<motivo>PAGTO DE CRÉDITO COM CARTÃO A RECEBER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BTP</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BCR</lx_tipo_lancamento>
+		<motivo>PAGTO DE TÍTULOS COM CARTÃO A RECEBER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BCR</lx_tipo_lancamento>
+		<motivo>RECEBIMENTO DE CARTÃO COM CRÉDITO EM CONTA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>IAD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BCR</lx_tipo_lancamento>
+		<motivo>TROCA DE CARTÃO A RECEBER POR AVISO DE DÉBITO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ICR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BCR</lx_tipo_lancamento>
+		<motivo>TROCA DE CARTÃO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ITR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BCR</lx_tipo_lancamento>
+		<motivo>TROCA DE CARTÃO A RECEBER POR TÍTULOS A RECEBER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LEC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BCR</lx_tipo_lancamento>
+		<motivo>RECEBIMENTO DO CARTÃO EM MOEDA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BAD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BDC</lx_tipo_lancamento>
+		<motivo/>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>DVC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BDC</lx_tipo_lancamento>
+		<motivo/>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LDR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BDR</lx_tipo_lancamento>
+		<motivo/>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BAC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BDV</lx_tipo_lancamento>
+		<motivo/>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>DVV</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BDV</lx_tipo_lancamento>
+		<motivo/>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LDC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BTD</lx_tipo_lancamento>
+		<motivo/>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BAD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BTP</lx_tipo_lancamento>
+		<motivo>PAGAR TÍTULOS COM UM DÉBITO DO TERCEIRO(DEVOLUÇÃO DE COMPRA)</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BCH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BTP</lx_tipo_lancamento>
+		<motivo>PAGAR TÍTULOS COM CHEQUES A RECEBER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BTR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BTP</lx_tipo_lancamento>
+		<motivo>PAGAR TÍTULOS COM TÍTULOS A RECEBER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BTP</lx_tipo_lancamento>
+		<motivo>PAGAR TÍTULOS COM EMISSÃO DE CHEQUE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>IAC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BTP</lx_tipo_lancamento>
+		<motivo>TROCAR TÍTULOS POR AVISO DE CRÉDITO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ITP</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BTP</lx_tipo_lancamento>
+		<motivo>TROCAR TÍTULOS A PAGAR POR OUTROS TÍTULOS A PAGAR</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LRD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BTP</lx_tipo_lancamento>
+		<motivo>DESCONSIDERAR VALOR E LANÇAR COMO RECEITA DIVERSA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LSC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BTP</lx_tipo_lancamento>
+		<motivo>PAGAR TÍTULO EM MOEDA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>SCC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BTP</lx_tipo_lancamento>
+		<motivo>PAGAR TÍTULO COM DÉBITO EM CONTA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BAC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BTR</lx_tipo_lancamento>
+		<motivo>RECEBER TÍTULO COM CRÉDITO DO TERCEIRO (DEVOLUÇÃO DE VENDA)</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>CMS</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BTR</lx_tipo_lancamento>
+		<motivo>PAGAR COMPRA A VISTA COM TÍTULOS A RECEBER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BTR</lx_tipo_lancamento>
+		<motivo>RECEBER TÍTULOS COM CRÉDITO EM CONTA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>IAD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BTR</lx_tipo_lancamento>
+		<motivo>TROCAR TÍTULOS A RECEBER POR AVISO DE DÉBITO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ICH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BTR</lx_tipo_lancamento>
+		<motivo>RECEBER TÍTULOS COM CHEQUE PRÉ-DATADO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ICR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BTR</lx_tipo_lancamento>
+		<motivo>TROCAR TÍTULOS A RECEBER POR CARTÃO A RECEBER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ITR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BTR</lx_tipo_lancamento>
+		<motivo>TROCAR TÍTULOS A RECEBER POR OUTROS TÍTULOS A RECEBER (REPARCELAMENTO)</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LDC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BTR</lx_tipo_lancamento>
+		<motivo>LANÇAR VALOR COMO DESCONTO CONCEDIDO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LEC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>BTR</lx_tipo_lancamento>
+		<motivo>RECEBER TÍTULOS EM MOEDA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BCH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>CBT</lx_tipo_lancamento>
+		<motivo>CRÉDITO EM CONTA POR RECEBIMENTO DE CHEQUES</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BCR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>CBT</lx_tipo_lancamento>
+		<motivo>CRÉDITO EM CONTA POR RECEBIMENTO DE CARTÕES</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BTR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>CBT</lx_tipo_lancamento>
+		<motivo>CRÉDITO EM CONTA POR RECEBIMENTO DE TÍTULOS</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LCC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>CHC</lx_tipo_lancamento>
+		<motivo>COMPENSAÇÃO DE CHEQUES</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LMD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>CHC</lx_tipo_lancamento>
+		<motivo/>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BAD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>CMS</lx_tipo_lancamento>
+		<motivo>COMPRA COM  DÉBITO DO TERCEIRO (PAGTO ANTECIPADO)</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BCH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>CMS</lx_tipo_lancamento>
+		<motivo>COMPRA COM CHEQUES A RECEBER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BTR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>CMS</lx_tipo_lancamento>
+		<motivo>COMPRA COM TÍTULOS A RECEBER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>CMS</lx_tipo_lancamento>
+		<motivo>COMPRA COM CHEQUE PRÓPRIO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>IAC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>CMS</lx_tipo_lancamento>
+		<motivo>COMPRA COM INCLUSÃO DE AVISO DE CRÉDITO (PAGAMENTO FUTURO)</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ITP</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>CMS</lx_tipo_lancamento>
+		<motivo>COMPRA COM INCLUSÃO DE TÍTULOS A PAGAR</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LSC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>CMS</lx_tipo_lancamento>
+		<motivo>COMPRA EM MOEDA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>SCC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>CMS</lx_tipo_lancamento>
+		<motivo>COMPRA COM DÉBITO EM CONTA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>DCP</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>CPD</lx_tipo_lancamento>
+		<motivo>ESTORNAR CHEQUE NO BANCO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BTP</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>DBT</lx_tipo_lancamento>
+		<motivo>PAGAMENTOS BANCÁRIO DE TÍTULOS (DÉBITO AUTOMÁTICO)</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>SCC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>DCH</lx_tipo_lancamento>
+		<motivo>ESTORNO POR CHEQUE DEVOLVIDO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ICM</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>DCM</lx_tipo_lancamento>
+		<motivo>LANÇAR COMISSÕES A PAGAR</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>CPD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>DCP</lx_tipo_lancamento>
+		<motivo>RETORNAR CHEQUE EM COMPENSAÇÃO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>SCC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>DCR</lx_tipo_lancamento>
+		<motivo>ESTORNAR CONTA CORRENTE POR DEVOLUÇÃO DE CARTÃO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>IRS</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>DIS</lx_tipo_lancamento>
+		<motivo>LANÇAR IMPOSTO A RECOLHER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>IAD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>DVC</lx_tipo_lancamento>
+		<motivo>LANÇAR AVISO DE DÉBITO PARA O FORNECEDOR (DEVOLUÇÃO DE COMPRA)</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>IAC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>DVV</lx_tipo_lancamento>
+		<motivo>LANÇAR AVISO DE CRÉDITO AO CLIENTE (DEVOLUÇÃO DE VENDA)</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BAD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ECC</lx_tipo_lancamento>
+		<motivo>RECEBER AVISO DE DÉBITO COM CRÉDITO EM CONTA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BCH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ECC</lx_tipo_lancamento>
+		<motivo>RECEBER CHEQUE (DEVOLVIDO) COM CRÉDITO EM CONTA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BCR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ECC</lx_tipo_lancamento>
+		<motivo>RECEBER CARTÃO COM CRÉDITO EM CONTA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BTR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ECC</lx_tipo_lancamento>
+		<motivo>RECEBER TÍTULOS COM CRÉDITO EM CONTA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ECC</lx_tipo_lancamento>
+		<motivo>TROCAR CHEQUE PRÓPRIO POR CRÉDITO EM CONTA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>IAC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ECC</lx_tipo_lancamento>
+		<motivo>ANTECIPAÇÃO DE TERCEIROS COM CRÉDITO EM CONTA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ITP</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ECC</lx_tipo_lancamento>
+		<motivo>LANÇAR TÍTULO A PAGAR POR CRÉDITO EM CONTA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LDR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ECC</lx_tipo_lancamento>
+		<motivo>LANÇAR CRÉDITO EM CONTA COMO DESCONTO RECEBIDO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LJR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ECC</lx_tipo_lancamento>
+		<motivo>LANÇAR CRÉDITO EM CONTA COMO JUROS RECEBIDOS</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LMR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ECC</lx_tipo_lancamento>
+		<motivo>LANÇAR CRÉDITO EM CONTA COMO MULTA RECEBIDA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LRD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ECC</lx_tipo_lancamento>
+		<motivo>LANÇAR CRÉDITO EM CONTA COMO RECEITAS DIVERSAS</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LRF</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ECC</lx_tipo_lancamento>
+		<motivo>LANÇAR CRÉDITO EM CONTA COMO RECEITAS FINANCEIRA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LSC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ECC</lx_tipo_lancamento>
+		<motivo>TRANSFERÊNCIA DO CAIXA PARA A CONTA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>SCC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ECC</lx_tipo_lancamento>
+		<motivo>TRANSFERÊNCIA ENTRE CONTAS CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BAC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ECH</lx_tipo_lancamento>
+		<motivo>PAGAR AVISO DE CRÉDITO COM CHEQUE PRÓPRIO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BTP</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ECH</lx_tipo_lancamento>
+		<motivo>PAGAR TÍTULO COM CHEQUE PRÓPRIO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>CMS</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ECH</lx_tipo_lancamento>
+		<motivo>COMPRA A VISTA COM CHEQUE PRÓPRIO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ECH</lx_tipo_lancamento>
+		<motivo>LANÇAR VALOR DO CHEQUE COMO CRÉDITO EM CONTA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>IAD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ECH</lx_tipo_lancamento>
+		<motivo>ANTECIPAÇÃO / EMPRÉSTIMO COM CHEQUE PRÓPRIO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ICR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ECH</lx_tipo_lancamento>
+		<motivo>TROCA DE CHEQUE PRÓPRIO POR CARTÃO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ITR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ECH</lx_tipo_lancamento>
+		<motivo>TROCA DE CHEQUE PRÓPRIO POR TÍTULO A RECEBER (DESCONTO DE TÍTULO)</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>RRC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ECP</lx_tipo_lancamento>
+		<motivo>LANÇAR TÍTULOS PARA COBRANÇA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>SCP</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ECT</lx_tipo_lancamento>
+		<motivo>DEVOLUÇÃO PELA PORTADORA DO TÍTULO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LPE</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>EEC</lx_tipo_lancamento>
+		<motivo>LANÇAR PREJUÍZO DO EXERCÍCIO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LLE</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>EED</lx_tipo_lancamento>
+		<motivo>LANÇAR LUCRO DO EXERCÍCIO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>IAC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>EIM</lx_tipo_lancamento>
+		<motivo/>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>IRS</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>EIM</lx_tipo_lancamento>
+		<motivo/>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>EMC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>EMR</lx_tipo_lancamento>
+		<motivo>LANÇAR VALOR EM CONTA DE COMPENSAÇÃO ATIVA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>SMT</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ERM</lx_tipo_lancamento>
+		<motivo>SAÍDA DO CONTROLE DE ESTOQUE COM TERCEIROS</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>SMT</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ERS</lx_tipo_lancamento>
+		<motivo>COMPENSAR O RETORNO SIMBÓLICO COM A SAÍDA DA MERCADORIA DE EM PODER DE TERCEIROS</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>STT</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ETM</lx_tipo_lancamento>
+		<motivo>SAÍDA DO TRÂNSITO DE TRANSFERÊNCIA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>IAD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>EVM</lx_tipo_lancamento>
+		<motivo/>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>DVV</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>IAC</lx_tipo_lancamento>
+		<motivo>LANÇAR VALOR COMO DEVOLUÇÃO DE VENDA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>IAC</lx_tipo_lancamento>
+		<motivo>ANTECIPAÇÃO COM CRÉDITO EM CONTA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ICH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>IAC</lx_tipo_lancamento>
+		<motivo>ANTECIPAÇÃO EM CHEQUE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LEC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>IAC</lx_tipo_lancamento>
+		<motivo>ANTECIPAÇÃO EM MOEDA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BAD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>IAD</lx_tipo_lancamento>
+		<motivo>TROCAR DE UM AVISO DE DÉBITO POR OUTRO (REPARCELAMENTO)</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BCH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>IAD</lx_tipo_lancamento>
+		<motivo>TROCAR CHEQUES A RECEBER POR AVISO DE DÉBITO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BTR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>IAD</lx_tipo_lancamento>
+		<motivo>TROCAR TÍTULOS A RECEBER POR AVISO DE DÉBITO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>DVC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>IAD</lx_tipo_lancamento>
+		<motivo>LANÇAR VALOR COMO DEVOLUÇÃO DE COMPRA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>IAD</lx_tipo_lancamento>
+		<motivo>ANTECIPAÇÃO COM CHEQUE PRÓPRIO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LDR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>IAD</lx_tipo_lancamento>
+		<motivo>LANÇAR VALOR COMO DESCONTO RECEBIDO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LJR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>IAD</lx_tipo_lancamento>
+		<motivo>LANÇAR VALOR COMO JUROS RECEBIDOS</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LMR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>IAD</lx_tipo_lancamento>
+		<motivo>LANÇAR VALOR COMO MULTA RECEBIDA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LRD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>IAD</lx_tipo_lancamento>
+		<motivo>LANÇAR VALOR COMO RECEITA DIVERSA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LSC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>IAD</lx_tipo_lancamento>
+		<motivo>ANTECIPAÇÃO EM MOEDA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>SCC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>IAD</lx_tipo_lancamento>
+		<motivo>ANTECIPAÇÃO COM DÉBITO EM CONTA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BAD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ICH</lx_tipo_lancamento>
+		<motivo>RECEBTO DE DÉBITO COM CHEQUE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BCH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ICH</lx_tipo_lancamento>
+		<motivo>TROCA DE CHEQUE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BTR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ICH</lx_tipo_lancamento>
+		<motivo>RECEBTO DE TITULOS COM CHEQUE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ICH</lx_tipo_lancamento>
+		<motivo>DESCONTO DE CHEQUE COM CHEQUE PRÓPRIO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>IAC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ICH</lx_tipo_lancamento>
+		<motivo>ANTECIPAÇÃO COM CHEQUE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LDR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ICH</lx_tipo_lancamento>
+		<motivo>LANÇAR VALOR COMO DESCONTO RECEBIDO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LJR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ICH</lx_tipo_lancamento>
+		<motivo>LANÇAR VALOR COMO JUROS RECEBIDOS</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LMR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ICH</lx_tipo_lancamento>
+		<motivo>LANÇAR VALOR COMO MULTA  RECEBIDA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LRD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ICH</lx_tipo_lancamento>
+		<motivo>LANÇAR VALOR COMO RECEITAS DIVERSAS</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LSC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ICH</lx_tipo_lancamento>
+		<motivo>DESCONTAR CHEQUE EM MOEDA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>SCC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ICH</lx_tipo_lancamento>
+		<motivo>DESCONTAR CHEQUE COM DEBITO EM CONTA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>VMS</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ICH</lx_tipo_lancamento>
+		<motivo>VENDA COM PAGAMENTO EM CHEQUE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>DCM</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ICM</lx_tipo_lancamento>
+		<motivo>LANÇAR O VALOR COMO DESPESA DESPESA DE COMISSÃO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BAD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ICR</lx_tipo_lancamento>
+		<motivo>RECEBER O DÉBITO COM CARTÃO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BCH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ICR</lx_tipo_lancamento>
+		<motivo>TROCA DE CHEQUE A RECEBER POR CARTÃO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BTR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ICR</lx_tipo_lancamento>
+		<motivo>RECEBTO DE TÍTULOS COM CARTÃO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ICR</lx_tipo_lancamento>
+		<motivo>TROCA DE CHEQUE POR CARTÃO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>IAC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ICR</lx_tipo_lancamento>
+		<motivo>ANTECIPAÇÃO EM CARTÃO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LDR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ICR</lx_tipo_lancamento>
+		<motivo>LANÇAR VALOR COMO DESCONTO RECEBIDO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LJR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ICR</lx_tipo_lancamento>
+		<motivo>LANÇAR VALOR JUROS RECEBIDO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LMR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ICR</lx_tipo_lancamento>
+		<motivo>LANÇAR VALOR COMO MULTA RECEBIDA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LRD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ICR</lx_tipo_lancamento>
+		<motivo>LANÇAR VALOR COMO RECEITA DIVERSA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LSC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ICR</lx_tipo_lancamento>
+		<motivo>DESCONTAR CARTÃO COM MOEDA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>SCC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ICR</lx_tipo_lancamento>
+		<motivo>DESCONTAR CARTÃO COM DÉBITO EM CONTA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>VMS</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ICR</lx_tipo_lancamento>
+		<motivo>VENDA COM CARTÃO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>DIE</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>IRE</lx_tipo_lancamento>
+		<motivo>DEDUÇÃO DO IMPOSTO S/ENTRADAS</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LRD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>IRE</lx_tipo_lancamento>
+		<motivo>RECUPERAÇÃO DE IMPOSTOS</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>DIS</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>IRS</lx_tipo_lancamento>
+		<motivo>LANÇAR DEDUÇÃO DOS IMPOSTOS S/VENDAS</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LDD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>IRS</lx_tipo_lancamento>
+		<motivo>DESPESA COM IMPOSTO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BAC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ITP</lx_tipo_lancamento>
+		<motivo>TROCAR AVISO DE CRÉDITO POR TÍTULO A PAGAR</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BTP</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ITP</lx_tipo_lancamento>
+		<motivo>TROCAR TÍTULO A PAGAR POR OUTRO (REPARCELAMENTO)</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>CMS</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ITP</lx_tipo_lancamento>
+		<motivo>COMPRA FATURADA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>IRE</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ITP</lx_tipo_lancamento>
+		<motivo>LANÇAR IMPOSTOS A RECUPERAR SOBRE TÍTULO A PAGAR</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LDD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ITP</lx_tipo_lancamento>
+		<motivo>LANÇAR COMO DESPESA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BAD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ITR</lx_tipo_lancamento>
+		<motivo>RECEBTO DE DÉBITO COM TÍTULOS DE TERCEIROS A RECEBER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BCH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ITR</lx_tipo_lancamento>
+		<motivo>TROCA DE CHEQUE POR TÍTULOS A RECEBER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BTR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ITR</lx_tipo_lancamento>
+		<motivo>TROCA DE TÍTULOS A RECEBER POR OUTRO (REPARCELAMENTO)</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ITR</lx_tipo_lancamento>
+		<motivo>DESCONTAR TÍTULOS COM CHEQUE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>IAC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ITR</lx_tipo_lancamento>
+		<motivo>ANTECIPAÇÃO COM TÍTULOS DE TERCEIROS A RECEBER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LDR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ITR</lx_tipo_lancamento>
+		<motivo>LANÇAR VALOR DOS TÍTULOS COMO DESCONTO RECEBIDO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LJR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ITR</lx_tipo_lancamento>
+		<motivo>LANÇAR VALOR DOS TÍTULOS COMO JURO RECEBIDO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LMR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ITR</lx_tipo_lancamento>
+		<motivo>LANÇAR VALOR DOS TÍTULOS COMO MULTA RECEBIDA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LRD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ITR</lx_tipo_lancamento>
+		<motivo>LANÇAR VALOR DOS TÍTULOS COMO RECEITA DIVERSA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LSC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ITR</lx_tipo_lancamento>
+		<motivo>DESCONTAR TÍTULO COM MOEDA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>SCC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ITR</lx_tipo_lancamento>
+		<motivo>DESCONTAR TÍTULO COM DÉBITO EM CONTA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>VMS</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>ITR</lx_tipo_lancamento>
+		<motivo>VENDA FATURADA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>CHC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LCC</lx_tipo_lancamento>
+		<motivo>COMPENSAÇÃO DO CHEQUE NO BANCO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BCH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LDA</lx_tipo_lancamento>
+		<motivo>PAGAR DESPESA COM CHEQUES DE TERCEIROS A RECEBER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LDA</lx_tipo_lancamento>
+		<motivo>PAGAR DESPESA COM CHEQUE PRÓPRIO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LSC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LDA</lx_tipo_lancamento>
+		<motivo>PAGAR DESPESA COM MOEDA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>SCC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LDA</lx_tipo_lancamento>
+		<motivo>PAGAR DESPESA COM DÉBITO EM CONTA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BCH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LDD</lx_tipo_lancamento>
+		<motivo>PAGAR DESPESA COM CHEQUES DE TERCEIROS A RECEBER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LDD</lx_tipo_lancamento>
+		<motivo>PAGAR DESPESA COM CHEQUE PRÓPRIO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LSC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LDD</lx_tipo_lancamento>
+		<motivo>PAGAR DESPESA COM MOEDA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>SCC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LDD</lx_tipo_lancamento>
+		<motivo>PAGAR DESPESA COM DÉBITO EM CONTA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BCH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LDF</lx_tipo_lancamento>
+		<motivo>PAGAR DESPESA COM CHEQUES DE TERCEIROS A RECEBER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LDF</lx_tipo_lancamento>
+		<motivo>PAGAR DESPESA COM CHEQUE PRÓPRIO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LSC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LDF</lx_tipo_lancamento>
+		<motivo>PAGAR DESPESA COM MOEDA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>SCC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LDF</lx_tipo_lancamento>
+		<motivo>PAGAR DESPESA COM DÉBITO EM CONTA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BCH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LDI</lx_tipo_lancamento>
+		<motivo>PAGAR DESPESA COM CHEQUES DE TERCEIROS A RECEBER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LDI</lx_tipo_lancamento>
+		<motivo>PAGAR DESPESA COM CHEQUE PRÓPRIO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LSC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LDI</lx_tipo_lancamento>
+		<motivo>PAGAR DESPESA COM MOEDA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>SCC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LDI</lx_tipo_lancamento>
+		<motivo>PAGAR DESPESA COM DÉBITO EM CONTA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BCH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LDP</lx_tipo_lancamento>
+		<motivo>PAGAR DESPESA COM CHEQUES DE TERCEIROS A RECEBER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LDP</lx_tipo_lancamento>
+		<motivo>PAGAR DESPESA COM CHEQUE PRÓPRIO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LSC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LDP</lx_tipo_lancamento>
+		<motivo>PAGAR DESPESA COM MOEDA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>SCC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LDP</lx_tipo_lancamento>
+		<motivo>PAGAR DESPESA COM DÉBITO EM CONTA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BCH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LDV</lx_tipo_lancamento>
+		<motivo>PAGAR DESPESA COM CHEQUES DE TERCEIROS A RECEBER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LDV</lx_tipo_lancamento>
+		<motivo>PAGAR DESPESA COM CHEQUE PRÓPRIO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LSC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LDV</lx_tipo_lancamento>
+		<motivo>PAGAR DESPESA COM MOEDA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>SCC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LDV</lx_tipo_lancamento>
+		<motivo>PAGAR DESPESA COM DÉBITO EM CONTA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BAD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LEC</lx_tipo_lancamento>
+		<motivo>RECEBTO DE AVISO DE DÉBITO, EM MOEDA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BCH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LEC</lx_tipo_lancamento>
+		<motivo>TROCA DE CHEQUE A RECEBER POR MOEDA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BTR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LEC</lx_tipo_lancamento>
+		<motivo>RECEBTO DE TÍTULOS , EM MOEDA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LEC</lx_tipo_lancamento>
+		<motivo>TROCA DE CHEQUE PRÓPRIO POR MOEDA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>IAC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LEC</lx_tipo_lancamento>
+		<motivo>ANTECIPAÇÃO EM MOEDA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ITP</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LEC</lx_tipo_lancamento>
+		<motivo>LANÇAR VALOR EM MOEDA, COMO TÍTULOS A PAGAR</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LDR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LEC</lx_tipo_lancamento>
+		<motivo>RECEBER DESCONTO EM MOEDA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LJR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LEC</lx_tipo_lancamento>
+		<motivo>RECEBER JUROS EM MOEDA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LMR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LEC</lx_tipo_lancamento>
+		<motivo>RECEBER MULTA EM MOEDA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LRD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LEC</lx_tipo_lancamento>
+		<motivo>LANÇAR COMO RECEITAS DIVERSAS</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LSC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LEC</lx_tipo_lancamento>
+		<motivo>TROCAR DE CAIXA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>SCC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LEC</lx_tipo_lancamento>
+		<motivo>SAQUE DA CONTA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LJP</lx_tipo_lancamento>
+		<motivo>PAGAR DE JUROS COM CHEQUE PRÓRPIO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ITP</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LJP</lx_tipo_lancamento>
+		<motivo>LANÇAR JUROS COMO TÍTULO A PAGAR</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LSC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LJP</lx_tipo_lancamento>
+		<motivo>PAGAR JUROS EM MOEDA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>SCC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LJP</lx_tipo_lancamento>
+		<motivo>PAGAR JUROS COM DÉBITO EM CONTA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LJR</lx_tipo_lancamento>
+		<motivo>RECEBER JUROS COM CRÉDITO EM CONTA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ITR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LJR</lx_tipo_lancamento>
+		<motivo>LANÇAR JUROS COMO TÍTULOS A RECEBER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LEC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LJR</lx_tipo_lancamento>
+		<motivo>RECEBER JUROS EM MOEDA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>EED</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LLE</lx_tipo_lancamento>
+		<motivo>LANÇAR ENCERRAMENTO COM LUCRO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LMD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LMC</lx_tipo_lancamento>
+		<motivo>CONTRA PARTIDA DO LANÇAMENTO A CRÉDITO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LMC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LMD</lx_tipo_lancamento>
+		<motivo>CONTRA PARTIDA DO LANÇAMENTO A DÉBITO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LMP</lx_tipo_lancamento>
+		<motivo>PAGAR MULTA COM CHEQUE PRÓPRIO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ITP</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LMP</lx_tipo_lancamento>
+		<motivo>LANÇAR VALOR DA MULTA COMO TÍTULO A PAGAR</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LSC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LMP</lx_tipo_lancamento>
+		<motivo>PAGAR MULTA COM MOEDA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>SCC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LMP</lx_tipo_lancamento>
+		<motivo>PAGAR MULTA COM DÉBITO EM CONTA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LMR</lx_tipo_lancamento>
+		<motivo>RECEBER MULTA COM CRÉDITO EM CONTA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ICH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LMR</lx_tipo_lancamento>
+		<motivo>RECEBER MULTA COM CHEQUE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ITR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LMR</lx_tipo_lancamento>
+		<motivo>LANÇAR VALOR DA MULTA COMO TÍTULOS A RECEBER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LEC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LMR</lx_tipo_lancamento>
+		<motivo>RECEBER MULTA EM MOEDA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LDD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LOP</lx_tipo_lancamento>
+		<motivo>LANÇAR COMO DESPESA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LMD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LOP</lx_tipo_lancamento>
+		<motivo>LANÇAMENTO LIVRE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>EEC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LPE</lx_tipo_lancamento>
+		<motivo>LANÇAR ENCERRAMENTO COM PREJUÍZO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BAC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LSC</lx_tipo_lancamento>
+		<motivo>PAGAR AVISO DE CRÉDITO EM MOEDA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BTP</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LSC</lx_tipo_lancamento>
+		<motivo>PAGAR TÍTULO EM MOEDA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>CMS</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LSC</lx_tipo_lancamento>
+		<motivo>COMPRA EM MOEDA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LSC</lx_tipo_lancamento>
+		<motivo>DEPOSITAR DINHEIRO NA CONTA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>IAD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LSC</lx_tipo_lancamento>
+		<motivo>LANÇAR SAÍDA DO CAIXA COMO AVISO DE DÉBITO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LDD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LSC</lx_tipo_lancamento>
+		<motivo>LANÇAR SAÍDA DO CAIXA COMO DESPESA DIVERSA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LDF</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LSC</lx_tipo_lancamento>
+		<motivo>LANÇAR SAÍDA DO CAIXA COMO DESPESA FINANCEIRA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>SCC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>LTB</lx_tipo_lancamento>
+		<motivo>LANCAMENTO DE DESPESAS BANCÁRIAS</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>OCP</lx_tipo_lancamento>
+		<motivo/>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LSC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>OCP</lx_tipo_lancamento>
+		<motivo/>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>SCC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>OCP</lx_tipo_lancamento>
+		<motivo/>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>RPC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>PCP</lx_tipo_lancamento>
+		<motivo>SAÍDA DA CARTEIRA DE TÍTULOS A PAGAR</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>RIP</lx_tipo_lancamento>
+		<motivo>RECOLHIMENTO DE IMPOSTOS COM CHEQUE PRÓPRIO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LSC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>RIP</lx_tipo_lancamento>
+		<motivo>RECOLHIMENTO DE IMPOSTOS EM MOEDA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>SCC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>RIP</lx_tipo_lancamento>
+		<motivo>RECOLHIMENTO DE IMPOSTOS COM DÉBITO EM CONTA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>PCP</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>RPC</lx_tipo_lancamento>
+		<motivo>LANÇAR VALOR NA CONTA PORTADORA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECP</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>RRC</lx_tipo_lancamento>
+		<motivo>ENTRADA DO TÍTULO NA CONTA PORTADORA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BAC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>SCC</lx_tipo_lancamento>
+		<motivo>PAGAR AVISO DE CRÉDITO COM DÉBITO EM CONTA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BTP</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>SCC</lx_tipo_lancamento>
+		<motivo>PAGAR TÍTULO COM DÉBITO EM CONTA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>DCH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>SCC</lx_tipo_lancamento>
+		<motivo>LANÇAR DEVOLUÇÃO DE CHEQUE A RECEBER</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>SCC</lx_tipo_lancamento>
+		<motivo>TRANSFERÊNCIA ENTRE CONTAS CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>IAD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>SCC</lx_tipo_lancamento>
+		<motivo>LANÇAR DÉBITO EM CONTA COMO AVISO DE DÉBITO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LDD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>SCC</lx_tipo_lancamento>
+		<motivo>LANÇAR DÉBITO EM CONTA COMO DESPESA DIVERSA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LDF</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>SCC</lx_tipo_lancamento>
+		<motivo>LANÇAR DÉBITO EM CONTA COMO  DESPESA FINANCEIRA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LEC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>SCC</lx_tipo_lancamento>
+		<motivo>LANÇAR DÉBITO EM CONTA COMO  ENTRADA NO CAIXA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LTB</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>SCC</lx_tipo_lancamento>
+		<motivo>LANÇAR DÉBITO EM CONTA COMO TARIFA BANCÁRIA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>IAD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>SIM</lx_tipo_lancamento>
+		<motivo/>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>IRE</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>SIM</lx_tipo_lancamento>
+		<motivo/>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>EMT</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>SMR</lx_tipo_lancamento>
+		<motivo>ENTRADA NO ESTOQUE EM PODER DE TERCEIROS</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>SMC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>SRM</lx_tipo_lancamento>
+		<motivo>LANÇAR SAÍDA DA CONTA DE COMPENSAÇÃO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>SMC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>SRS</lx_tipo_lancamento>
+		<motivo>BAIXAR O RETORNO SIMBÓLICO NA CONTA DE COMPENSAÇÃO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ETT</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>STM</lx_tipo_lancamento>
+		<motivo>ENTRADA NO TRÂNSITO DE TRANFERÊNCIA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>IAC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>SVM</lx_tipo_lancamento>
+		<motivo>LANÇAR O VALOR A MAIOR COMO AVISO DE CRÉDITO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>TCE</lx_tipo_lancamento>
+		<motivo>TROCA DE CHEQUE EMITIDO POR OUTRO CHEQUE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>SCC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>TCE</lx_tipo_lancamento>
+		<motivo>TROCA CHEQUE EMITIDO POR DINHEIRO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>BAC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>VMS</lx_tipo_lancamento>
+		<motivo>BAIXA DA ANTECIPAÇÃO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ECC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>VMS</lx_tipo_lancamento>
+		<motivo>A VISTA COM CRÉDITO EM CONTA</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>IAD</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>VMS</lx_tipo_lancamento>
+		<motivo>LANÇAR COMO DÉBITO DO TERCEIRO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ICH</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>VMS</lx_tipo_lancamento>
+		<motivo>PAGO COM CHEQUE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ICR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>VMS</lx_tipo_lancamento>
+		<motivo>PAGO COM CARTÃO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>ITR</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>VMS</lx_tipo_lancamento>
+		<motivo>FATURADO</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+	<ctb_lx_lanc_tipo_contra>
+		<lx_tipo_contrapartida>LEC</lx_tipo_contrapartida>
+		<lx_tipo_lancamento>VMS</lx_tipo_lancamento>
+		<motivo>A VISTA EM MOEDA CORRENTE</motivo>
+		<inativo>false</inativo>
+	</ctb_lx_lanc_tipo_contra>
+</VFPData>

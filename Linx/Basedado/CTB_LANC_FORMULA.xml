@@ -1,0 +1,757 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="ctb_lanc_formula" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="codigo_formula">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="25"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="formula">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="2147483647"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="indicador_tipo_formula" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="1"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="lx_formula" type="xsd:boolean"/>
+								<xsd:element name="inativo" type="xsd:boolean"/>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<ctb_lanc_formula>
+		<codigo_formula>01.1 - ICMS POR NF</codigo_formula>
+		<formula>ICMS</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>01.2 - ICMS ACUMULADO</codigo_formula>
+		<formula>ICMS</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>02.1 - IPI POR NF</codigo_formula>
+		<formula>IPI</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>02.2 - IPI ACUMULADO</codigo_formula>
+		<formula>IPI</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>03.1 - IRRF POR NF</codigo_formula>
+		<formula>IRRF</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>03.2 - IRRF ACUMULADO</codigo_formula>
+		<formula>IRRF</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>04.1 - INSS POR NF</codigo_formula>
+		<formula>INSS</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>04.2 - IRRF ACUMULADO</codigo_formula>
+		<formula>IRRF</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>05.1 - PIS POR NF</codigo_formula>
+		<formula>PIS</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>05.2 - PIS ACUMULADO</codigo_formula>
+		<formula>PIS</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>06.1 - COFINS POR NF</codigo_formula>
+		<formula>COFINS</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>06.2 - COFINS ACUMULADO</codigo_formula>
+		<formula>COFINS</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>07.1 - I.IMPORT. POR NF</codigo_formula>
+		<formula>I.IMPORT.</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>07.2 - I.IMPORT.ACUMULADO</codigo_formula>
+		<formula>I.IMPORT.</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>08.1 - IVA POR NF</codigo_formula>
+		<formula>IVA</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>08.2 - IVA ACUMULADO</codigo_formula>
+		<formula>IVA</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>09.1 - RECARGO POR NF</codigo_formula>
+		<formula>RECARGO</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>09.2 - RECARGO ACUMULADO</codigo_formula>
+		<formula>RECARGO</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>11.1 - DICMS POR NF</codigo_formula>
+		<formula>DICMS</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>11.2 - DICMS ACUMULADO</codigo_formula>
+		<formula>DICMS</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>12.1 - ICMS-ST POR NF</codigo_formula>
+		<formula>ICMS-ST</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>12.2 - ICMS-ST ACUMULADO</codigo_formula>
+		<formula>ICMS-ST</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>13.1 - ICMS-STR POR NF</codigo_formula>
+		<formula>ICMS-STR</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>13.2 - ICMS-STR ACUMULADO</codigo_formula>
+		<formula>ICMS-STR</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>14.1 - ISS POR NF</codigo_formula>
+		<formula>ISS</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>14.2 - ISS ACUMULADO</codigo_formula>
+		<formula>ISS</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>15.1 - IVA-IC POR NF</codigo_formula>
+		<formula>IVA-IC</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>15.2 - IVA-IC ACUMULADO</codigo_formula>
+		<formula>IVA-IC</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>16.1 - PC-CSL POR NF</codigo_formula>
+		<formula>PC-CSL</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>16.2 - PC-CSL ACUMULADO</codigo_formula>
+		<formula>PC-CSL</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>17.1 - PIS-R POR NF</codigo_formula>
+		<formula>PIS-R</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>17.2 - PIS-R ACUMULADO</codigo_formula>
+		<formula>PIS-R</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>18.1 - COFINS-R POR NF</codigo_formula>
+		<formula>COFINS-R</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>18.2 - COFINS-R ACUMULADO</codigo_formula>
+		<formula>COFINS-R</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>19.1 - CSLL-R POR NF</codigo_formula>
+		<formula>CSLL-R</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>19.2 - CSLL-R ACUMULADO</codigo_formula>
+		<formula>CSLL-R</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>20.1 - IRRF-R POR NF</codigo_formula>
+		<formula>IRRF-R</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>20.2 - IRRF-R ACUMULADO</codigo_formula>
+		<formula>IRRF-R</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>21.1 - INSS-R POR NF</codigo_formula>
+		<formula>INSS-R</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>21.2 - INSS-R ACUMULADO</codigo_formula>
+		<formula>INSS-R</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>22.1 - ISS-R POR NF</codigo_formula>
+		<formula>ISS-R</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>22.2 - ISS-R ACUMULADO</codigo_formula>
+		<formula>ISS-R</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>23.1 - PIS-S POR NF</codigo_formula>
+		<formula>PIS-S</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>23.2 - PIS-S ACUMULADO</codigo_formula>
+		<formula>PIS-S</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>24.1 - COFINS-S POR NF</codigo_formula>
+		<formula>COFINS-S</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>24.2 - COFINS-S ACUMULADO</codigo_formula>
+		<formula>COFINS-S</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>25.1 - CSLL-S POR NF</codigo_formula>
+		<formula>CSLL-S</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>25.2 - CSLL-S ACUMULADO</codigo_formula>
+		<formula>CSLL-S</formula>
+		<indicador_tipo_formula>1</indicador_tipo_formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>42.1 - FECP POR NF</codigo_formula>
+		<formula>FECP</formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>42.2 - FECP ACUMULADO</codigo_formula>
+		<formula>FECP</formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>COFINS</codigo_formula>
+		<formula>dbo.FX_VAL_IMP(@E,@L,null,null,@F,'COFINS',1) </formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>COFINS-R (Retido)</codigo_formula>
+		<formula>dbo.FX_VAL_IMP(@E,@L,null,null,@F,'COFINS-R',1) </formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>COFINS-S (Ret.Separado)</codigo_formula>
+		<formula>dbo.FX_VAL_IMP(@E,@L,null,null,@F,'COFINS-S',1) </formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>COMISSAO (ICM)</codigo_formula>
+		<formula>dbo.FX_VAL_LANC(@E,@L,'ICM',null)  </formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>CSLL</codigo_formula>
+		<formula>dbo.FX_VAL_IMP(@E,@L,null,null,@F,'CSLL',1)  </formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>CSLL-R (Retido)</codigo_formula>
+		<formula>dbo.FX_VAL_IMP(@E,@L,null,null,@F,'CSLL-R',1)</formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>CSLL-S (Ret.Separado)</codigo_formula>
+		<formula>dbo.FX_VAL_IMP(@E,@L,null,null,@F,'CSLL-S',1)</formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>DESPESA (SDD)</codigo_formula>
+		<formula>dbo.FX_VAL_LANC(@E,@L,'SDD',null) </formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>DEVOL VENDA (IAC)</codigo_formula>
+		<formula>dbo.FX_VAL_LANC(@E,@L,'IAC',null) </formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>DICMS</codigo_formula>
+		<formula>dbo.FX_VAL_IMP(@E,@L,null,null,@F,'DICMS',1)    </formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>DICMS-R</codigo_formula>
+		<formula>dbo.FX_VAL_IMP(@E,@L,null,null,@F,'DICMS-R',1)  </formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>DICMS-R (POR TERCEIRO)</codigo_formula>
+		<formula>dbo.FX_IMP_SUM_TERC(@E,@L,'DICMS-R',@TCF)</formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>ENT REMESSA (EMR)</codigo_formula>
+		<formula>dbo.FX_VAL_LANC(@E,@L,'EMR',null)  </formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>ENT RETORNO (SMT)</codigo_formula>
+		<formula>dbo.FX_VAL_LANC(@E,@L,'SMT',null) </formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>ENT TRANSF.(STT)</codigo_formula>
+		<formula>dbo.FX_VAL_LANC(@E,@L,'STT',null)  </formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>ESTORNO COMISSAO (IEC)</codigo_formula>
+		<formula>dbo.FX_VAL_LANC(@E,@L,'IEC',null) </formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>I.IMPORT</codigo_formula>
+		<formula>dbo.FX_VAL_IMP(@E,@L,null,null,@F,'I.IMPORT',1) </formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>ICMS</codigo_formula>
+		<formula>dbo.FX_VAL_IMP(@E,@L,null,null,@F,'ICMS',1)</formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>ICMS-ST</codigo_formula>
+		<formula>dbo.FX_VAL_IMP(@E,@L,null,null,@F,'ICMS-ST',1)</formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>ICMS-STR (Retido)</codigo_formula>
+		<formula>dbo.FX_VAL_IMP(@E,@L,null,null,@F,'ICMS-STR',1)</formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>INSS</codigo_formula>
+		<formula>dbo.FX_VAL_IMP(@E,@L,null,null,@F,'INSS',1)</formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>INSS-R (Retido)</codigo_formula>
+		<formula>dbo.FX_VAL_IMP(@E,@L,null,null,@F,'INSS-R',1)</formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>IPI</codigo_formula>
+		<formula>dbo.FX_VAL_IMP(@E,@L,null,null,@F,'IPI',1)
+</formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>IRPF</codigo_formula>
+		<formula>dbo.FX_VAL_IMP(@E,@L,null,null,@F,'IRPF',1)</formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>IRRF</codigo_formula>
+		<formula>dbo.FX_VAL_IMP(@E,@L,null,null,@F,'IRRF',1)</formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>IRRF-R (Retido)</codigo_formula>
+		<formula>dbo.FX_VAL_IMP(@E,@L,null,null,@F,'IRRF-R',1)</formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>ISS</codigo_formula>
+		<formula>dbo.FX_VAL_IMP(@E,@L,null,null,@F,'ISS',1)</formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>ISS-R (Retido)</codigo_formula>
+		<formula>dbo.FX_VAL_IMP(@E,@L,null,null,@F,'ISS-R',1)</formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>ITEM</codigo_formula>
+		<formula>dbo.FX_VAL_ITEM(@E,@L,@C,@CC,@F,1) - dbo.FX_VAL_ITEM(@E,@L,@C,@CC,@F,3) + dbo.FX_VAL_ITEM(@E,@L,@C,@CC,@F,2) + dbo.FX_VAL_ITEM(@E,@L,@C,@CC,@F,4) + dbo.FX_IMP_AGREG_CONTA_RATEIO_FILIAL(@E,@L,'IPI',2,@C,@CC, @F)</formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>ITEM C/CONTA DIFERENCIAL</codigo_formula>
+		<formula>dbo.FX_VAL_ITEM(@E,@L,@CI,@CC,@F,1) - dbo.FX_VAL_ITEM(@E,@L,@CI,@CC,@F,3) + dbo.FX_VAL_ITEM(@E,@L,@CI,@CC,@F,2) + dbo.FX_VAL_ITEM(@E,@L,@CI,@CC,@F,4) +     dbo.FX_IMP_AGREG_CONTA_RATEIO_FILIAL(@E,@L,'IPI',2,@CI,@CC,@F)</formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>ITEM CCUSTO FIXO</codigo_formula>
+		<formula>dbo.FX_VAL_ITEM(@E,@L,@C,null,@F,1) - dbo.FX_VAL_ITEM(@E,@L,@C,null,@F,3) + dbo.FX_VAL_ITEM(@E,@L,@C,null,@F,2) + dbo.FX_VAL_ITEM(@E,@L,@C,null,@F,4) + dbo.FX_IMP_AGREG_CONTA_RATEIO_FILIAL(@E,@L,'IPI',2,@C,null,@F)</formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>ITEM CONTA E CCUSTO FIXO</codigo_formula>
+		<formula>dbo.FX_VAL_ITEM(@E,@L,null,null,@F,1) - dbo.FX_VAL_ITEM(@E,@L,null,null,@F,3) + dbo.FX_VAL_ITEM(@E,@L,null,null,@F,2) + dbo.FX_VAL_ITEM(@E,@L,null,null,@F,4) + dbo.FX_IMP_AGREG_CONTA_RATEIO_FILIAL(@E,@L,'IPI',2,null,null,@F)</formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>ITEM CONTA FIXA</codigo_formula>
+		<formula>dbo.FX_VAL_ITEM(@E,@L,null,@CC,@F,1) - dbo.FX_VAL_ITEM(@E,@L,null,@CC,@F,3) + dbo.FX_VAL_ITEM(@E,@L,null,@CC,@F,2) + dbo.FX_VAL_ITEM(@E,@L,null,@CC,@F,4) + dbo.FX_IMP_AGREG_CONTA_RATEIO_FILIAL(@E,@L,'IPI',2,null,@CC,@F)</formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>IVA</codigo_formula>
+		<formula>dbo.FX_VAL_IMP(@E,@L,null,null,@F,'IVA',1) </formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>IVA-IC</codigo_formula>
+		<formula>dbo.FX_VAL_IMP(@E,@L,null,null,@F,'IVA-IC',1) </formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>PC-CSL</codigo_formula>
+		<formula>dbo.FX_VAL_IMP(@E,@L,null,null,@F,'PC-CSL',1)</formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>PC-CSL-R (Retido)</codigo_formula>
+		<formula>dbo.FX_VAL_IMP(@E,@L,null,null,@F,'PC-CSL-R',1)     </formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>PIS</codigo_formula>
+		<formula>dbo.FX_VAL_IMP(@E,@L,null,null,@F,'PIS',1)</formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>PIS-R (Retido)</codigo_formula>
+		<formula>dbo.FX_VAL_IMP(@E,@L,null,null,@F,'PIS-R',1)</formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>PIS-S (Ret.Separado)</codigo_formula>
+		<formula>dbo.FX_VAL_IMP(@E,@L,null,null,@F,'PIS-S',1)</formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>RECARGO</codigo_formula>
+		<formula>dbo.FX_VAL_IMP(@E,@L,null,null,@F,'RECARGO',1) </formula>
+		<lx_formula>false</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>RECEITA (ERD)</codigo_formula>
+		<formula>dbo.FX_VAL_LANC(@E,@L,'ERD',null)  </formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>REM SEM RET. (RSR)</codigo_formula>
+		<formula>dbo.FX_VAL_LANC(@E,@L,'RSR',null)   </formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>RET SIMBOLICO</codigo_formula>
+		<formula>dbo.FX_REC_SIMB(@E,@L)</formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>SAI REMESSA (EMT)</codigo_formula>
+		<formula>dbo.FX_VAL_LANC(@E,@L,'EMT',null) </formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>SAI RET.SIMB (SRS)</codigo_formula>
+		<formula>dbo.FX_VAL_LANC(@E,@L,'SRS',null) </formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>SAI RETORNO (SRM)</codigo_formula>
+		<formula>dbo.FX_VAL_LANC(@E,@L,'SRM',null) </formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>SAI SEM RET. (SSR)</codigo_formula>
+		<formula>dbo.FX_VAL_LANC(@E,@L,'SSR',null)</formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>SAI TRANSF.(ETT)</codigo_formula>
+		<formula>dbo.FX_VAL_LANC(@E,@L,'ETT',null) </formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>VALOR DA VENDA (VMS)</codigo_formula>
+		<formula>dbo.FX_VAL_LANC(@E,@L,'VMS',null)     </formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>VENDA (ITR)</codigo_formula>
+		<formula>dbo.FX_VAL_LANC(@E,@L,'ITR',null)</formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>VENDA LOJA</codigo_formula>
+		<formula>dbo.FX_VAL_LANC(@E,@L,'BAC',null) + dbo.FX_VAL_LANC(@E,@L,'IAD',null) + dbo.FX_VAL_LANC(@E,@L,'ICH',null) + dbo.FX_VAL_LANC(@E,@L,'ICR',null) + dbo.FX_VAL_LANC(@E,@L,'ITR',null) + dbo.FX_VAL_LANC(@E,@L,'LDD',null) + dbo.FX_VAL_LANC(@E,@L,'LEC',null) + dbo.FX_VAL_LANC(@E,@L,'LTA',null) + dbo.FX_VAL_LANC(@E,@L,'LMD',null) + dbo.FX_VAL_LANC(@E,@L,'PGM',null)                            </formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+	<ctb_lanc_formula>
+		<codigo_formula>VENDA LOJA - Devol - DVV</codigo_formula>
+		<formula>dbo.FX_VAL_LANC(@E,@L,'LSC',null) + dbo.FX_VAL_LANC(@E,@L,'IAC',null)</formula>
+		<indicador_tipo_formula>0</indicador_tipo_formula>
+		<lx_formula>true</lx_formula>
+		<inativo>false</inativo>
+	</ctb_lanc_formula>
+</VFPData>

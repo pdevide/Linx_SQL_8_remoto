@@ -1,0 +1,19 @@
+dir obj_001013SPK.fxp
+dir obj_001015SPK.fxp
+dir obj_001016SPK.fxp
+dir obj_002006CSM.fxp
+dir obj_004006CSM.fxp
+dir obj_005015SPK.fxp
+dir obj_005102SPK.fxp
+dir obj_005109SPK.fxp
+dir obj_009022SPK.fxp
+dir obj_009140SPK.fxp
+dir obj_009150SPK.fxp
+dir obj_100101SPK.fxp
+dir obj_100102SPK.fxp
+dir obj_100132CSM.fxp
+dir obj_100135CSM.fxp
+dir obj_100136SPK.fxp
+dir obj_120007SPK.fxp
+dir obj_150008SPK.fxp
+pause 

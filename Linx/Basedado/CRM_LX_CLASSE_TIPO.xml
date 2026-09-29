@@ -1,0 +1,103 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="crm_lx_classe_tipo" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="classe_tipo" type="xsd:int"/>
+								<xsd:element name="desc_classe" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="40"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="classe_controle" type="xsd:int" minOccurs="0"/>
+								<xsd:element name="imagem_id" type="xsd:int" minOccurs="0"/>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<crm_lx_classe_tipo>
+		<classe_tipo>1</classe_tipo>
+		<desc_classe>PASTA</desc_classe>
+		<classe_controle>1</classe_controle>
+	</crm_lx_classe_tipo>
+	<crm_lx_classe_tipo>
+		<classe_tipo>2</classe_tipo>
+		<desc_classe>TABELAS SISTEMA COMO PASTA</desc_classe>
+		<classe_controle>1</classe_controle>
+	</crm_lx_classe_tipo>
+	<crm_lx_classe_tipo>
+		<classe_tipo>3</classe_tipo>
+		<desc_classe>DOCUMENTOS</desc_classe>
+		<classe_controle>1</classe_controle>
+	</crm_lx_classe_tipo>
+	<crm_lx_classe_tipo>
+		<classe_tipo>4</classe_tipo>
+		<desc_classe>EMAILS</desc_classe>
+		<classe_controle>1</classe_controle>
+	</crm_lx_classe_tipo>
+	<crm_lx_classe_tipo>
+		<classe_tipo>6</classe_tipo>
+		<desc_classe>CONTATOS</desc_classe>
+		<classe_controle>1</classe_controle>
+	</crm_lx_classe_tipo>
+	<crm_lx_classe_tipo>
+		<classe_tipo>7</classe_tipo>
+		<desc_classe>TAREFAS PROGRAMADAS</desc_classe>
+		<classe_controle>1</classe_controle>
+	</crm_lx_classe_tipo>
+	<crm_lx_classe_tipo>
+		<classe_tipo>8</classe_tipo>
+		<desc_classe>REALIZAÇÕES E MOVIMENTAÇÕES DE TAREFAS</desc_classe>
+		<classe_controle>1</classe_controle>
+	</crm_lx_classe_tipo>
+	<crm_lx_classe_tipo>
+		<classe_tipo>9</classe_tipo>
+		<desc_classe>APLICATIVO</desc_classe>
+		<classe_controle>1</classe_controle>
+	</crm_lx_classe_tipo>
+	<crm_lx_classe_tipo>
+		<classe_tipo>10</classe_tipo>
+		<desc_classe>VERSÃO APLICATIVO</desc_classe>
+		<classe_controle>1</classe_controle>
+	</crm_lx_classe_tipo>
+	<crm_lx_classe_tipo>
+		<classe_tipo>11</classe_tipo>
+		<desc_classe>CLASSIFICADOR</desc_classe>
+		<classe_controle>1</classe_controle>
+	</crm_lx_classe_tipo>
+	<crm_lx_classe_tipo>
+		<classe_tipo>12</classe_tipo>
+		<desc_classe>QUERY</desc_classe>
+		<classe_controle>1</classe_controle>
+	</crm_lx_classe_tipo>
+	<crm_lx_classe_tipo>
+		<classe_tipo>13</classe_tipo>
+		<desc_classe>QUERY - FILTROS</desc_classe>
+		<classe_controle>1</classe_controle>
+	</crm_lx_classe_tipo>
+	<crm_lx_classe_tipo>
+		<classe_tipo>21</classe_tipo>
+		<desc_classe>TABELAS SISTEMA COMO CLASSIFICADOR</desc_classe>
+		<classe_controle>1</classe_controle>
+	</crm_lx_classe_tipo>
+	<crm_lx_classe_tipo>
+		<classe_tipo>22</classe_tipo>
+		<desc_classe>RETIRADA DE DOCUMENTOS / CONTROLE  APP</desc_classe>
+		<classe_controle>1</classe_controle>
+	</crm_lx_classe_tipo>
+	<crm_lx_classe_tipo>
+		<classe_tipo>23</classe_tipo>
+		<desc_classe>DEVOLUCAO DE DOCUMENTOS / CONTROLE APP</desc_classe>
+		<classe_controle>1</classe_controle>
+	</crm_lx_classe_tipo>
+</VFPData>

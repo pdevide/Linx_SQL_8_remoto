@@ -1,0 +1,153 @@
+***
+* OBJETO DE ENTRADA: TELA GRUPOS/SUBGRUPO DE PRODUTO ACABADO
+* PAULO DEVIDE => 01-AGO-2023
+*/
+define class obj_entrada as custom
+
+	procedure metodo_usuario
+
+		lparam xmetodo, xobjeto ,xnome_obj
+
+		**WAIT WINDOW xnome_obj + " - " + xmetodo TIMEOUT 1
+		
+		do case
+		
+			CASE UPPER(xmetodo) == 'USR_SEARCH_AFTER'
+
+			case UPPER(xmetodo) == 'USR_REFRESH'
+
+			case UPPER(xmetodo) == 'USR_INIT'
+
+				WAIT WINDOW NOWAIT "obj"
+				** PAULO DEVIDE - 01-10-2025
+				** gera tabela de codigos disponiveis para uso
+				carrega_cmb_codigo()
+				thisformset.lx_form1.addobject('cb_codigo', 'cb_codigo')
+				thisformset.lx_form1.cb_codigo.visible = .t.
+				
+			case UPPER(xmetodo) == 'USR_SEARCH_AFTER'
+
+
+			Case Upper(xmetodo) == 'USR_INCLUDE_BEFORE'
+
+				thisformset.lx_FORM1.tx_codigo_grupo.maxlength = 2
+				thisformset.lx_FORM1.tx_codigo_grupo.inputmask="!!"
+				thisformset.lx_FORM1.lx_grid_filha1.col_tx_subgrupo_produto.tx_subgrupo_produto.maxlength = 2
+				thisformset.lx_FORM1.lx_grid_filha1.col_tx_CODIGO_SUBGRUPO.tx_CODIGO_SUBGRUPO.inputmask="!!"
+				thisformset.lx_FORM1.lx_grid_filha1.col_TX_CODIGO_SEQUENCIAL.TX_CODIGO_SEQUENCIAL.InputMask="9999"
+
+			case UPPER(xmetodo) == 'USR_ALTER_AFTER'
+				thisformset.lx_FORM1.tx_codigo_grupo.maxlength = 2
+				thisformset.lx_FORM1.tx_codigo_grupo.inputmask="!!"
+				thisformset.lx_FORM1.lx_grid_filha1.col_tx_subgrupo_produto.tx_subgrupo_produto.maxlength = 2
+				thisformset.lx_FORM1.lx_grid_filha1.col_tx_CODIGO_SUBGRUPO.tx_CODIGO_SUBGRUPO.inputmask="!!"
+				thisformset.lx_FORM1.lx_grid_filha1.col_TX_CODIGO_SEQUENCIAL.TX_CODIGO_SEQUENCIAL.InputMask="9999"
+
+			case UPPER(xmetodo) == 'USR_ALTER_BEFORE'
+
+
+				thisformset.lx_FORM1.tx_codigo_grupo.maxlength = 2
+				thisformset.lx_FORM1.tx_codigo_grupo.inputmask="!!"
+				thisformset.lx_FORM1.lx_grid_filha1.col_tx_subgrupo_produto.tx_subgrupo_produto.maxlength = 2
+				thisformset.lx_FORM1.lx_grid_filha1.col_tx_CODIGO_SUBGRUPO.tx_CODIGO_SUBGRUPO.inputmask="!!"
+				thisformset.lx_FORM1.lx_grid_filha1.col_TX_CODIGO_SEQUENCIAL.TX_CODIGO_SEQUENCIAL.InputMask="9999"
+				
+				
+
+			Case Upper(xmetodo) == 'USR_INCLUDE_AFTER'
+
+				thisformset.lx_FORM1.tx_codigo_grupo.maxlength = 2
+				thisformset.lx_FORM1.tx_codigo_grupo.inputmask="!!"
+				thisformset.lx_FORM1.lx_grid_filha1.col_tx_subgrupo_produto.tx_subgrupo_produto.maxlength = 2
+				thisformset.lx_FORM1.lx_grid_filha1.col_tx_CODIGO_SUBGRUPO.tx_CODIGO_SUBGRUPO.inputmask="!!"				
+				thisformset.lx_FORM1.lx_grid_filha1.col_TX_CODIGO_SEQUENCIAL.TX_CODIGO_SEQUENCIAL.InputMask="9999"
+
+
+
+			case UPPER(xmetodo) == 'USR_WHEN'
+
+
+			case UPPER(xmetodo) == 'USR_VALID'
+			
+				IF ThisFormSet.p_Tool_Status $ "IA"
+					IF 'TX_CODIGO_SEQUENCIAL'$UPPER(xnome_obj)
+						xnvalue = CAST(thisformset.lx_FORM1.lx_grid_filha1.col_TX_CODIGO_SEQUENCIAL.TX_CODIGO_SEQUENCIAL.value as int)
+						thisformset.lx_FORM1.lx_grid_filha1.col_TX_CODIGO_SEQUENCIAL.TX_CODIGO_SEQUENCIAL.value = PADL(xnvalue,4,"0")
+						*WAIT WINDOW xnome_obj
+					ENDIF
+				ENDIF
+				
+
+
+			CASE UPPER(xmetodo) == 'USR_SAVE_BEFORE'
+
+
+			otherwise
+				return .t.
+		endcase
+	endproc
+enddefine
+
+FUNCTION carrega_cmb_codigo
+TEXT TO cmdsql1 NOSHOW TEXTMERGE PRETEXT 7
+	declare @VLETRAS table (COD varchar(2))
+	declare @i int = 1, @LETRA CHAR(1), @w int
+	while @i <= 26
+	BEGIN
+		SET @LETRA = CHAR(64+@i)
+		set @w=0
+		while @w <= 9 
+		BEGIN
+			INSERT INTO @VLETRAS VALUES (@letra+CAST(@w as char(1)))
+			set @w += 1
+		END 
+		set @i += 1
+	END
+
+	SELECT A.* 
+	from @VLETRAS a
+	left join PRODUTOS_GRUPO b on b.CODIGO_GRUPO = a.cod	
+	WHERE B.CODIGO_GRUPO IS NULL
+ENDTEXT
+F_SELECT(cmdsql1,"cmb_codigo")
+ENDFUNC  
+
+
+DEFINE CLASS cb_codigo AS lx_combobox
+	Height = 21
+	Left = 435
+	Top = 30
+	Width = 42
+	Name = "cb_codigo"
+	rowsourcetype = 6
+	rowsource = "cmb_codigo.cod"
+	controlsource = "V_PRODUTOS_GRUPO_00.codigo_grupo"
+	
+	PROCEDURE when
+		IF Thisformset.p_Tool_Status = "L" && TELA COM FILTRO LIMPO - PERMITIDO PARA NOVO FILTRO
+			RETURN .T.
+		ELSE
+			If !Inlist(Thisformset.p_Tool_Status, "A","I") && NÃO ESTÁ EM MODO INSERT OU EDIT -> PROIBIDO
+				WAIT WINDOW "Alteração não permitida em modo consulta" TIMEOUT 2
+				RETURN .f.
+			ENDIF
+		ENDIF
+		
+	ENDPROC
+
+	PROCEDURE valid
+		IF Inlist(Thisformset.p_Tool_Status, "A","I")
+			this.Parent.tx_CODIGO_GRUPO.refresh
+		ENDIF
+	ENDPROC
+	
+	PROCEDURE refresh
+		IF Inlist(Thisformset.p_Tool_Status, "A","I")
+			ThisFormset.Lx_form1.tx_CODIGO_GRUPO.enabled = .f.
+			This.visible = .t.
+		ELSE 
+			This.visible = .f.
+		ENDIF 
+	ENDPROC 
+	
+ENDDEFINE

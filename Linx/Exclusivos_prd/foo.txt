@@ -1,0 +1,2389 @@
+
+---------- OBJ_001013LX0.PRG
+
+---------- OBJ_001013SPK.PRG
+
+---------- OBJ_001015GP0.PRG
+
+---------- OBJ_001015LX0.PRG
+
+---------- OBJ_001015SP1.PRG
+
+---------- OBJ_001015SPK.PRG
+
+---------- OBJ_001015XPK.PRG
+
+---------- OBJ_001016LX0.PRG
+
+---------- OBJ_001016SPK.PRG
+
+---------- OBJ_001016XPK.PRG
+
+---------- OBJ_002002ER1.PRG
+
+---------- OBJ_002005.PRG
+
+---------- OBJ_002005GP0.PRG
+
+---------- OBJ_002006CP1.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006CP2.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006CP3.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006CS0.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006CS1.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006CS2.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006CS3.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006CS4.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006CSM.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006CUP.PRG
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006GP0.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006GP1.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006GP2.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006GP3.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006GP4.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006GP5.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006GP6.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006GP7.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006LX0.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006SPC.PRG
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006SPK.PRG
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006TP1.PRG
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006TP3.PRG
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006TP4.PRG
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006TP5.PRG
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006TP6.PRG
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006TP7.PRG
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006TP8.PRG
+			**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+			ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+								thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+						thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+						thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006XP1.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006XP2.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006XP3.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006XP4.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006XP5.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006XP6.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006XP7.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006XPK.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+								thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+						thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+						thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006XXX.PRG
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006ZX0.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006ZX2.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006ZX3.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006ZX4.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006ZX5.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002006ZX6.PRG
+				**o_002006.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+				ThisFormSet.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.T.
+										thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+									thisformset.lx_FORM1.lx_pageframe1.page3.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+*!*							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+				thisformset.lx_form1.lx_pageframe1.page3.lx_grid_filha1.height = 271
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.f.
+							thisformset.lx_FORM1.lx_PAGEFRAME1.pAGE1.pgDadosProdutos.pAGE2.lx_GRID_FILHA1.p_tool_grid.Visible=.t.
+						thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_002007SPK.PRG
+								thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_003008SPK.PRG
+
+---------- OBJ_0040065Q1.PRG
+	** 9) Validar se os grid큦 da aba PACK contem registro
+
+---------- OBJ_0040065QQ.PRG
+	** 9) Validar se os grid큦 da aba PACK contem registro
+
+---------- OBJ_0040066QQ.PRG
+	** 9) Validar se os grid큦 da aba PACK contem registro
+
+---------- OBJ_0040067QQ.PRG
+	** 9) Validar se os grid큦 da aba PACK contem registro
+
+---------- OBJ_0040068QQ.PRG
+	** 9) Validar se os grid큦 da aba PACK contem registro
+
+---------- OBJ_0040069QQ.PRG
+	** 9) Validar se os grid큦 da aba PACK contem registro
+
+---------- OBJ_004006CP1.PRG
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha1
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha2
+	ADD OBJECT lx_grid_filha1 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha1", ;
+	PROCEDURE lx_grid_filha1.init
+	ADD OBJECT lx_grid_filha2 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha2", ;
+		this.lx_grid_filha1.AfterRowColChange	
+		this.lx_grid_filha2.AfterRowColChange	
+	PROCEDURE lx_grid_filha2.init
+	PROCEDURE lx_grid_filha1.AfterRowColChange
+	PROCEDURE lx_grid_filha2.AfterRowColChange
+	ADD OBJECT grid1 AS grid WITH ;
+	PROCEDURE grid1.init		
+	PROCEDURE tecla_grid
+			THIS,"tecla_grid")
+
+---------- OBJ_004006CS0.PRG
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha1
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha2
+	ADD OBJECT lx_grid_filha1 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha1", ;
+	PROCEDURE lx_grid_filha1.init
+	ADD OBJECT lx_grid_filha2 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha2", ;
+		this.lx_grid_filha1.AfterRowColChange	
+		this.lx_grid_filha2.AfterRowColChange	
+	PROCEDURE lx_grid_filha2.init
+	PROCEDURE lx_grid_filha1.AfterRowColChange
+	PROCEDURE lx_grid_filha2.AfterRowColChange
+	ADD OBJECT grid1 AS grid WITH ;
+	PROCEDURE grid1.init		
+	PROCEDURE tecla_grid
+			THIS,"tecla_grid")
+
+---------- OBJ_004006CS1.PRG
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha1
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha2
+	ADD OBJECT lx_grid_filha1 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha1", ;
+	PROCEDURE lx_grid_filha1.init
+	ADD OBJECT lx_grid_filha2 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha2", ;
+		this.lx_grid_filha1.AfterRowColChange	
+		this.lx_grid_filha2.AfterRowColChange	
+	PROCEDURE lx_grid_filha2.init
+	PROCEDURE lx_grid_filha1.AfterRowColChange
+	PROCEDURE lx_grid_filha2.AfterRowColChange
+	ADD OBJECT grid1 AS grid WITH ;
+	PROCEDURE grid1.init		
+	PROCEDURE tecla_grid
+			THIS,"tecla_grid")
+
+---------- OBJ_004006CS2.PRG
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha1
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha2
+	ADD OBJECT lx_grid_filha1 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha1", ;
+	PROCEDURE lx_grid_filha1.init
+	ADD OBJECT lx_grid_filha2 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha2", ;
+		this.lx_grid_filha1.AfterRowColChange	
+		this.lx_grid_filha2.AfterRowColChange	
+	PROCEDURE lx_grid_filha2.init
+	PROCEDURE lx_grid_filha1.AfterRowColChange
+	PROCEDURE lx_grid_filha2.AfterRowColChange
+	ADD OBJECT grid1 AS grid WITH ;
+	PROCEDURE grid1.init		
+	PROCEDURE tecla_grid
+			THIS,"tecla_grid")
+
+---------- OBJ_004006CS3.PRG
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha1
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha2
+	ADD OBJECT lx_grid_filha1 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha1", ;
+	PROCEDURE lx_grid_filha1.init
+	ADD OBJECT lx_grid_filha2 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha2", ;
+		this.lx_grid_filha1.AfterRowColChange	
+		this.lx_grid_filha2.AfterRowColChange	
+	PROCEDURE lx_grid_filha2.init
+	PROCEDURE lx_grid_filha1.AfterRowColChange
+	PROCEDURE lx_grid_filha2.AfterRowColChange
+	ADD OBJECT grid1 AS grid WITH ;
+	PROCEDURE grid1.init		
+	PROCEDURE tecla_grid
+			THIS,"tecla_grid")
+
+---------- OBJ_004006CS5.PRG
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha1
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha2
+	ADD OBJECT lx_grid_filha1 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha1", ;
+	PROCEDURE lx_grid_filha1.init
+	ADD OBJECT lx_grid_filha2 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha2", ;
+		this.lx_grid_filha1.AfterRowColChange	
+		this.lx_grid_filha2.AfterRowColChange	
+	PROCEDURE lx_grid_filha2.init
+	PROCEDURE lx_grid_filha1.AfterRowColChange
+	PROCEDURE lx_grid_filha2.AfterRowColChange
+	ADD OBJECT grid1 AS grid WITH ;
+	PROCEDURE grid1.init		
+	PROCEDURE tecla_grid
+			THIS,"tecla_grid")
+
+---------- OBJ_004006CS6.PRG
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha1
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha2
+	ADD OBJECT lx_grid_filha1 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha1", ;
+	PROCEDURE lx_grid_filha1.init
+	ADD OBJECT lx_grid_filha2 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha2", ;
+		this.lx_grid_filha1.AfterRowColChange	
+		this.lx_grid_filha2.AfterRowColChange	
+	PROCEDURE lx_grid_filha2.init
+	PROCEDURE lx_grid_filha1.AfterRowColChange
+	PROCEDURE lx_grid_filha2.AfterRowColChange
+	ADD OBJECT grid1 AS grid WITH ;
+	PROCEDURE grid1.init		
+	PROCEDURE tecla_grid
+			THIS,"tecla_grid")
+
+---------- OBJ_004006CS7.PRG
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha1
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha2
+	ADD OBJECT lx_grid_filha1 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha1", ;
+	PROCEDURE lx_grid_filha1.init
+	ADD OBJECT lx_grid_filha2 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha2", ;
+		this.lx_grid_filha1.AfterRowColChange	
+		this.lx_grid_filha2.AfterRowColChange	
+	PROCEDURE lx_grid_filha2.init
+	PROCEDURE lx_grid_filha1.AfterRowColChange
+	PROCEDURE lx_grid_filha2.AfterRowColChange
+	ADD OBJECT grid1 AS grid WITH ;
+	PROCEDURE grid1.init		
+	PROCEDURE tecla_grid
+			THIS,"tecla_grid")
+
+---------- OBJ_004006CS8.PRG
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha1
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha2
+	ADD OBJECT lx_grid_filha1 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha1", ;
+	PROCEDURE lx_grid_filha1.init
+	ADD OBJECT lx_grid_filha2 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha2", ;
+		this.lx_grid_filha1.AfterRowColChange	
+		this.lx_grid_filha2.AfterRowColChange	
+	PROCEDURE lx_grid_filha2.init
+	PROCEDURE lx_grid_filha1.AfterRowColChange
+	PROCEDURE lx_grid_filha2.AfterRowColChange
+	ADD OBJECT grid1 AS grid WITH ;
+	PROCEDURE grid1.init		
+	PROCEDURE tecla_grid
+			THIS,"tecla_grid")
+
+---------- OBJ_004006CSM.PRG
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha1
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha2
+	ADD OBJECT lx_grid_filha1 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha1", ;
+	PROCEDURE lx_grid_filha1.init
+	ADD OBJECT lx_grid_filha2 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha2", ;
+		this.lx_grid_filha1.AfterRowColChange	
+		this.lx_grid_filha2.AfterRowColChange	
+	PROCEDURE lx_grid_filha2.init
+	PROCEDURE lx_grid_filha1.AfterRowColChange
+	PROCEDURE lx_grid_filha2.AfterRowColChange
+	ADD OBJECT grid1 AS grid WITH ;
+	PROCEDURE grid1.init		
+	PROCEDURE tecla_grid
+			THIS,"tecla_grid")
+
+---------- OBJ_004006CV1.PRG
+	** 9) Validar se os grid큦 da aba PACK contem registro
+
+---------- OBJ_004006CV2.PRG
+	** 9) Validar se os grid큦 da aba PACK contem registro
+
+---------- OBJ_004006CV3.PRG
+	** 9) Validar se os grid큦 da aba PACK contem registro
+
+---------- OBJ_004006CV4.PRG
+	** 9) Validar se os grid큦 da aba PACK contem registro
+
+---------- OBJ_004006GP0.PRG
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha1
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha2
+	ADD OBJECT lx_grid_filha1 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha1", ;
+	PROCEDURE lx_grid_filha1.init
+	ADD OBJECT lx_grid_filha2 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha2", ;
+		this.lx_grid_filha1.AfterRowColChange	
+		this.lx_grid_filha2.AfterRowColChange	
+	PROCEDURE lx_grid_filha2.init
+	PROCEDURE lx_grid_filha1.AfterRowColChange
+	PROCEDURE lx_grid_filha2.AfterRowColChange
+	ADD OBJECT grid1 AS grid WITH ;
+	PROCEDURE grid1.init		
+	PROCEDURE tecla_grid
+			THIS,"tecla_grid")
+
+---------- OBJ_004006GP1.PRG
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha1
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha2
+	ADD OBJECT lx_grid_filha1 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha1", ;
+	PROCEDURE lx_grid_filha1.init
+	ADD OBJECT lx_grid_filha2 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha2", ;
+		this.lx_grid_filha1.AfterRowColChange	
+		this.lx_grid_filha2.AfterRowColChange	
+	PROCEDURE lx_grid_filha2.init
+	PROCEDURE lx_grid_filha1.AfterRowColChange
+	PROCEDURE lx_grid_filha2.AfterRowColChange
+	ADD OBJECT grid1 AS grid WITH ;
+	PROCEDURE grid1.init		
+	PROCEDURE tecla_grid
+			THIS,"tecla_grid")
+
+---------- OBJ_004006GP2.PRG
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha1
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha2
+	ADD OBJECT lx_grid_filha1 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha1", ;
+	PROCEDURE lx_grid_filha1.init
+	ADD OBJECT lx_grid_filha2 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha2", ;
+		this.lx_grid_filha1.AfterRowColChange	
+		this.lx_grid_filha2.AfterRowColChange	
+	PROCEDURE lx_grid_filha2.init
+	PROCEDURE lx_grid_filha1.AfterRowColChange
+	PROCEDURE lx_grid_filha2.AfterRowColChange
+	ADD OBJECT grid1 AS grid WITH ;
+	PROCEDURE grid1.init		
+	PROCEDURE tecla_grid
+			THIS,"tecla_grid")
+
+---------- OBJ_004006GP3.PRG
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha1
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha2
+	ADD OBJECT lx_grid_filha1 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha1", ;
+	PROCEDURE lx_grid_filha1.init
+	ADD OBJECT lx_grid_filha2 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha2", ;
+		this.lx_grid_filha1.AfterRowColChange	
+		this.lx_grid_filha2.AfterRowColChange	
+	PROCEDURE lx_grid_filha2.init
+	PROCEDURE lx_grid_filha1.AfterRowColChange
+	PROCEDURE lx_grid_filha2.AfterRowColChange
+	ADD OBJECT grid1 AS grid WITH ;
+	PROCEDURE grid1.init		
+	PROCEDURE tecla_grid
+			THIS,"tecla_grid")
+
+---------- OBJ_004006HMG.PRG
+	** 9) Validar se os grid큦 da aba PACK contem registro
+
+---------- OBJ_004006LX0.PRG
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha1
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha2
+	ADD OBJECT lx_grid_filha1 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha1", ;
+	PROCEDURE lx_grid_filha1.init
+	ADD OBJECT lx_grid_filha2 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha2", ;
+		this.lx_grid_filha1.AfterRowColChange	
+		this.lx_grid_filha2.AfterRowColChange	
+	PROCEDURE lx_grid_filha2.init
+	PROCEDURE lx_grid_filha1.AfterRowColChange
+	PROCEDURE lx_grid_filha2.AfterRowColChange
+	ADD OBJECT grid1 AS grid WITH ;
+	PROCEDURE grid1.init		
+	PROCEDURE tecla_grid
+			THIS,"tecla_grid")
+
+---------- OBJ_004006LX1.PRG
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha1
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha2
+	ADD OBJECT lx_grid_filha1 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha1", ;
+	PROCEDURE lx_grid_filha1.init
+	ADD OBJECT lx_grid_filha2 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha2", ;
+		this.lx_grid_filha1.AfterRowColChange	
+		this.lx_grid_filha2.AfterRowColChange	
+	PROCEDURE lx_grid_filha2.init
+	PROCEDURE lx_grid_filha1.AfterRowColChange
+	PROCEDURE lx_grid_filha2.AfterRowColChange
+	ADD OBJECT grid1 AS grid WITH ;
+	PROCEDURE grid1.init		
+	PROCEDURE tecla_grid
+			THIS,"tecla_grid")
+
+---------- OBJ_004006LX2.PRG
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha1
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha2
+	ADD OBJECT lx_grid_filha1 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha1", ;
+	PROCEDURE lx_grid_filha1.init
+	ADD OBJECT lx_grid_filha2 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha2", ;
+		this.lx_grid_filha1.AfterRowColChange	
+		this.lx_grid_filha2.AfterRowColChange	
+	PROCEDURE lx_grid_filha2.init
+	PROCEDURE lx_grid_filha1.AfterRowColChange
+	PROCEDURE lx_grid_filha2.AfterRowColChange
+	ADD OBJECT grid1 AS grid WITH ;
+	PROCEDURE grid1.init		
+	PROCEDURE tecla_grid
+			THIS,"tecla_grid")
+
+---------- OBJ_004006LX3.PRG
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha1
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha2
+	ADD OBJECT lx_grid_filha1 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha1", ;
+	PROCEDURE lx_grid_filha1.init
+	ADD OBJECT lx_grid_filha2 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha2", ;
+		this.lx_grid_filha1.AfterRowColChange	
+		this.lx_grid_filha2.AfterRowColChange	
+	PROCEDURE lx_grid_filha2.init
+	PROCEDURE lx_grid_filha1.AfterRowColChange
+	PROCEDURE lx_grid_filha2.AfterRowColChange
+	ADD OBJECT grid1 AS grid WITH ;
+	PROCEDURE grid1.init		
+	PROCEDURE tecla_grid
+			THIS,"tecla_grid")
+
+---------- OBJ_004006LX4.PRG
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha1
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha2
+	ADD OBJECT lx_grid_filha1 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha1", ;
+	PROCEDURE lx_grid_filha1.init
+	ADD OBJECT lx_grid_filha2 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha2", ;
+		this.lx_grid_filha1.AfterRowColChange	
+		this.lx_grid_filha2.AfterRowColChange	
+	PROCEDURE lx_grid_filha2.init
+	PROCEDURE lx_grid_filha1.AfterRowColChange
+	PROCEDURE lx_grid_filha2.AfterRowColChange
+	ADD OBJECT grid1 AS grid WITH ;
+	PROCEDURE grid1.init		
+	PROCEDURE tecla_grid
+			THIS,"tecla_grid")
+
+---------- OBJ_004006LX5.PRG
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha1
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha2
+	ADD OBJECT lx_grid_filha1 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha1", ;
+	PROCEDURE lx_grid_filha1.init
+	ADD OBJECT lx_grid_filha2 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha2", ;
+		this.lx_grid_filha1.AfterRowColChange	
+		this.lx_grid_filha2.AfterRowColChange	
+	PROCEDURE lx_grid_filha2.init
+	PROCEDURE lx_grid_filha1.AfterRowColChange
+	PROCEDURE lx_grid_filha2.AfterRowColChange
+	ADD OBJECT grid1 AS grid WITH ;
+	PROCEDURE grid1.init		
+	PROCEDURE tecla_grid
+			THIS,"tecla_grid")
+
+---------- OBJ_004006LX6.PRG
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha1
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha2
+	ADD OBJECT lx_grid_filha1 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha1", ;
+	PROCEDURE lx_grid_filha1.init
+	ADD OBJECT lx_grid_filha2 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha2", ;
+		this.lx_grid_filha1.AfterRowColChange	
+		this.lx_grid_filha2.AfterRowColChange	
+	PROCEDURE lx_grid_filha2.init
+	PROCEDURE lx_grid_filha1.AfterRowColChange
+	PROCEDURE lx_grid_filha2.AfterRowColChange
+	ADD OBJECT grid1 AS grid WITH ;
+	PROCEDURE grid1.init		
+	PROCEDURE tecla_grid
+			THIS,"tecla_grid")
+
+---------- OBJ_004006LX7.PRG
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha1
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha2
+	ADD OBJECT lx_grid_filha1 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha1", ;
+	PROCEDURE lx_grid_filha1.init
+	ADD OBJECT lx_grid_filha2 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha2", ;
+		this.lx_grid_filha1.AfterRowColChange	
+		this.lx_grid_filha2.AfterRowColChange	
+	PROCEDURE lx_grid_filha2.init
+	PROCEDURE lx_grid_filha1.AfterRowColChange
+	PROCEDURE lx_grid_filha2.AfterRowColChange
+	ADD OBJECT grid1 AS grid WITH ;
+	PROCEDURE grid1.init		
+	PROCEDURE tecla_grid
+			THIS,"tecla_grid")
+
+---------- OBJ_004006NT1.PRG
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha1
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha2
+	ADD OBJECT lx_grid_filha1 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha1", ;
+	PROCEDURE lx_grid_filha1.init
+	ADD OBJECT lx_grid_filha2 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha2", ;
+		this.lx_grid_filha1.AfterRowColChange	
+		this.lx_grid_filha2.AfterRowColChange	
+	PROCEDURE lx_grid_filha2.init
+	PROCEDURE lx_grid_filha1.AfterRowColChange
+	PROCEDURE lx_grid_filha2.AfterRowColChange
+	ADD OBJECT grid1 AS grid WITH ;
+	PROCEDURE grid1.init		
+	PROCEDURE tecla_grid
+			THIS,"tecla_grid")
+
+---------- OBJ_004006PD1.PRG
+	** 9) Validar se os grid큦 da aba PACK contem registro
+
+---------- OBJ_004006PK1.PRG
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha1
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha2
+	ADD OBJECT grid1 AS grid WITH ;
+	PROCEDURE grid1.init		
+	PROCEDURE tecla_grid
+			THIS,"tecla_grid")
+
+---------- OBJ_004006PK2.PRG
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha1
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha2
+	ADD OBJECT grid1 AS grid WITH ;
+	PROCEDURE grid1.init		
+	PROCEDURE tecla_grid
+			THIS,"tecla_grid")
+
+---------- OBJ_004006PK3.PRG
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha1
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha2
+	ADD OBJECT lx_grid_filha1 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha1", ;
+	PROCEDURE lx_grid_filha1.init
+	ADD OBJECT lx_grid_filha2 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha2", ;
+		this.lx_grid_filha1.AfterRowColChange	
+		this.lx_grid_filha2.AfterRowColChange	
+	PROCEDURE lx_grid_filha2.init
+	PROCEDURE lx_grid_filha1.AfterRowColChange
+	PROCEDURE lx_grid_filha2.AfterRowColChange
+	ADD OBJECT grid1 AS grid WITH ;
+	PROCEDURE grid1.init		
+	PROCEDURE tecla_grid
+			THIS,"tecla_grid")
+
+---------- OBJ_004006PK4.PRG
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha1
+			**WITH ThisFormset.Lx_form1.Lx_pageframe1.Page21.Lx_grid_filha2
+	ADD OBJECT lx_grid_filha1 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha1", ;
+	PROCEDURE lx_grid_filha1.init
+	ADD OBJECT lx_grid_filha2 AS lx_grid_filha WITH ;
+		p_mostrar_tool_grid = .T., ;
+		Name = "Lx_grid_filha2", ;
+		this.lx_grid_filha1.AfterRowColChange	
+		this.lx_grid_filha2.AfterRowColChange	
+	PROCEDURE lx_grid_filha2.init
+	PROCEDURE lx_grid_filha1.AfterRowColChange
+	PROCEDURE lx_grid_filha2.AfterRowColChange
+	ADD OBJECT grid1 AS grid WITH ;
+	PROCEDURE grid1.init		
+	PROCEDURE tecla_grid
+			THIS,"tecla_grid")
+
+---------- OBJ_004006TP1.PRG
+	** 9) Validar se os grid큦 da aba PACK contem registro
+
+---------- OBJ_004006TP2.PRG
+	** 9) Validar se os grid큦 da aba PACK contem registro
+
+---------- OBJ_004006TP3.PRG
+	** 9) Validar se os grid큦 da aba PACK contem registro
+
+---------- OBJ_004006TP4.PRG
+	** 9) Validar se os grid큦 da aba PACK contem registro
+
+---------- OBJ_004006TP5.PRG
+	** 9) Validar se os grid큦 da aba PACK contem registro
+
+---------- OBJ_004006TP6.PRG
+	** 9) Validar se os grid큦 da aba PACK contem registro
+
+---------- OBJ_004006TP7.PRG
+	** 9) Validar se os grid큦 da aba PACK contem registro
+
+---------- OBJ_004006TP8.PRG
+	** 9) Validar se os grid큦 da aba PACK contem registro
+
+---------- OBJ_004006TP9.PRG
+	** 9) Validar se os grid큦 da aba PACK contem registro
+
+---------- OBJ_004006TQ5.PRG
+	** 9) Validar se os grid큦 da aba PACK contem registro
+
+---------- OBJ_004014SP1.PRG
+
+---------- OBJ_005015CP1.PRG
+						.lx_grid_filha1.anchor = 0
+						lnHeightGrid =268 &&.lx_grid_filha1.Height  - 30
+						.lx_grid_filha1.Height = lnHeightGrid
+						.addobject("Lx_grid_filha1","lx_grade_filha")
+						.Lx_grid_filha1.visible = .t.				
+					*!*						.Lx_grid_filha1.top = 188		&& grid da page
+					*!*						.Lx_grid_filha1.height = 270		 && altura da grid da page
+					lnTotCols = .lx_grid_filha1.ColumnCount
+					.lx_grid_filha1.ColumnCount = lnTotCols + 3
+					.lx_grid_filha1.columns(lnTotCols+1).Header1.Caption = "Linha"
+					.lx_grid_filha1.columns(lnTotCols+2).Header1.Caption = "Griffe"
+					.lx_grid_filha1.columns(lnTotCols+3).Header1.Caption = "Justificativa"
+					.lx_grid_filha1.columns(lnTotCols+1).controlsource = "v_estoque_prod_contagem_00_itens.Linha"
+					.lx_grid_filha1.columns(lnTotCols+2).controlsource = "v_estoque_prod_contagem_00_itens.Griffe"
+					.lx_grid_filha1.columns(lnTotCols+3).controlsource = "v_estoque_prod_contagem_00_itens.ERP_Justificativa"
+					.lx_grid_filha1.columns(lnTotCols+1).visible = .t.
+					.lx_grid_filha1.columns(lnTotCols+2).visible = .t.
+					.lx_grid_filha1.columns(lnTotCols+3).visible = .t.
+					.lx_grid_filha1.columns(lnTotCols+1).enabled = .t.
+					.lx_grid_filha1.columns(lnTotCols+2).enabled = .t.
+					.lx_grid_filha1.columns(lnTotCols+3).enabled = .t.
+					.lx_grid_filha1.columns(lnTotCols+3).ColumnOrder = 6
+					.lx_grid_filha1.columns(lnTotCols+3).Width = 170
+					.lx_grid_filha1.columns(lnTotCols+1).name = "col_Linha"
+					.lx_grid_filha1.columns(lnTotCols+2).name = "col_Griffe"
+					.lx_grid_filha1.columns(lnTotCols+3).name = "col_ERP_Justificativa"
+					.lx_grid_filha1.col_ERP_Justificativa.Addobject("cmb_justificativa1","cmb_justificativa")
+					.lx_grid_filha1.col_ERP_Justificativa.currentcontrol = "cmb_justificativa1"
+					.lx_grid_filha1.col_ERP_Justificativa.cmb_justificativa1.visible=.t.
+					.lx_grid_filha1.col_ERP_Justificativa.sparse=.f.
+					.lx_grid_filha1.anchor = 0
+					lnHeightGrid = .lx_grid_filha1.Height  - 30
+					.lx_grid_filha1.Height = lnHeightGrid
+		This.Parent.Lx_grid_filha1.Refresh()
+			this.removeobject("Lx_grid_filha1")
+			this.addobject("Lx_grid_filha1","lx_grade_filha")
+			this.Lx_grid_filha1.visible = .t.	
+			WITH this.Lx_grid_filha1
+DEFINE CLASS lx_grade_filha as lx_grid_filha
+	Name = "Lx_grid_filha1"
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_produto.ADDOBJECT("h_tx_produto","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_produto.h_tx_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_produto.addobject("lx_textbox_valida1","lx_textbox_valida")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_produto.lx_textbox_valida1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_produto.AddObject("h_tx_desc_produto","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_produto.h_tx_desc_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_produto.AddObject("tx_desc_produto","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_produto.tx_desc_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_unidade.AddObject("h_tx_unidade","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_unidade.h_tx_unidade
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_unidade.AddObject("tx_unidade","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_unidade.tx_unidade
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_peso.AddObject("h_tx_peso","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_peso.h_tx_peso
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_peso.AddObject("tx_peso","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_peso.tx_peso
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_produto.AddObject("h_tx_cor_produto","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_produto.h_tx_cor_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_produto.AddObject("lx_textbox_valida1","lx_textbox_valida")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_produto.lx_textbox_valida1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_cor_produto.AddObject("h_tx_desc_cor_produto","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_cor_produto.h_tx_desc_cor_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_cor_produto.AddObject("tx_desc_cor_produto","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_cor_produto.tx_desc_cor_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_refer_fabricante.AddObject("h_tx_refer_fabricante","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_refer_fabricante.h_tx_refer_fabricante
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_refer_fabricante.AddObject("tx_refer_fabricante","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_refer_fabricante.tx_refer_fabricante
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_revenda.AddObject("h_tx_revenda","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_revenda.h_tx_revenda
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_revenda.AddObject("tx_revenda","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_revenda.tx_revenda
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_sortida.AddObject("h_tx_cor_sortida","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_sortida.h_tx_cor_sortida
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_sortida.AddObject("tx_cor_sortida","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_sortida.tx_cor_sortida
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_qtde_contagem.AddObject("h_tx_qtde_contagem","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_qtde_contagem.h_tx_qtde_contagem
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_qtde_contagem.AddObject("tx_qtde_contagem","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_qtde_contagem.tx_qtde_contagem
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_saldo_contagem.AddObject("h_tx_saldo_contagem","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_saldo_contagem.h_tx_saldo_contagem
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_saldo_contagem.AddObject("tx_saldo_contagem","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_saldo_contagem.tx_saldo_contagem
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_q43.AddObject("h_tx_q43","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_q43.h_tx_q43
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_q43.AddObject("lx_grade48_1","lx_grade48_1" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_q43.lx_grade48_1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_s1.AddObject("h_tx_s1","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_s1.h_tx_s1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_s1.AddObject("lx_grade48_1","lx_grade48_2" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_s1.lx_grade48_1
+	*oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.column108.AddObject("header1","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.column108.header1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.column108.AddObject("lx_textbox_base1","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.column108.lx_textbox_base1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_valor_contagem_diferenca.AddObject("h_tx_valor_contagem_diferenca","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_valor_contagem_diferenca.h_tx_valor_contagem_diferenca
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_valor_contagem_diferenca.AddObject("tx_valor_contagem_diferenca","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_valor_contagem_diferenca.tx_valor_contagem_diferenca
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo4_a_valorizar.AddObject("h_tx_custo4_a_valorizar","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo4_a_valorizar.h_tx_custo4_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo4_a_valorizar.AddObject("tx_custo4_a_valorizar","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo4_a_valorizar.tx_custo4_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo3_a_valorizar.AddObject("h_tx_custo3_a_valorizar","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo3_a_valorizar.h_tx_custo3_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo3_a_valorizar.AddObject("tx_custo3_a_valorizar","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo3_a_valorizar.tx_custo3_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo2_a_valorizar.AddObject("h_tx_custo2_a_valorizar","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo2_a_valorizar.h_tx_custo2_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo2_a_valorizar.AddObject("tx_custo2_a_valorizar","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo2_a_valorizar.tx_custo2_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo1_a_valorizar.AddObject("h_tx_custo1_a_valorizar","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo1_a_valorizar.h_tx_custo1_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo1_a_valorizar.AddObject("tx_custo1_a_valorizar","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo1_a_valorizar.tx_custo1_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_grupo_produto.AddObject("h_tx_grupo_produto","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_grupo_produto.h_tx_grupo_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_grupo_produto.AddObject("tx_grupo_produto","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_grupo_produto.tx_grupo_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_subgrupo_produto.AddObject("h_tx_subgrupo_produto","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_subgrupo_produto.h_tx_subgrupo_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_subgrupo_produto.AddObject("tx_subgrupo_produto","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_subgrupo_produto.tx_subgrupo_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao1.AddObject("h_tx_custo_reposicao1","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao1.h_tx_custo_reposicao1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao1.AddObject("tx_custo_reposicao1","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao1.tx_custo_reposicao1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao4.AddObject("h_tx_custo_reposicao4","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao4.h_tx_custo_reposicao4
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao4.AddObject("tx_custo_reposicao4","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao4.tx_custo_reposicao4
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_linha.AddObject("h_tx_linha","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_linha.h_tx_linha
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_linha.AddObject("tx_linha","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_linha.tx_linha
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_griffe.AddObject("h_tx_griffe","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_griffe.h_tx_griffe
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_griffe.AddObject("tx_griffe","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_griffe.tx_griffe
+
+---------- OBJ_005015CP2.PRG
+						.lx_grid_filha1.anchor = 0
+						lnHeightGrid =268 &&.lx_grid_filha1.Height  - 30
+						.lx_grid_filha1.Height = lnHeightGrid
+						.addobject("Lx_grid_filha1","lx_grade_filha")
+						.Lx_grid_filha1.visible = .t.				
+					*!*						.Lx_grid_filha1.top = 188		&& grid da page
+					*!*						.Lx_grid_filha1.height = 270		 && altura da grid da page
+					lnTotCols = .lx_grid_filha1.ColumnCount
+					.lx_grid_filha1.ColumnCount = lnTotCols + 3
+					.lx_grid_filha1.columns(lnTotCols+1).Header1.Caption = "Linha"
+					.lx_grid_filha1.columns(lnTotCols+2).Header1.Caption = "Griffe"
+					.lx_grid_filha1.columns(lnTotCols+3).Header1.Caption = "Justificativa"
+					.lx_grid_filha1.columns(lnTotCols+1).controlsource = "v_estoque_prod_contagem_00_itens.Linha"
+					.lx_grid_filha1.columns(lnTotCols+2).controlsource = "v_estoque_prod_contagem_00_itens.Griffe"
+					.lx_grid_filha1.columns(lnTotCols+3).controlsource = "v_estoque_prod_contagem_00_itens.ERP_Justificativa"
+					.lx_grid_filha1.columns(lnTotCols+1).visible = .t.
+					.lx_grid_filha1.columns(lnTotCols+2).visible = .t.
+					.lx_grid_filha1.columns(lnTotCols+3).visible = .t.
+					.lx_grid_filha1.columns(lnTotCols+1).enabled = .t.
+					.lx_grid_filha1.columns(lnTotCols+2).enabled = .t.
+					.lx_grid_filha1.columns(lnTotCols+3).enabled = .t.
+					.lx_grid_filha1.columns(lnTotCols+3).ColumnOrder = 6
+					.lx_grid_filha1.columns(lnTotCols+3).Width = 170
+					.lx_grid_filha1.columns(lnTotCols+1).name = "col_Linha"
+					.lx_grid_filha1.columns(lnTotCols+2).name = "col_Griffe"
+					.lx_grid_filha1.columns(lnTotCols+3).name = "col_ERP_Justificativa"
+					.lx_grid_filha1.col_ERP_Justificativa.Addobject("cmb_justificativa1","cmb_justificativa")
+					.lx_grid_filha1.col_ERP_Justificativa.currentcontrol = "cmb_justificativa1"
+					.lx_grid_filha1.col_ERP_Justificativa.cmb_justificativa1.visible=.t.
+					.lx_grid_filha1.col_ERP_Justificativa.sparse=.f.
+					.lx_grid_filha1.anchor = 0
+					lnHeightGrid = .lx_grid_filha1.Height  - 30
+					.lx_grid_filha1.Height = lnHeightGrid
+		This.Parent.Lx_grid_filha1.Refresh()
+			this.removeobject("Lx_grid_filha1")
+			this.addobject("Lx_grid_filha1","lx_grade_filha")
+			this.Lx_grid_filha1.visible = .t.	
+			WITH this.Lx_grid_filha1
+DEFINE CLASS lx_grade_filha as lx_grid_filha
+	Name = "Lx_grid_filha1"
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_produto.ADDOBJECT("h_tx_produto","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_produto.h_tx_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_produto.addobject("lx_textbox_valida1","lx_textbox_valida")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_produto.lx_textbox_valida1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_produto.AddObject("h_tx_desc_produto","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_produto.h_tx_desc_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_produto.AddObject("tx_desc_produto","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_produto.tx_desc_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_unidade.AddObject("h_tx_unidade","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_unidade.h_tx_unidade
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_unidade.AddObject("tx_unidade","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_unidade.tx_unidade
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_peso.AddObject("h_tx_peso","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_peso.h_tx_peso
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_peso.AddObject("tx_peso","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_peso.tx_peso
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_produto.AddObject("h_tx_cor_produto","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_produto.h_tx_cor_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_produto.AddObject("lx_textbox_valida1","lx_textbox_valida")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_produto.lx_textbox_valida1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_cor_produto.AddObject("h_tx_desc_cor_produto","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_cor_produto.h_tx_desc_cor_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_cor_produto.AddObject("tx_desc_cor_produto","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_cor_produto.tx_desc_cor_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_refer_fabricante.AddObject("h_tx_refer_fabricante","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_refer_fabricante.h_tx_refer_fabricante
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_refer_fabricante.AddObject("tx_refer_fabricante","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_refer_fabricante.tx_refer_fabricante
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_revenda.AddObject("h_tx_revenda","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_revenda.h_tx_revenda
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_revenda.AddObject("tx_revenda","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_revenda.tx_revenda
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_sortida.AddObject("h_tx_cor_sortida","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_sortida.h_tx_cor_sortida
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_sortida.AddObject("tx_cor_sortida","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_sortida.tx_cor_sortida
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_qtde_contagem.AddObject("h_tx_qtde_contagem","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_qtde_contagem.h_tx_qtde_contagem
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_qtde_contagem.AddObject("tx_qtde_contagem","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_qtde_contagem.tx_qtde_contagem
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_saldo_contagem.AddObject("h_tx_saldo_contagem","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_saldo_contagem.h_tx_saldo_contagem
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_saldo_contagem.AddObject("tx_saldo_contagem","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_saldo_contagem.tx_saldo_contagem
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_q43.AddObject("h_tx_q43","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_q43.h_tx_q43
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_q43.AddObject("lx_grade48_1","lx_grade48_1" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_q43.lx_grade48_1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_s1.AddObject("h_tx_s1","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_s1.h_tx_s1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_s1.AddObject("lx_grade48_1","lx_grade48_2" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_s1.lx_grade48_1
+	*oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.column108.AddObject("header1","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.column108.header1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.column108.AddObject("lx_textbox_base1","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.column108.lx_textbox_base1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_valor_contagem_diferenca.AddObject("h_tx_valor_contagem_diferenca","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_valor_contagem_diferenca.h_tx_valor_contagem_diferenca
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_valor_contagem_diferenca.AddObject("tx_valor_contagem_diferenca","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_valor_contagem_diferenca.tx_valor_contagem_diferenca
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo4_a_valorizar.AddObject("h_tx_custo4_a_valorizar","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo4_a_valorizar.h_tx_custo4_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo4_a_valorizar.AddObject("tx_custo4_a_valorizar","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo4_a_valorizar.tx_custo4_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo3_a_valorizar.AddObject("h_tx_custo3_a_valorizar","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo3_a_valorizar.h_tx_custo3_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo3_a_valorizar.AddObject("tx_custo3_a_valorizar","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo3_a_valorizar.tx_custo3_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo2_a_valorizar.AddObject("h_tx_custo2_a_valorizar","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo2_a_valorizar.h_tx_custo2_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo2_a_valorizar.AddObject("tx_custo2_a_valorizar","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo2_a_valorizar.tx_custo2_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo1_a_valorizar.AddObject("h_tx_custo1_a_valorizar","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo1_a_valorizar.h_tx_custo1_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo1_a_valorizar.AddObject("tx_custo1_a_valorizar","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo1_a_valorizar.tx_custo1_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_grupo_produto.AddObject("h_tx_grupo_produto","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_grupo_produto.h_tx_grupo_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_grupo_produto.AddObject("tx_grupo_produto","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_grupo_produto.tx_grupo_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_subgrupo_produto.AddObject("h_tx_subgrupo_produto","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_subgrupo_produto.h_tx_subgrupo_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_subgrupo_produto.AddObject("tx_subgrupo_produto","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_subgrupo_produto.tx_subgrupo_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao1.AddObject("h_tx_custo_reposicao1","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao1.h_tx_custo_reposicao1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao1.AddObject("tx_custo_reposicao1","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao1.tx_custo_reposicao1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao4.AddObject("h_tx_custo_reposicao4","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao4.h_tx_custo_reposicao4
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao4.AddObject("tx_custo_reposicao4","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao4.tx_custo_reposicao4
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_linha.AddObject("h_tx_linha","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_linha.h_tx_linha
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_linha.AddObject("tx_linha","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_linha.tx_linha
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_griffe.AddObject("h_tx_griffe","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_griffe.h_tx_griffe
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_griffe.AddObject("tx_griffe","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_griffe.tx_griffe
+
+---------- OBJ_005015GP0.PRG
+						.lx_grid_filha1.anchor = 0
+						lnHeightGrid =268 &&.lx_grid_filha1.Height  - 30
+						.lx_grid_filha1.Height = lnHeightGrid
+						.addobject("Lx_grid_filha1","lx_grade_filha")
+						.Lx_grid_filha1.visible = .t.				
+					*!*						.Lx_grid_filha1.top = 188		&& grid da page
+					*!*						.Lx_grid_filha1.height = 270		 && altura da grid da page
+					lnTotCols = .lx_grid_filha1.ColumnCount
+					.lx_grid_filha1.ColumnCount = lnTotCols + 3
+					.lx_grid_filha1.columns(lnTotCols+1).Header1.Caption = "Linha"
+					.lx_grid_filha1.columns(lnTotCols+2).Header1.Caption = "Griffe"
+					.lx_grid_filha1.columns(lnTotCols+3).Header1.Caption = "Justificativa"
+					.lx_grid_filha1.columns(lnTotCols+1).controlsource = "v_estoque_prod_contagem_00_itens.Linha"
+					.lx_grid_filha1.columns(lnTotCols+2).controlsource = "v_estoque_prod_contagem_00_itens.Griffe"
+					.lx_grid_filha1.columns(lnTotCols+3).controlsource = "v_estoque_prod_contagem_00_itens.ERP_Justificativa"
+					.lx_grid_filha1.columns(lnTotCols+1).visible = .t.
+					.lx_grid_filha1.columns(lnTotCols+2).visible = .t.
+					.lx_grid_filha1.columns(lnTotCols+3).visible = .t.
+					.lx_grid_filha1.columns(lnTotCols+1).enabled = .t.
+					.lx_grid_filha1.columns(lnTotCols+2).enabled = .t.
+					.lx_grid_filha1.columns(lnTotCols+3).enabled = .t.
+					.lx_grid_filha1.columns(lnTotCols+3).ColumnOrder = 6
+					.lx_grid_filha1.columns(lnTotCols+3).Width = 170
+					.lx_grid_filha1.columns(lnTotCols+1).name = "col_Linha"
+					.lx_grid_filha1.columns(lnTotCols+2).name = "col_Griffe"
+					.lx_grid_filha1.columns(lnTotCols+3).name = "col_ERP_Justificativa"
+					.lx_grid_filha1.col_ERP_Justificativa.Addobject("cmb_justificativa1","cmb_justificativa")
+					.lx_grid_filha1.col_ERP_Justificativa.currentcontrol = "cmb_justificativa1"
+					.lx_grid_filha1.col_ERP_Justificativa.cmb_justificativa1.visible=.t.
+					.lx_grid_filha1.col_ERP_Justificativa.sparse=.f.
+					.lx_grid_filha1.anchor = 0
+					lnHeightGrid = .lx_grid_filha1.Height  - 30
+					.lx_grid_filha1.Height = lnHeightGrid
+		This.Parent.Lx_grid_filha1.Refresh()
+			this.removeobject("Lx_grid_filha1")
+			this.addobject("Lx_grid_filha1","lx_grade_filha")
+			this.Lx_grid_filha1.visible = .t.	
+			WITH this.Lx_grid_filha1
+DEFINE CLASS lx_grade_filha as lx_grid_filha
+	Name = "Lx_grid_filha1"
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_produto.ADDOBJECT("h_tx_produto","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_produto.h_tx_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_produto.addobject("lx_textbox_valida1","lx_textbox_valida")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_produto.lx_textbox_valida1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_produto.AddObject("h_tx_desc_produto","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_produto.h_tx_desc_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_produto.AddObject("tx_desc_produto","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_produto.tx_desc_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_unidade.AddObject("h_tx_unidade","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_unidade.h_tx_unidade
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_unidade.AddObject("tx_unidade","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_unidade.tx_unidade
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_peso.AddObject("h_tx_peso","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_peso.h_tx_peso
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_peso.AddObject("tx_peso","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_peso.tx_peso
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_produto.AddObject("h_tx_cor_produto","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_produto.h_tx_cor_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_produto.AddObject("lx_textbox_valida1","lx_textbox_valida")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_produto.lx_textbox_valida1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_cor_produto.AddObject("h_tx_desc_cor_produto","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_cor_produto.h_tx_desc_cor_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_cor_produto.AddObject("tx_desc_cor_produto","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_cor_produto.tx_desc_cor_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_refer_fabricante.AddObject("h_tx_refer_fabricante","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_refer_fabricante.h_tx_refer_fabricante
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_refer_fabricante.AddObject("tx_refer_fabricante","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_refer_fabricante.tx_refer_fabricante
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_revenda.AddObject("h_tx_revenda","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_revenda.h_tx_revenda
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_revenda.AddObject("tx_revenda","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_revenda.tx_revenda
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_sortida.AddObject("h_tx_cor_sortida","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_sortida.h_tx_cor_sortida
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_sortida.AddObject("tx_cor_sortida","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_sortida.tx_cor_sortida
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_qtde_contagem.AddObject("h_tx_qtde_contagem","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_qtde_contagem.h_tx_qtde_contagem
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_qtde_contagem.AddObject("tx_qtde_contagem","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_qtde_contagem.tx_qtde_contagem
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_saldo_contagem.AddObject("h_tx_saldo_contagem","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_saldo_contagem.h_tx_saldo_contagem
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_saldo_contagem.AddObject("tx_saldo_contagem","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_saldo_contagem.tx_saldo_contagem
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_q43.AddObject("h_tx_q43","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_q43.h_tx_q43
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_q43.AddObject("lx_grade48_1","lx_grade48_1" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_q43.lx_grade48_1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_s1.AddObject("h_tx_s1","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_s1.h_tx_s1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_s1.AddObject("lx_grade48_1","lx_grade48_2" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_s1.lx_grade48_1
+	*oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.column108.AddObject("header1","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.column108.header1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.column108.AddObject("lx_textbox_base1","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.column108.lx_textbox_base1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_valor_contagem_diferenca.AddObject("h_tx_valor_contagem_diferenca","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_valor_contagem_diferenca.h_tx_valor_contagem_diferenca
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_valor_contagem_diferenca.AddObject("tx_valor_contagem_diferenca","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_valor_contagem_diferenca.tx_valor_contagem_diferenca
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo4_a_valorizar.AddObject("h_tx_custo4_a_valorizar","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo4_a_valorizar.h_tx_custo4_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo4_a_valorizar.AddObject("tx_custo4_a_valorizar","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo4_a_valorizar.tx_custo4_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo3_a_valorizar.AddObject("h_tx_custo3_a_valorizar","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo3_a_valorizar.h_tx_custo3_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo3_a_valorizar.AddObject("tx_custo3_a_valorizar","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo3_a_valorizar.tx_custo3_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo2_a_valorizar.AddObject("h_tx_custo2_a_valorizar","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo2_a_valorizar.h_tx_custo2_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo2_a_valorizar.AddObject("tx_custo2_a_valorizar","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo2_a_valorizar.tx_custo2_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo1_a_valorizar.AddObject("h_tx_custo1_a_valorizar","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo1_a_valorizar.h_tx_custo1_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo1_a_valorizar.AddObject("tx_custo1_a_valorizar","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo1_a_valorizar.tx_custo1_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_grupo_produto.AddObject("h_tx_grupo_produto","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_grupo_produto.h_tx_grupo_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_grupo_produto.AddObject("tx_grupo_produto","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_grupo_produto.tx_grupo_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_subgrupo_produto.AddObject("h_tx_subgrupo_produto","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_subgrupo_produto.h_tx_subgrupo_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_subgrupo_produto.AddObject("tx_subgrupo_produto","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_subgrupo_produto.tx_subgrupo_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao1.AddObject("h_tx_custo_reposicao1","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao1.h_tx_custo_reposicao1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao1.AddObject("tx_custo_reposicao1","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao1.tx_custo_reposicao1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao4.AddObject("h_tx_custo_reposicao4","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao4.h_tx_custo_reposicao4
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao4.AddObject("tx_custo_reposicao4","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao4.tx_custo_reposicao4
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_linha.AddObject("h_tx_linha","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_linha.h_tx_linha
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_linha.AddObject("tx_linha","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_linha.tx_linha
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_griffe.AddObject("h_tx_griffe","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_griffe.h_tx_griffe
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_griffe.AddObject("tx_griffe","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_griffe.tx_griffe
+
+---------- OBJ_005015GP1.PRG
+						.lx_grid_filha1.anchor = 0
+						lnHeightGrid =268 &&.lx_grid_filha1.Height  - 30
+						.lx_grid_filha1.Height = lnHeightGrid
+						.addobject("Lx_grid_filha1","lx_grade_filha")
+						.Lx_grid_filha1.visible = .t.				
+					*!*						.Lx_grid_filha1.top = 188		&& grid da page
+					*!*						.Lx_grid_filha1.height = 270		 && altura da grid da page
+					lnTotCols = .lx_grid_filha1.ColumnCount
+					.lx_grid_filha1.ColumnCount = lnTotCols + 3
+					.lx_grid_filha1.columns(lnTotCols+1).Header1.Caption = "Linha"
+					.lx_grid_filha1.columns(lnTotCols+2).Header1.Caption = "Griffe"
+					.lx_grid_filha1.columns(lnTotCols+3).Header1.Caption = "Justificativa"
+					.lx_grid_filha1.columns(lnTotCols+1).controlsource = "v_estoque_prod_contagem_00_itens.Linha"
+					.lx_grid_filha1.columns(lnTotCols+2).controlsource = "v_estoque_prod_contagem_00_itens.Griffe"
+					.lx_grid_filha1.columns(lnTotCols+3).controlsource = "v_estoque_prod_contagem_00_itens.ERP_Justificativa"
+					.lx_grid_filha1.columns(lnTotCols+1).visible = .t.
+					.lx_grid_filha1.columns(lnTotCols+2).visible = .t.
+					.lx_grid_filha1.columns(lnTotCols+3).visible = .t.
+					.lx_grid_filha1.columns(lnTotCols+1).enabled = .t.
+					.lx_grid_filha1.columns(lnTotCols+2).enabled = .t.
+					.lx_grid_filha1.columns(lnTotCols+3).enabled = .t.
+					.lx_grid_filha1.columns(lnTotCols+3).ColumnOrder = 6
+					.lx_grid_filha1.columns(lnTotCols+3).Width = 170
+					.lx_grid_filha1.columns(lnTotCols+1).name = "col_Linha"
+					.lx_grid_filha1.columns(lnTotCols+2).name = "col_Griffe"
+					.lx_grid_filha1.columns(lnTotCols+3).name = "col_ERP_Justificativa"
+					.lx_grid_filha1.col_ERP_Justificativa.Addobject("cmb_justificativa1","cmb_justificativa")
+					.lx_grid_filha1.col_ERP_Justificativa.currentcontrol = "cmb_justificativa1"
+					.lx_grid_filha1.col_ERP_Justificativa.cmb_justificativa1.visible=.t.
+					.lx_grid_filha1.col_ERP_Justificativa.sparse=.f.
+					.lx_grid_filha1.anchor = 0
+					lnHeightGrid = .lx_grid_filha1.Height  - 30
+					.lx_grid_filha1.Height = lnHeightGrid
+		This.Parent.Lx_grid_filha1.Refresh()
+			this.removeobject("Lx_grid_filha1")
+			this.addobject("Lx_grid_filha1","lx_grade_filha")
+			this.Lx_grid_filha1.visible = .t.	
+			WITH this.Lx_grid_filha1
+DEFINE CLASS lx_grade_filha as lx_grid_filha
+	Name = "Lx_grid_filha1"
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_produto.ADDOBJECT("h_tx_produto","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_produto.h_tx_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_produto.addobject("lx_textbox_valida1","lx_textbox_valida")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_produto.lx_textbox_valida1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_produto.AddObject("h_tx_desc_produto","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_produto.h_tx_desc_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_produto.AddObject("tx_desc_produto","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_produto.tx_desc_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_unidade.AddObject("h_tx_unidade","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_unidade.h_tx_unidade
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_unidade.AddObject("tx_unidade","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_unidade.tx_unidade
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_peso.AddObject("h_tx_peso","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_peso.h_tx_peso
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_peso.AddObject("tx_peso","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_peso.tx_peso
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_produto.AddObject("h_tx_cor_produto","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_produto.h_tx_cor_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_produto.AddObject("lx_textbox_valida1","lx_textbox_valida")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_produto.lx_textbox_valida1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_cor_produto.AddObject("h_tx_desc_cor_produto","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_cor_produto.h_tx_desc_cor_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_cor_produto.AddObject("tx_desc_cor_produto","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_cor_produto.tx_desc_cor_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_refer_fabricante.AddObject("h_tx_refer_fabricante","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_refer_fabricante.h_tx_refer_fabricante
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_refer_fabricante.AddObject("tx_refer_fabricante","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_refer_fabricante.tx_refer_fabricante
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_revenda.AddObject("h_tx_revenda","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_revenda.h_tx_revenda
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_revenda.AddObject("tx_revenda","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_revenda.tx_revenda
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_sortida.AddObject("h_tx_cor_sortida","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_sortida.h_tx_cor_sortida
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_sortida.AddObject("tx_cor_sortida","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_sortida.tx_cor_sortida
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_qtde_contagem.AddObject("h_tx_qtde_contagem","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_qtde_contagem.h_tx_qtde_contagem
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_qtde_contagem.AddObject("tx_qtde_contagem","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_qtde_contagem.tx_qtde_contagem
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_saldo_contagem.AddObject("h_tx_saldo_contagem","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_saldo_contagem.h_tx_saldo_contagem
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_saldo_contagem.AddObject("tx_saldo_contagem","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_saldo_contagem.tx_saldo_contagem
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_q43.AddObject("h_tx_q43","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_q43.h_tx_q43
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_q43.AddObject("lx_grade48_1","lx_grade48_1" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_q43.lx_grade48_1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_s1.AddObject("h_tx_s1","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_s1.h_tx_s1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_s1.AddObject("lx_grade48_1","lx_grade48_2" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_s1.lx_grade48_1
+	*oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.column108.AddObject("header1","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.column108.header1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.column108.AddObject("lx_textbox_base1","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.column108.lx_textbox_base1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_valor_contagem_diferenca.AddObject("h_tx_valor_contagem_diferenca","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_valor_contagem_diferenca.h_tx_valor_contagem_diferenca
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_valor_contagem_diferenca.AddObject("tx_valor_contagem_diferenca","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_valor_contagem_diferenca.tx_valor_contagem_diferenca
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo4_a_valorizar.AddObject("h_tx_custo4_a_valorizar","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo4_a_valorizar.h_tx_custo4_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo4_a_valorizar.AddObject("tx_custo4_a_valorizar","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo4_a_valorizar.tx_custo4_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo3_a_valorizar.AddObject("h_tx_custo3_a_valorizar","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo3_a_valorizar.h_tx_custo3_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo3_a_valorizar.AddObject("tx_custo3_a_valorizar","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo3_a_valorizar.tx_custo3_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo2_a_valorizar.AddObject("h_tx_custo2_a_valorizar","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo2_a_valorizar.h_tx_custo2_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo2_a_valorizar.AddObject("tx_custo2_a_valorizar","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo2_a_valorizar.tx_custo2_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo1_a_valorizar.AddObject("h_tx_custo1_a_valorizar","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo1_a_valorizar.h_tx_custo1_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo1_a_valorizar.AddObject("tx_custo1_a_valorizar","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo1_a_valorizar.tx_custo1_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_grupo_produto.AddObject("h_tx_grupo_produto","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_grupo_produto.h_tx_grupo_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_grupo_produto.AddObject("tx_grupo_produto","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_grupo_produto.tx_grupo_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_subgrupo_produto.AddObject("h_tx_subgrupo_produto","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_subgrupo_produto.h_tx_subgrupo_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_subgrupo_produto.AddObject("tx_subgrupo_produto","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_subgrupo_produto.tx_subgrupo_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao1.AddObject("h_tx_custo_reposicao1","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao1.h_tx_custo_reposicao1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao1.AddObject("tx_custo_reposicao1","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao1.tx_custo_reposicao1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao4.AddObject("h_tx_custo_reposicao4","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao4.h_tx_custo_reposicao4
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao4.AddObject("tx_custo_reposicao4","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao4.tx_custo_reposicao4
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_linha.AddObject("h_tx_linha","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_linha.h_tx_linha
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_linha.AddObject("tx_linha","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_linha.tx_linha
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_griffe.AddObject("h_tx_griffe","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_griffe.h_tx_griffe
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_griffe.AddObject("tx_griffe","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_griffe.tx_griffe
+
+---------- OBJ_005015SPK.PRG
+						.lx_grid_filha1.anchor = 0
+						lnHeightGrid =268 &&.lx_grid_filha1.Height  - 30
+						.lx_grid_filha1.Height = lnHeightGrid
+						.addobject("Lx_grid_filha1","lx_grade_filha")
+						.Lx_grid_filha1.visible = .t.				
+					*!*						.Lx_grid_filha1.top = 188		&& grid da page
+					*!*						.Lx_grid_filha1.height = 270		 && altura da grid da page
+					lnTotCols = .lx_grid_filha1.ColumnCount
+					.lx_grid_filha1.ColumnCount = lnTotCols + 3
+					.lx_grid_filha1.columns(lnTotCols+1).Header1.Caption = "Linha"
+					.lx_grid_filha1.columns(lnTotCols+2).Header1.Caption = "Griffe"
+					.lx_grid_filha1.columns(lnTotCols+3).Header1.Caption = "Justificativa"
+					.lx_grid_filha1.columns(lnTotCols+1).controlsource = "v_estoque_prod_contagem_00_itens.Linha"
+					.lx_grid_filha1.columns(lnTotCols+2).controlsource = "v_estoque_prod_contagem_00_itens.Griffe"
+					.lx_grid_filha1.columns(lnTotCols+3).controlsource = "v_estoque_prod_contagem_00_itens.ERP_Justificativa"
+					.lx_grid_filha1.columns(lnTotCols+1).visible = .t.
+					.lx_grid_filha1.columns(lnTotCols+2).visible = .t.
+					.lx_grid_filha1.columns(lnTotCols+3).visible = .t.
+					.lx_grid_filha1.columns(lnTotCols+1).enabled = .t.
+					.lx_grid_filha1.columns(lnTotCols+2).enabled = .t.
+					.lx_grid_filha1.columns(lnTotCols+3).enabled = .t.
+					.lx_grid_filha1.columns(lnTotCols+3).ColumnOrder = 6
+					.lx_grid_filha1.columns(lnTotCols+3).Width = 170
+					.lx_grid_filha1.columns(lnTotCols+1).name = "col_Linha"
+					.lx_grid_filha1.columns(lnTotCols+2).name = "col_Griffe"
+					.lx_grid_filha1.columns(lnTotCols+3).name = "col_ERP_Justificativa"
+					.lx_grid_filha1.col_ERP_Justificativa.Addobject("cmb_justificativa1","cmb_justificativa")
+					.lx_grid_filha1.col_ERP_Justificativa.currentcontrol = "cmb_justificativa1"
+					.lx_grid_filha1.col_ERP_Justificativa.cmb_justificativa1.visible=.t.
+					.lx_grid_filha1.col_ERP_Justificativa.sparse=.f.
+					.lx_grid_filha1.anchor = 0
+					lnHeightGrid = .lx_grid_filha1.Height  - 30
+					.lx_grid_filha1.Height = lnHeightGrid
+		This.Parent.Lx_grid_filha1.Refresh()
+			this.removeobject("Lx_grid_filha1")
+			this.addobject("Lx_grid_filha1","lx_grade_filha")
+			this.Lx_grid_filha1.visible = .t.	
+			WITH this.Lx_grid_filha1
+DEFINE CLASS lx_grade_filha as lx_grid_filha
+	Name = "Lx_grid_filha1"
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_produto.ADDOBJECT("h_tx_produto","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_produto.h_tx_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_produto.addobject("lx_textbox_valida1","lx_textbox_valida")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_produto.lx_textbox_valida1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_produto.AddObject("h_tx_desc_produto","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_produto.h_tx_desc_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_produto.AddObject("tx_desc_produto","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_produto.tx_desc_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_unidade.AddObject("h_tx_unidade","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_unidade.h_tx_unidade
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_unidade.AddObject("tx_unidade","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_unidade.tx_unidade
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_peso.AddObject("h_tx_peso","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_peso.h_tx_peso
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_peso.AddObject("tx_peso","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_peso.tx_peso
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_produto.AddObject("h_tx_cor_produto","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_produto.h_tx_cor_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_produto.AddObject("lx_textbox_valida1","lx_textbox_valida")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_produto.lx_textbox_valida1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_cor_produto.AddObject("h_tx_desc_cor_produto","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_cor_produto.h_tx_desc_cor_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_cor_produto.AddObject("tx_desc_cor_produto","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_cor_produto.tx_desc_cor_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_refer_fabricante.AddObject("h_tx_refer_fabricante","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_refer_fabricante.h_tx_refer_fabricante
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_refer_fabricante.AddObject("tx_refer_fabricante","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_refer_fabricante.tx_refer_fabricante
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_revenda.AddObject("h_tx_revenda","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_revenda.h_tx_revenda
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_revenda.AddObject("tx_revenda","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_revenda.tx_revenda
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_sortida.AddObject("h_tx_cor_sortida","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_sortida.h_tx_cor_sortida
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_sortida.AddObject("tx_cor_sortida","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_sortida.tx_cor_sortida
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_qtde_contagem.AddObject("h_tx_qtde_contagem","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_qtde_contagem.h_tx_qtde_contagem
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_qtde_contagem.AddObject("tx_qtde_contagem","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_qtde_contagem.tx_qtde_contagem
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_saldo_contagem.AddObject("h_tx_saldo_contagem","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_saldo_contagem.h_tx_saldo_contagem
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_saldo_contagem.AddObject("tx_saldo_contagem","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_saldo_contagem.tx_saldo_contagem
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_q43.AddObject("h_tx_q43","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_q43.h_tx_q43
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_q43.AddObject("lx_grade48_1","lx_grade48_1" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_q43.lx_grade48_1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_s1.AddObject("h_tx_s1","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_s1.h_tx_s1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_s1.AddObject("lx_grade48_1","lx_grade48_2" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_s1.lx_grade48_1
+	*oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.column108.AddObject("header1","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.column108.header1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.column108.AddObject("lx_textbox_base1","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.column108.lx_textbox_base1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_valor_contagem_diferenca.AddObject("h_tx_valor_contagem_diferenca","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_valor_contagem_diferenca.h_tx_valor_contagem_diferenca
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_valor_contagem_diferenca.AddObject("tx_valor_contagem_diferenca","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_valor_contagem_diferenca.tx_valor_contagem_diferenca
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo4_a_valorizar.AddObject("h_tx_custo4_a_valorizar","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo4_a_valorizar.h_tx_custo4_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo4_a_valorizar.AddObject("tx_custo4_a_valorizar","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo4_a_valorizar.tx_custo4_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo3_a_valorizar.AddObject("h_tx_custo3_a_valorizar","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo3_a_valorizar.h_tx_custo3_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo3_a_valorizar.AddObject("tx_custo3_a_valorizar","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo3_a_valorizar.tx_custo3_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo2_a_valorizar.AddObject("h_tx_custo2_a_valorizar","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo2_a_valorizar.h_tx_custo2_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo2_a_valorizar.AddObject("tx_custo2_a_valorizar","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo2_a_valorizar.tx_custo2_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo1_a_valorizar.AddObject("h_tx_custo1_a_valorizar","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo1_a_valorizar.h_tx_custo1_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo1_a_valorizar.AddObject("tx_custo1_a_valorizar","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo1_a_valorizar.tx_custo1_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_grupo_produto.AddObject("h_tx_grupo_produto","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_grupo_produto.h_tx_grupo_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_grupo_produto.AddObject("tx_grupo_produto","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_grupo_produto.tx_grupo_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_subgrupo_produto.AddObject("h_tx_subgrupo_produto","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_subgrupo_produto.h_tx_subgrupo_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_subgrupo_produto.AddObject("tx_subgrupo_produto","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_subgrupo_produto.tx_subgrupo_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao1.AddObject("h_tx_custo_reposicao1","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao1.h_tx_custo_reposicao1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao1.AddObject("tx_custo_reposicao1","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao1.tx_custo_reposicao1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao4.AddObject("h_tx_custo_reposicao4","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao4.h_tx_custo_reposicao4
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao4.AddObject("tx_custo_reposicao4","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao4.tx_custo_reposicao4
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_linha.AddObject("h_tx_linha","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_linha.h_tx_linha
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_linha.AddObject("tx_linha","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_linha.tx_linha
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_griffe.AddObject("h_tx_griffe","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_griffe.h_tx_griffe
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_griffe.AddObject("tx_griffe","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_griffe.tx_griffe
+
+---------- OBJ_005015SPX.PRG
+						.lx_grid_filha1.anchor = 0
+						lnHeightGrid =268 &&.lx_grid_filha1.Height  - 30
+						.lx_grid_filha1.Height = lnHeightGrid
+						.addobject("Lx_grid_filha1","lx_grade_filha")
+						.Lx_grid_filha1.visible = .t.				
+					*!*						.Lx_grid_filha1.top = 188		&& grid da page
+					*!*						.Lx_grid_filha1.height = 270		 && altura da grid da page
+					lnTotCols = .lx_grid_filha1.ColumnCount
+					.lx_grid_filha1.ColumnCount = lnTotCols + 3
+					.lx_grid_filha1.columns(lnTotCols+1).Header1.Caption = "Linha"
+					.lx_grid_filha1.columns(lnTotCols+2).Header1.Caption = "Griffe"
+					.lx_grid_filha1.columns(lnTotCols+3).Header1.Caption = "Justificativa"
+					.lx_grid_filha1.columns(lnTotCols+1).controlsource = "v_estoque_prod_contagem_00_itens.Linha"
+					.lx_grid_filha1.columns(lnTotCols+2).controlsource = "v_estoque_prod_contagem_00_itens.Griffe"
+					.lx_grid_filha1.columns(lnTotCols+3).controlsource = "v_estoque_prod_contagem_00_itens.ERP_Justificativa"
+					.lx_grid_filha1.columns(lnTotCols+1).visible = .t.
+					.lx_grid_filha1.columns(lnTotCols+2).visible = .t.
+					.lx_grid_filha1.columns(lnTotCols+3).visible = .t.
+					.lx_grid_filha1.columns(lnTotCols+1).enabled = .t.
+					.lx_grid_filha1.columns(lnTotCols+2).enabled = .t.
+					.lx_grid_filha1.columns(lnTotCols+3).enabled = .t.
+					.lx_grid_filha1.columns(lnTotCols+3).ColumnOrder = 6
+					.lx_grid_filha1.columns(lnTotCols+3).Width = 170
+					.lx_grid_filha1.columns(lnTotCols+1).name = "col_Linha"
+					.lx_grid_filha1.columns(lnTotCols+2).name = "col_Griffe"
+					.lx_grid_filha1.columns(lnTotCols+3).name = "col_ERP_Justificativa"
+					.lx_grid_filha1.col_ERP_Justificativa.Addobject("cmb_justificativa1","cmb_justificativa")
+					.lx_grid_filha1.col_ERP_Justificativa.currentcontrol = "cmb_justificativa1"
+					.lx_grid_filha1.col_ERP_Justificativa.cmb_justificativa1.visible=.t.
+					.lx_grid_filha1.col_ERP_Justificativa.sparse=.f.
+					.lx_grid_filha1.anchor = 0
+					lnHeightGrid = .lx_grid_filha1.Height  - 30
+					.lx_grid_filha1.Height = lnHeightGrid
+		This.Parent.Lx_grid_filha1.Refresh()
+			this.removeobject("Lx_grid_filha1")
+			this.addobject("Lx_grid_filha1","lx_grade_filha")
+			this.Lx_grid_filha1.visible = .t.	
+			WITH this.Lx_grid_filha1
+DEFINE CLASS lx_grade_filha as lx_grid_filha
+	Name = "Lx_grid_filha1"
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_produto.ADDOBJECT("h_tx_produto","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_produto.h_tx_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_produto.addobject("lx_textbox_valida1","lx_textbox_valida")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_produto.lx_textbox_valida1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_produto.AddObject("h_tx_desc_produto","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_produto.h_tx_desc_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_produto.AddObject("tx_desc_produto","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_produto.tx_desc_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_unidade.AddObject("h_tx_unidade","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_unidade.h_tx_unidade
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_unidade.AddObject("tx_unidade","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_unidade.tx_unidade
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_peso.AddObject("h_tx_peso","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_peso.h_tx_peso
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_peso.AddObject("tx_peso","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_peso.tx_peso
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_produto.AddObject("h_tx_cor_produto","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_produto.h_tx_cor_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_produto.AddObject("lx_textbox_valida1","lx_textbox_valida")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_produto.lx_textbox_valida1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_cor_produto.AddObject("h_tx_desc_cor_produto","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_cor_produto.h_tx_desc_cor_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_cor_produto.AddObject("tx_desc_cor_produto","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_desc_cor_produto.tx_desc_cor_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_refer_fabricante.AddObject("h_tx_refer_fabricante","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_refer_fabricante.h_tx_refer_fabricante
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_refer_fabricante.AddObject("tx_refer_fabricante","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_refer_fabricante.tx_refer_fabricante
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_revenda.AddObject("h_tx_revenda","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_revenda.h_tx_revenda
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_revenda.AddObject("tx_revenda","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_revenda.tx_revenda
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_sortida.AddObject("h_tx_cor_sortida","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_sortida.h_tx_cor_sortida
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_sortida.AddObject("tx_cor_sortida","lx_textbox_base")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_cor_sortida.tx_cor_sortida
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_qtde_contagem.AddObject("h_tx_qtde_contagem","header")
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_qtde_contagem.h_tx_qtde_contagem
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_qtde_contagem.AddObject("tx_qtde_contagem","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_qtde_contagem.tx_qtde_contagem
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_saldo_contagem.AddObject("h_tx_saldo_contagem","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_saldo_contagem.h_tx_saldo_contagem
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_saldo_contagem.AddObject("tx_saldo_contagem","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_saldo_contagem.tx_saldo_contagem
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_q43.AddObject("h_tx_q43","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_q43.h_tx_q43
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_q43.AddObject("lx_grade48_1","lx_grade48_1" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_q43.lx_grade48_1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_s1.AddObject("h_tx_s1","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_s1.h_tx_s1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_s1.AddObject("lx_grade48_1","lx_grade48_2" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_s1.lx_grade48_1
+	*oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.column108.AddObject("header1","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.column108.header1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.column108.AddObject("lx_textbox_base1","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.column108.lx_textbox_base1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_valor_contagem_diferenca.AddObject("h_tx_valor_contagem_diferenca","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_valor_contagem_diferenca.h_tx_valor_contagem_diferenca
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_valor_contagem_diferenca.AddObject("tx_valor_contagem_diferenca","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_valor_contagem_diferenca.tx_valor_contagem_diferenca
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo4_a_valorizar.AddObject("h_tx_custo4_a_valorizar","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo4_a_valorizar.h_tx_custo4_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo4_a_valorizar.AddObject("tx_custo4_a_valorizar","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo4_a_valorizar.tx_custo4_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo3_a_valorizar.AddObject("h_tx_custo3_a_valorizar","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo3_a_valorizar.h_tx_custo3_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo3_a_valorizar.AddObject("tx_custo3_a_valorizar","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo3_a_valorizar.tx_custo3_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo2_a_valorizar.AddObject("h_tx_custo2_a_valorizar","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo2_a_valorizar.h_tx_custo2_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo2_a_valorizar.AddObject("tx_custo2_a_valorizar","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo2_a_valorizar.tx_custo2_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo1_a_valorizar.AddObject("h_tx_custo1_a_valorizar","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo1_a_valorizar.h_tx_custo1_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo1_a_valorizar.AddObject("tx_custo1_a_valorizar","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo1_a_valorizar.tx_custo1_a_valorizar
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_grupo_produto.AddObject("h_tx_grupo_produto","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_grupo_produto.h_tx_grupo_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_grupo_produto.AddObject("tx_grupo_produto","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_grupo_produto.tx_grupo_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_subgrupo_produto.AddObject("h_tx_subgrupo_produto","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_subgrupo_produto.h_tx_subgrupo_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_subgrupo_produto.AddObject("tx_subgrupo_produto","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_subgrupo_produto.tx_subgrupo_produto
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao1.AddObject("h_tx_custo_reposicao1","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao1.h_tx_custo_reposicao1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao1.AddObject("tx_custo_reposicao1","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao1.tx_custo_reposicao1
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao4.AddObject("h_tx_custo_reposicao4","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao4.h_tx_custo_reposicao4
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao4.AddObject("tx_custo_reposicao4","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_custo_reposicao4.tx_custo_reposicao4
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_linha.AddObject("h_tx_linha","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_linha.h_tx_linha
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_linha.AddObject("tx_linha","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_linha.tx_linha
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_griffe.AddObject("h_tx_griffe","header" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_griffe.h_tx_griffe
+	oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_griffe.AddObject("tx_griffe","lx_textbox_base" )
+	WITH oFormSet.lx_form1.lx_pageframe1.pgCaedu.lx_grid_filha1.col_tx_griffe.tx_griffe
+
+---------- OBJ_005102999.PRG
+
+---------- OBJ_005102CP1.PRG
+
+---------- OBJ_005102CS1.PRG
+
+---------- OBJ_005102CSM.PRG
+
+---------- OBJ_005102GP1.PRG
+
+---------- OBJ_005102GP2.PRG
+
+---------- OBJ_005102GP3.PRG
+
+---------- OBJ_005102GP4.PRG
+
+---------- OBJ_005102LX0.PRG
+
+---------- OBJ_005102LX2.PRG
+
+---------- OBJ_005102LX3.PRG
+
+---------- OBJ_005102LX4.PRG
+
+---------- OBJ_005102LX5.PRG
+
+---------- OBJ_005102LX6.PRG
+
+---------- OBJ_005102MA1.PRG
+
+---------- OBJ_005102MAI.PRG
+
+---------- OBJ_005102MAX.PRG
+
+---------- OBJ_005102SPK.PRG
+
+---------- OBJ_005102XPK.PRG
+
+---------- OBJ_005104SPK.PRG
+ 			 xobjeto.lx_FORM1.lx_pageframe1.page2.lx_grid_filha1.col_DESCRICAO_ITEM.ReadOnly = .T.
+
+---------- OBJ_005107SPK.PRG
+	ADD OBJECT grid1 AS grid WITH ;
+	PROCEDURE grid1.Init
+			.gridLineColor = RGB(215,215,215)
+
+---------- OBJ_005109SPK.PRG
+
+---------- OBJ_006003SPK.PRG
+
+---------- OBJ_009007CAE.PRG
+
+---------- OBJ_009007SPK.PRG
+
+---------- OBJ_009017SPK.PRG
+
+---------- OBJ_009022SPK.PRG
+
+---------- OBJ_009042SPK.PRG
+
+---------- OBJ_009150SPK.PRG
+
+---------- OBJ_009161SP1.PRG
+
+---------- OBJ_100101CB1.PRG
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(xItemCabideA43)
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = iCabidesA43 
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(xItemCabideA38)
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = iCabidesA38 
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(xItemCabideA33)
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = iCabidesA33 
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(xItemCabideM26)
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = iCabidesM26 
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(xItemCabideM35)
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = iCabidesM35
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(xItemBolacha)
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = iBolachas
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+
+---------- OBJ_100101CB2.PRG
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(xItemCabideA43)
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = iCabidesA43 
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(xItemCabideA38)
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = iCabidesA38 
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(xItemCabideA33)
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = iCabidesA33 
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(xItemCabideM26)
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = iCabidesM26 
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(xItemCabideM35)
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = iCabidesM35
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(xItemBolacha)
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = iBolachas
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+
+---------- OBJ_100101CB3.PRG
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(xItemCabideA43)
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = iCabidesA43 
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(xItemCabideA38)
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = iCabidesA38 
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(xItemCabideA33)
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = iCabidesA33 
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(xItemCabideM26)
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = iCabidesM26 
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(xItemCabideM35)
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = iCabidesM35
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(xItemBolacha)
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = iBolachas
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.interactivechange
+						o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.valid()
+*!*							o_100102.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+
+---------- OBJ_100101CB4.PRG
+
+---------- OBJ_100101CP1.PRG
+
+---------- OBJ_100101GP0.PRG
+
+---------- OBJ_100101GP1.PRG
+
+---------- OBJ_100101GP2.PRG
+
+---------- OBJ_100101GP3.PRG
+
+---------- OBJ_100101GP4.PRG
+
+---------- OBJ_100101GP5.PRG
+
+---------- OBJ_100101SPK.PRG
+
+---------- OBJ_100102CS2.PRG
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(vtmp_inventario.produto)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = ABS(vtmp_inventario.qtde)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+
+---------- OBJ_100102CSM.PRG
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(vtmp_inventario.produto)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = ABS(vtmp_inventario.qtde)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+
+---------- OBJ_100102GP0.PRG
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(vtmp_inventario.produto)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = ABS(vtmp_inventario.qtde)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+
+---------- OBJ_100102GP1.PRG
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(vtmp_inventario.produto)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = ABS(vtmp_inventario.qtde)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+
+---------- OBJ_100102LX0.PRG
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(vtmp_inventario.produto)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = ABS(vtmp_inventario.qtde)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+
+---------- OBJ_100102SPK.PRG
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(vtmp_inventario.produto)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = ABS(vtmp_inventario.qtde)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+
+---------- OBJ_100132CP1.PRG
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(vtmp_inventario.produto)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = ABS(vtmp_inventario.qtde)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+
+---------- OBJ_100132CP2.PRG
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(vtmp_inventario.produto)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = ABS(vtmp_inventario.qtde)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+
+---------- OBJ_100132CS0.PRG
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(vtmp_inventario.produto)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = ABS(vtmp_inventario.qtde)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+
+---------- OBJ_100132CS1.PRG
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(vtmp_inventario.produto)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = ABS(vtmp_inventario.qtde)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+
+---------- OBJ_100132CSM.PRG
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(vtmp_inventario.produto)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = ABS(vtmp_inventario.qtde)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+
+---------- OBJ_100132GP0.PRG
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(vtmp_inventario.produto)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = ABS(vtmp_inventario.qtde)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+
+---------- OBJ_100132GP1.PRG
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(vtmp_inventario.produto)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = ABS(vtmp_inventario.qtde)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+
+---------- OBJ_100132GP2.PRG
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(vtmp_inventario.produto)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = ABS(vtmp_inventario.qtde)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+
+---------- OBJ_100132GP3.PRG
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(vtmp_inventario.produto)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = ABS(vtmp_inventario.qtde)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+
+---------- OBJ_100132GP4.PRG
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(vtmp_inventario.produto)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = ABS(vtmp_inventario.qtde)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+
+---------- OBJ_100132GP5.PRG
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(vtmp_inventario.produto)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = ABS(vtmp_inventario.qtde)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+
+---------- OBJ_100132GP6.PRG
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(vtmp_inventario.produto)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = ABS(vtmp_inventario.qtde)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+
+---------- OBJ_100132GP7.PRG
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(vtmp_inventario.produto)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = ABS(vtmp_inventario.qtde)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+
+---------- OBJ_100132GP8.PRG
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(vtmp_inventario.produto)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = ABS(vtmp_inventario.qtde)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+
+---------- OBJ_100132GP9.PRG
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(vtmp_inventario.produto)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = ABS(vtmp_inventario.qtde)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+
+---------- OBJ_100132GPX.PRG
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.value = ALLTRIM(vtmp_inventario.produto)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_codigo_item.tx_codigo_item.l_desenhista_recalculo()
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.value = ABS(vtmp_inventario.qtde)
+					ThisFormSet.lx_Form1.lx_pageframe1.page3.lx_grid_filha1.col_tx_qtde_item.tx_qtde_item.l_desenhista_recalculo()
+
+---------- OBJ_100135CP1.PRG
+					.lx_pageframe.page1.lx_grid_status_documento.anchor = 0
+
+---------- OBJ_100135CSM.PRG
+					.lx_pageframe.page1.lx_grid_status_documento.anchor = 0
+
+---------- OBJ_100135GP0.PRG
+					.lx_pageframe.page1.lx_grid_status_documento.anchor = 0
+
+---------- OBJ_100135GP1.PRG
+					.lx_pageframe.page1.lx_grid_status_documento.anchor = 0
+
+---------- OBJ_100135GP2.PRG
+					.lx_pageframe.page1.lx_grid_status_documento.anchor = 0
+
+---------- OBJ_100135SPK.PRG
+					.lx_pageframe.page1.lx_grid_status_documento.anchor = 0
+
+---------- OBJ_100136SPK.PRG
+
+---------- OBJ_120007SPK.PRG
+
+---------- OBJ_120007SPKDEL.PRG
+
+---------- OBJ_120007TP1.PRG
+
+---------- OBJ_120007TP2.PRG
+
+---------- OBJ_120007TP3.PRG
+
+---------- OBJ_120007TP5.PRG
+
+---------- OBJ_120007TP6.PRG
+
+---------- OBJ_120103SP1.PRG
+
+---------- OBJ_120103SPK.PRG
+
+---------- OBJ_150008SPK.PRG
+
+---------- OBJ_150011SP1.PRG
+
+---------- OBJ_150011SP2.PRG
+
+---------- OBJ_150011SPK.PRG
+
+---------- OBJ_150011XPK.PRG
+
+---------- OBJ_300053SPK.PRG
+
+---------- OBJ_300063.PRG
+
+---------- OBJ_999324HMG.PRG
+*!*							thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .f.
+*!*				thisformset.lx_FORM1.lx_pageframe1.page5.lX_GRID_FILHA1.p_tool_grid.Visible = .T.
+
+---------- OBJ_999340SP1.PRG
+
+---------- OBJ_999340SP2.PRG
+
+---------- OBJ_999340SP3.PRG
+
+---------- OBJ_999340SP4.PRG
+
+---------- OBJ_999340SP5.PRG
+
+---------- OBJ_999340SP6.PRG
+
+---------- OBJ_999387.PRG
+
+---------- ZOBJ_001015SPK.PRG

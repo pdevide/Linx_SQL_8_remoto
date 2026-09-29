@@ -1,0 +1,259 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="ctb_lx_grupo_fluxo" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="lx_grupo_fluxo">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="3"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="descr_grupo_fluxo">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="30"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="inativo" type="xsd:boolean"/>
+								<xsd:element name="comando_processo" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="2147483647"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="comando_detalhe" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="2147483647"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="fator_soma" type="xsd:int"/>
+								<xsd:element name="tipo_grupo" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="1"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="comando_processo_realizado" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="2147483647"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<ctb_lx_grupo_fluxo>
+		<lx_grupo_fluxo>00</lx_grupo_fluxo>
+		<descr_grupo_fluxo>SALDO ANTERIOR</descr_grupo_fluxo>
+		<inativo>false</inativo>
+		<comando_processo>EXEC LX_CTB_FLX_SALDO_CONTAS @ID_FLUXO_CAIXA, @INDICA_SALDO_INICIAL, @SALDO_INICIAL, @USAR_LIMITE</comando_processo>
+		<fator_soma>1</fator_soma>
+		<tipo_grupo>A</tipo_grupo>
+		<comando_processo_realizado>EXEC LX_CTB_FLX_SALDO_CONTAS @ID_FLUXO_CAIXA, @INDICA_SALDO_INICIAL, @SALDO_INICIAL, @USAR_LIMITE</comando_processo_realizado>
+	</ctb_lx_grupo_fluxo>
+	<ctb_lx_grupo_fluxo>
+		<lx_grupo_fluxo>05</lx_grupo_fluxo>
+		<descr_grupo_fluxo>TÍTULOS A RECEBER</descr_grupo_fluxo>
+		<inativo>false</inativo>
+		<comando_processo>EXEC LX_CTB_FLX_A_RECEBER @ID_FLUXO_CAIXA, @D_CR, @PORC_INADIMPLENCIA_CR,@DIAS_ATRASO_CR,@TIPO_CARTEIRA, @N1, @N2</comando_processo>
+		<fator_soma>1</fator_soma>
+		<tipo_grupo>R</tipo_grupo>
+		<comando_processo_realizado>EXEC LX_CTB_FLX_A_RECEBER_REALIZADO @ID_FLUXO_CAIXA, @TIPO_CARTEIRA, @N1, @N2</comando_processo_realizado>
+	</ctb_lx_grupo_fluxo>
+	<ctb_lx_grupo_fluxo>
+		<lx_grupo_fluxo>10</lx_grupo_fluxo>
+		<descr_grupo_fluxo>CHEQUE RECEBER</descr_grupo_fluxo>
+		<inativo>false</inativo>
+		<comando_processo>LX_CTB_FLX_CHEQUE_CARTAO_RECEBER @ID_FLUXO_CAIXA, @D_CHEQUE, @D_CARTAO, @PORC_INADIMPLENCIA_CHQ, @PORC_INADIMPLENCIA_CAR, @TIPO_CARTEIRA, @CHEQUE_CARTAO, @GRAVA_DETALHE, @N1, @N2</comando_processo>
+		<fator_soma>1</fator_soma>
+		<tipo_grupo>R</tipo_grupo>
+		<comando_processo_realizado>LX_CTB_FLX_CHEQUE_CARTAO_RECEBER_REALIZADO @ID_FLUXO_CAIXA, @TIPO_CARTEIRA, @CHEQUE_CARTAO, @GRAVA_DETALHE, @N1, @N2</comando_processo_realizado>
+	</ctb_lx_grupo_fluxo>
+	<ctb_lx_grupo_fluxo>
+		<lx_grupo_fluxo>11</lx_grupo_fluxo>
+		<descr_grupo_fluxo>CARTÃO A RECEBER</descr_grupo_fluxo>
+		<inativo>false</inativo>
+		<comando_processo>LX_CTB_FLX_CHEQUE_CARTAO_RECEBER @ID_FLUXO_CAIXA, @D_CHEQUE, @D_CARTAO, @PORC_INADIMPLENCIA_CHQ, @PORC_INADIMPLENCIA_CAR, @TIPO_CARTEIRA, @CHEQUE_CARTAO, @GRAVA_DETALHE, @N1, @N2</comando_processo>
+		<fator_soma>1</fator_soma>
+		<tipo_grupo>R</tipo_grupo>
+		<comando_processo_realizado>LX_CTB_FLX_CHEQUE_CARTAO_RECEBER_REALIZADO @ID_FLUXO_CAIXA, @TIPO_CARTEIRA, @CHEQUE_CARTAO, @GRAVA_DETALHE, @N1, @N2</comando_processo_realizado>
+	</ctb_lx_grupo_fluxo>
+	<ctb_lx_grupo_fluxo>
+		<lx_grupo_fluxo>15</lx_grupo_fluxo>
+		<descr_grupo_fluxo>AVISO DE DÉBITO</descr_grupo_fluxo>
+		<inativo>false</inativo>
+		<comando_processo>EXEC LX_CTB_FLX_AVISO_DEBITO @ID_FLUXO_CAIXA, @APROVACAO_AE, @N1, @N2</comando_processo>
+		<fator_soma>1</fator_soma>
+		<tipo_grupo>R</tipo_grupo>
+		<comando_processo_realizado>EXEC LX_CTB_FLX_AVISO_DEBITO_REALIZADO @ID_FLUXO_CAIXA, @N1, @N2</comando_processo_realizado>
+	</ctb_lx_grupo_fluxo>
+	<ctb_lx_grupo_fluxo>
+		<lx_grupo_fluxo>20</lx_grupo_fluxo>
+		<descr_grupo_fluxo>ENTRADA DE VERBA</descr_grupo_fluxo>
+		<inativo>false</inativo>
+		<comando_processo>LX_CTB_FLX_ENTRADA_VERBA @ID_FLUXO_CAIXA, @APROVACAO_AE, @N1, @N2</comando_processo>
+		<fator_soma>1</fator_soma>
+		<tipo_grupo>R</tipo_grupo>
+		<comando_processo_realizado>LX_CTB_FLX_ENTRADA_VERBA_REALIZADO @ID_FLUXO_CAIXA, @N1, @N2</comando_processo_realizado>
+	</ctb_lx_grupo_fluxo>
+	<ctb_lx_grupo_fluxo>
+		<lx_grupo_fluxo>25</lx_grupo_fluxo>
+		<descr_grupo_fluxo>PEDIDOS DE VENDA</descr_grupo_fluxo>
+		<inativo>false</inativo>
+		<comando_processo>EXEC LX_CTB_FLX_PEDIDO_VENDA @ID_FLUXO_CAIXA, @INDICA_LIMITE_ENTREGA, @APROVACAO_PD, @DIAS_PEDIDOS_VENCIDOS, @INDICA_DATA_INICIAL, @N1, @N2</comando_processo>
+		<fator_soma>1</fator_soma>
+		<tipo_grupo>R</tipo_grupo>
+		<comando_processo_realizado>NULL</comando_processo_realizado>
+	</ctb_lx_grupo_fluxo>
+	<ctb_lx_grupo_fluxo>
+		<lx_grupo_fluxo>40</lx_grupo_fluxo>
+		<descr_grupo_fluxo>PREVISÃO DE VENDA DE LOJA</descr_grupo_fluxo>
+		<inativo>false</inativo>
+		<comando_processo>EXEC LX_CTB_FLX_PREVISAO_LOJA @ID_FLUXO_CAIXA, @PORC_PREVISAO, @LOJA_FORMA_PGTO, @ABRIR_FILIAL, @N1, @N2</comando_processo>
+		<fator_soma>1</fator_soma>
+		<tipo_grupo>R</tipo_grupo>
+		<comando_processo_realizado>NULL</comando_processo_realizado>
+	</ctb_lx_grupo_fluxo>
+	<ctb_lx_grupo_fluxo>
+		<lx_grupo_fluxo>43</lx_grupo_fluxo>
+		<descr_grupo_fluxo>MOV. DE LOJA NÃO INTEGRADO</descr_grupo_fluxo>
+		<inativo>false</inativo>
+		<comando_processo>EXEC LX_CTB_FLX_LOJA_NAO_INTEGRADO @ID_FLUXO_CAIXA, @GRAVA_DETALHE, @N1, @N2</comando_processo>
+		<fator_soma>1</fator_soma>
+		<tipo_grupo>R</tipo_grupo>
+		<comando_processo_realizado>NULL</comando_processo_realizado>
+	</ctb_lx_grupo_fluxo>
+	<ctb_lx_grupo_fluxo>
+		<lx_grupo_fluxo>45</lx_grupo_fluxo>
+		<descr_grupo_fluxo>ESTORNO DE COMISSÃO</descr_grupo_fluxo>
+		<inativo>false</inativo>
+		<comando_processo>EXEC LX_CTB_FLX_ESTORNO_COMISSAO @ID_FLUXO_CAIXA, @ULTIMO_DIA_MES, @N1, @N2</comando_processo>
+		<fator_soma>1</fator_soma>
+		<tipo_grupo>R</tipo_grupo>
+		<comando_processo_realizado>EXEC LX_CTB_FLX_ESTORNO_COMISSAO_REALIZADO @ID_FLUXO_CAIXA, @ULTIMO_DIA_MES, @N1, @N2</comando_processo_realizado>
+	</ctb_lx_grupo_fluxo>
+	<ctb_lx_grupo_fluxo>
+		<lx_grupo_fluxo>49</lx_grupo_fluxo>
+		<descr_grupo_fluxo>ORÇAMENTO A RECEBER</descr_grupo_fluxo>
+		<inativo>false</inativo>
+		<comando_processo>EXEC LX_CTB_FLX_ORCAMENTO_RECEBER @ID_FLUXO_CAIXA, @ORCAMENTO_TIPO, @N1, @N2</comando_processo>
+		<fator_soma>1</fator_soma>
+		<tipo_grupo>R</tipo_grupo>
+		<comando_processo_realizado>NULL</comando_processo_realizado>
+	</ctb_lx_grupo_fluxo>
+	<ctb_lx_grupo_fluxo>
+		<lx_grupo_fluxo>50</lx_grupo_fluxo>
+		<descr_grupo_fluxo>TÍTULOS A PAGAR</descr_grupo_fluxo>
+		<inativo>false</inativo>
+		<comando_processo>EXEC LX_CTB_FLX_A_PAGAR @ID_FLUXO_CAIXA, @D_CP, @APROVACAO_AE, @DIAS_ATRASO_CP, @N1, @N2</comando_processo>
+		<fator_soma>-1</fator_soma>
+		<tipo_grupo>P</tipo_grupo>
+		<comando_processo_realizado>EXEC LX_CTB_FLX_A_PAGAR_REALIZADO @ID_FLUXO_CAIXA, @N1, @N2</comando_processo_realizado>
+	</ctb_lx_grupo_fluxo>
+	<ctb_lx_grupo_fluxo>
+		<lx_grupo_fluxo>55</lx_grupo_fluxo>
+		<descr_grupo_fluxo>CHEQUES A COMPENSAR</descr_grupo_fluxo>
+		<inativo>false</inativo>
+		<comando_processo>EXEC LX_CTB_FLX_CHEQUE_PAGAR @ID_FLUXO_CAIXA, @D_CHEQUE_CP, @DIAS_ATRASO_CHE, @N1, @N2</comando_processo>
+		<fator_soma>-1</fator_soma>
+		<tipo_grupo>P</tipo_grupo>
+		<comando_processo_realizado>EXEC LX_CTB_FLX_CHEQUE_PAGAR_REALIZADO @ID_FLUXO_CAIXA, @N1, @N2</comando_processo_realizado>
+	</ctb_lx_grupo_fluxo>
+	<ctb_lx_grupo_fluxo>
+		<lx_grupo_fluxo>60</lx_grupo_fluxo>
+		<descr_grupo_fluxo>AVISO DE CRÉDITO</descr_grupo_fluxo>
+		<inativo>false</inativo>
+		<comando_processo>EXEC LX_CTB_FLX_AVISO_CREDITO @ID_FLUXO_CAIXA, @APROVACAO_AE, @N1, @N2</comando_processo>
+		<fator_soma>-1</fator_soma>
+		<tipo_grupo>P</tipo_grupo>
+		<comando_processo_realizado>EXEC LX_CTB_FLX_AVISO_CREDITO_REALIZADO @ID_FLUXO_CAIXA, @N1, @N2</comando_processo_realizado>
+	</ctb_lx_grupo_fluxo>
+	<ctb_lx_grupo_fluxo>
+		<lx_grupo_fluxo>65</lx_grupo_fluxo>
+		<descr_grupo_fluxo>SOLICITAÇÃO DE VERBA</descr_grupo_fluxo>
+		<inativo>false</inativo>
+		<comando_processo>LX_CTB_FLX_SOLICITACAO_VERBA @ID_FLUXO_CAIXA, @APROVACAO_AE, @N1, @N2</comando_processo>
+		<fator_soma>-1</fator_soma>
+		<tipo_grupo>P</tipo_grupo>
+		<comando_processo_realizado>LX_CTB_FLX_SOLICITACAO_VERBA_REALIZADO @ID_FLUXO_CAIXA, @N1, @N2</comando_processo_realizado>
+	</ctb_lx_grupo_fluxo>
+	<ctb_lx_grupo_fluxo>
+		<lx_grupo_fluxo>70</lx_grupo_fluxo>
+		<descr_grupo_fluxo>PEDIDO DE COMPRA</descr_grupo_fluxo>
+		<inativo>false</inativo>
+		<comando_processo>EXEC LX_CTB_FLX_PEDIDO_COMPRA @ID_FLUXO_CAIXA, @INDICA_LIMITE_ENTREGA, @APROVACAO_PD, @DIAS_PEDIDOS_VENCIDOS, @TIPO_FORNECEDOR_TIRAR, @INDICA_DATA_INICIAL, @N1, @N2</comando_processo>
+		<fator_soma>-1</fator_soma>
+		<tipo_grupo>P</tipo_grupo>
+		<comando_processo_realizado>NULL</comando_processo_realizado>
+	</ctb_lx_grupo_fluxo>
+	<ctb_lx_grupo_fluxo>
+		<lx_grupo_fluxo>75</lx_grupo_fluxo>
+		<descr_grupo_fluxo>COMISSÕES A PAGAR</descr_grupo_fluxo>
+		<inativo>false</inativo>
+		<comando_processo>EXEC LX_CTB_FLX_COMISSAO @ID_FLUXO_CAIXA, @ULTIMO_DIA_MES, @N1, @N2</comando_processo>
+		<fator_soma>-1</fator_soma>
+		<tipo_grupo>P</tipo_grupo>
+		<comando_processo_realizado>EXEC LX_CTB_FLX_COMISSAO_REALIZADO @ID_FLUXO_CAIXA, @ULTIMO_DIA_MES, @N1, @N2</comando_processo_realizado>
+	</ctb_lx_grupo_fluxo>
+	<ctb_lx_grupo_fluxo>
+		<lx_grupo_fluxo>76</lx_grupo_fluxo>
+		<descr_grupo_fluxo>COMISSÕES A PAGAR - FECHADAS</descr_grupo_fluxo>
+		<inativo>false</inativo>
+		<comando_processo>EXEC LX_CTB_FLX_COMISSAO_FECHADA @ID_FLUXO_CAIXA, @DIAS_VENCIMENTO, @CONTA_CONTABIL, @N1, @N2</comando_processo>
+		<fator_soma>-1</fator_soma>
+		<tipo_grupo>P</tipo_grupo>
+	</ctb_lx_grupo_fluxo>
+	<ctb_lx_grupo_fluxo>
+		<lx_grupo_fluxo>80</lx_grupo_fluxo>
+		<descr_grupo_fluxo>FINANCEIRO FISCAL - IMPOSTOS</descr_grupo_fluxo>
+		<inativo>false</inativo>
+		<comando_processo>LX_CTB_FLX_FINANCEIRO_FISCAL @ID_FLUXO_CAIXA, @N1, @N2</comando_processo>
+		<fator_soma>-1</fator_soma>
+		<tipo_grupo>P</tipo_grupo>
+		<comando_processo_realizado>NULL</comando_processo_realizado>
+	</ctb_lx_grupo_fluxo>
+	<ctb_lx_grupo_fluxo>
+		<lx_grupo_fluxo>85</lx_grupo_fluxo>
+		<descr_grupo_fluxo>ORDEM PRODUÇÃO</descr_grupo_fluxo>
+		<inativo>false</inativo>
+		<comando_processo>EXEC LX_CTB_FLX_PRODUCAO @ID_FLUXO_CAIXA, @DIAS_ORDEM_VENCIDA, @INDICA_DATA_INICIAL, @N1, @N2</comando_processo>
+		<fator_soma>-1</fator_soma>
+		<tipo_grupo>P</tipo_grupo>
+		<comando_processo_realizado>NULL</comando_processo_realizado>
+	</ctb_lx_grupo_fluxo>
+	<ctb_lx_grupo_fluxo>
+		<lx_grupo_fluxo>98</lx_grupo_fluxo>
+		<descr_grupo_fluxo>ORÇAMENTO A PAGAR</descr_grupo_fluxo>
+		<inativo>false</inativo>
+		<comando_processo>EXEC LX_CTB_FLX_ORCAMENTO_PAGAR @ID_FLUXO_CAIXA, @ORCAMENTO_TIPO, @N1, @N2</comando_processo>
+		<fator_soma>-1</fator_soma>
+		<tipo_grupo>P</tipo_grupo>
+		<comando_processo_realizado>NULL</comando_processo_realizado>
+	</ctb_lx_grupo_fluxo>
+	<ctb_lx_grupo_fluxo>
+		<lx_grupo_fluxo>99</lx_grupo_fluxo>
+		<descr_grupo_fluxo>FLUXO SALDO</descr_grupo_fluxo>
+		<inativo>false</inativo>
+		<comando_processo>LX_CTB_FLX_FLUXO_SALDO @ID_FLUXO_CAIXA</comando_processo>
+		<fator_soma>1</fator_soma>
+		<tipo_grupo>S</tipo_grupo>
+		<comando_processo_realizado>NULL</comando_processo_realizado>
+	</ctb_lx_grupo_fluxo>
+</VFPData>

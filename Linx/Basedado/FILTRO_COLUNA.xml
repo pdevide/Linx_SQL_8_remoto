@@ -1,0 +1,1727 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="filtro_coluna" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="id_descricao">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="6"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="id_desc_superior" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="6"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="descricao_coluna">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="40"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="tipo_coluna" type="xsd:int" minOccurs="0"/>
+								<xsd:element name="inativo" type="xsd:boolean"/>
+								<xsd:element name="tabela_filtro">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="40"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="coluna_a_filtrar">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="40"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="publico" type="xsd:boolean"/>
+								<xsd:element name="sugestao_linx" type="xsd:boolean"/>
+								<xsd:element name="tabela_aplicada">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="40"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="filtro_a_aplicar" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="2147483647"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="usuario" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="25"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="criterio_condicao" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="25"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="inclui_coluna_valida" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="250"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="inclui_tabela_valida" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="250"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="inclui_condicao_valida" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="250"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="multivalorado" type="xsd:boolean"/>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<filtro_coluna>
+		<id_descricao>L_0001</id_descricao>
+		<descricao_coluna>CARTELA</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>CARTELA</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.CARTELA = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0002</id_descricao>
+		<descricao_coluna>COD_CATEGORIA</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>COD_CATEGORIA</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.COD_CATEGORIA = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<inclui_coluna_valida>PRODUTOS_CATEGORIA.CATEGORIA_PRODUTO</inclui_coluna_valida>
+		<inclui_tabela_valida>JOIN PRODUTOS_CATEGORIA ON (PRODUTOS.COD_CATEGORIA = PRODUTOS_CATEGORIA.COD_CATEGORIA)</inclui_tabela_valida>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0003</id_descricao>
+		<descricao_coluna>CODIGO BARRA</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS_BARRA</tabela_filtro>
+		<coluna_a_filtrar>CODIGO_BARRA</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.PRODUTO IN (SELECT DISTINCT PRODUTO FROM PRODUTOS_BARRA WHERE PRODUTOS_BARRA.CODIGO_BARRA = '#VALOR_FILTRO#')</filtro_a_aplicar>
+		<inclui_coluna_valida>produtos_barra.cor_produto,produtos_barra.grade</inclui_coluna_valida>
+		<inclui_tabela_valida>join produtos on produtos.produto = produtos_barra.produto</inclui_tabela_valida>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0004</id_descricao>
+		<descricao_coluna>COLEÇÃO</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>COLECAO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.COLECAO = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0005</id_descricao>
+		<descricao_coluna>COMPOSIÇÃO</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>COMPOSICAO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.COMPOSICAO = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0006</id_descricao>
+		<descricao_coluna>COR PRODUTO</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTO_CORES</tabela_filtro>
+		<coluna_a_filtrar>COR_PRODUTO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.PRODUTO IN (SELECT DISTINCT PRODUTO FROM PRODUTO_CORES WHERE PRODUTO_CORES.COR_PRODUTO = '#VALOR_FILTRO#')</filtro_a_aplicar>
+		<inclui_coluna_valida>desc_cor_produto</inclui_coluna_valida>
+		<inclui_tabela_valida>join produtos on produtos.produto = produto_cores.produto</inclui_tabela_valida>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0007</id_descricao>
+		<descricao_coluna>DESC PRODUTO</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>DESC_PRODUTO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.DESC_PRODUTO = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<inclui_coluna_valida>PRODUTO</inclui_coluna_valida>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0008</id_descricao>
+		<descricao_coluna>ESTILISTA</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>ESTILISTA</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.ESTILISTA = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0009</id_descricao>
+		<descricao_coluna>FABRICANTE</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>FABRICANTE</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.FABRICANTE = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0010</id_descricao>
+		<descricao_coluna>GRADE</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>GRADE</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.GRADE = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0011</id_descricao>
+		<descricao_coluna>GRIFFE</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>GRIFFE</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.GRIFFE = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0012</id_descricao>
+		<descricao_coluna>GRUPO PRODUTO</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>GRUPO_PRODUTO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.GRUPO_PRODUTO = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0013</id_descricao>
+		<descricao_coluna>ID_AGRUPAMENTO</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>GIV_AGRUPAMENTO_PRODUTO</tabela_filtro>
+		<coluna_a_filtrar>ID_AGRUPAMENTO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.PRODUTO IN (SELECT DISTINCT PRODUTO FROM GIV_AGRUPAMENTO_PRODUTO WHERE GIV_AGRUPAMENTO_PRODUTO.ID_AGRUPAMENTO = '#VALOR_FILTRO#')</filtro_a_aplicar>
+		<inclui_coluna_valida>GIV_AGRUPAMENTO_PRODUTO.cod_agrupamento,desc_agrupamento,agrupamento_meta,agrupamento_distribuicao,agrupamento_segmentacao</inclui_coluna_valida>
+		<inclui_tabela_valida>join giv_agrupamento on giv_agrupamento.cod_agrupamento=giv_agrupamento_produto.cod_agrupamento and
+giv_agrupamento.id_agrupamento=giv_agrupamento_produto.id_agrupamento
+join produtos  on produtos.produto=giv_agrupamento_produto.produto</inclui_tabela_valida>
+		<inclui_condicao_valida/>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0014</id_descricao>
+		<descricao_coluna>LINHA</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>LINHA</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.LINHA = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0015</id_descricao>
+		<descricao_coluna>MATERIAL</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>MATERIAL</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.MATERIAL = ('#VALOR_FILTRO#')</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0016</id_descricao>
+		<descricao_coluna>MODELAGEM</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>MODELAGEM</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.MODELAGEM = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0017</id_descricao>
+		<descricao_coluna>MODELISTA</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>MODELISTA</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.MODELISTA = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0018</id_descricao>
+		<descricao_coluna>MODELO</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>MODELO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.MODELO = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0019</id_descricao>
+		<descricao_coluna>PARTE</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>PARTE_TIPO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.PARTE_TIPO = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0020</id_descricao>
+		<descricao_coluna>PEDIDO DE COMPRA</descricao_coluna>
+		<tipo_coluna>4</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>COMPRAS_PRODUTO</tabela_filtro>
+		<coluna_a_filtrar>PEDIDO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.PRODUTO IN (SELECT DISTINCT PRODUTO FROM COMPRAS_PRODUTO WHERE COMPRAS_PRODUTO.PEDIDO = '#VALOR_FILTRO#')</filtro_a_aplicar>
+		<inclui_coluna_valida>COMPRAS.FORNECEDOR</inclui_coluna_valida>
+		<inclui_tabela_valida>JOIN COMPRAS ON COMPRAS.PEDIDO=COMPRAS_PRODUTO.PEDIDO JOIN PRODUTOS ON PRODUTOS.PRODUTO=COMPRAS_PRODUTO.PRODUTO</inclui_tabela_valida>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0021</id_descricao>
+		<descricao_coluna>PEDIDO DISTRIBUIÇÃO/VENDA</descricao_coluna>
+		<tipo_coluna>4</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>VENDAS_PRODUTO</tabela_filtro>
+		<coluna_a_filtrar>PEDIDO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.PRODUTO IN (SELECT DISTINCT PRODUTO FROM VENDAS_PRODUTO WHERE VENDAS_PRODUTO.PEDIDO = '#VALOR_FILTRO#')</filtro_a_aplicar>
+		<inclui_coluna_valida>CLIENTE_ATACADO AS ' FILIAL/CLIENTE ' ,EMISSAO</inclui_coluna_valida>
+		<inclui_tabela_valida>JOIN VENDAS ON VENDAS.PEDIDO=VENDAS_PRODUTO.PEDIDO JOIN PRODUTOS ON PRODUTOS.PRODUTO=VENDAS_PRODUTO.PRODUTO</inclui_tabela_valida>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0022</id_descricao>
+		<descricao_coluna>PERIODO PCP</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>PERIODO_PCP</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.PERIODO_PCP = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0023</id_descricao>
+		<descricao_coluna>PRODUTO</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>PRODUTO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.PRODUTO = ('#VALOR_FILTRO#')</filtro_a_aplicar>
+		<inclui_coluna_valida>desc_produto</inclui_coluna_valida>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0024</id_descricao>
+		<descricao_coluna>REDE LOJAS</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>REDE_LOJAS</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.REDE_LOJAS = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0025</id_descricao>
+		<descricao_coluna>REFER FABRICANTE</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>REFER_FABRICANTE</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.REFER_FABRICANTE = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0026</id_descricao>
+		<descricao_coluna>SEMANA 454 COMPRAS</descricao_coluna>
+		<tipo_coluna>4</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>DATAS</tabela_filtro>
+		<coluna_a_filtrar/>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.PRODUTO IN (SELECT DISTINCT PRODUTO FROM compras_produto join datas on compras_produto.entrega  =datas.data WHERE DATAS.SEMANA454 = '#VALOR_FILTRO#')</filtro_a_aplicar>
+		<inclui_coluna_valida>MES454,ANO454</inclui_coluna_valida>
+		<inclui_tabela_valida>join compras_produto on compras_produto.entrega  =datas.data join produtos on produtos.produto=compras_produto.produto</inclui_tabela_valida>
+		<inclui_condicao_valida/>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0027</id_descricao>
+		<descricao_coluna>SEXO</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>SEXO_TIPO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.SEXO_TIPO = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0028</id_descricao>
+		<descricao_coluna>STATUS PRODUTO</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>STATUS_PRODUTO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.STATUS_PRODUTO = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0029</id_descricao>
+		<descricao_coluna>SUBGRUPO PRODUTO</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>SUBGRUPO_PRODUTO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.SUBGRUPO_PRODUTO = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0030</id_descricao>
+		<descricao_coluna>TABELA MEDIDAS</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>TABELA_MEDIDAS</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.TABELA_MEDIDAS = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0031</id_descricao>
+		<descricao_coluna>TABELA OPERAÇÕES</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>TABELA_OPERACOES</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.TABELA_OPERACOES = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0032</id_descricao>
+		<descricao_coluna>TIPO PRODUTO</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>TIPO_PRODUTO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.TIPO_PRODUTO = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0033</id_descricao>
+		<descricao_coluna>COLECAO</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>MATERIAIS</tabela_filtro>
+		<coluna_a_filtrar>COLECAO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>MATERIAIS</tabela_aplicada>
+		<filtro_a_aplicar>MATERIAIS.COLECAO = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0034</id_descricao>
+		<descricao_coluna>DESC. MATERIAL</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>MATERIAIS</tabela_filtro>
+		<coluna_a_filtrar>DESC_MATERIAL</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>MATERIAIS</tabela_aplicada>
+		<filtro_a_aplicar>MATERIAIS.DESC_MATERIAL = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<inclui_coluna_valida>materiais.material</inclui_coluna_valida>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0035</id_descricao>
+		<descricao_coluna>DESC_COLECAO</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>COLECOES</tabela_filtro>
+		<coluna_a_filtrar>DESC_COLECAO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>MATERIAIS</tabela_aplicada>
+		<filtro_a_aplicar>exists (SELECT 1 FROM COLECOES WHERE COLECOES.DESC_COLECAO = '#VALOR_FILTRO#'   and MATERIAIS.COLECAO = COLECOES.COLECAO)</filtro_a_aplicar>
+		<inclui_coluna_valida>COLECOES.COLECAO</inclui_coluna_valida>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0036</id_descricao>
+		<descricao_coluna>FABRICANTE</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>FORNECEDORES</tabela_filtro>
+		<coluna_a_filtrar>FORNECEDOR</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>MATERIAIS</tabela_aplicada>
+		<filtro_a_aplicar>exists (SELECT 1 FROM FORNECEDORES WHERE FORNECEDORES.FORNECEDOR = '#VALOR_FILTRO#'   and MATERIAIS.FABRICANTE = FORNECEDORES.FORNECEDOR)</filtro_a_aplicar>
+		<inclui_condicao_valida>FORNECEDORES.FORNECEDOR IN (SELECT DISTINCT MATERIAIS.FABRICANTE FROM MATERIAIS )</inclui_condicao_valida>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0037</id_descricao>
+		<descricao_coluna>FASE PRODUÇÃO</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUCAO_FASE</tabela_filtro>
+		<coluna_a_filtrar>DESC_FASE_PRODUCAO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>MATERIAIS</tabela_aplicada>
+		<filtro_a_aplicar>exists (SELECT 1 FROM PRODUCAO_FASE WHERE PRODUCAO_FASE.DESC_FASE_PRODUCAO = '#VALOR_FILTRO#'   and MATERIAIS.FASE_PRODUCAO = PRODUCAO_FASE.FASE_PRODUCAO)</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0038</id_descricao>
+		<descricao_coluna>GRUPO</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>MATERIAIS</tabela_filtro>
+		<coluna_a_filtrar>GRUPO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>MATERIAIS</tabela_aplicada>
+		<filtro_a_aplicar>MATERIAIS.GRUPO = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0039</id_descricao>
+		<descricao_coluna>MATERIAL</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>MATERIAIS</tabela_filtro>
+		<coluna_a_filtrar>MATERIAL</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>MATERIAIS</tabela_aplicada>
+		<filtro_a_aplicar>MATERIAIS.MATERIAL IN ('#VALOR_FILTRO#')</filtro_a_aplicar>
+		<inclui_coluna_valida>MATERIAIS.DESC_MATERIAL</inclui_coluna_valida>
+		<multivalorado>true</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0040</id_descricao>
+		<descricao_coluna>REF. FABRICANTE</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>MATERIAIS</tabela_filtro>
+		<coluna_a_filtrar>REF_FABRICANTE</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>MATERIAIS</tabela_aplicada>
+		<filtro_a_aplicar>MATERIAIS.REF_FABRICANTE = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0041</id_descricao>
+		<descricao_coluna>SETOR PRODUÇÃO</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUCAO_SETOR</tabela_filtro>
+		<coluna_a_filtrar>DESC_SETOR_PRODUCAO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>MATERIAIS</tabela_aplicada>
+		<filtro_a_aplicar>exists (SELECT 1 FROM PRODUCAO_SETOR WHERE PRODUCAO_SETOR.DESC_SETOR_PRODUCAO = '#VALOR_FILTRO#'   and MATERIAIS.FASE_PRODUCAO = PRODUCAO_SETOR.FASE_PRODUCAO and MATERIAIS.SETOR_PRODUCAO = PRODUCAO_SETOR.SETOR_PRODUCAO)</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0042</id_descricao>
+		<descricao_coluna>SUBGRUPO</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>MATERIAIS</tabela_filtro>
+		<coluna_a_filtrar>SUBGRUPO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>MATERIAIS</tabela_aplicada>
+		<filtro_a_aplicar>MATERIAIS.SUBGRUPO = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0043</id_descricao>
+		<descricao_coluna>TIPO</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>MATERIAIS</tabela_filtro>
+		<coluna_a_filtrar>TIPO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>MATERIAIS</tabela_aplicada>
+		<filtro_a_aplicar>MATERIAIS.TIPO = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0044</id_descricao>
+		<descricao_coluna>UNID_ESTOQUE</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>MATERIAIS</tabela_filtro>
+		<coluna_a_filtrar>UNID_ESTOQUE</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>MATERIAIS</tabela_aplicada>
+		<filtro_a_aplicar>MATERIAIS.UNID_ESTOQUE = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0045</id_descricao>
+		<descricao_coluna>CATEGORIA</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CONTATO_CATEGORIA</tabela_filtro>
+		<coluna_a_filtrar>DESC_CATEGORIA_CONTATO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>CONTATO</tabela_aplicada>
+		<filtro_a_aplicar>CONTATO.CATEGORIA_CONTATO IN (SELECT DISTINCT CATEGORIA_CONTATO FROM CONTATO_CATEGORIA WHERE CONTATO_CATEGORIA.DESC_CATEGORIA_CONTATO IN ('#VALOR_FILTRO#'))</filtro_a_aplicar>
+		<inclui_coluna_valida>CONTATO_CATEGORIA.CATEGORIA_CONTATO</inclui_coluna_valida>
+		<inclui_tabela_valida>inner join contato on contato.categoria_contato = CONTATO_CATEGORIA.CATEGORIA_CONTATO</inclui_tabela_valida>
+		<inclui_condicao_valida/>
+		<multivalorado>true</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0046</id_descricao>
+		<descricao_coluna>CEP</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CONTATO_ENDERECO</tabela_filtro>
+		<coluna_a_filtrar>CEP</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>CONTATO</tabela_aplicada>
+		<filtro_a_aplicar>CONTATO.CODIGO_CONTATO IN (SELECT DISTINCT CODIGO_CONTATO FROM CONTATO_ENDERECO WHERE CONTATO_ENDERECO.CEP = '#VALOR_FILTRO#')</filtro_a_aplicar>
+		<inclui_coluna_valida>contato.contato, contato.codigo_contato</inclui_coluna_valida>
+		<inclui_tabela_valida>inner join contato on contato.codigo_contato = contato_endereco.codigo_contato</inclui_tabela_valida>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0047</id_descricao>
+		<descricao_coluna>CIDADE</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CONTATO_ENDERECO</tabela_filtro>
+		<coluna_a_filtrar>CIDADE</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>CONTATO</tabela_aplicada>
+		<filtro_a_aplicar>CONTATO.CODIGO_CONTATO IN (SELECT DISTINCT CODIGO_CONTATO FROM CONTATO_ENDERECO WHERE CONTATO_ENDERECO.CIDADE like '#VALOR_FILTRO#')</filtro_a_aplicar>
+		<inclui_coluna_valida>contato.contato, contato.codigo_contato</inclui_coluna_valida>
+		<inclui_tabela_valida>inner join contato on contato.codigo_contato = contato_endereco.codigo_contato</inclui_tabela_valida>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0048</id_descricao>
+		<descricao_coluna>CODIGO</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CONTATO</tabela_filtro>
+		<coluna_a_filtrar>CODIGO_CONTATO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>CONTATO</tabela_aplicada>
+		<filtro_a_aplicar>CONTATO.CODIGO_CONTATO = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<inclui_coluna_valida>CONTATO</inclui_coluna_valida>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0049</id_descricao>
+		<descricao_coluna>COMENTÁRIOS DO USUÁRIO</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CONTATO_COMENTARIO</tabela_filtro>
+		<coluna_a_filtrar>COMENTARIO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>CONTATO</tabela_aplicada>
+		<filtro_a_aplicar>exists (SELECT 1 FROM CONTATO_COMENTARIO WHERE CONTATO_COMENTARIO.COMENTARIO like '#VALOR_FILTRO#'   and CONTATO.CODIGO_CONTATO = CONTATO_COMENTARIO.CODIGO_CONTATO)</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0050</id_descricao>
+		<descricao_coluna>CONTA SOLICITANTE</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CONTATO</tabela_filtro>
+		<coluna_a_filtrar>CONTATO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>CONTATO</tabela_aplicada>
+		<filtro_a_aplicar>CONTATO.CONTATO IN  ('#VALOR_FILTRO#')</filtro_a_aplicar>
+		<inclui_condicao_valida>CONTATO.status_contato != 'I' AND (pf_pj = 0 or pf_pj = 2)</inclui_condicao_valida>
+		<multivalorado>true</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0051</id_descricao>
+		<descricao_coluna>CONTATO</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CONTATO</tabela_filtro>
+		<coluna_a_filtrar>CONTATO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>CONTATO</tabela_aplicada>
+		<filtro_a_aplicar>CONTATO.CONTATO IN ( '#VALOR_FILTRO#')</filtro_a_aplicar>
+		<inclui_coluna_valida>CODIGO_CONTATO</inclui_coluna_valida>
+		<multivalorado>true</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0052</id_descricao>
+		<descricao_coluna>CPF / CGC</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CONTATO</tabela_filtro>
+		<coluna_a_filtrar>CPF_CGC</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>CONTATO</tabela_aplicada>
+		<filtro_a_aplicar>CONTATO.CPF_CGC = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<inclui_coluna_valida>CONTATO,CODIGO_CONTATO</inclui_coluna_valida>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0053</id_descricao>
+		<descricao_coluna>DEPARTAMENTO</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CONTATO</tabela_filtro>
+		<coluna_a_filtrar>DEPARTAMENTO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>CONTATO</tabela_aplicada>
+		<filtro_a_aplicar>CONTATO.DEPARTAMENTO = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0054</id_descricao>
+		<descricao_coluna>EMAIL</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CONTATO_EMAIL</tabela_filtro>
+		<coluna_a_filtrar>EMAIL</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>CONTATO</tabela_aplicada>
+		<filtro_a_aplicar>CONTATO.CODIGO_CONTATO IN (SELECT DISTINCT CODIGO_CONTATO FROM CONTATO_EMAIL WHERE CONTATO_EMAIL.EMAIL = '#VALOR_FILTRO#')</filtro_a_aplicar>
+		<inclui_coluna_valida>contato.contato, contato.codigo_contato</inclui_coluna_valida>
+		<inclui_tabela_valida>inner join contato on contato.codigo_contato = contato_email.codigo_contato</inclui_tabela_valida>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0055</id_descricao>
+		<descricao_coluna>ENDEREÇO</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CONTATO_ENDERECO</tabela_filtro>
+		<coluna_a_filtrar>ENDERECO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>CONTATO</tabela_aplicada>
+		<filtro_a_aplicar>contato.codigo_contato in (select contato_endereco.codigo_contato from contato_endereco where contato_endereco.logradouro like '#VALOR_FILTRO#')</filtro_a_aplicar>
+		<inclui_coluna_valida>contato.contato, contato.codigo_contato</inclui_coluna_valida>
+		<inclui_tabela_valida>inner join contato on contato.codigo_contato = contato_endereco.codigo_contato</inclui_tabela_valida>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0056</id_descricao>
+		<descricao_coluna>RECURSO</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CONTATO</tabela_filtro>
+		<coluna_a_filtrar>CONTATO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>CONTATO</tabela_aplicada>
+		<filtro_a_aplicar>CONTATO.CONTATO IN ('#VALOR_FILTRO#')</filtro_a_aplicar>
+		<inclui_condicao_valida>CONTATO.status_contato != 'I' AND (subtipo_contato = '1.5' or pf_pj = 2 OR  codigo_contato in (select codigo_contato from users))</inclui_condicao_valida>
+		<multivalorado>true</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0057</id_descricao>
+		<descricao_coluna>Relação</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CONTATO</tabela_filtro>
+		<coluna_a_filtrar>CONTATO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>CONTATO</tabela_aplicada>
+		<filtro_a_aplicar>CONTATO.CODIGO_CONTATO IN (SELECT CODIGO_CONTATO FROM W_CRM_RELACIONAMENTOS WHERE CONTATO_INVERSA in ('#VALOR_FILTRO#'))</filtro_a_aplicar>
+		<inclui_coluna_valida/>
+		<inclui_tabela_valida/>
+		<inclui_condicao_valida/>
+		<multivalorado>true</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0058</id_descricao>
+		<descricao_coluna>RELAÇÃO - TIPOS</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>W_CRM_RELACIONAMENTOS</tabela_filtro>
+		<coluna_a_filtrar>desc_relacao</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>CONTATO</tabela_aplicada>
+		<filtro_a_aplicar>CONTATO.CODIGO_CONTATO IN (SELECT DISTINCT CODIGO_CONTATO FROM W_CRM_RELACIONAMENTOS WHERE W_CRM_RELACIONAMENTOS.desc_relacao in ( '#VALOR_FILTRO#'))</filtro_a_aplicar>
+		<inclui_coluna_valida/>
+		<inclui_tabela_valida>INNER JOIN CONTATO ON CONTATO.CODIGO_CONTATO = W_CRM_RELACIONAMENTOS.CODIGO_CONTATO</inclui_tabela_valida>
+		<multivalorado>true</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0059</id_descricao>
+		<descricao_coluna>SOLICITANTE</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CONTATO</tabela_filtro>
+		<coluna_a_filtrar>CONTATO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>CONTATO</tabela_aplicada>
+		<filtro_a_aplicar>CONTATO.CONTATO IN ('#VALOR_FILTRO#')</filtro_a_aplicar>
+		<inclui_condicao_valida>CONTATO.STATUS_CONTATO != 'I'</inclui_condicao_valida>
+		<multivalorado>true</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0060</id_descricao>
+		<descricao_coluna>SUB-CATEGORIA</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CONTATO_SUBCATEGORIA</tabela_filtro>
+		<coluna_a_filtrar>DESC_SUBCATEGORIA_CONTATO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>CONTATO</tabela_aplicada>
+		<filtro_a_aplicar>RTRIM(CONTATO.CATEGORIA_CONTATO)+RTRIM(CONTATO.SUBCATEGORIA_CONTATO) IN (SELECT DISTINCT RTRIM(CATEGORIA_CONTATO)+RTRIM(SUBCATEGORIA_CONTATO) FROM CONTATO_SUBCATEGORIA WHERE CONTATO_SUBCATEGORIA.DESC_SUBCATEGORIA_CONTATO IN ('#VALOR_FILTRO#'))</filtro_a_aplicar>
+		<inclui_coluna_valida>DESC_CATEGORIA_CONTATO</inclui_coluna_valida>
+		<inclui_tabela_valida>INNER JOIN CONTATO_CATEGORIA ON CONTATO_CATEGORIA.CATEGORIA_CONTATO = CONTATO_CATEGORIA.CATEGORIA_CONTATO inner join contato on contato.subcategoria_contato = CONTATO_subcategoria.subcategoria_contato</inclui_tabela_valida>
+		<inclui_condicao_valida/>
+		<multivalorado>true</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0061</id_descricao>
+		<descricao_coluna>SUB-TIPO</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CONTATO_SUBTIPO</tabela_filtro>
+		<coluna_a_filtrar>DESC_SUBTIPO_CONTATO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>CONTATO</tabela_aplicada>
+		<filtro_a_aplicar>RTRIM(CONTATO.TIPO_CONTATO) + RTRIM(CONTATO.SUBTIPO_CONTATO) IN (SELECT DISTINCT RTRIM(TIPO_CONTATO)+RTRIM(SUBTIPO_CONTATO) FROM CONTATO_SUBTIPO WHERE CONTATO_SUBTIPO.DESC_SUBTIPO_CONTATO in ('#VALOR_FILTRO#'))</filtro_a_aplicar>
+		<inclui_coluna_valida>CONTATO_TIPO.DESC_TIPO_CONTATO</inclui_coluna_valida>
+		<inclui_tabela_valida>INNER JOIN CONTATO_TIPO ON CONTATO_SUBTIPO.TIPO_CONTATO = CONTATO_TIPO.TIPO_CONTATO inner join contato on contato.subtipo_contato = CONTATO_SUBTIPO.subtipo_contato</inclui_tabela_valida>
+		<inclui_condicao_valida/>
+		<multivalorado>true</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0062</id_descricao>
+		<descricao_coluna>TELEFONE</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CONTATO_TELEFONE</tabela_filtro>
+		<coluna_a_filtrar>TELEFONE</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>CONTATO</tabela_aplicada>
+		<filtro_a_aplicar>CONTATO.CODIGO_CONTATO IN (SELECT DISTINCT CODIGO_CONTATO FROM CONTATO_TELEFONE WHERE CONTATO_TELEFONE.TELEFONE = '#VALOR_FILTRO#')</filtro_a_aplicar>
+		<inclui_coluna_valida>contato.contato, contato.codigo_contato</inclui_coluna_valida>
+		<inclui_tabela_valida>inner join contato on contato.codigo_contato = contato_telefone.codigo_contato</inclui_tabela_valida>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0063</id_descricao>
+		<descricao_coluna>TIPO</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CONTATO_TIPO</tabela_filtro>
+		<coluna_a_filtrar>DESC_TIPO_CONTATO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>CONTATO</tabela_aplicada>
+		<filtro_a_aplicar>CONTATO.TIPO_CONTATO IN (SELECT DISTINCT TIPO_CONTATO FROM CONTATO_TIPO WHERE CONTATO_TIPO.DESC_TIPO_CONTATO in ('#VALOR_FILTRO#'))</filtro_a_aplicar>
+		<inclui_coluna_valida>CONTATO_TIPO.TIPO_CONTATO</inclui_coluna_valida>
+		<inclui_tabela_valida>inner join contato on contato.tipo_contato = CONTATO_TIPO.tipo_contato</inclui_tabela_valida>
+		<inclui_condicao_valida/>
+		<multivalorado>true</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0064</id_descricao>
+		<descricao_coluna>CADASTRADO POR</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CONTATO</tabela_filtro>
+		<coluna_a_filtrar>CONTATO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>W_CRM_TAREFA_PROGRAMADA.RESPONSAVEL in ('#VALOR_FILTRO#')</filtro_a_aplicar>
+		<multivalorado>true</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0065</id_descricao>
+		<descricao_coluna>CLASSE_ID</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>W_CRM_TAREFA_PROGRAMADA</tabela_filtro>
+		<coluna_a_filtrar>CLASSE_ID</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>W_CRM_TAREFA_PROGRAMADA.CLASSE_ID in ( '#VALOR_FILTRO#' )</filtro_a_aplicar>
+		<inclui_coluna_valida>desc_classe</inclui_coluna_valida>
+		<multivalorado>true</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0066</id_descricao>
+		<descricao_coluna>CONTA SOLICITANTE</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CONTATO</tabela_filtro>
+		<coluna_a_filtrar>CONTATO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>W_CRM_TAREFA_PROGRAMADA.NOME_CONTATO_CONTA_SOLICITANTE in ('#VALOR_FILTRO#')</filtro_a_aplicar>
+		<multivalorado>true</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0067</id_descricao>
+		<descricao_coluna>CONTROLE FONTES</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CRM_OBJETO</tabela_filtro>
+		<coluna_a_filtrar>DESC_OBJETO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>exists( select 1 from crm_objeto_superior
+inner join crm_tarefa_programada on crm_objeto_superior.objeto_id_superior = crm_tarefa_programada.objeto_id
+inner join crm_objeto on crm_objeto_superior.objeto_id =  crm_objeto.objeto_id
+where crm_objeto.desc_objeto = '#VALOR_FILTRO#'  and crm_tarefa_programada.objeto_id = w_crm_tarefa_programada.objeto_id)</filtro_a_aplicar>
+		<inclui_coluna_valida/>
+		<inclui_tabela_valida>inner join crm_classe on crm_classe.classe_id = crm_objeto.classe_id</inclui_tabela_valida>
+		<inclui_condicao_valida>crm_classe.controla_fonte_aplicativo = 1</inclui_condicao_valida>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0068</id_descricao>
+		<descricao_coluna>DESCRIÇÃO</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>W_CRM_TAREFA_PROGRAMADA</tabela_filtro>
+		<coluna_a_filtrar>DESC_OBJETO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>W_CRM_TAREFA_PROGRAMADA.DESC_OBJETO = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0069</id_descricao>
+		<descricao_coluna>DETALHE DA TAREFA</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>W_CRM_TAREFA_PROGRAMADA</tabela_filtro>
+		<coluna_a_filtrar>DETALHE_TAREFA</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>W_CRM_TAREFA_PROGRAMADA.DETALHE_TAREFA LIKE '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0070</id_descricao>
+		<descricao_coluna>DOCUMENTOS LINX</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CRM_OBJETO</tabela_filtro>
+		<coluna_a_filtrar>DESC_OBJETO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>exists (SELECT 1
+	from crm_tarefa_programada
+	inner join crm_objeto_superior on crm_objeto_superior.objeto_id = crm_tarefa_programada.objeto_id
+       inner join crm_objeto on crm_objeto_superior.objeto_id_superior = crm_objeto.objeto_id 
+	WHERE crm_objeto.desc_objeto in (  '#VALOR_FILTRO#'   )
+	and W_CRM_TAREFA_PROGRAMADA.OBJETO_ID = CRM_TAREFA_PROGRAMADA.OBJETO_ID)</filtro_a_aplicar>
+		<inclui_coluna_valida>objeto_id, desc_objeto</inclui_coluna_valida>
+		<inclui_tabela_valida>inner join crm_classe on crm_classe.classe_id = crm_objeto.classe_id</inclui_tabela_valida>
+		<inclui_condicao_valida>crm_classe.classe_tipo = 3</inclui_condicao_valida>
+		<multivalorado>true</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0071</id_descricao>
+		<descricao_coluna>ENCAMINHADO DE</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CONTATO</tabela_filtro>
+		<coluna_a_filtrar>CONTATO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>objeto_id in (SELECT objeto_id_programada FROM CRM_TAREFA_PROGRAMADA_MOV 
+	inner join contato on contato.codigo_contato = CRM_TAREFA_PROGRAMADA_MOV.movimento_de 
+	where tipo_movimento = 1 and contato in ('#VALOR_FILTRO#'))</filtro_a_aplicar>
+		<inclui_coluna_valida/>
+		<multivalorado>true</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0072</id_descricao>
+		<descricao_coluna>ENCAMINHADO PARA</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CONTATO</tabela_filtro>
+		<coluna_a_filtrar>CONTATO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>objeto_id in (SELECT objeto_id_programada FROM CRM_TAREFA_PROGRAMADA_MOV 
+	inner join contato on contato.codigo_contato = CRM_TAREFA_PROGRAMADA_MOV.movimento_PARA 
+	where tipo_movimento = 1 and contato in ('#VALOR_FILTRO#'))</filtro_a_aplicar>
+		<multivalorado>true</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0073</id_descricao>
+		<descricao_coluna>GRUPO - SOLICITAÇÕES</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CONTATO</tabela_filtro>
+		<coluna_a_filtrar>CONTATO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>OBJETO_ID IN (	SELECT DISTINCT OBJETO_ID FROM W_CRM_TAREFA_PROGRAMADA_CONTATO WHERE  TIPO_RELACAO = 4 and codigo_contato in (SELECT CODIGO_CONTATO FROM W_CRM_RELACIONAMENTOS WHERE CONTATO_INVERSA in ( '#VALOR_FILTRO#') ) )</filtro_a_aplicar>
+		<multivalorado>true</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0074</id_descricao>
+		<descricao_coluna>GRUPO DE PESSOAS</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CONTATO</tabela_filtro>
+		<coluna_a_filtrar>CONTATO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>EXISTS (SELECT 1 FROM CRM_TAREFA_PROGRAMADA, W_CRM_TAREFA_PROGRAMADA
+	WHERE CRM_TAREFA_PROGRAMADA.CONTATO_RECURSO IN (SELECT DISTINCT CODIGO_CONTATO
+				FROM W_CRM_RELACIONAMENTOS 
+				WHERE CONTATO_INVERSA IN ( '#VALOR_FILTRO#') 
+				OR CONTATO IN ('#VALOR_FILTRO#'))
+	AND CRM_TAREFA_PROGRAMADA.OBJETO_ID = W_CRM_TAREFA_PROGRAMADA.OBJETO_ID 
+	)</filtro_a_aplicar>
+		<inclui_coluna_valida/>
+		<inclui_condicao_valida>SUBCATEGORIA_CONTATO = '10'</inclui_condicao_valida>
+		<multivalorado>true</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0075</id_descricao>
+		<descricao_coluna>MINHAS TAREFAS ATRASADAS</descricao_coluna>
+		<tipo_coluna>5</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro/>
+		<coluna_a_filtrar/>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>data_hora_fim &lt; isnull(data_hora_fim_real, getdate()) and contato_recurso = (select top 1 codigo_contato from users where usuario = system_user)</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0076</id_descricao>
+		<descricao_coluna>MINHAS TAREFAS PENDENTES</descricao_coluna>
+		<tipo_coluna>5</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro/>
+		<coluna_a_filtrar/>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>porc_concluida  &lt; 100 and contato_recurso = (select top 1 codigo_contato from users where usuario = system_user)</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0077</id_descricao>
+		<descricao_coluna>MOV - ALTERADO DT FIM PREVISTO</descricao_coluna>
+		<tipo_coluna>5</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro/>
+		<coluna_a_filtrar/>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>exists ( select objeto_id_programada from CRM_TAREFA_PROGRAMADA_MOV m where m.objeto_id_programada = w_crm_tarefa_programada.objeto_id and m.tipo_movimento = 4 )</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0078</id_descricao>
+		<descricao_coluna>MOV - ALTERAR DATA DO INÍCIO PREVISTO</descricao_coluna>
+		<tipo_coluna>5</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro/>
+		<coluna_a_filtrar/>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>exists ( select objeto_id_programada from CRM_TAREFA_PROGRAMADA_MOV m where m.objeto_id_programada = w_crm_tarefa_programada.objeto_id and m.tipo_movimento = 5 )</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0079</id_descricao>
+		<descricao_coluna>MOV - ALTERAR PRIORIDADE DO RECURSO</descricao_coluna>
+		<tipo_coluna>5</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro/>
+		<coluna_a_filtrar/>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>exists ( select objeto_id_programada from CRM_TAREFA_PROGRAMADA_MOV m where m.objeto_id_programada = w_crm_tarefa_programada.objeto_id and m.tipo_movimento = 6 )</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0080</id_descricao>
+		<descricao_coluna>MOV - ALTERAR PRIORIDADE DO SOLICITANTE</descricao_coluna>
+		<tipo_coluna>5</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro/>
+		<coluna_a_filtrar/>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>exists ( select objeto_id_programada from CRM_TAREFA_PROGRAMADA_MOV m where m.objeto_id_programada = w_crm_tarefa_programada.objeto_id and m.tipo_movimento = 7 )</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0081</id_descricao>
+		<descricao_coluna>MOV - ENCAMINHAMENTO</descricao_coluna>
+		<tipo_coluna>5</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro/>
+		<coluna_a_filtrar/>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>exists ( select objeto_id_programada from CRM_TAREFA_PROGRAMADA_MOV m where m.objeto_id_programada = w_crm_tarefa_programada.objeto_id and m.tipo_movimento = 1 )</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0082</id_descricao>
+		<descricao_coluna>MOV - PERCENTUAL DE CONCLUSÃO</descricao_coluna>
+		<tipo_coluna>5</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro/>
+		<coluna_a_filtrar/>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>exists ( select objeto_id_programada from CRM_TAREFA_PROGRAMADA_MOV m where m.objeto_id_programada = w_crm_tarefa_programada.objeto_id and m.tipo_movimento = 3 )</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0083</id_descricao>
+		<descricao_coluna>MOV - STATUS ALTERADO</descricao_coluna>
+		<tipo_coluna>5</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro/>
+		<coluna_a_filtrar/>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>exists ( select objeto_id_programada from CRM_TAREFA_PROGRAMADA_MOV m where m.objeto_id_programada = w_crm_tarefa_programada.objeto_id and m.tipo_movimento = 2 )</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0084</id_descricao>
+		<descricao_coluna>QUALQUER RECURSO</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CONTATO</tabela_filtro>
+		<coluna_a_filtrar>CONTATO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>OBJETO_ID IN (SELECT DISTINCT OBJETO_ID FROM W_CRM_TAREFA_PROGRAMADA_CONTATO WHERE CONTATO in ('#VALOR_FILTRO#') AND TIPO_RELACAO = 3)</filtro_a_aplicar>
+		<inclui_coluna_valida>CODIGO_CONTATO</inclui_coluna_valida>
+		<inclui_tabela_valida/>
+		<inclui_condicao_valida/>
+		<multivalorado>true</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0085</id_descricao>
+		<descricao_coluna>QUALQUER SOLICITANTE</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CONTATO</tabela_filtro>
+		<coluna_a_filtrar>CONTATO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>OBJETO_ID IN (SELECT DISTINCT OBJETO_ID FROM W_CRM_TAREFA_PROGRAMADA_CONTATO WHERE CONTATO IN ('#VALOR_FILTRO#') AND TIPO_RELACAO = 4)</filtro_a_aplicar>
+		<inclui_coluna_valida>CODIGO_CONTATO</inclui_coluna_valida>
+		<inclui_tabela_valida/>
+		<inclui_condicao_valida/>
+		<multivalorado>true</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0086</id_descricao>
+		<descricao_coluna>RECURSO PRINCIPAL</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CONTATO</tabela_filtro>
+		<coluna_a_filtrar>CONTATO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>W_CRM_TAREFA_PROGRAMADA.NOME_CONTATO_RECURSO in ('#VALOR_FILTRO#')</filtro_a_aplicar>
+		<inclui_coluna_valida/>
+		<multivalorado>true</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0087</id_descricao>
+		<descricao_coluna>SOLICITANTE PRINCIPAL</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CONTATO</tabela_filtro>
+		<coluna_a_filtrar>CONTATO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>W_CRM_TAREFA_PROGRAMADA.NOME_CONTATO_SOLICITANTE in ('#VALOR_FILTRO#')</filtro_a_aplicar>
+		<inclui_coluna_valida/>
+		<multivalorado>true</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0088</id_descricao>
+		<descricao_coluna>STATUS DA TAREFA</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CRM_TAREFA_STATUS</tabela_filtro>
+		<coluna_a_filtrar>DESC_STATUS_TAREFA</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>desc_status_tarefa in ('#VALOR_FILTRO#')</filtro_a_aplicar>
+		<multivalorado>true</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0089</id_descricao>
+		<descricao_coluna>SUAS SOLICITAÇÕES NÃO LIDAS</descricao_coluna>
+		<tipo_coluna>5</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro/>
+		<coluna_a_filtrar/>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>exists (select 1 from crm_objeto_superior as a
+		where a.objeto_id=w_crm_tarefa_programada.objeto_id 
+		and a.objeto_id_superior=convert(INT,dbo.fx_parametro_empresa('objeto_id_contatos',0))  
+		and tipo_relacao = 3 and instrucoes&lt;&gt;'TAREFA LIDA'
+		and objeto_id in (select objeto_id from crm_objeto_superior 
+		inner join contato on crm_objeto_superior.campo_id_superior = contato.codigo_contato
+		inner join users on users.codigo_contato = contato.codigo_contato
+		where objeto_id_superior=convert(INT,dbo.fx_parametro_empresa('objeto_id_contatos',0))
+		and users.usuario = system_user and tipo_relacao=4))</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0090</id_descricao>
+		<descricao_coluna>SUAS TAREFAS NÃO LIDAS</descricao_coluna>
+		<tipo_coluna>5</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro/>
+		<coluna_a_filtrar/>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>lx_controle_status not in (5,7) and exists (select 1 from crm_objeto_superior as a 	 
+	join w_crm_tarefa_programada as p on (a.objeto_id=p.objeto_id)  
+	join contato as c on (a.campo_id_superior=c.codigo_contato) 
+	join users as u on (u.codigo_contato=c.codigo_contato) 
+	where a.objeto_id_superior=convert(INT,dbo.fx_parametro_empresa('objeto_id_contatos',0))  
+	and u.usuario=system_user and a.objeto_id=w_crm_tarefa_programada.objeto_id and a.tipo_relacao=3 and a.instrucoes&lt;&gt;'TAREFA LIDA')</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0091</id_descricao>
+		<descricao_coluna>TAREFAS - ATRASADAS</descricao_coluna>
+		<tipo_coluna>5</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro/>
+		<coluna_a_filtrar/>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>data_hora_fim &lt; isnull(data_hora_fim_real, getdate())</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0092</id_descricao>
+		<descricao_coluna>TAREFAS - CONCLUÍDAS/CANCELADAS</descricao_coluna>
+		<tipo_coluna>5</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro/>
+		<coluna_a_filtrar/>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>porc_concluida  = 100</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0093</id_descricao>
+		<descricao_coluna>TAREFAS - EXCEDERAM AS HORAS PREVISTAS</descricao_coluna>
+		<tipo_coluna>5</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro/>
+		<coluna_a_filtrar/>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>exists (select objeto_id from crm_tarefa_programada_horas h where CASE when H.tempo_horas&gt;h.tempo_horas_subtarefas THEN H.tempo_horas ELSE h.tempo_horas_subtarefas END &lt; H.tempo_horas_realizadas AND H.OBJETO_ID = w_crm_tarefa_programada.OBJETO_ID)</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0094</id_descricao>
+		<descricao_coluna>TAREFAS - PENDENTES</descricao_coluna>
+		<tipo_coluna>5</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro/>
+		<coluna_a_filtrar/>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>porc_concluida  &lt; 100 and lx_controle_status != 6</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0095</id_descricao>
+		<descricao_coluna>TAREFAS - PENDENTES - ATRASADAS</descricao_coluna>
+		<tipo_coluna>5</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro/>
+		<coluna_a_filtrar/>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>porc_concluida  &lt; 100 and lx_controle_status != 6 and  data_hora_fim &lt; isnull(data_hora_fim_real, getdate())</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0096</id_descricao>
+		<descricao_coluna>TAREFAS - PREVISÃO MAIOR QUE REALIZAÇÃO</descricao_coluna>
+		<tipo_coluna>5</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro/>
+		<coluna_a_filtrar/>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_PROGRAMADA</tabela_aplicada>
+		<filtro_a_aplicar>exists (select objeto_id from crm_tarefa_programada_horas h where h.tempo_horas &gt; h.tempo_horas_realizadas AND H.OBJETO_ID = w_crm_tarefa_programada.OBJETO_ID)</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0097</id_descricao>
+		<descricao_coluna>CLASSE</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>W_CRM_TAREFA_REALIZADA</tabela_filtro>
+		<coluna_a_filtrar>DESC_CLASSE</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_REALIZADA</tabela_aplicada>
+		<filtro_a_aplicar>W_CRM_TAREFA_REALIZADA.DESC_CLASSE = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0098</id_descricao>
+		<descricao_coluna>DESC_STATUS_TAREFA</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>CRM_TAREFA_STATUS</tabela_filtro>
+		<coluna_a_filtrar>DESC_STATUS_TAREFA</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_REALIZADA</tabela_aplicada>
+		<filtro_a_aplicar>OBJETO_ID IN 
+	(SELECT DISTINCT S.OBJETO_ID 
+		FROM CRM_OBJETO_SUPERIOR S
+		INNER JOIN CRM_TAREFA_REALIZADA R ON S.OBJETO_ID = R.OBJETO_ID
+		WHERE OBJETO_ID_SUPERIOR in 
+			(select objeto_id from w_crm_tarefa_programada 
+				where DESC_STATUS_TAREFA in ('#VALOR_FILTRO#' )) AND TIPO_RELACAO = 12)</filtro_a_aplicar>
+		<multivalorado>true</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0099</id_descricao>
+		<descricao_coluna>DESCRIÇÃO</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>W_CRM_TAREFA_REALIZADA</tabela_filtro>
+		<coluna_a_filtrar>DESC_OBJETO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_REALIZADA</tabela_aplicada>
+		<filtro_a_aplicar>W_CRM_TAREFA_REALIZADA.DESC_OBJETO = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0100</id_descricao>
+		<descricao_coluna>DETALHE DA TAREFA</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>W_CRM_TAREFA_REALIZADA</tabela_filtro>
+		<coluna_a_filtrar>DETALHE_TAREFA</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_REALIZADA</tabela_aplicada>
+		<filtro_a_aplicar>W_CRM_TAREFA_REALIZADA.DETALHE_TAREFA LIKE '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0101</id_descricao>
+		<descricao_coluna>MOV CANCELAMENTO / REPROVAMENTO</descricao_coluna>
+		<tipo_coluna>5</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro/>
+		<coluna_a_filtrar/>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_REALIZADA</tabela_aplicada>
+		<filtro_a_aplicar>exists( select 1
+	from CRM_TAREFA_PROGRAMADA_MOV m 
+	where m.objeto_id_realizada = w_crm_tarefa_realizada.objeto_id 
+	and tipo_movimento = 2 and movimento_para = '9' )</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0102</id_descricao>
+		<descricao_coluna>MOVIMENTAÇÃO DE CONCLUSÃO</descricao_coluna>
+		<tipo_coluna>5</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro/>
+		<coluna_a_filtrar/>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_REALIZADA</tabela_aplicada>
+		<filtro_a_aplicar>exists( select 1 from CRM_TAREFA_PROGRAMADA_MOV m 
+	where m.objeto_id_realizada = w_crm_tarefa_realizada.objeto_id 
+	and tipo_movimento = 2 and movimento_para = '8' )</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0103</id_descricao>
+		<descricao_coluna>MOVIMENTAÇÃO DE FIM PREVISTO</descricao_coluna>
+		<tipo_coluna>5</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro/>
+		<coluna_a_filtrar/>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_REALIZADA</tabela_aplicada>
+		<filtro_a_aplicar>exists( select 1 from CRM_TAREFA_PROGRAMADA_MOV m 
+	where m.objeto_id_realizada = w_crm_tarefa_realizada.objeto_id 
+	and tipo_movimento = 4)</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0104</id_descricao>
+		<descricao_coluna>REALIZADAS - CONCLUÍDAS</descricao_coluna>
+		<tipo_coluna>5</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro/>
+		<coluna_a_filtrar/>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_REALIZADA</tabela_aplicada>
+		<filtro_a_aplicar>data_hora_fim is not null</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0105</id_descricao>
+		<descricao_coluna>REALIZADAS - EM ABERTO</descricao_coluna>
+		<tipo_coluna>5</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro/>
+		<coluna_a_filtrar/>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_REALIZADA</tabela_aplicada>
+		<filtro_a_aplicar>data_hora_fim is null</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0106</id_descricao>
+		<descricao_coluna>RECURSO</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>W_CRM_TAREFA_REALIZADA</tabela_filtro>
+		<coluna_a_filtrar>NOME_CONTATO_RECURSO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_REALIZADA</tabela_aplicada>
+		<filtro_a_aplicar>W_CRM_TAREFA_REALIZADA.NOME_CONTATO_RECURSO in ('#VALOR_FILTRO#')</filtro_a_aplicar>
+		<multivalorado>true</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0107</id_descricao>
+		<descricao_coluna>RESPONSAVEL</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>W_CRM_TAREFA_REALIZADA</tabela_filtro>
+		<coluna_a_filtrar>RESPONSAVEL</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_REALIZADA</tabela_aplicada>
+		<filtro_a_aplicar>W_CRM_TAREFA_REALIZADA.RESPONSAVEL in ('#VALOR_FILTRO#')</filtro_a_aplicar>
+		<multivalorado>true</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0108</id_descricao>
+		<descricao_coluna>TAREFA PROGRAMADA</descricao_coluna>
+		<tipo_coluna>3</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>W_CRM_TAREFA_PROGRAMADA</tabela_filtro>
+		<coluna_a_filtrar>OBJETO_ID</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>W_CRM_TAREFA_REALIZADA</tabela_aplicada>
+		<filtro_a_aplicar>OBJETO_ID IN (SELECT DISTINCT S.OBJETO_ID FROM CRM_OBJETO_SUPERIOR S
+INNER JOIN CRM_TAREFA_REALIZADA R ON S.OBJETO_ID = R.OBJETO_ID
+WHERE OBJETO_ID_SUPERIOR in  ('#VALOR_FILTRO#') AND TIPO_RELACAO = 12)</filtro_a_aplicar>
+		<inclui_coluna_valida>DESC_OBJETO,DESC_CLASSE,NOME_CONTATO_RECURSO,NOME_CONTATO_SOLICITANTE,NOME_CONTATO_CONTA_SOLICITANTE</inclui_coluna_valida>
+		<inclui_tabela_valida/>
+		<multivalorado>true</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>L_0109</id_descricao>
+		<descricao_coluna>COD_SUBCATEGORIA</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>COD_SUBCATEGORIA</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.COD_SUBCATEGORIA = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<inclui_coluna_valida>PRODUTOS_SUBCATEGORIA.SUBCATEGORIA_PRODUTO</inclui_coluna_valida>
+		<inclui_tabela_valida>JOIN PRODUTOS_SUBCATEGORIA ON (PRODUTOS.COD_CATEGORIA = PRODUTOS_SUBCATEGORIA.COD_CATEGORIA AND PRODUTOS.COD_SUBCATEGORIA = PRODUTOS_SUBCATEGORIA.COD_SUBCATEGORIA)</inclui_tabela_valida>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>U_0000</id_descricao>
+		<descricao_coluna>CONTINUIDADE</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>CONTINUIDADE</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.CONTINUIDADE = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>U_0001</id_descricao>
+		<descricao_coluna>COD_PRODUTO_SOLUCAO</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>COD_PRODUTO_SOLUCAO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.COD_PRODUTO_SOLUCAO = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>U_0002</id_descricao>
+		<descricao_coluna>COD_PRODUTO_SEGMENTO</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>COD_PRODUTO_SEGMENTO</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.COD_PRODUTO_SEGMENTO = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>U_0003</id_descricao>
+		<descricao_coluna>FATOR_P</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>FATOR_P</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.FATOR_P = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>U_0004</id_descricao>
+		<descricao_coluna>FATOR_Q</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>FATOR_Q</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.FATOR_Q = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+	<filtro_coluna>
+		<id_descricao>U_0005</id_descricao>
+		<descricao_coluna>FATOR_F</descricao_coluna>
+		<tipo_coluna>1</tipo_coluna>
+		<inativo>false</inativo>
+		<tabela_filtro>PRODUTOS</tabela_filtro>
+		<coluna_a_filtrar>FATOR_F</coluna_a_filtrar>
+		<publico>true</publico>
+		<sugestao_linx>true</sugestao_linx>
+		<tabela_aplicada>PRODUTOS</tabela_aplicada>
+		<filtro_a_aplicar>PRODUTOS.FATOR_F = '#VALOR_FILTRO#'</filtro_a_aplicar>
+		<multivalorado>false</multivalorado>
+	</filtro_coluna>
+</VFPData>

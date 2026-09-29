@@ -1,0 +1,575 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="ctb_lx_bordero_ocorrencia" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="descricao_ocorrencia">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="40"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="lx_tipo_bordero" type="xsd:int"/>
+								<xsd:element name="lx_tipo_lancamento" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="3"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="lx_tipo_ocorrencia">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="3"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="inativo" type="xsd:boolean"/>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>COMPENSAÇÃO DECHEQUES</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>101</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>ENCARGOS</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>102</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>ESTORNOS</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>103</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>LANÇAMENTO AVISADO</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>104</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>TARIFAS</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>105</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>APLICACAO</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>106</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>EMPRESTIMOS / FINANCIAMENTOS</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>107</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>CAMBIO</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>108</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>CPMF</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>109</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>IOF</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>110</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>IMPOSTO DE RENDA</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>111</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>PAGAMENTO FORNECEDORES</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>112</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>PAGAMENTO FUNCIONARIOS</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>113</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>SAQUE ELETRONICO</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>114</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>ACOES</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>115</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>TRANSFERENCIA ENTRE CONTAS</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>117</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>DEVOLUCAO DA COMPENSACAO</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>118</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>DEVOLUCAO DE CHEQUE DEPOSITADO</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>119</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>TRANSFERENCIA INTERBANCARIA (DOC/TED)</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>120</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>ANTECIPACOES A FORNECEDORES</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>121</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>OC / AEROPS</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>122</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>DEPÓSITO</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>201</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>LIQUIDO COBRANCA</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>202</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>DEVOLUCAO DE CHEQUES</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>203</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>ESTORNOS</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>204</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>LANCAMENTO AVISADO</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>205</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>RESGATE APLICACAO</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>206</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>EMPRESTIMOS / FINANCIAMENTOS</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>207</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>CAMBIO</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>208</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>TRANFERENCIA INTERBANCARIA (DOC/TED)</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>209</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>ACOES</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>210</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>DIVIDENDOS</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>211</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>SEGURO</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>212</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>TRANSFERENCIA ENTRE CONTAS</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>213</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>DEPOSITOS ESPECIAIS</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>214</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>DEVOLUCAO DE COMPENSACAO</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>215</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>OCT</descricao_ocorrencia>
+		<lx_tipo_bordero>13</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>216</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>ABATIMENTO CONCEDIDO</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>ABC</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>ABATIMENTO CANCELADO</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>ABL</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>ALTERAÇÃO DE DADOS DE BAIXA</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>ADB</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>ALTERAÇÃO DE DADOS REJEITADOS</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>ADR</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>ALTERAÇÃO DO ENDEREÇO DO SACADO</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>AES</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>ALTERAÇÃO DE DADOS</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>ALD</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>ALEGAÇÕES DO SACADO</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>ALS</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>ALTERAÇÃO DO NOME DO SACADO</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>ANS</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>ALTERAÇÃO DE TÍPO DE COBRANÇA</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>ATC</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>APÓS VENCTO PAGAVEL SO NA AG DEPOSITÁRIA</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>AVA</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>BAIXA REJEITADA</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>BXR</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>BAIXA DO TÍTULO NO BANCO</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>BXT</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>CONF. DE REC. DE INST. DE PROTESTO</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>CIP</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>COBRAR JUROS</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>CJR</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>CONF. DE REC. DE INTRUÇÃO DE PROTESTO</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>CRI</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>CONF. DE REC. DE INSTRUÇÃO NÃO PROTESTAR</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>CRN</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>CONF. DE REC. DE SUSTAÇÃO DE PROTESTO</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>CSP</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>DÉBITO DE CUSTAS ANTECIPADAS</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>DCA</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>DESPESAS DE PROTESTO</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>DDP</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>DÉBITO EM CONTA</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>DEC</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>DESPESAS DE SUSTAÇÃO DE PROTESTO</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>DSP</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>DÉBITO DE TARIFAS E CUSTAS</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>DTC</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>ENTRADA CONFIRMADA</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>ECF</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>ENTRADA REJEITADA</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>ENR</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>ENTRADA DO TÍTULO EM CARTÓRIO</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>ETC</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>INDEFINIDO</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>IND</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>INSTRUÇÃO REJEITADA</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>INR</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>LIQUIDAÇAO EM CARTÓRIO</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>LIC</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>LIQUIDAÇÃO NORMAL</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>LIQ</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>LIQUIDAÇÃO REJEITADA</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>LIR</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>RETORNO PARA A CONTA DO TÍTULO</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>M01</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>ANULAÇÃO DA CONTA PORTADORA DO TÍTULO</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>M02</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>MANUTENÇÃO DE TÍTULO VENCIDO</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>MTV</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>NÃO RECEBER APÓS VENCIMENTO</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>NAP</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>NÃO COBRAR JUROS</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>NCJ</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>NÃO PROTESTAR</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>NPT</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>NÃO RECEBER ANTES DO VENCIMENTO</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>NRA</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>PEDIDO DE DÉBITO EM CONTA</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>PDC</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>PROTESTO ENVIADO A CARTORIO / TARIFA</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>PEC</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>PROTESTAR</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>PRO</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>REMESSA DE TÍTULOS</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>REM</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>RETIRADA DE CARTÓRIO</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>RET</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>REMESSA SIMPLES DE TÍTULOS</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>RMS</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>SOLICITAÇÃO DE BAIXA</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>SDC</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>SEM INSTRUÇÃO DE COBRANÇA</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>SIC</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>SUSTAR PROTESTO</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>SUP</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>TARIFA DE AVISO DE COBRANÇA</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>TAC</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>TARIFA DE RELAÇÃO DE LIQUIDAÇÕES</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>TAR</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>TÍTULOS EM SER</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>TES</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>TARIFA DE EXTRATO POSIÇÃO</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>TEX</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>TARIFA DE MANUTENÇÃO DE TÍTULOS VENCIDOS</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>TMT</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+	<ctb_lx_bordero_ocorrencia>
+		<descricao_ocorrencia>VENCIMENTO ALTERADO</descricao_ocorrencia>
+		<lx_tipo_bordero>1</lx_tipo_bordero>
+		<lx_tipo_ocorrencia>VCA</lx_tipo_ocorrencia>
+		<inativo>false</inativo>
+	</ctb_lx_bordero_ocorrencia>
+</VFPData>

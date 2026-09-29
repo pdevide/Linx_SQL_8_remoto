@@ -1,0 +1,866 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="ctb_lx_tipo_operacao" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="ctb_tipo_operacao" type="xsd:int"/>
+								<xsd:element name="desc_tipo_operacao">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="40"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="gera_financeiro" type="xsd:boolean"/>
+								<xsd:element name="indica_entrada_saida">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="1"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="tipo_operacao">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="1"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="inativo" type="xsd:boolean"/>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>100</ctb_tipo_operacao>
+		<desc_tipo_operacao>VENDA DE MERCADORIA</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>V</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>101</ctb_tipo_operacao>
+		<desc_tipo_operacao>VENDA DE SERVIÇO DE INDUSTRIALIZAÇÃO</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>E</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>102</ctb_tipo_operacao>
+		<desc_tipo_operacao>VENDA DE SERVIÇO</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>V</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>103</ctb_tipo_operacao>
+		<desc_tipo_operacao>VENDA MERCADORIA DEPOSITADA EM ARMAZÉM</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>V</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>104</ctb_tipo_operacao>
+		<desc_tipo_operacao>VENDA SOB REGIME DRAWBACK</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>V</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>105</ctb_tipo_operacao>
+		<desc_tipo_operacao>VENDA EFETUADA FORA DO ESTABELECIMENTO</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>V</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>106</ctb_tipo_operacao>
+		<desc_tipo_operacao>VENDA MERC.REMETIDA EM CONSIG.INDUSTRIAL</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>V</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>107</ctb_tipo_operacao>
+		<desc_tipo_operacao>VENDA MERC.REMETIDA EM CONSIG.COMERCIAL</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>V</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>108</ctb_tipo_operacao>
+		<desc_tipo_operacao>VENDA C/ENTREGA FUTURA</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>V</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>109</ctb_tipo_operacao>
+		<desc_tipo_operacao>VENDA C/ENTREGA À ORDEM</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>V</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>110</ctb_tipo_operacao>
+		<desc_tipo_operacao>VENDA C/REMESSA P/INDUSTRIALIZ. À ORDEM</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>V</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>111</ctb_tipo_operacao>
+		<desc_tipo_operacao>VENDA INDUSTRIALIZAÇÃO C/RECEBTO À ORDEM</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>E</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>115</ctb_tipo_operacao>
+		<desc_tipo_operacao>VENDA C/FATURAMENTO FUTURO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>G</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>116</ctb_tipo_operacao>
+		<desc_tipo_operacao>NF DEVOLUÇÃO DE COMPRA C/FAT.ABONO FUT.</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>N</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>117</ctb_tipo_operacao>
+		<desc_tipo_operacao>FATURA DE ABONO DE NF. DEVOLUÇÃO VENDA</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>D</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>118</ctb_tipo_operacao>
+		<desc_tipo_operacao>VENDA MERC.RECEBIDA EM CONSIG.MERCANTIL</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>V</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>120</ctb_tipo_operacao>
+		<desc_tipo_operacao>TRANSFERÊNCIA EXPEDIDA</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>T</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>121</ctb_tipo_operacao>
+		<desc_tipo_operacao>TRANSFERÊNCIA DE MERCADORIA EM ARMAZÉM</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>T</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>122</ctb_tipo_operacao>
+		<desc_tipo_operacao>DEVOL.TRANSF.RECEBIDA P/INDUSTRIALIZAÇÃO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>T</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>123</ctb_tipo_operacao>
+		<desc_tipo_operacao>DEVOL.TRANSF.RECEBIDA P/COMERCIALIZAÇÃO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>T</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>128</ctb_tipo_operacao>
+		<desc_tipo_operacao>REMESSA P/BONIFICAÇÃO/DOAÇÃO/BRINDE</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>O</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>129</ctb_tipo_operacao>
+		<desc_tipo_operacao>REMESSA P/VENDA FORA ESTABELECIMENTO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>O</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>130</ctb_tipo_operacao>
+		<desc_tipo_operacao>REMESSA DE MATERIAL P/INDUSTRIALIZAÇÃO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>R</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>131</ctb_tipo_operacao>
+		<desc_tipo_operacao>REMESSA S/RETORNO FUTURO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>O</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>132</ctb_tipo_operacao>
+		<desc_tipo_operacao>REMESSA C/RETORNO FUTURO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>R</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>133</ctb_tipo_operacao>
+		<desc_tipo_operacao>REMESSA P/DEMONSTRAÇÃO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>R</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>134</ctb_tipo_operacao>
+		<desc_tipo_operacao>REMESSA P/CONSERTO OU REPARO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>R</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>135</ctb_tipo_operacao>
+		<desc_tipo_operacao>REMESSA DE MERCADORIA P/CONSIGNAÇÃO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>R</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>136</ctb_tipo_operacao>
+		<desc_tipo_operacao>REMESSA P/FINS ESPECÍFICOS DE EXPORTAÇÃO</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>V</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>137</ctb_tipo_operacao>
+		<desc_tipo_operacao>REMESSA EM VENDA À ORDEM</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>O</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>138</ctb_tipo_operacao>
+		<desc_tipo_operacao>REMESSA P/INDUSTRIALIZAÇÃO À ORDEM</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>E</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>139</ctb_tipo_operacao>
+		<desc_tipo_operacao>REMESSA DE BEM EM COMODATO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>O</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>140</ctb_tipo_operacao>
+		<desc_tipo_operacao>RETORNO (SIMB) MATERIAL INDUSTRIALIZAÇÃO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>E</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>141</ctb_tipo_operacao>
+		<desc_tipo_operacao>RETORNO MATERIAL NÃO UTILIZADO NA IND.</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>E</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>142</ctb_tipo_operacao>
+		<desc_tipo_operacao>RETORNO SIMPLES - SAÍDA</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>E</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>143</ctb_tipo_operacao>
+		<desc_tipo_operacao>RETORNO MERCADORIA RECEBIDA Á ORDEM</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>E</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>144</ctb_tipo_operacao>
+		<desc_tipo_operacao>RETORNO MERC. RECEB. P/DEMONSTRAÇÃO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>E</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>145</ctb_tipo_operacao>
+		<desc_tipo_operacao>RETORNO MERC. OU BEM RECEB. P/CONSERTO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>E</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>146</ctb_tipo_operacao>
+		<desc_tipo_operacao>RETORNO MERC. DEPOSITADA EM DEPÓSITO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>E</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>147</ctb_tipo_operacao>
+		<desc_tipo_operacao>RETORNO (SIMB) MERC. DEPOSITADA DEPÓSITO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>E</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>149</ctb_tipo_operacao>
+		<desc_tipo_operacao>RETORNO DE BEM RECEBIDO EM COMODATO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>O</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>150</ctb_tipo_operacao>
+		<desc_tipo_operacao>DEVOL. / ANULAÇÃO DE COMPRA</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>D</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>151</ctb_tipo_operacao>
+		<desc_tipo_operacao>DEVOL. DE COMPRA S/REGIME DRAWBACK</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>D</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>152</ctb_tipo_operacao>
+		<desc_tipo_operacao>DEVOL. RECEBIMENTO EM CONSIGNAÇÃO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>E</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>153</ctb_tipo_operacao>
+		<desc_tipo_operacao>DEVOL. (SIMB) RECEBTO EM CONSIGNAÇÃO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>E</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>160</ctb_tipo_operacao>
+		<desc_tipo_operacao>SIMPLES FATURAMENTO</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>V</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>170</ctb_tipo_operacao>
+		<desc_tipo_operacao>SAÍDA P/RECLASSIFICAÇÃO DE MATERIAL</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>O</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>171</ctb_tipo_operacao>
+		<desc_tipo_operacao>BAIXA DE ESTOQUE POR PERDA DO MATERIAL</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>O</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>172</ctb_tipo_operacao>
+		<desc_tipo_operacao>BAIXA DE ESTOQUE ENCERRAMENTO DA EMPRESA</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>O</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>173</ctb_tipo_operacao>
+		<desc_tipo_operacao>RETENÇÃO DA SUBSTITUIÇÃO TRIBUTÁRIA</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>O</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>180</ctb_tipo_operacao>
+		<desc_tipo_operacao>VENDA MERC. NA CONDIÇÃO DE SUBSTITUTO</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>V</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>181</ctb_tipo_operacao>
+		<desc_tipo_operacao>VENDA P/USO INDUSTRIALIZAÇÃO</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>V</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>182</ctb_tipo_operacao>
+		<desc_tipo_operacao>VENDA P/COMERCIALIZAÇÃO</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>V</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>183</ctb_tipo_operacao>
+		<desc_tipo_operacao>VENDA P/USO OU CONSUMO</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>V</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>184</ctb_tipo_operacao>
+		<desc_tipo_operacao>VENDA DE LOJA NAO GERA FINANCEIRO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>V</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>190</ctb_tipo_operacao>
+		<desc_tipo_operacao>OPERAÇÃO JÁ REGISTRADA EM E.C.F.</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>O</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>199</ctb_tipo_operacao>
+		<desc_tipo_operacao>OUTRAS SAÍDAS NÃO ESPECIFICADAS</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>S</indica_entrada_saida>
+		<tipo_operacao>O</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>200</ctb_tipo_operacao>
+		<desc_tipo_operacao>COMPRA DE MERCADORIA</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>C</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>201</ctb_tipo_operacao>
+		<desc_tipo_operacao>COMPRA DE SERVIÇO DE INDUSTRIALIZAÇÃO</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>E</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>202</ctb_tipo_operacao>
+		<desc_tipo_operacao>COMPRA DE SERVIÇOS DIVERSOS</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>C</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>205</ctb_tipo_operacao>
+		<desc_tipo_operacao>COMPRA SERV.INDL.C/MAT.REMETIDO À ORDEM</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>E</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>206</ctb_tipo_operacao>
+		<desc_tipo_operacao>COMPRA MERC. CONSIG. INDL/COML</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>C</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>208</ctb_tipo_operacao>
+		<desc_tipo_operacao>COMPRA C/RECEBIMENTO FUTURO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>O</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>209</ctb_tipo_operacao>
+		<desc_tipo_operacao>COMPRA C/ENTREGA À ORDEM</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>C</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>210</ctb_tipo_operacao>
+		<desc_tipo_operacao>COMPRA C/REMESSA P/INDUSTRIAL. À ORDEM</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>C</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>215</ctb_tipo_operacao>
+		<desc_tipo_operacao>COMPRA C/FATURAMENTO FUTURO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>G</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>216</ctb_tipo_operacao>
+		<desc_tipo_operacao>FATURA DE ABONO DE NF.DEVOLUÇÃO COMPRA</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>D</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>217</ctb_tipo_operacao>
+		<desc_tipo_operacao>NF DEVOLUÇÃO DE VENDA C/FAT.ABONO FUT.</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>N</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>220</ctb_tipo_operacao>
+		<desc_tipo_operacao>TRANSF. RECEBIDA P/INDUSTRIALIZAÇÃO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>T</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>221</ctb_tipo_operacao>
+		<desc_tipo_operacao>TRANSF. RECEBIDA P/COMERCIALIZAÇÃO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>T</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>222</ctb_tipo_operacao>
+		<desc_tipo_operacao>DEVOL. DE TRANSFERÊNCIA</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>T</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>227</ctb_tipo_operacao>
+		<desc_tipo_operacao>RECEBIMENTO MERC.P/ARMAZEM OU DEPÓSITO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>O</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>228</ctb_tipo_operacao>
+		<desc_tipo_operacao>RECEBIMENTO BONIFICAÇÃO/DOAÇÃO/BRINDE</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>O</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>230</ctb_tipo_operacao>
+		<desc_tipo_operacao>RECEBIMENTO MATERIAL P/INDUSTRIALIZAÇÃO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>R</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>231</ctb_tipo_operacao>
+		<desc_tipo_operacao>RECEBIMENTO C/RETORNO FUTURO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>R</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>232</ctb_tipo_operacao>
+		<desc_tipo_operacao>RECEBIMENTO S/RETORNO FUTURO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>O</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>233</ctb_tipo_operacao>
+		<desc_tipo_operacao>RECEBIMENTO P/DEMONSTRAÇÃO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>O</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>234</ctb_tipo_operacao>
+		<desc_tipo_operacao>RECEBIMENTO P/CONSERTO OU REPARO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>O</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>235</ctb_tipo_operacao>
+		<desc_tipo_operacao>RECEBIMENTO EM CONSIGNAÇÃO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>O</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>236</ctb_tipo_operacao>
+		<desc_tipo_operacao>RECEBIMENTO P/FINS DE EXPORTAÇÃO</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>C</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>237</ctb_tipo_operacao>
+		<desc_tipo_operacao>RECEBIMENTO EM COMPRA À ORDEM</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>O</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>238</ctb_tipo_operacao>
+		<desc_tipo_operacao>RECEBIMENTO P/INDUSTRIALIZAÇÃO À ORDEM</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>R</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>239</ctb_tipo_operacao>
+		<desc_tipo_operacao>RECEBIMENTO DE BEM EM COMODATO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>O</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>240</ctb_tipo_operacao>
+		<desc_tipo_operacao>RETORNO (SIMB) MATERIAL INDUSTRIALIZAÇÃO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>E</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>241</ctb_tipo_operacao>
+		<desc_tipo_operacao>RETORNO MATERIAL NÃO UTILIZADO NA IND.</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>E</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>242</ctb_tipo_operacao>
+		<desc_tipo_operacao>RETORNO SIMPLES - ENTRADA</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>E</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>243</ctb_tipo_operacao>
+		<desc_tipo_operacao>RETORNO REMESSA P/VENDA FORA DO ESTAB.</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>O</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>244</ctb_tipo_operacao>
+		<desc_tipo_operacao>RETORNO REMESSA EM DEMONSTRAÇÃO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>O</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>245</ctb_tipo_operacao>
+		<desc_tipo_operacao>RETORNO REMESSA P/CONSERTO OU REPARO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>O</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>246</ctb_tipo_operacao>
+		<desc_tipo_operacao>RETORNO REMESSA P/INDUSTRIAL. À ORDEM</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>O</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>247</ctb_tipo_operacao>
+		<desc_tipo_operacao>RETORNO REMESSA EM COMODATO</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>O</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>250</ctb_tipo_operacao>
+		<desc_tipo_operacao>DEVOL. / ANULAÇÃO DE VENDA</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>D</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>251</ctb_tipo_operacao>
+		<desc_tipo_operacao>DEVOL. REMESSA PARA EXPORTAÇÃO</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>D</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>252</ctb_tipo_operacao>
+		<desc_tipo_operacao>DEVOL. REMESSA CONSIG. INDL/COML</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>E</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>253</ctb_tipo_operacao>
+		<desc_tipo_operacao>DEVOL. (SIMB) REMESSA CONSIG. INDL/COML</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>E</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>260</ctb_tipo_operacao>
+		<desc_tipo_operacao>SIMPLES FATURAMENTO</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>C</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>270</ctb_tipo_operacao>
+		<desc_tipo_operacao>ENTRADA P/RECLASSIFICAÇÃO DE MATERIAL</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>O</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>281</ctb_tipo_operacao>
+		<desc_tipo_operacao>DEVOL. VENDA P/USO INDUSTRIALIZAÇÃO</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>D</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>282</ctb_tipo_operacao>
+		<desc_tipo_operacao>DEVOL. VENDA P/COMERCIALIZAÇÃO</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>D</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>283</ctb_tipo_operacao>
+		<desc_tipo_operacao>DEVOL. VENDA P/USO OU CONSUMO</desc_tipo_operacao>
+		<gera_financeiro>true</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>D</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>290</ctb_tipo_operacao>
+		<desc_tipo_operacao>DEVOLUCAO DE VENDA DE LOJA (SEM FINANC)</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>D</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>299</ctb_tipo_operacao>
+		<desc_tipo_operacao>OUTRAS ENTRADAS NÃO ESPECIFICADAS</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>E</indica_entrada_saida>
+		<tipo_operacao>O</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+	<ctb_lx_tipo_operacao>
+		<ctb_tipo_operacao>999</ctb_tipo_operacao>
+		<desc_tipo_operacao>VENDA POR ECF (para exceção de loja)</desc_tipo_operacao>
+		<gera_financeiro>false</gera_financeiro>
+		<indica_entrada_saida>L</indica_entrada_saida>
+		<tipo_operacao>O</tipo_operacao>
+		<inativo>false</inativo>
+	</ctb_lx_tipo_operacao>
+</VFPData>

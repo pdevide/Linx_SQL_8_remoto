@@ -1,0 +1,125 @@
+**********************************************************
+*        Ultimas alterações no Grupo Palma               *
+**********************************************************
+* Data :  01/06/2026
+* Autor:  Paulo Devide
+
+*	USR_INITarea
+*	USR_ALTER_BEFORE  ->Return .f. Para o Metodo
+*	USR_ALTER_AFTER
+*	USR_INCLUDE_AFTER
+*	USR_SEARCH_BEFORE ->Return .f. Para o Metodo
+*	USR_SEARCH_AFTER
+*	USR_CLEAN_AFTER
+*	USR_REFRESH
+*	USR_SAVE_BEFORE   ->Return .f. Para o Metodo
+*	USR_SAVE_AFTER
+*	USR_ITEN_DELETE_BEFORE ->Return .f. Para o Metodo
+*	USR_ITEN_DELETE_AFTER
+*	USR_ITEN_INCLUDE_BEFORE ->Return .f. Para o Metodo
+*	USR_ITEN_INCLUDE_AFTER
+*   USR_LOSTFOCUS
+*	USR_CLICK
+define class obj_entrada as custom
+	*- Nome do metodo/função que os objetos linx vão chamar.
+	procedure metodo_usuario
+
+		lparam xmetodo, xobjeto ,xnome_obj
+
+		do case
+
+			case UPPER(xmetodo) == 'USR_SAVE_AFTER'
+
+			case UPPER(xmetodo) == 'USR_REFRESH'
+
+			case UPPER(xmetodo) == 'USR_INIT'
+				SELECT v_forma_pgto_00
+				oCursor = GETCURSORADAPTER("v_forma_pgto_00")
+
+				** Instruções:
+				**oCursor.AddBufferField("tabela.nome_da_coluna", "Tipo",  <atualizavel>, "caption", "tabela.nome_coluna")
+				**
+				oCursor.AddBufferField("COND_ENT_PGTOS.EBS_ID_COND_PAGAMENTO","C(60)",.T.,"EBS_ID_COND_PAGAMENTO","COND_ENT_PGTOS.EBS_ID_COND_PAGAMENTO")
+				**
+				oCursor.confirmStructureChanges()
+
+				** Limpa a pesquisa
+				Thisformset.l_limpa()
+
+				** ID ORACLE 
+				ThisFormset.Lx_form1.Lx_pageframe1.Page1.addobject('lbl_id_oracle', 'lbl_id_oracle')
+				ThisFormset.Lx_form1.Lx_pageframe1.Page1.addobject('txtid_oracle', 'txtid_oracle')
+				
+				WITH ThisFormset.Lx_form1.Lx_pageframe1.Page1.txtid_oracle
+					.top = ThisFormset.Lx_form1.Lx_pageframe1.Page1.Label_VALOR_MINIMO_PARCELAMENTO.top
+					.left = ThisFormset.Lx_form1.Lx_pageframe1.Page1.Label_VALOR_MINIMO_PARCELAMENTO.left+254
+					.width = 100
+					.controlsource = "v_forma_pgto_00.EBS_ID_COND_PAGAMENTO"
+					.visible = .t.
+					.parent.lbl_id_oracle.caption = "ID Oracle"
+					.parent.lbl_id_oracle.top = ThisFormset.Lx_form1.Lx_pageframe1.Page1.Label_VALOR_MINIMO_PARCELAMENTO.top
+					.parent.lbl_id_oracle.left = ThisFormset.Lx_form1.Lx_pageframe1.Page1.Label_VALOR_MINIMO_PARCELAMENTO.left + 200
+					.parent.lbl_id_oracle.visible = .t.
+				ENDWITH	
+				
+				
+
+			case UPPER(xmetodo) == 'USR_SEARCH_AFTER'
+
+
+			Case Upper(xmetodo) == 'USR_INCLUDE_BEFORE'
+
+
+			case UPPER(xmetodo) == 'USR_ALTER_AFTER'
+
+
+
+			case UPPER(xmetodo) == 'USR_ALTER_BEFORE'
+
+			Case Upper(xmetodo) == 'USR_INCLUDE_AFTER'
+
+
+			case UPPER(xmetodo) == 'USR_WHEN'
+
+			case UPPER(xmetodo) == 'USR_VALID'
+
+			CASE UPPER(xmetodo) == 'USR_SAVE_BEFORE'
+
+
+			otherwise
+				return .t.
+		endcase
+	endproc
+enddefine
+
+** 01-jun-26 Id Oracle
+DEFINE CLASS lbl_id_oracle as label
+
+	caption = 'ID Oracle'
+	autosize = .T.
+	WIDTH = 100
+	top = 47
+	left = 44
+	HEIGHT =  27
+	visible  = .t.
+	**backcolor =  RGB(64,128,128)
+		
+ENDDEFINE
+** 01-jun-26 Id Oracle
+
+** 01-jun-26 Id Oracle
+DEFINE CLASS txtid_oracle AS lx_textbox_base
+	Height = 21
+	Left = 95
+	Top = 44
+	Width = 325
+	ReadOnly = .F.
+	Name = "txtid_oracle"
+	ControlSource = "v_forma_pgto_00.EBS_ID_COND_PAGAMENTO"
+	*p_tipo_dado = "EDITA"
+
+	PROCEDURE when
+		RETURN .f.
+	ENDPROC
+ENDDEFINE
+** 01-jun-26 Id Oracle

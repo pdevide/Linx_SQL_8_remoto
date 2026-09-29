@@ -1,0 +1,169 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<xsd:schema id="VFPData" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="VFPData" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="ctb_lx_documento_tipo" minOccurs="0" maxOccurs="unbounded">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="lx_tipo_documento" type="xsd:int"/>
+								<xsd:element name="tipo_documento">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="25"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="serie_nf" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="2"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="nome_recibo" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="40"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+								<xsd:element name="inativo" type="xsd:boolean"/>
+								<xsd:element name="tipo_pgto" minOccurs="0">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:maxLength value="1"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:anyAttribute namespace="http://www.w3.org/XML/1998/namespace" processContents="lax"/>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<ctb_lx_documento_tipo>
+		<lx_tipo_documento>1</lx_tipo_documento>
+		<tipo_documento>DUPLICATAS</tipo_documento>
+		<inativo>false</inativo>
+	</ctb_lx_documento_tipo>
+	<ctb_lx_documento_tipo>
+		<lx_tipo_documento>2</lx_tipo_documento>
+		<tipo_documento>PROMISSORIA</tipo_documento>
+		<inativo>false</inativo>
+	</ctb_lx_documento_tipo>
+	<ctb_lx_documento_tipo>
+		<lx_tipo_documento>3</lx_tipo_documento>
+		<tipo_documento>CHEQUE PRÉ-DATADO</tipo_documento>
+		<inativo>false</inativo>
+	</ctb_lx_documento_tipo>
+	<ctb_lx_documento_tipo>
+		<lx_tipo_documento>4</lx_tipo_documento>
+		<tipo_documento>CHEQUE À VISTA</tipo_documento>
+		<inativo>false</inativo>
+	</ctb_lx_documento_tipo>
+	<ctb_lx_documento_tipo>
+		<lx_tipo_documento>5</lx_tipo_documento>
+		<tipo_documento>CARTÃO DE CRÉDITO POS</tipo_documento>
+		<inativo>false</inativo>
+	</ctb_lx_documento_tipo>
+	<ctb_lx_documento_tipo>
+		<lx_tipo_documento>6</lx_tipo_documento>
+		<tipo_documento>CARTÃO DE CRÉDITO TEF</tipo_documento>
+		<inativo>false</inativo>
+	</ctb_lx_documento_tipo>
+	<ctb_lx_documento_tipo>
+		<lx_tipo_documento>7</lx_tipo_documento>
+		<tipo_documento>VALE FUNCIONÁRIO</tipo_documento>
+		<inativo>false</inativo>
+	</ctb_lx_documento_tipo>
+	<ctb_lx_documento_tipo>
+		<lx_tipo_documento>8</lx_tipo_documento>
+		<tipo_documento>CARTÃO DE DÉBITO</tipo_documento>
+		<inativo>false</inativo>
+	</ctb_lx_documento_tipo>
+	<ctb_lx_documento_tipo>
+		<lx_tipo_documento>9</lx_tipo_documento>
+		<tipo_documento>VALE PRODUTO</tipo_documento>
+		<inativo>false</inativo>
+	</ctb_lx_documento_tipo>
+	<ctb_lx_documento_tipo>
+		<lx_tipo_documento>10</lx_tipo_documento>
+		<tipo_documento>AVISO DE DÉBITO</tipo_documento>
+		<inativo>false</inativo>
+	</ctb_lx_documento_tipo>
+	<ctb_lx_documento_tipo>
+		<lx_tipo_documento>11</lx_tipo_documento>
+		<tipo_documento>AVISO DE CRÉDITO</tipo_documento>
+		<inativo>false</inativo>
+	</ctb_lx_documento_tipo>
+	<ctb_lx_documento_tipo>
+		<lx_tipo_documento>12</lx_tipo_documento>
+		<tipo_documento>GNRE</tipo_documento>
+		<inativo>false</inativo>
+	</ctb_lx_documento_tipo>
+	<ctb_lx_documento_tipo>
+		<lx_tipo_documento>13</lx_tipo_documento>
+		<tipo_documento>FATURA</tipo_documento>
+		<inativo>false</inativo>
+	</ctb_lx_documento_tipo>
+	<ctb_lx_documento_tipo>
+		<lx_tipo_documento>14</lx_tipo_documento>
+		<tipo_documento>GARE DR</tipo_documento>
+		<inativo>false</inativo>
+	</ctb_lx_documento_tipo>
+	<ctb_lx_documento_tipo>
+		<lx_tipo_documento>15</lx_tipo_documento>
+		<tipo_documento>DARF</tipo_documento>
+		<inativo>false</inativo>
+	</ctb_lx_documento_tipo>
+	<ctb_lx_documento_tipo>
+		<lx_tipo_documento>16</lx_tipo_documento>
+		<tipo_documento>TLIF</tipo_documento>
+		<inativo>false</inativo>
+	</ctb_lx_documento_tipo>
+	<ctb_lx_documento_tipo>
+		<lx_tipo_documento>17</lx_tipo_documento>
+		<tipo_documento>GPS</tipo_documento>
+		<inativo>false</inativo>
+	</ctb_lx_documento_tipo>
+	<ctb_lx_documento_tipo>
+		<lx_tipo_documento>18</lx_tipo_documento>
+		<tipo_documento>IPTU</tipo_documento>
+		<inativo>false</inativo>
+	</ctb_lx_documento_tipo>
+	<ctb_lx_documento_tipo>
+		<lx_tipo_documento>19</lx_tipo_documento>
+		<tipo_documento>GFIP</tipo_documento>
+		<inativo>false</inativo>
+	</ctb_lx_documento_tipo>
+	<ctb_lx_documento_tipo>
+		<lx_tipo_documento>40</lx_tipo_documento>
+		<tipo_documento>TAXA</tipo_documento>
+		<inativo>false</inativo>
+	</ctb_lx_documento_tipo>
+	<ctb_lx_documento_tipo>
+		<lx_tipo_documento>41</lx_tipo_documento>
+		<tipo_documento>CONTRATO</tipo_documento>
+		<inativo>false</inativo>
+	</ctb_lx_documento_tipo>
+	<ctb_lx_documento_tipo>
+		<lx_tipo_documento>42</lx_tipo_documento>
+		<tipo_documento>CESSAO DE DIREITO</tipo_documento>
+		<inativo>false</inativo>
+	</ctb_lx_documento_tipo>
+	<ctb_lx_documento_tipo>
+		<lx_tipo_documento>43</lx_tipo_documento>
+		<tipo_documento>DESPESA</tipo_documento>
+		<inativo>false</inativo>
+	</ctb_lx_documento_tipo>
+	<ctb_lx_documento_tipo>
+		<lx_tipo_documento>44</lx_tipo_documento>
+		<tipo_documento>RECIBO</tipo_documento>
+		<serie_nf>RC</serie_nf>
+		<inativo>false</inativo>
+	</ctb_lx_documento_tipo>
+</VFPData>
